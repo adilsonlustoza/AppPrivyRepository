@@ -1,0 +1,8 @@
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.0\AppPrivy.Application.deps.json
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.0\AppPrivy.Application.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.0\AppPrivy.Application.pdb
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.0\AppPrivy.Application.csprojAssemblyReference.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.0\AppPrivy.Application.AssemblyInfoInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.0\AppPrivy.Application.AssemblyInfo.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.0\AppPrivy.Application.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.0\AppPrivy.Application.pdb

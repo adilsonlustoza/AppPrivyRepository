@@ -1,0 +1,8 @@
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.0\AppPrivy.InfraStructure.deps.json
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.0\AppPrivy.InfraStructure.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.0\AppPrivy.InfraStructure.pdb
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.0\AppPrivy.InfraStructure.csprojAssemblyReference.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.0\AppPrivy.InfraStructure.AssemblyInfoInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.0\AppPrivy.InfraStructure.AssemblyInfo.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.0\AppPrivy.InfraStructure.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.0\AppPrivy.InfraStructure.pdb
