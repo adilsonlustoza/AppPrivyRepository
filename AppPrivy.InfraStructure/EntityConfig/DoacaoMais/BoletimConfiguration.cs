@@ -1,0 +1,24 @@
+﻿
+using AppPrivy.Domain.Entities.DoacaoMais;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.ComponentModel.DataAnnotations.Schema;
+
+
+namespace AppPrivy.Data.EntityConfig.DoacaoMais
+{
+    public class BoletimConfiguration : IEntityTypeConfiguration<Boletim>
+    {
+
+
+        public void Configure(EntityTypeBuilder<Boletim> builder)
+        {
+            builder.ToTable("Boletim","DoacaoMais");
+            builder.HasKey(x => x.BoletimId);
+            builder.Property(x => x.BoletimId)
+           .HasColumnName("BoletimId")
+           .IsRequired()
+           .ValueGeneratedOnAdd();
+        }
+    }
+}

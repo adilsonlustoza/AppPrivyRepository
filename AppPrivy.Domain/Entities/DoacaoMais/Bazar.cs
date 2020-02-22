@@ -1,14 +1,14 @@
 
+using AppPrivy.Domain.Entities.ObjectValue;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using AppPrivy.Domain.Entities.ObjectValue;
 
 namespace AppPrivy.Domain.Entities.DoacaoMais
 {
-    [Table("Bazar", Schema ="DoacaoMais")]
-    public class Bazar : Entity
+    [Table("Bazar", Schema = "DoacaoMais")]
+    public partial class Bazar : Entity
     {
-         [Key]
+        [Key]
         public int BazarId { get; set; }
 
         [StringLength(150)]
@@ -30,7 +30,7 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         [StringLength(500)]
         public string UrlImagem { get; set; }
-    
+
 
         /**********************************************Relation Area**************************************************/
 
@@ -38,6 +38,6 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
         public int CacccId { get; set; }
 
         public virtual Caccc Caccc { get; set; }
-        
+
     }
 }
