@@ -1,0 +1,152 @@
+﻿@model AppPrivy.Application.ViewsModels.ContatoViewModel
+
+@{
+    ViewBag.Title = "Contato";
+}
+
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/home_contato.css")" />
+
+
+<div class="container-fluid  margin-footer clearfix">
+
+    <div class="container page-header  mt-5 mb-3">
+
+        <h1>Contato<small class="text-muted">- será um prazer atendê-lo! </small></h1><hr />
+
+
+    </div>
+
+    <br />
+
+    <div class="container" id="container">
+
+        <div class="col-md-12">
+            <div class="col-md-9 float-left">
+
+                @using (Html.BeginForm("Contact", "Home"))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control input100", @placeholder = "Entre com o seu nome" } })
+                                @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control input100", @placeholder = "Entre com o seu e-mail " } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Telefone, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Telefone, new { htmlAttributes = new { @class = "form-control input100", @placeholder = "(99) 9999-9999 / (99) 99999-9999" } })
+                                @Html.ValidationMessageFor(model => model.Telefone, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Assunto, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Assunto, new { htmlAttributes = new { @class = "form-control input100", @placeholder = "Entre com o assunto" } })
+                                @Html.ValidationMessageFor(model => model.Assunto, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Mensagem, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Mensagem, new { htmlAttributes = new { @class = "form-control input100", @placeholder = "Entre com a mensagem", @rows = 4 } })
+                                @Html.ValidationMessageFor(model => model.Mensagem, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            @Html.LabelFor(model => model.TipoContato, htmlAttributes: new { @class = "col-md-2 col-form-label" })
+                            <div class="col-md-10">
+                                @Html.RadioButtonFor(model => model.TipoContato, 1, new { @checked = true, @class = "" }) Leitor
+                                &nbsp;&nbsp;
+                                @Html.RadioButtonFor(model => model.TipoContato, 2, new { @class = "" }) Empresa
+
+                                @Html.ValidationMessageFor(model => model.TipoContato, "", new { @class = "text-danger", @checked = true })
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <div class="col-md-10">
+                                <div class="checkbox">
+                                    <label>
+                                        @Html.CheckBoxFor(model => model.Novidades, new { @checked = "true" }) Desejo receber informativos e atualizações do site
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                @{ Html.RenderPartial("_Captcha"); }
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <div class="btn btn-outline-primary">
+                                    <span class="fa fa-mail-bulk" aria-hidden="true">&nbsp;Enviar</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                }
+            </div>
+
+            <div class="col-md-3 float-right">
+                <div class="row mt-2">
+                    <p class="text-muted ">
+                        Microsoft Certified Professional (MCP) é uma certificação que valida o profissional e desenvolvedor de TI developer especialização técnica com exames rigorosos, aprovados e reconhecidos pelo setor. Os exames MCP abrangem uma ampla variedade de produtos, tecnologias e soluções da Microsoft.
+                    </p>
+
+                </div>
+
+                <div class="row mt-5">
+                    <img src="~/Images/contato/microsoft-profissional.png" class="img-fluid img-responsive" />
+                </div>
+
+                <div class="row mt-5">
+                    <a href="@Url.Action("Login","Account")">
+                        <img src="~/Images/contato/area-restrita.png" class="img-fluid img-responsive" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+@section Scripts {
+
+    <script src="~/scripts/Own/ajax_functions.js"></script>
+    <script src="~/scripts/Views/Contato.js"></script> 
+
+}
+
+
+
+

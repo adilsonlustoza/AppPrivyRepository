@@ -1,9 +1,31 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
-}
+    ViewBag.Title = "Home Page";}
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <div>
+        <div  class="row">
+            @{Html.RenderPartial("_Carrossel");}
+        </div>      
+    </div>
+
+    <div>
+        <div class="row">
+            @{Html.RenderPartial("_QueFaco");}           
+        </div>
+    </div>
+
+
+    <div>
+        <div class="row">
+            @{Html.RenderPartial("_Recentes");}
+        </div>
+    </div>
+
+
+    <div>
+        <div class="row">
+            @{Html.RenderPartial("_Sobre");}
+        </div>
+    </div>
+
 </div>
-

@@ -1,0 +1,27 @@
+﻿
+.sobre_background
+{
+  min-height:420px;
+  min-width:100%;
+  background-image: url('../images/home/footer-bg.png');
+  position:relative;
+  bottom:0;
+  padding-top:1%;
+}
+
+.aui_font_about{
+    margin-top:2%;
+    text-align:justify;
+    color:white;
+    font-size:large;
+}
+
+.aui_font_phase{
+    position:relative;
+    margin-top:2%;
+    margin-bottom:3em;
+    text-align:center;
+    color:#46b8da;
+    font-size:large;
+    
+}

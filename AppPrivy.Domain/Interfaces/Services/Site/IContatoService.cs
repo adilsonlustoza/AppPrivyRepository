@@ -1,9 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿using AppPrivy.CrossCutting.Agregation;
+using System.Threading.Tasks;
 
 namespace AppPrivy.Domain
 {
     public interface IContatoService
     {
-      //  Task SendMail(ContactAgregation contato);
+        Task SendMail(ContactAgregation contato);
     }
 }
