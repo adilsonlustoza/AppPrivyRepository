@@ -1,14 +1,25 @@
+using AppPrivy.Application;
+using AppPrivy.Application.Interfaces;
+using AppPrivy.CrossCutting.Fault;
+using AppPrivy.CrossCutting.Operations;
 using AppPrivy.Data.Contexto;
 using AppPrivy.Data.Interface;
 using AppPrivy.Data.Repositories;
 using AppPrivy.Data.Repositories.DoacaoMais;
 using AppPrivy.Domain;
+using AppPrivy.Domain.Interfaces;
 using AppPrivy.Domain.Interfaces.Repositories;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
+using AppPrivy.Domain.Interfaces.Services;
+using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using AppPrivy.Domain.Services;
+using AppPrivy.Domain.Services.DoacaoMais;
 using AppPrivy.InfraStructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,33 +41,72 @@ namespace AppPrivy.WebAppMvc
         {
             services.AddControllersWithViews();
 
+            services.AddMvc(options=>options.EnableEndpointRouting=false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
             services.AddDbContext<AppPrivyContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("DoacaoMaisContext"));
+                options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"));
             });
 
 
 
             services.AddTransient<IContextManager, ContextManager>();
+            services.AddTransient<AppPrivyContext, DoacaoMaisContext>();
+            services.AddTransient<AppPrivyContext, SiteContext>();
 
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBaseDoacaoMais<>));
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBaseSite<>));
+            services.AddTransient(typeof(IServiceBase<>), typeof(ServiceBase<>));
+            services.AddTransient(typeof(IAppServiceBase<>), typeof(AppServiceBase<>));
 
             services.AddTransient<IBazarRepository, BazarRepository>();
+            services.AddTransient<IBazarService, BazarService>();
+
             services.AddTransient<IBoletimRepository, BoletimRepository>();
+            services.AddTransient<IBoletimService, BoletimService>();
+
             services.AddTransient<ICacccRepository, CacccRepository>();
+            services.AddTransient<ICacccService, CacccService>();
+
             services.AddTransient<IContaBancariaRepository, ContaBancariaRepository>();
+            services.AddTransient<IContaBancariaService, ContaBancariaService>();
+
             services.AddTransient<IConteudoRepository, ConteudoRepository>();
+            services.AddTransient<IConteudoService, ConteudoService>();
+
             services.AddTransient<IDispositivoRepository, DispositivoRepository>();
+            services.AddTransient<IDispositoService, DispositivoService>();
+
             services.AddTransient<INoticiaRepository, NoticiaRepository>();
+            services.AddTransient<INoticiaService, NoticiaService>();
+
             services.AddTransient<INotificacaoRepository, NotificacaoRepository>();
+            services.AddTransient<INotificacaoService, NotificacaoService>();
+
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            services.AddTransient<IUsuarioService, UsuarioService>();
 
             services.AddTransient<IPesquisaRepository, PesquisaRepository>();
+            services.AddTransient<IPesquisaService, PesquisaService>();        
+            services.AddTransient<IPesquisaRepository, PesquisaRepository>();
+
+            services.AddTransient<IContatoService, ContatoService>();
+            services.AddTransient<IPesquisaService, PesquisaService>();
+
+            services.AddTransient<IContatoAppService, ContatoAppService>();
+            services.AddTransient<IPesquisaAppService, PesquisaAppService>();
+
+            services.AddScoped<FaultException>();
+            services.AddScoped<SendMail>();
+
+
+
+
 
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
+            services.AddSingleton(Configuration);
+          
 
 
         }
@@ -77,16 +127,56 @@ namespace AppPrivy.WebAppMvc
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseCookiePolicy();
+            app.UseAuthentication();
             app.UseRouting();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //        name: "default",
+            //        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            //    endpoints.MapControllers();
+            //    endpoints.MapRazorPages();
+            //});
+
+           
+
+            app.UseMvc(routes =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+                routes.MapAreaRoute(
+               name: "AreaBlog",
+               areaName: "Blog",
+               template: "Blog/{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapAreaRoute(
+                name: "AreaDoacaoMais",
+                areaName: "DoacaoMais",
+                template: "DoacaoMais/{controller=Home}/{action=Index}/{id?}");
+
+              //  routes.MapRoute(
+              //  name: "blog",
+              //  template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+              //);
+
+              //  routes.MapRoute(
+              // name: "doacaomais",
+              // template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+              //);
+
+                routes.MapRoute(
+                 name: "default",
+                 template: "{controller=Home}/{action=Index}/{id?}"
+               );
+
+              
             });
+
         }
     }
 }

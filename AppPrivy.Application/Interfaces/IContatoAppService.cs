@@ -1,6 +1,5 @@
 ﻿
 using AppPrivy.CrossCutting.Agregation;
-using System;
 using System.Threading.Tasks;
 
 namespace AppPrivy.Application.Interfaces
@@ -9,7 +8,7 @@ namespace AppPrivy.Application.Interfaces
     {
         Task SendMail(ContactAgregation contato);
 
-        Boolean GoogleCaptcha();
+        bool GoogleCaptcha();
 
     }
 }

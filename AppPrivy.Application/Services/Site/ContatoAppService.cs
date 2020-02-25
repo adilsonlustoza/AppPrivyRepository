@@ -14,7 +14,7 @@ namespace AppPrivy.Application
         private readonly IContatoService _contatoService;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public ContatoAppService(IContatoService contatoService, IHttpContextAccessor httpContextAccessor)
+        public ContatoAppService(IContatoService contatoService,IHttpContextAccessor httpContextAccessor)
         {
             _contatoService = contatoService;
             _httpContextAccessor = httpContextAccessor;

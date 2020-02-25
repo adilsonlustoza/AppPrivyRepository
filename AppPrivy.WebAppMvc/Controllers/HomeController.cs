@@ -3,9 +3,10 @@ using AppPrivy.Application.ViewsModels;
 using AppPrivy.CrossCutting.Agregation;
 using AppPrivy.WebAppMvc.Commons;
 using AppPrivy.WebAppMvc.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Primitives;
 using System;
@@ -21,26 +22,30 @@ namespace AppPrivy.WebAppMvc.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IContatoAppService _contatoAppService;
         private readonly IPesquisaAppService _pesquisaAppService;
-        private readonly IHttpContextAccessor _httpContextAccessor;        
-        private readonly IHostEnvironment _hostingEnvironment;
+        private readonly IConfiguration _configuration;
 
-        public HomeController() { }
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IHostingEnvironment _webHostEnvironment;
 
-        [Obsolete]
+
+
         public HomeController
             (
                 IContatoAppService contatoAppService, 
                 IPesquisaAppService pesquisaAppService, 
-                ILogger<HomeController> logger, 
-                IHttpContextAccessor httpContextAccessor, 
-                IHostEnvironment hostingEnvironment
-            )
+                ILogger<HomeController> logger ,
+                IHostingEnvironment webHostEnvironment,
+                IHttpContextAccessor httpContextAccessor,
+               IConfiguration configuration
+            ) 
         {
             _contatoAppService = contatoAppService;
             _pesquisaAppService = pesquisaAppService;
             _logger = logger;
             _httpContextAccessor = httpContextAccessor;
-            _hostingEnvironment = hostingEnvironment;
+            _configuration = configuration;
+            _webHostEnvironment = webHostEnvironment;
+
         }
                            
 
@@ -109,7 +114,7 @@ namespace AppPrivy.WebAppMvc.Controllers
 
                         await _contatoAppService.SendMail(new ContactAgregation()
                         {
-                            _path = Path.Combine(_hostingEnvironment.ContentRootPath,@"~\Templates\Email\ContatoEmail.html"),
+                            _path = Path.Combine(_webHostEnvironment.WebRootPath,@"~\Templates\Email\ContatoEmail.html"),
                             _from = contato.Email,
                             _phone = contato.Telefone,
                             _body = contato.Mensagem,

@@ -12,12 +12,12 @@ namespace AppPrivy.Data.Repositories.DoacaoMais
     public class NotificacaoRepository: RepositoryBaseDoacaoMais<Notificacao>, INotificacaoRepository
     {
         private readonly IContextManager _contextManager;
-        private readonly DoacaoMaisContext _doacaoMaisContext;
+      //  private readonly DoacaoMaisContext _doacaoMaisContext;
 
-        public NotificacaoRepository(IContextManager contextManager,DoacaoMaisContext doacaoMaisContext):base(contextManager)
+        public NotificacaoRepository(IContextManager contextManager):base(contextManager)
         {
             _contextManager = contextManager;
-            _doacaoMaisContext = doacaoMaisContext;
+          // _doacaoMaisContext = doacaoMaisContext;
         }
 
         public async Task<IEnumerable<Notificacao>> ListaNoficacaoAtivas()
