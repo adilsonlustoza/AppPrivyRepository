@@ -5,3 +5,4 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppP
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.AssemblyInfo.cs
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.pdb
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csprojAssemblyReference.cache

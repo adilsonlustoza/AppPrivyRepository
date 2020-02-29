@@ -26,8 +26,15 @@ using AppPrivy.WebAppMvc.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"798bd264f6dfd4036d7954a39ab2ea048e31888c", @"/Views/Home/Politica.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d856fe62581d936797dd271970a191669de61fb1", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ecd829dd3b64d7430413dd535fd635bc1cc4d4d9", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Politica : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

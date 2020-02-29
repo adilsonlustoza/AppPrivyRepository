@@ -75,6 +75,7 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsof
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.amd64.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\appsettings.Development.json
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\appsettings.json
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\backup.json
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.StaticWebAssets.xml
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.exe
