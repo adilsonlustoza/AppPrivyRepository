@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AppPrivy.Data.EntityConfig.Site
+namespace AppPrivy.InfraStructure.EntityConfig.Site
 {
     public class PesquisaConfiguration: IEntityTypeConfiguration<Pesquisa>
     {    

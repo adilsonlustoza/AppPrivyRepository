@@ -55,39 +55,39 @@ namespace AppPrivy.Domain.Services.DoacaoMais
                 {
 
 
-                    if (dispositivo.NotificacaoDispositivos != null)
+                    if (dispositivo.Notificacao != null)
                     {
-                        var notificacaoId = dispositivo.NotificacaoDispositivos.Count > 0 ? dispositivo.NotificacaoDispositivos.FirstOrDefault().NotificacaoId : 0;
+                        var notificacaoId = dispositivo.Notificacao.Count > 0 ? dispositivo.Notificacao.FirstOrDefault().NotificacaoId : 0;
 
                         if (notificacaoId != 0)
                             _notificacao = await _notificacaoRepository.GetById(notificacaoId);
                     }
 
-                    _dispositivos = await _dispositivoRepository.Search(p => p.Serial == dispositivo.Serial, x => x.NotificacaoDispositivos);
+                    _dispositivos = await _dispositivoRepository.Search(p => p.Serial == dispositivo.Serial, x => x.Notificacao);
 
 
-                    //if (_dispositivos != null && _dispositivos.Count() > 0)
-                    //{
-                    //    var dispositivoEncontrado = _dispositivos.FirstOrDefault();
+                    if (_dispositivos != null && _dispositivos.Count() > 0)
+                    {
+                        var dispositivoEncontrado = _dispositivos.FirstOrDefault();
 
 
-                    //    if (dispositivoEncontrado != null && !dispositivoEncontrado.Notificacao.Contains(_notificacao))
-                    //        dispositivoEncontrado.Notificacao.Add(_notificacao);
-                    //    _dispositivoRepository.Update(dispositivoEncontrado);
+                        if (dispositivoEncontrado != null && !dispositivoEncontrado.Notificacao.Contains(_notificacao))
+                            dispositivoEncontrado.Notificacao.Add(_notificacao);
+                        _dispositivoRepository.Update(dispositivoEncontrado);
 
-                    //    _result = _dispositivoRepository.SaveChanges();
-                    //}
-                    //else
-                    //{
+                        _result = _dispositivoRepository.SaveChanges();
+                    }
+                    else
+                    {
 
-                    //    dispositivo.Notificacao = new List<Notificacao>();
-                    //    dispositivo.Notificacao.Add(_notificacao);
+                         new List<Notificacao>().Add(_notificacao);
 
-                    //    _dispositivoRepository.Add(dispositivo);
+                         dispositivo.Notificacao.Add(_notificacao);
+                        _dispositivoRepository.Add(dispositivo);
+                        
+                        _result = _dispositivoRepository.SaveChanges();
 
-                    //    _result = _dispositivoRepository.SaveChanges();
-
-                    //}
+                    }
 
 
                     _unitOfWork.Commit();

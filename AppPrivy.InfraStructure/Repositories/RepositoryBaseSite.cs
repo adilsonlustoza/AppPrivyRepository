@@ -1,4 +1,4 @@
-﻿using AppPrivy.Data.Interface;
+﻿using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace AppPrivy.Data.Repositories
+namespace AppPrivy.InfraStructure.Repositories
 {
     public class RepositoryBaseSite<TEntity> : IDisposable, IRepositoryBase<TEntity> where TEntity : class
     {

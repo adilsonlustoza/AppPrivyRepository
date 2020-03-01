@@ -1,8 +1,8 @@
-﻿using AppPrivy.Data.Interface;
+﻿using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 
-namespace AppPrivy.Data.Repositories.DoacaoMais
+namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class NoticiaRepository: RepositoryBaseDoacaoMais<Noticia>, INoticiaRepository
     {

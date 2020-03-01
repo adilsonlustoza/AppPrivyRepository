@@ -2,10 +2,11 @@ using AppPrivy.Application;
 using AppPrivy.Application.Interfaces;
 using AppPrivy.CrossCutting.Fault;
 using AppPrivy.CrossCutting.Operations;
-using AppPrivy.Data.Contexto;
-using AppPrivy.Data.Interface;
-using AppPrivy.Data.Repositories;
-using AppPrivy.Data.Repositories.DoacaoMais;
+using AppPrivy.InfraStructure.Contexto;
+using AppPrivy.InfraStructure.Interface;
+using AppPrivy.InfraStructure.Repositories;
+using AppPrivy.InfraStructure.Repositories.DoacaoMais;
+using AppPrivy.InfraStructure.Repositories.Site;
 using AppPrivy.Domain;
 using AppPrivy.Domain.Interfaces;
 using AppPrivy.Domain.Interfaces.Repositories;
@@ -14,11 +15,10 @@ using AppPrivy.Domain.Interfaces.Services;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using AppPrivy.Domain.Services;
 using AppPrivy.Domain.Services.DoacaoMais;
-using AppPrivy.InfraStructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -43,16 +43,24 @@ namespace AppPrivy.WebAppMvc
 
             services.AddMvc(options=>options.EnableEndpointRouting=false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
-            services.AddDbContext<AppPrivyContext>(options =>
+            services.AddDbContext<DoacaoMaisContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"));
+                options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"), b => b.MigrationsAssembly("AppPrivy.WebAppMvc"));
             });
+            
+            services.AddDbContext<SiteContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"), b => b.MigrationsAssembly("AppPrivy.WebAppMvc"));
+            });
+
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<SiteContext>();         
 
 
 
             services.AddTransient<IContextManager, ContextManager>();
-            services.AddTransient<AppPrivyContext, DoacaoMaisContext>();
-            services.AddTransient<AppPrivyContext, SiteContext>();
+            services.AddTransient<DoacaoMaisContext>();
+            services.AddTransient<SiteContext>();
+
 
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBaseDoacaoMais<>));
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBaseSite<>));
@@ -100,13 +108,11 @@ namespace AppPrivy.WebAppMvc
             services.AddScoped<SendMail>();
 
 
-
-
-
-
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton(Configuration);
-          
+
+           
+
 
 
         }
@@ -114,6 +120,25 @@ namespace AppPrivy.WebAppMvc
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<DoacaoMaisContext>();
+                context.Database.EnsureDeleted();
+                context.Database.EnsureCreated();
+                DoacaoMaisDBInitializer.Seed(context);
+            }
+
+
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<SiteContext>();
+                context.Database.EnsureDeleted();
+                context.Database.EnsureCreated();
+                SiteDBInitializer.Seed(context);
+            }
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -133,6 +158,8 @@ namespace AppPrivy.WebAppMvc
 
             app.UseAuthorization();
 
+     
+
             //app.UseEndpoints(endpoints =>
             //{
             //    endpoints.MapControllerRoute(
@@ -143,7 +170,7 @@ namespace AppPrivy.WebAppMvc
             //    endpoints.MapRazorPages();
             //});
 
-           
+
 
             app.UseMvc(routes =>
             {

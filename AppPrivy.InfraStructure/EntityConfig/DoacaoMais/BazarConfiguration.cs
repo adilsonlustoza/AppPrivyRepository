@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 
-namespace AppPrivy.Data.EntityConfig.DoacaoMais
+namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
 {
 
     public class BazarConfiguration : IEntityTypeConfiguration<Bazar>
@@ -19,7 +19,9 @@ namespace AppPrivy.Data.EntityConfig.DoacaoMais
             builder.Property(x => x.BazarId)
            .HasColumnName("BazarId")
            .IsRequired()
-           .ValueGeneratedOnAdd(); 
+           .ValueGeneratedOnAdd();
+
+            builder.OwnsOne(x => x.Endereco);
         }
     }
 }

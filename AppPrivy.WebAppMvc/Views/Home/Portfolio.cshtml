@@ -324,7 +324,7 @@
 
 </div>
 
-@{Html.RenderPartial("_ModalImage");}
+@{await Html.RenderPartialAsync("_ModalImage");}
 
-<script src='@Url.Content("~/Scripts/Own/portfolio.js")'></script>
+<script src='~/Scripts/Own/portfolio.js' asp-append-version="true"></script>
 

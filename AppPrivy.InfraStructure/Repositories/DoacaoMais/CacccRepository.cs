@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AppPrivy.Data.Interface;
+using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
-using AppPrivy.Data.Repositories;
+using AppPrivy.InfraStructure.Repositories;
 using AppPrivy.Domain.Entities.ObjectValue;
 
-namespace AppPrivy.Data.Repositories.DoacaoMais
+namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class CacccRepository : RepositoryBaseDoacaoMais<Caccc>, ICacccRepository
     {

@@ -1,11 +1,11 @@
-﻿using AppPrivy.Data.Interface;
+﻿using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AppPrivy.Data.Repositories.DoacaoMais
+namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class BoletimRepository :  RepositoryBaseDoacaoMais<Boletim>, IBoletimRepository
     {

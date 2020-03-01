@@ -1,7 +1,7 @@
-﻿using AppPrivy.Data.Interface;
+﻿using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain;
 
-namespace AppPrivy.Data.Repositories
+namespace AppPrivy.InfraStructure.Repositories
 {
     public class PesquisaRepository :RepositoryBaseSite<Pesquisa>,IPesquisaRepository
     {

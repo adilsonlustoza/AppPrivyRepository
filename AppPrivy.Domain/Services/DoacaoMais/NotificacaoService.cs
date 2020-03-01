@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using AppPrivy.CrossCutting.Cache;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
@@ -19,11 +20,9 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
         public async Task<IEnumerable<Notificacao>> ListaNoficacaoAtivas()
         {
-            //    if(TemporaryMemory.GetInstance().GetCache(NotificacaoCache)==null)
-            //        TemporaryMemory.GetInstance().CacheSave(NotificacaoCache, await _notificacaoRepository.ListaNoficacaoAtivas());
-            //    return (IEnumerable<Notificacao>) TemporaryMemory.GetInstance().GetCache(NotificacaoCache);
-
-            return null;
+            if (TemporaryMemory.GetInstance().GetCache(NotificacaoCache) == null)
+                TemporaryMemory.GetInstance().CacheSave(NotificacaoCache, await _notificacaoRepository.ListaNoficacaoAtivas());
+            return (IEnumerable<Notificacao>)TemporaryMemory.GetInstance().GetCache(NotificacaoCache);
         }
 
         public async Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico)

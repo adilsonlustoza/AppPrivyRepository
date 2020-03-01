@@ -1,15 +1,14 @@
-﻿using AppPrivy.Data.Contexto;
+﻿using AppPrivy.InfraStructure.Contexto;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Entities.ObjectValue;
 using System;
 using System.Collections.Generic;
 
-namespace AppPrivy.Data.Repositories.DoacaoMais
+namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-   /* public class DoacaoMaisDBInitializer : DropCreateDatabaseIfModelChanges<DoacaoMaisContext>
+    public class DoacaoMaisDBInitializer 
     {
-
-        protected override void Seed(DoacaoMaisContext context)
+        public static void Seed(DoacaoMaisContext context)
         {
             var defaultCaccc = new List<Caccc>();
             
@@ -1063,8 +1062,8 @@ Para colher os recursos, a CAVD reúne diversos tipos de eventos. Além disso, r
             foreach (Caccc caccc in defaultCaccc)
                 context.Caccc.Add(caccc);
 
-            base.Seed(context);
+         
         }
 
-    }*/
+    }
 }

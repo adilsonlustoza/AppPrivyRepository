@@ -25,7 +25,7 @@ namespace AppPrivy.WebAppMvc.Controllers
         private readonly IConfiguration _configuration;
 
         private readonly IHttpContextAccessor _httpContextAccessor;
-        private readonly IHostingEnvironment _webHostEnvironment;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
 
 
@@ -34,7 +34,7 @@ namespace AppPrivy.WebAppMvc.Controllers
                 IContatoAppService contatoAppService, 
                 IPesquisaAppService pesquisaAppService, 
                 ILogger<HomeController> logger ,
-                IHostingEnvironment webHostEnvironment,
+                IWebHostEnvironment webHostEnvironment,
                 IHttpContextAccessor httpContextAccessor,
                IConfiguration configuration
             ) 

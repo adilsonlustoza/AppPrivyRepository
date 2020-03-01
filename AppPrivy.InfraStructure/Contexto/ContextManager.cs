@@ -1,10 +1,8 @@
-﻿using AppPrivy.Data.Interface;
-using AppPrivy.InfraStructure;
+﻿using AppPrivy.InfraStructure.Interface;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using  Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
-namespace AppPrivy.Data.Contexto
+namespace AppPrivy.InfraStructure.Contexto
 {
     public class ContextManager : IContextManager
     {
@@ -20,18 +18,18 @@ namespace AppPrivy.Data.Contexto
 
 
 
-        public AppPrivyContext SiteContext()
+        public SiteContext SiteContext()
         {
             if (_httpContextAccessor.HttpContext.Items[SiteContextKey] == null)
-                _httpContextAccessor.HttpContext.Items[SiteContextKey] = new SiteContext( new DbContextOptions<InfraStructure.AppPrivyContext>());
+                _httpContextAccessor.HttpContext.Items[SiteContextKey] = new SiteContext( new DbContextOptions<SiteContext>());
             return (SiteContext)_httpContextAccessor.HttpContext.Items[SiteContextKey];
           
         }
 
-        public AppPrivyContext DoacaoMaisContext()
+        public DoacaoMaisContext DoacaoMaisContext()
         {
             if (_httpContextAccessor.HttpContext.Items[DoacaoMaisContextKey] == null)
-                _httpContextAccessor.HttpContext.Items[DoacaoMaisContextKey] = new DoacaoMaisContext(new DbContextOptions<InfraStructure.AppPrivyContext>());
+                _httpContextAccessor.HttpContext.Items[DoacaoMaisContextKey] = new DoacaoMaisContext(new DbContextOptions<DoacaoMaisContext>());
             return (DoacaoMaisContext)_httpContextAccessor.HttpContext.Items[DoacaoMaisContextKey];
 
            

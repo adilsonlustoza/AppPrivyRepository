@@ -13,7 +13,7 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
     {
         public Notificacao()
         {
-            NotificacaoDispositivos = new HashSet<NotificacaoDispositivo>();
+            Dispositivos = new HashSet<Dispositivo>();
         }
 
         [Key]
@@ -37,8 +37,11 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
         public bool Ativa { get; set;}
 
         /*****************************************Relation areas**************************************************/
+        [NotMapped]
+        public virtual ICollection<Dispositivo> Dispositivos { get; set; }
 
-        public virtual ICollection<NotificacaoDispositivo> NotificacaoDispositivos { get; set; }
+        
+        public virtual ICollection<NotificacaoDispositivo> NotificacaoDispositivo { get; set; }
 
     }
 }

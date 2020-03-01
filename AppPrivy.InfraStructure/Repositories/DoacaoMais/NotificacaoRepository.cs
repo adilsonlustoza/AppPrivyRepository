@@ -1,48 +1,40 @@
 ﻿using System.Collections.Generic;
-using AppPrivy.Data.Interface;
+using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using System;
-using AppPrivy.Data.Contexto;
+using AppPrivy.InfraStructure.Contexto;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AppPrivy.Data.Repositories.DoacaoMais
+namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class NotificacaoRepository: RepositoryBaseDoacaoMais<Notificacao>, INotificacaoRepository
-    {
-        private readonly IContextManager _contextManager;
-      //  private readonly DoacaoMaisContext _doacaoMaisContext;
+    {       
+        private readonly DoacaoMaisContext _doacaoMaisContext;
 
-        public NotificacaoRepository(IContextManager contextManager):base(contextManager)
-        {
-            _contextManager = contextManager;
-          // _doacaoMaisContext = doacaoMaisContext;
+        public NotificacaoRepository(IContextManager contextManager,DoacaoMaisContext doacaoMaisContext):base(contextManager)
+        {          
+            _doacaoMaisContext = doacaoMaisContext;
         }
 
         public async Task<IEnumerable<Notificacao>> ListaNoficacaoAtivas()
         {
             try
             {
-                ICollection<Notificacao> _returnNotification=null;              
+                ICollection<Notificacao> _returnNotification=null;
 
-                //var result = await this.Search(p => p.Ativa  && (p.DataInicial<=DateTime.Now && p.DataFinal>=DateTime.Now),p=> p.Dispositivos);
+                var result = await this.Search(p => p.Ativa && (p.DataInicial <= DateTime.Now && p.DataFinal >= DateTime.Now));
 
-                //if (result != null)
-                //{
-                //    _returnNotification = new List<Notificacao>();
+                if (result != null)
+                {
+                    _returnNotification = new List<Notificacao>();
+                    var iEnumerator = result.GetEnumerator();
+                    while (iEnumerator.MoveNext())
+                        _returnNotification.Add(iEnumerator.Current);
+                }
 
-                  
-                //   var iEnumerator =  result.GetEnumerator();
-
-                //    while (iEnumerator.MoveNext())                    
-                //        _returnNotification.Add(iEnumerator.Current);
-                    
-
-                //}
-
-                return _returnNotification; 
-                           
+                return _returnNotification;                            
             }
             catch (Exception e)
             {
@@ -55,14 +47,12 @@ namespace AppPrivy.Data.Repositories.DoacaoMais
         {
             try
             {
-             
-                    //var notificacoes = _doacaoMaisContext.Dispositivo.Where(d => d.IdentificadorUnico.Equals(identificadorUnico)).FirstOrDefault();
 
-                    //if (notificacoes != null)
-                    //    return await Task.FromResult<IList<Notificacao>>(notificacoes.Notificacao.ToList());                  
-                
+                var notificacoes = _doacaoMaisContext.Dispositivo.Where(d => d.IdentificadorUnico.Equals(identificadorUnico)).FirstOrDefault();
 
-                return null;
+                if (notificacoes != null)
+                    return await Task.FromResult<IList<Notificacao>>(notificacoes.Notificacao.ToList());
+                return  null ;
             }
             catch (Exception e)
             {

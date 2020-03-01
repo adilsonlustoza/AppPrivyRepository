@@ -105,6 +105,7 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsof
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.DotNet.Cli.Utils.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.DotNet.ProjectModel.dll
@@ -113,7 +114,9 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsof
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.Extensions.CommandLineUtils.dll
@@ -132,6 +135,7 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsof
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.VisualBasic.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
@@ -163,7 +167,6 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\System.C
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
@@ -226,11 +229,11 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.Application.dll
@@ -243,8 +246,6 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.Domain.pdb
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.Domain.dll.config
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.csprojAssemblyReference.cache
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.MvcApplicationPartsAssemblyInfo.cs
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.MvcApplicationPartsAssemblyInfo.cache
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.RazorAssemblyInfo.cache
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.RazorAssemblyInfo.cs
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.AssemblyInfoInputs.cache
@@ -289,3 +290,5 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\staticwe
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\staticwebassets\AppPrivy.WebAppMvc.StaticWebAssets.xml
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.pdb
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.MvcApplicationPartsAssemblyInfo.cs
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.MvcApplicationPartsAssemblyInfo.cache

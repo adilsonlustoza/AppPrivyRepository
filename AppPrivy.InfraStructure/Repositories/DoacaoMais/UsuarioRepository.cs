@@ -1,4 +1,4 @@
-﻿using AppPrivy.Data.Interface;
+﻿using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppPrivy.Data.Repositories.DoacaoMais
+namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class UsuarioRepository :  RepositoryBaseDoacaoMais<Usuario>, IUsuarioRepository
     {

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace AppPrivy.Data.EntityConfig.DoacaoMais
+namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
 {
     public class BoletimConfiguration : IEntityTypeConfiguration<Boletim>
     {

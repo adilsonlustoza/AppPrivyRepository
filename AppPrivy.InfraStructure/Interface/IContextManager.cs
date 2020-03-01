@@ -1,10 +1,10 @@
-﻿using AppPrivy.InfraStructure;
+﻿using AppPrivy.InfraStructure.Contexto;
 
-namespace AppPrivy.Data.Interface
+namespace AppPrivy.InfraStructure.Interface
 {
     public interface IContextManager
     {
-        AppPrivyContext SiteContext();
-        AppPrivyContext DoacaoMaisContext();
+        SiteContext SiteContext();
+        DoacaoMaisContext DoacaoMaisContext();
     }
 }

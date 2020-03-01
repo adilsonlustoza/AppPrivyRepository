@@ -1,10 +1,10 @@
-﻿using AppPrivy.Data.Interface;
+﻿using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AppPrivy.Data.Repositories.DoacaoMais
+namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class DispositivoRepository :  RepositoryBaseDoacaoMais<Dispositivo>, IDispositivoRepository
     {

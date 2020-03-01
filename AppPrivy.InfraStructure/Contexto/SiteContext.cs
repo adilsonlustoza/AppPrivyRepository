@@ -1,23 +1,27 @@
-﻿using AppPrivy.Data.EntityConfig.Site;
-using AppPrivy.Data.Repositories.Site;
+﻿using AppPrivy.InfraStructure.EntityConfig.DoacaoMais;
+using AppPrivy.InfraStructure.EntityConfig.Site;
+using AppPrivy.InfraStructure.Repositories.Site;
 using AppPrivy.Domain;
+using AppPrivy.Domain.Entities.Identity;
 using AppPrivy.InfraStructure;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
-namespace AppPrivy.Data.Contexto
+namespace AppPrivy.InfraStructure.Contexto
 {
-    public class SiteContext : AppPrivyContext
+    //public class SiteContext : IdentityDbContext<User, Role, int,
+    //                                                IdentityUserClaim<int>, UserRole, IdentityUserLogin<int>,
+    //                                                IdentityRoleClaim<int>, IdentityUserToken<int>>
+
+    public class SiteContext: IdentityDbContext
     {
        
-        public SiteContext(DbContextOptions<AppPrivyContext> options) : base(options)
+        public SiteContext(DbContextOptions<SiteContext> options) : base(options)
         { 
-        //    :base("SiteContext")
-        //{
-        // //   var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
-        //    Database.SetInitializer<SiteContext>(new SiteDBInitializer());
-        //    this.Configuration.ProxyCreationEnabled = false;
+        
         }
 
         public virtual DbSet<Pesquisa> Pesquisa { get; set; }
@@ -25,24 +29,12 @@ namespace AppPrivy.Data.Contexto
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasDefaultSchema("dbo");
-
-            //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-            //modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
-
-            //modelBuilder.Properties()
-            //    .Where(p => p.Name == p.ReflectedType.Name + "Id")
-            //    .Configure(p => p.IsKey());
-
-            //modelBuilder.Properties<string>()
-            //    .Configure(p => p.HasColumnType("varchar"));
-
-            //modelBuilder.Properties<string>()
-            //    .Configure(p => p.HasMaxLength(100));
-
+            //modelBuilder.ApplyConfiguration(new UserConfiguration());
+            //modelBuilder.ApplyConfiguration(new RoleConfiguration());
+            //modelBuilder.ApplyConfiguration(new UserRoleConfiguration());           
             modelBuilder.ApplyConfiguration(new PesquisaConfiguration());
-
-
+            base.OnModelCreating(modelBuilder);
+          
         }
 
 

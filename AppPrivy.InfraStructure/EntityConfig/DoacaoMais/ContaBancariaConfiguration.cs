@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 
 
-namespace AppPrivy.Data.EntityConfig.DoacaoMais
+namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
 {
 
     public class ContaBancariaConfiguration : IEntityTypeConfiguration<ContaBancaria>

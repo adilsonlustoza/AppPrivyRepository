@@ -1,25 +1,17 @@
 using System;
 using AppPrivy.Domain.Entities.DoacaoMais;
-using AppPrivy.Data.EntityConfig.DoacaoMais;
-using AppPrivy.Data.Repositories.DoacaoMais;
-using System.Linq;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using AppPrivy.InfraStructure;
 using AppPrivy.InfraStructure.EntityConfig.DoacaoMais;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
-namespace AppPrivy.Data.Contexto
+namespace AppPrivy.InfraStructure.Contexto
 {
 
-
-    public partial class DoacaoMaisContext : AppPrivyContext
+    public partial class DoacaoMaisContext : DbContext
     {
-        public DoacaoMaisContext(DbContextOptions<AppPrivyContext> options):base(options)           
-        {
-          
-            //Database.SetInitializer(new DoacaoMaisDBInitializer());
-            //this.Configuration.LazyLoadingEnabled = true;
-            //this.Configuration.ProxyCreationEnabled = false;
+        public DoacaoMaisContext(DbContextOptions<DoacaoMaisContext> options):base(options)           
+        {          
+           
         }
 
         public virtual DbSet<Bazar> Bazar { get; set; }  
@@ -38,22 +30,6 @@ namespace AppPrivy.Data.Contexto
         {
 
             modelBuilder.HasDefaultSchema("dbo");
-
-
-            //modelBuilder.()
-            //    .Configure(et => et.SetTableName(et.DisplayName()));
-
-
-            //modelBuilder.Conventions.Remove<IncludeMetadataConvention>();
-
-            //modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-            //modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
-
-            //modelBuilder.Properties()
-            //   .Where(p => p.Name == p.ReflectedType.Name + "Id" )
-            //   .Configure(p => p.IsKey());
-
             modelBuilder.ApplyConfiguration(new BazarConfiguration());
             modelBuilder.ApplyConfiguration(new CacccConfiguration());
             modelBuilder.ApplyConfiguration(new BoletimConfiguration());
@@ -65,10 +41,7 @@ namespace AppPrivy.Data.Contexto
             modelBuilder.ApplyConfiguration(new NotificacaoConfiguration());
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
             modelBuilder.ApplyConfiguration(new NotificacaoDispositivoConfiguration());
-       
-
-            //modelBuilder.Entity<NotificacaoDispositivo>()
-            //  .HasKey(p => new { p.NotificacaoId, p.DispositivoId });
+         
 
         }
 
@@ -94,19 +67,8 @@ namespace AppPrivy.Data.Contexto
             }
             catch (Exception e)
             {
-                //foreach (var eve in e.EntityValidationErrors)
-                //{
-                //    Console.WriteLine("Entidade do tipo \"{0}\" no estado \"{1}\" tem os seguintes erros de validação:",
-                //        eve.Entry.Entity.GetType().Name, eve.Entry.State);
-                //    foreach (var ve in eve.ValidationErrors)
-                //    {
-                //        Console.WriteLine("- Property: \"{0}\", Erro: \"{1}\"",
-                //            ve.PropertyName, ve.ErrorMessage);
-                //    }
-                //}
-                //throw;
+                throw e;
             }
-            return 0;
         }
 
     }
