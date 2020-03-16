@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class DispositivoRepository :  RepositoryBaseDoacaoMais<Dispositivo>, IDispositivoRepository
+    public class DispositivoRepository :  RepositoryBase<Dispositivo>, IDispositivoRepository
     {
 
         private readonly IContextManager _contextManager;
@@ -19,7 +19,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
         public IEnumerable<Dispositivo> GetAllDispositivosPorUsuarioId(int Id)
         {
             return _contextManager
-                   .DoacaoMaisContext()
+                   .AppPrivyContext()
                    .Set<Usuario>()
                    .Where(p => p.UsuarioId == Id)
                    .FirstOrDefault()

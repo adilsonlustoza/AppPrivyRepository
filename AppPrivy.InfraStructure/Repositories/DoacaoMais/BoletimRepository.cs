@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class BoletimRepository :  RepositoryBaseDoacaoMais<Boletim>, IBoletimRepository
+    public class BoletimRepository :  RepositoryBase<Boletim>, IBoletimRepository
     {
 
         private readonly IContextManager _contextManager;

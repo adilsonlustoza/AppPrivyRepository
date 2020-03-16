@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class ContaBancariaRepository: RepositoryBaseDoacaoMais<ContaBancaria>, IContaBancariaRepository
+    public class ContaBancariaRepository: RepositoryBase<ContaBancaria>, IContaBancariaRepository
     {
         private readonly IContextManager _contextManager;
 

@@ -1,5 +1,5 @@
-﻿<link rel="stylesheet" type="text/css" href='@Url.Content("~/Content/home_portfolio.css")' />
-
+﻿<script src='~/js/own/portfolio.js' asp-append-version="true"></script>
+<link href="~/css/home_portfolio.css" rel="stylesheet" asp-append-version="true" />
 @{
     ViewBag.Title = "Experiência Profissional";
 }
@@ -324,7 +324,9 @@
 
 </div>
 
+
+
 @{await Html.RenderPartialAsync("_ModalImage");}
 
-<script src='~/Scripts/Own/portfolio.js' asp-append-version="true"></script>
+
 

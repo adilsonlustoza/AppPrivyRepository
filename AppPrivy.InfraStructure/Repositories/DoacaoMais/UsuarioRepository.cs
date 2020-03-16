@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class UsuarioRepository :  RepositoryBaseDoacaoMais<Usuario>, IUsuarioRepository
+    public class UsuarioRepository :  RepositoryBase<Usuario>, IUsuarioRepository
     {
 
         private readonly IContextManager _contextManager;
@@ -28,7 +28,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
         {
             try
             {
-                _contextManager.DoacaoMaisContext().Set<Dispositivo>().Add(dispositivo);               
+                _contextManager.AppPrivyContext().Set<Dispositivo>().Add(dispositivo);               
             }
             catch (Exception e)
             {

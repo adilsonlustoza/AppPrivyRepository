@@ -36,7 +36,7 @@ namespace AppPrivy.WebAppMvc.Controllers
                 ILogger<HomeController> logger ,
                 IWebHostEnvironment webHostEnvironment,
                 IHttpContextAccessor httpContextAccessor,
-               IConfiguration configuration
+                IConfiguration configuration
             ) 
         {
             _contatoAppService = contatoAppService;
@@ -99,7 +99,7 @@ namespace AppPrivy.WebAppMvc.Controllers
 
         [Route("Contato")]
         [HttpPost]       
-        public async Task<JsonResult> Contact(ContatoViewModel contato)
+        public async Task<IActionResult> Contact(ContatoViewModel contato)
         {
             try
             {

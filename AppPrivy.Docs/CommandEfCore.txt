@@ -2,6 +2,6 @@ Generate Migration
 
 1) dotnet ef --startup-project  ../AppPrivy/AppPrivy.WebAppMvc/AppPrivy.WebAppMvc.csproj migrations add IniciandoMigrations --context AppPrivyContext
 
-Generate DataBase
+Generate DataBase 
 
-2) dotnet ef --startup-project  ../AppPrivy/AppPrivy.WebAppMvc/AppPrivy.WebAppMvc.csproj  database update -c DoacaoMaisContext
+2) dotnet ef --startup-project  ../AppPrivy/AppPrivy.WebAppMvc/AppPrivy.WebAppMvc.csproj  database update -c AppPrivyContext

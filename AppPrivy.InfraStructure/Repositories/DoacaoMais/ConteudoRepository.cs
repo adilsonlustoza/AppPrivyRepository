@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class ConteudoRepository: RepositoryBaseDoacaoMais<Conteudo>, IConteudoRepository
+    public class ConteudoRepository: RepositoryBase<Conteudo>, IConteudoRepository
     {
         private readonly IContextManager _contextManager;
 

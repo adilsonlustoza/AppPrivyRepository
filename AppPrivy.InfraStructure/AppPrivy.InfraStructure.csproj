@@ -28,4 +28,8 @@
     <ProjectReference Include="..\AppPrivy.Domain\AppPrivy.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EntityConfig\Identity\" />
+  </ItemGroup>
+
 </Project>

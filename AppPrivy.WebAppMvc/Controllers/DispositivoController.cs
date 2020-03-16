@@ -26,11 +26,8 @@ namespace Appointment.WebApi.Controllers
 
             _dispositivoService = dispositoService;
             _fault = faultException;
-
         }
-
-
-
+               
 
         [HttpGet]
         [Route("ListarTodosDispositivos")]
@@ -38,10 +35,9 @@ namespace Appointment.WebApi.Controllers
         {
             try
             {
-                //var _result = await _dispositivoService.GetAll(p => p.Notificacao);
-
-                //if (_result == null)
-                //    return NotFound();
+                var _result = await _dispositivoService.GetAll(p => p.Notificacao);
+                if (_result == null)
+                    return NotFound();
                 return Ok(null);
             }
             catch (FaultException e)

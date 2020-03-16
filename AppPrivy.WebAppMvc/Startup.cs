@@ -24,6 +24,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
+using System.Linq;
 
 namespace AppPrivy.WebAppMvc
 {
@@ -39,31 +42,33 @@ namespace AppPrivy.WebAppMvc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.Configure<CookiePolicyOptions>(options => {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+
+            });
+
             services.AddControllersWithViews();
 
             services.AddMvc(options=>options.EnableEndpointRouting=false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
-            services.AddDbContext<DoacaoMaisContext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"), b => b.MigrationsAssembly("AppPrivy.WebAppMvc"));
-            });
-            
-            services.AddDbContext<SiteContext>(options =>
+         
+
+            services.AddDbContext<AppPrivyContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"), b => b.MigrationsAssembly("AppPrivy.WebAppMvc"));
             });
 
-            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<SiteContext>();         
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppPrivyContext>().AddDefaultTokenProviders();         
 
 
 
             services.AddTransient<IContextManager, ContextManager>();
-            services.AddTransient<DoacaoMaisContext>();
-            services.AddTransient<SiteContext>();
+            services.AddTransient<AppPrivyContext>();
+         
 
-
-            services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBaseDoacaoMais<>));
-            services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBaseSite<>));
+            services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));          
             services.AddTransient(typeof(IServiceBase<>), typeof(ServiceBase<>));
             services.AddTransient(typeof(IAppServiceBase<>), typeof(AppServiceBase<>));
 
@@ -121,9 +126,18 @@ namespace AppPrivy.WebAppMvc
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
+            var supportedCultures = new[] { new CultureInfo("pt-BR") };
+
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(culture: "pt-BR", uiCulture: "pt-BR"),
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
+            });
+
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
-                var context = serviceScope.ServiceProvider.GetRequiredService<DoacaoMaisContext>();
+                var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
                 context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
                 DoacaoMaisDBInitializer.Seed(context);
@@ -132,7 +146,7 @@ namespace AppPrivy.WebAppMvc
 
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
-                var context = serviceScope.ServiceProvider.GetRequiredService<SiteContext>();
+                var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();                
                 context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
                 SiteDBInitializer.Seed(context);
@@ -152,13 +166,16 @@ namespace AppPrivy.WebAppMvc
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseCookiePolicy();
-            app.UseAuthentication();
+           
+            
             app.UseRouting();
 
-            app.UseAuthorization();
 
-     
+            app.UseAuthentication();
+            app.UseAuthorization();
+            app.UseCookiePolicy();
+
+
 
             //app.UseEndpoints(endpoints =>
             //{

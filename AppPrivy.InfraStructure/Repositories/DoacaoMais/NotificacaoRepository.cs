@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class NotificacaoRepository: RepositoryBaseDoacaoMais<Notificacao>, INotificacaoRepository
+    public class NotificacaoRepository: RepositoryBase<Notificacao>, INotificacaoRepository
     {       
-        private readonly DoacaoMaisContext _doacaoMaisContext;
+        private readonly AppPrivyContext _doacaoMaisContext;
 
-        public NotificacaoRepository(IContextManager contextManager,DoacaoMaisContext doacaoMaisContext):base(contextManager)
+        public NotificacaoRepository(IContextManager contextManager, AppPrivyContext doacaoMaisContext):base(contextManager)
         {          
             _doacaoMaisContext = doacaoMaisContext;
         }

@@ -8,7 +8,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class DoacaoMaisDBInitializer 
     {
-        public static void Seed(DoacaoMaisContext context)
+        public static void Seed(AppPrivyContext context)
         {
             var defaultCaccc = new List<Caccc>();
             

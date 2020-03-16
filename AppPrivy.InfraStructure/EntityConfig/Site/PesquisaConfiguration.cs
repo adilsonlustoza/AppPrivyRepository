@@ -10,7 +10,7 @@ namespace AppPrivy.InfraStructure.EntityConfig.Site
         public void Configure(EntityTypeBuilder<Pesquisa> builder)
         {
 
-            builder.ToTable("Pesquisa", "dbo");
+            builder.ToTable("Pesquisa", "Site");
 
             builder.HasKey(x => x.PesquisaId);
 

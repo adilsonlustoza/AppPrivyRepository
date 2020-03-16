@@ -11,7 +11,7 @@ using AppPrivy.Domain.Entities.ObjectValue;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class CacccRepository : RepositoryBaseDoacaoMais<Caccc>, ICacccRepository
+    public class CacccRepository : RepositoryBase<Caccc>, ICacccRepository
     {
         private readonly IContextManager _contextManager;
 

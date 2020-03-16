@@ -246,6 +246,8 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.Domain.pdb
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.Domain.dll.config
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.csprojAssemblyReference.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.MvcApplicationPartsAssemblyInfo.cs
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.MvcApplicationPartsAssemblyInfo.cache
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.RazorAssemblyInfo.cache
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.RazorAssemblyInfo.cs
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.AssemblyInfoInputs.cache
@@ -290,5 +292,3 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\staticwe
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\staticwebassets\AppPrivy.WebAppMvc.StaticWebAssets.xml
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.pdb
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.MvcApplicationPartsAssemblyInfo.cs
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.MvcApplicationPartsAssemblyInfo.cache

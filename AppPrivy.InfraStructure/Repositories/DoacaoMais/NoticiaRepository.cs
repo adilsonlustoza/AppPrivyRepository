@@ -4,7 +4,7 @@ using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class NoticiaRepository: RepositoryBaseDoacaoMais<Noticia>, INoticiaRepository
+    public class NoticiaRepository: RepositoryBase<Noticia>, INoticiaRepository
     {
         private readonly IContextManager _contextManager;
 
