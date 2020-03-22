@@ -244,3 +244,5 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.csproj.CopyComplete
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.pdb
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.csproj.CoreCompileInputs.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.genruntimeconfig.cache

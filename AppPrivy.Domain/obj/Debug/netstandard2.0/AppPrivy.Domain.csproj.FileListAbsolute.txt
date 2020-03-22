@@ -18,3 +18,4 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.D
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.csproj.CopyComplete
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.pdb
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.csproj.CoreCompileInputs.cache

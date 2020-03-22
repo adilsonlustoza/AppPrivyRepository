@@ -91,7 +91,8 @@
                                 <div class="col-md-10">
                                     <div class="checkbox">
                                         <label>
-                                            @Html.CheckBoxFor(model => model.Novidades, new { @checked = "true" }) Desejo receber informativos e atualizações do site
+                                            <input type="checkbox" asp-for="Novidades" checked="checked" /> Desejo receber informativos e atualizações do site
+                                           @* @Html.CheckBoxFor(model => model.Novidades, new { @checked = "true" }) Desejo receber informativos e atualizações do site*@
                                         </label>
                                     </div>
 
@@ -132,7 +133,7 @@
                 </div>
 
                 <div class="row mt-5">
-                    <a asp-controller="account" asp-action="login">
+                    <a asp-page="/Account/Login"  asp-area="Identity" >
                         <img src="~/Images/contato/area-restrita.png" class="img-fluid img-responsive" />
                     </a>
                 </div>

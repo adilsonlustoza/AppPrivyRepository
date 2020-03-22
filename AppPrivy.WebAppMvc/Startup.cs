@@ -43,7 +43,8 @@ namespace AppPrivy.WebAppMvc
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.Configure<CookiePolicyOptions>(options => {
+            services.Configure<CookiePolicyOptions>(options =>
+            {
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
 
@@ -51,24 +52,26 @@ namespace AppPrivy.WebAppMvc
 
             services.AddControllersWithViews();
 
-            services.AddMvc(options=>options.EnableEndpointRouting=false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddMvc(options => options.EnableEndpointRouting = false)
+                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
-         
+
+
 
             services.AddDbContext<AppPrivyContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"), b => b.MigrationsAssembly("AppPrivy.WebAppMvc"));
             });
 
-            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppPrivyContext>().AddDefaultTokenProviders();         
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppPrivyContext>().AddDefaultTokenProviders();
 
 
 
             services.AddTransient<IContextManager, ContextManager>();
             services.AddTransient<AppPrivyContext>();
-         
 
-            services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));          
+
+            services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddTransient(typeof(IServiceBase<>), typeof(ServiceBase<>));
             services.AddTransient(typeof(IAppServiceBase<>), typeof(AppServiceBase<>));
 
@@ -100,7 +103,7 @@ namespace AppPrivy.WebAppMvc
             services.AddTransient<IUsuarioService, UsuarioService>();
 
             services.AddTransient<IPesquisaRepository, PesquisaRepository>();
-            services.AddTransient<IPesquisaService, PesquisaService>();        
+            services.AddTransient<IPesquisaService, PesquisaService>();
             services.AddTransient<IPesquisaRepository, PesquisaRepository>();
 
             services.AddTransient<IContatoService, ContatoService>();
@@ -116,10 +119,22 @@ namespace AppPrivy.WebAppMvc
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton(Configuration);
 
-           
 
+            services.AddRazorPages()
+         .AddRazorPagesOptions(options =>
+         {
+             //options.RootDirectory = "/Areas";
+             //options.Conventions.AuthorizePage("/Login");
+             //options.Conventions.AuthorizeFolder("/Identity");
+             //options.Conventions.AllowAnonymousToPage("/Identity/Register");
+             //options.Conventions.AllowAnonymousToFolder("/Identity");
+             //options.Conventions.AuthorizeAreaFolder("Identity", "/Manage");
+             //options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Login");
+             
+             options.Conventions.AddAreaPageRoute("Identity", "/Login", "Account");
+         });
 
-
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -146,7 +161,7 @@ namespace AppPrivy.WebAppMvc
 
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
-                var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();                
+                var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
                 context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
                 SiteDBInitializer.Seed(context);
@@ -166,8 +181,8 @@ namespace AppPrivy.WebAppMvc
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-           
-            
+
+
             app.UseRouting();
 
 
@@ -177,50 +192,62 @@ namespace AppPrivy.WebAppMvc
 
 
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllerRoute(
-            //        name: "default",
-            //        pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            //    endpoints.MapControllers();
-            //    endpoints.MapRazorPages();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                   name: "Identity",
+                   pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+
+                endpoints.MapControllerRoute(
+                name: "Blog",
+                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                name: "DoacaoMais",
+                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+
+                endpoints.MapRazorPages();
+            });
+
+
+
+            //app.UseMvc(routes =>
+            //{
+
+
+            //    routes.MapAreaRoute(
+            //    name: "AreaBlog",
+            //    areaName: "Blog",
+            //    template: "Blog/{controller=Home}/{action=Index}/{id?}");
+
+            //    routes.MapAreaRoute(
+            //    name: "AreaDoacaoMais",
+            //    areaName: "DoacaoMais",
+            //    template: "DoacaoMais/{controller=Home}/{action=Index}/{id?}");
+
+
+
+            //    routes.MapRoute(
+            //     name: "default",
+            //     template: "{controller=Home}/{action=Index}/{id?}"
+            //   );
+
+
             //});
 
 
 
-            app.UseMvc(routes =>
-            {
-
-
-                routes.MapAreaRoute(
-               name: "AreaBlog",
-               areaName: "Blog",
-               template: "Blog/{controller=Home}/{action=Index}/{id?}");
-
-                routes.MapAreaRoute(
-                name: "AreaDoacaoMais",
-                areaName: "DoacaoMais",
-                template: "DoacaoMais/{controller=Home}/{action=Index}/{id?}");
-
-              //  routes.MapRoute(
-              //  name: "blog",
-              //  template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-              //);
-
-              //  routes.MapRoute(
-              // name: "doacaomais",
-              // template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-              //);
-
-                routes.MapRoute(
-                 name: "default",
-                 template: "{controller=Home}/{action=Index}/{id?}"
-               );
-
-              
-            });
-
         }
+
+
+
     }
 }
