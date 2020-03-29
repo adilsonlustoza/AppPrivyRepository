@@ -34,7 +34,8 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
         public InputModel Input { get; set; }
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
-
+        
+        [ViewData]
         public string ReturnUrl { get; set; }
 
         [TempData]
@@ -50,7 +51,7 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
-            [Display(Name = "Remember me?")]
+            [Display(Name = "Lembre-me?")]
             public bool RememberMe { get; set; }
         }
 
