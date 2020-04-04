@@ -357,4 +357,6 @@ MigrationBackup/
 .ionide/
 
 # Ignore appsettings
-appsettings.*.json
+appsettings.json
+appsettings.Development.json
+appsetting.*
