@@ -23,15 +23,17 @@ $(window).on('resize', function () {
 
 
 $('div.menu').click(function () {
+    try {
+        var display = $('.mobile-hamburger nav').css('display');
 
-    console.log('teste');
-
-    var display = $('.mobile-hamburger nav').css('display');
-
-    if (display === 'block')
-        $('.mobile-hamburger nav').css('display', 'none');
-    else
-        $('.mobile-hamburger nav').css({ 'display': 'block', 'position': 'absolute',' margin-top':'5.5'});
+        if (display === 'block')
+            $('.mobile-hamburger nav').css('display', 'none');
+        else
+            $('.mobile-hamburger nav').css({ 'display': 'block', 'position': 'absolute', ' margin-top': '5.5' });
+    }
+    catch (err) {
+        console.log(`div.menu click error : ${err.message}`);
+    }
 });
 
 
@@ -43,14 +45,23 @@ $('#banner4').css({ 'background-color': 'transparent', 'width': '18%', 'height':
 $('#banner5').css({ 'background-color': 'transparent', 'width': '26%', 'height': '10%', 'left': '65%', 'top': '71%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/Contato\'' });
 
 
-$('.fa.fa-search').on('click', function () {
 
-    var objFrm = $('#frmPesquisa'); 
+const Search = (event) =>
+{
+    try {
+        var objFrm = $('#frmPesquisa');
 
-    $(objFrm).submit();  
-});
+        if (objFrm!==null)
+            $(objFrm).submit();
+        else
+            console.log(``);
+    }
+    catch (err) {
+        console.log(`Error in method Pesquisa ${err.message}`);
+    }
+}
 
-global =
+const global =
     {
         clearForm: function (formData) {
             try {

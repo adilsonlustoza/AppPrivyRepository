@@ -149,7 +149,7 @@ namespace AppPrivy.WebAppMvc.Controllers
 
         [Route("Pesquisa")]
         [HttpPost]
-        public async Task<IActionResult> Search(FormCollection formCollection)
+        public async Task<IActionResult> Search(IFormCollection formCollection)
         {
             try
             {

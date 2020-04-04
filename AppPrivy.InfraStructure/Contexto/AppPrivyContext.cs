@@ -2,25 +2,30 @@
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.Site;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;
 
 namespace AppPrivy.InfraStructure.Contexto
 {
 
-
-
-    public class AppPrivyContext : IdentityDbContext<IdentityUser,IdentityRole,string>
-    { 
-
-
-
-        public AppPrivyContext(DbContextOptions<AppPrivyContext> options) : base(options)
+    public class AppPrivyContext : IdentityDbContext// IdentityDbContext<IdentityUser,IdentityRole,string>
+    {
+        private readonly IConfiguration _configuration;
+        
+        public AppPrivyContext(DbContextOptions<AppPrivyContext> options, IConfiguration configuration ) : base(options)
         {
-           
+            _configuration = configuration;
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(_configuration.GetConnectionString("AppPrivyContext"), builder => builder.EnableRetryOnFailure());
+            }
         }
 
         //-------------------------------Doacao Mais-----------------------
@@ -34,7 +39,6 @@ namespace AppPrivy.InfraStructure.Contexto
         public virtual DbSet<Paciente> Paciente { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Dispositivo> Dispositivo { get; set; }
-
 
         //-------------------------------Site-----------------------
         public virtual DbSet<Pesquisa> Pesquisa { get; set; }
@@ -81,3 +85,10 @@ namespace AppPrivy.InfraStructure.Contexto
         }
     }
 }
+//Generate Migration
+
+//1) dotnet ef --startup-project  ../AppPrivy/AppPrivy.WebAppMvc/AppPrivy.WebAppMvc.csproj migrations add IniciandoMigrations --context AppPrivyContext
+
+//Generate DataBase
+
+//2) dotnet ef --startup-project  ../AppPrivy/AppPrivy.WebAppMvc/AppPrivy.WebAppMvc.csproj database update -c AppPrivyContext --Verbose

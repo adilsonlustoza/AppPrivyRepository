@@ -35,7 +35,8 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
         
-        [ViewData]
+        [ViewData
+            ]
         public string ReturnUrl { get; set; }
 
         [TempData]

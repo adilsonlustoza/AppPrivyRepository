@@ -6,7 +6,6 @@ using AppPrivy.InfraStructure.Contexto;
 using AppPrivy.InfraStructure.Interface;
 using AppPrivy.InfraStructure.Repositories;
 using AppPrivy.InfraStructure.Repositories.DoacaoMais;
-using AppPrivy.InfraStructure.Repositories.Site;
 using AppPrivy.Domain;
 using AppPrivy.Domain.Interfaces;
 using AppPrivy.Domain.Interfaces.Repositories;
@@ -26,7 +25,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
-using System.Linq;
 
 namespace AppPrivy.WebAppMvc
 {
@@ -43,6 +41,9 @@ namespace AppPrivy.WebAppMvc
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSingleton(Configuration);
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
@@ -55,21 +56,14 @@ namespace AppPrivy.WebAppMvc
             services.AddMvc(options => options.EnableEndpointRouting = false)
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
-
-
-
             services.AddDbContext<AppPrivyContext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"), b => b.MigrationsAssembly("AppPrivy.WebAppMvc"));
-            });
+                options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"), b => b.MigrationsAssembly("AppPrivy.WebAppMvc"))
+            );
 
             services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppPrivyContext>().AddDefaultTokenProviders();
-
-
-
+            
             services.AddTransient<IContextManager, ContextManager>();
-            services.AddTransient<AppPrivyContext>();
-
+           // services.AddTransient<AppPrivyContext>();
 
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddTransient(typeof(IServiceBase<>), typeof(ServiceBase<>));
@@ -113,15 +107,9 @@ namespace AppPrivy.WebAppMvc
             services.AddTransient<IPesquisaAppService, PesquisaAppService>();
 
             services.AddScoped<FaultException>();
-            services.AddScoped<SendMail>();
+            services.AddScoped<SendMail>();      
 
-
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddSingleton(Configuration);
-
-
-            services.AddRazorPages()
-         .AddRazorPagesOptions(options =>
+            services.AddRazorPages().AddRazorPagesOptions(options =>
          {
              //options.RootDirectory = "/Areas";
              //options.Conventions.AuthorizePage("/Login");
@@ -150,22 +138,22 @@ namespace AppPrivy.WebAppMvc
                 SupportedUICultures = supportedCultures
             });
 
-            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-            {
-                var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
-                context.Database.EnsureDeleted();
-                context.Database.EnsureCreated();
-                DoacaoMaisDBInitializer.Seed(context);
-            }
+            //using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            //{
+            //    var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
+            //    context.Database.EnsureDeleted();
+            //    context.Database.EnsureCreated();
+            //    DoacaoMaisDBInitializer.Seed(context);
+            //}
 
 
-            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-            {
-                var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
-                context.Database.EnsureDeleted();
-                context.Database.EnsureCreated();
-                SiteDBInitializer.Seed(context);
-            }
+            //using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            //{
+            //    var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
+            //    context.Database.EnsureDeleted();
+            //    context.Database.EnsureCreated();
+            //    SiteDBInitializer.Seed(context);
+            //}
 
 
             if (env.IsDevelopment())
@@ -181,17 +169,11 @@ namespace AppPrivy.WebAppMvc
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-
-
             app.UseRouting();
-
 
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseCookiePolicy();
-
-
-
 
 
             app.UseEndpoints(endpoints =>
@@ -213,41 +195,11 @@ namespace AppPrivy.WebAppMvc
                 name: "DoacaoMais",
                 pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
-
                 endpoints.MapRazorPages();
-            });
-
-
-
-            //app.UseMvc(routes =>
-            //{
-
-
-            //    routes.MapAreaRoute(
-            //    name: "AreaBlog",
-            //    areaName: "Blog",
-            //    template: "Blog/{controller=Home}/{action=Index}/{id?}");
-
-            //    routes.MapAreaRoute(
-            //    name: "AreaDoacaoMais",
-            //    areaName: "DoacaoMais",
-            //    template: "DoacaoMais/{controller=Home}/{action=Index}/{id?}");
-
-
-
-            //    routes.MapRoute(
-            //     name: "default",
-            //     template: "{controller=Home}/{action=Index}/{id?}"
-            //   );
-
-
-            //});
-
+            });       
 
 
         }
-
-
 
     }
 }

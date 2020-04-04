@@ -13,7 +13,7 @@ namespace AppPrivy.Test
         [TestMethod]
         public void TesteConexao()
         {
-            _context = new AppPrivyContext( new DbContextOptions<AppPrivyContext>());
+          //  _context = new AppPrivyContext(new DbContextOptions<AppPrivyContext>());
 
             Assert.IsNotNull(_context,"Conta não foi debitada corretamente");
         }

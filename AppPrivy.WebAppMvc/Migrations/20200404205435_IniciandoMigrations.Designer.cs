@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppPrivy.WebAppMvc.Migrations
 {
     [DbContext(typeof(AppPrivyContext))]
-    [Migration("20200315235649_IniciandoMigrations")]
+    [Migration("20200404205435_IniciandoMigrations")]
     partial class IniciandoMigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

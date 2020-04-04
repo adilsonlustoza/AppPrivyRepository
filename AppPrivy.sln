@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppPrivy.WebAppCli", "AppPr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppPrivy.Test", "AppPrivy.Test\AppPrivy.Test.csproj", "{8948AC2C-96BC-47B0-A0E8-B2473F7958FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPrivy.CrossCutting", "AppPrivy.CrossCutting\AppPrivy.CrossCutting.csproj", "{B109273E-8D88-44FA-88B8-15F792C3DAE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppPrivy.CrossCutting", "AppPrivy.CrossCutting\AppPrivy.CrossCutting.csproj", "{B109273E-8D88-44FA-88B8-15F792C3DAE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

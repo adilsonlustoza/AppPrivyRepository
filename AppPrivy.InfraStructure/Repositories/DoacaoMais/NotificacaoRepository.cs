@@ -3,19 +3,19 @@ using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using System;
-using AppPrivy.InfraStructure.Contexto;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class NotificacaoRepository: RepositoryBase<Notificacao>, INotificacaoRepository
-    {       
-        private readonly AppPrivyContext _doacaoMaisContext;
+    {      
+        
+        private readonly IContextManager _contextManager;
 
-        public NotificacaoRepository(IContextManager contextManager, AppPrivyContext doacaoMaisContext):base(contextManager)
-        {          
-            _doacaoMaisContext = doacaoMaisContext;
+        public NotificacaoRepository(IContextManager contextManager):base(contextManager)
+        {
+            _contextManager = contextManager;
         }
 
         public async Task<IEnumerable<Notificacao>> ListaNoficacaoAtivas()
@@ -48,7 +48,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
             try
             {
 
-                var notificacoes = _doacaoMaisContext.Dispositivo.Where(d => d.IdentificadorUnico.Equals(identificadorUnico)).FirstOrDefault();
+                var notificacoes = _contextManager.AppPrivyContext().Dispositivo.Where(d => d.IdentificadorUnico.Equals(identificadorUnico)).FirstOrDefault();
 
                 if (notificacoes != null)
                     return await Task.FromResult<IList<Notificacao>>(notificacoes.Notificacao.ToList());
