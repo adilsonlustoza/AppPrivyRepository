@@ -1,0 +1,9 @@
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\bin\Debug\netstandard2.0\AppPrivy.CrossCutting.deps.json
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\bin\Debug\netstandard2.0\AppPrivy.CrossCutting.dll
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\bin\Debug\netstandard2.0\AppPrivy.CrossCutting.pdb
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.AssemblyInfoInputs.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.AssemblyInfo.cs
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.dll
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.pdb
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csproj.CoreCompileInputs.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csprojAssemblyReference.cache

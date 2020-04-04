@@ -1,0 +1,33 @@
+﻿
+
+@{
+    ViewBag.Title = "Home Page";}
+
+<div>
+    <div>
+        <div class="row">
+            @{ await Html.RenderPartialAsync("_Carrossel");}
+        </div>
+    </div>
+
+    <div>
+        <div class="row">
+            @{await Html.RenderPartialAsync("_QueFaco");}
+        </div>
+    </div>
+
+
+    <div>
+        <div class="row">
+            @{await Html.RenderPartialAsync("_Recentes");}
+        </div>
+    </div>
+
+
+    <div>
+        <div class="row">
+            @{await Html.RenderPartialAsync("_Sobre");}
+        </div>
+    </div>
+
+</div>

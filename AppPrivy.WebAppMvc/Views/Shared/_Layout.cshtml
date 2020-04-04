@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+            searchPseudoElements: true
+        }
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Adilson Lustoza - Analista de Sistemas</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+
+    <environment include="Development">
+
+        <!--------------------------------Popper------------------------------------>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                   asp-fallback-src="~/scripts/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+                crossorigin="anonymous"
+                asp-append-version="true"
+                ></script>
+    
+        <!--------------------------------Jquery------------------------------------>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                asp-fallback-src="~/scripts/jquery-3.4.1.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                asp-append-version="true"></script>
+
+
+        <script src="~/scripts/globalize.js" asp-append-version="true"></script>
+        @*<script src="~/scripts/methods-pt.js" asp-append-version="true"></script>*@
+        <script src="~/scripts/helper.js" asp-append-version="true"></script>
+        <script src="~/scripts/modernizr-2.8.3.js" asp-append-version="true"></script>
+        <script src="~/scripts/respond.js" asp-append-version="true"></script>
+
+        <!--------------------------------Bootstrap------------------------------------>
+        <script src="~/scripts/bootstrap.min.js" asp-append-version="true"></script>
+
+        <!--------------------------------Jquery Toaster------------------------------------>
+        <script src="~/js/pluggins/Toaster/jquery.toaster.js" asp-append-version="true"></script>
+
+        <!--------------------------------Jquery Masked------------------------------------>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" asp-append-version="true"></script>
+
+        <!--------------------------------Jquery Validations------------------------------------>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js" asp-append-version="true"></script>
+        <script src="~/scripts/jquery.validate.min.js" asp-append-version="true"></script>
+
+        <!--------------------------------Jquery Unobtrusive Ajax------------------------------------>
+        <script src="~/scripts/jquery.unobtrusive-ajax.min.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
+
+        <!--------------------------------Scripts Projeto------------------------------------>
+        <script src="~/js/own/global.js" asp-append-version="true"></script>
+
+    </environment>
+
+
+
+   
+
+    <environment include="Development">
+        <link href="~/css/fonts/Roboto.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/bootstrap/dist/css/bootstrap-reboot.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/css/global.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/css/menu_responsivo.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/css/rodape_responsivo.css" rel="stylesheet" asp-append-version="true" />
+    </environment>
+
+
+</head>
+<body>
+
+
+    @{await Html.RenderPartialAsync("_MenuTop"); }
+
+    <div class="container-fluid layout_main">
+
+        @if (TempData["Message"] != null)
+        {
+
+            <script type="text/javascript">
+                $(function () {
+                    $.toaster({ priority: 'info', title: 'Mensagem', message: '@TempData["Message"].ToString()' });
+                });
+            </script>
+        }
+
+        @RenderBody()
+
+    </div>
+
+
+    @{await Html.RenderPartialAsync("_Footer"); }
+
+
+    @RenderSection("scripts", required: false)
+
+
+
+
+
+
+
+</body>
+</html>
+
+

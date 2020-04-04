@@ -1,0 +1,160 @@
+﻿@model AppPrivy.Application.ViewsModels.ContatoViewModel
+
+@{
+    ViewBag.Title = "Contato";
+}
+
+
+<link href="~/css/home_contato.css" rel="stylesheet" asp-append-version="true" />
+
+<div class="container-fluid  margin-footer clearfix">
+
+    <div class="container page-header  mt-5 mb-3">
+
+        <h1>Contato<small class="text-muted">- será um prazer atendê-lo! </small></h1><hr />
+
+
+    </div>
+
+    <br />
+
+    <div class="container" id="container">
+
+        <div class="col-md-12">
+            <div class="col-md-9 float-left">
+
+                <form asp-controller="home" asp-action="contact">
+
+
+
+
+                    <div class="form-horizontal">
+
+                        <div asp-validation-summary="All" class="text-danger"></div>
+
+                        <div class="form-group">
+                            <label asp-for="Nome" class="control-label col-md-2"></label>
+                            <div class="col-md-10">
+                                <input type="text" asp-for="Nome" class="form-control input100" placeholder="Entre com o seu nome" />
+                                <span asp-validation-for="Nome" class="text-danger"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label col-md-2"></label>
+                            <div class="col-md-10">
+                                <input type="text" asp-for="Email" class="form-control input100" placeholder="Entre com o seu e-mail" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>                           
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Telefone" class="control-label col-md-2"></label>
+                            <div class="col-md-10">
+                                <input type="text" asp-for="Telefone" class="form-control input100" placeholder="(99) 99999-9999" }l" />
+                                <span asp-validation-for="Telefone" class="text-danger"></span>
+                            </div>
+                           
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Assunto" class="control-label col-md-2"></label>
+                            <div class="col-md-10">
+                                <input type="text" asp-for="Assunto" class="form-control input100" placeholder="Entre com o assunto" }l" />
+                                <span asp-validation-for="Assunto" class="text-danger"></span>
+                            </div>
+                          
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Mensagem" class="control-label col-md-2"></label>
+                            <div class="col-md-10"> 
+                                <textarea   asp-for="Mensagem" class="form-control input100" placeholder="Entre com a mensagem" rows="4" cols="40" >
+</textarea>
+                                <span asp-validation-for="Mensagem" class="text-danger"></span>
+                            </div>
+
+
+                          
+                        </div>
+
+                        <div class="form-group ">
+                            <label asp-for="TipoContato" class="control-label col-md-2"></label>                           
+                            <div class="col-md-10">
+                                <input type="radio" asp-for="TipoContato" value="1" checked />Leitor
+                                 &nbsp;&nbsp;
+                                <input type="radio" asp-for="TipoContato" value="2" />Empresa                               
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <div class="col-md-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" asp-for="Novidades" checked="checked" /> Desejo receber informativos e atualizações do site
+                                     
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                @{ await Html.RenderPartialAsync("_Captcha"); }
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <div class="btn btn-outline-primary">
+                                    <span class="fa fa-mail-bulk" aria-hidden="true">&nbsp;Enviar</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </form>
+            </div>
+
+            <div class="col-md-3 float-right">
+                <div class="row mt-2">
+                    <p class="text-muted ">
+                        Microsoft Certified Professional (MCP) é uma certificação que valida o profissional e desenvolvedor de TI developer especialização técnica com exames rigorosos, aprovados e reconhecidos pelo setor. Os exames MCP abrangem uma ampla variedade de produtos, tecnologias e soluções da Microsoft.
+                    </p>
+
+                </div>
+
+                <div class="row mt-5">
+                    <img src="~/Images/contato/microsoft-profissional.png" class="img-fluid img-responsive" />
+                </div>
+
+                <div class="row mt-5">
+                    <a asp-page="/Account/Login" asp-area="Identity">
+                        <img src="~/Images/contato/area-restrita.png" class="img-fluid img-responsive" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+@section Scripts {
+    <script src="~/js/own/ajax_functions.js" asp-append-version="true"></script>
+    <script src="~/js/views/Contato.js" asp-append-version="true"></script>
+
+}
+
+
+
+
