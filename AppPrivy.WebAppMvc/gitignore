@@ -1,0 +1,4 @@
+#Documentation/foo.html
+appsettings.json
+appsettings.Development.json
+appsettings.*
