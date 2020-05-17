@@ -51,19 +51,40 @@ namespace AppPrivy.WebAppMvc
 
             });
 
-            services.AddControllersWithViews();
-
-            services.AddMvc(options => options.EnableEndpointRouting = false)
-                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-
             services.AddDbContext<AppPrivyContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"), b => b.MigrationsAssembly("AppPrivy.WebAppMvc"))
+             options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"),
+             b => b.MigrationsAssembly("AppPrivy.WebAppMvc"))
             );
 
-            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppPrivyContext>().AddDefaultTokenProviders();
+            services.AddDefaultIdentity<IdentityUser>()
+                    .AddRoles<IdentityRole>() 
+                    .AddEntityFrameworkStores<AppPrivyContext>()
+                    .AddDefaultTokenProviders();
+
+            //services.AddTransient<UserManager<IdentityUser>>();
+            //services.AddTransient<SignInManager<IdentityUser>>();            
+            //services.AddTransient<RoleManager<IdentityUser>>();
+
+            services.AddMvc(options => options.EnableEndpointRouting = false)
+              .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+              .AddRazorPagesOptions(options =>
+              {
+                  options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
+                  options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
+              });
+
+
+            services.AddAuthentication("CookieAuth")
+                .AddCookie("CookieAuth", config => {
+                    config.Cookie.Name = "AppPrivy.Cookie";
+                    config.LoginPath = new PathString($"/Identity/Account/Login");
+                    config.LogoutPath = new PathString($"/Identity/Account/Logout");
+                    config.AccessDeniedPath = new PathString($"/Identity/Account/AccessDenied");
+                });            
+
+          //  services.AddControllersWithViews();       
             
-            services.AddTransient<IContextManager, ContextManager>();
-           // services.AddTransient<AppPrivyContext>();
+            services.AddTransient<IContextManager, ContextManager>();        
 
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddTransient(typeof(IServiceBase<>), typeof(ServiceBase<>));
@@ -185,7 +206,6 @@ namespace AppPrivy.WebAppMvc
                 endpoints.MapControllerRoute(
                    name: "Identity",
                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
 
                 endpoints.MapControllerRoute(
                 name: "Blog",

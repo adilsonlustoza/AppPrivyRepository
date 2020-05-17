@@ -8,7 +8,6 @@ namespace AppPrivy.WebAppMvc.App_Filter
     public class TraceFilter : IActionFilter
     {
         public bool AllowMultiple { get { return true; } }
-
       
 
         public void OnActionExecuted(ActionExecutedContext context)
