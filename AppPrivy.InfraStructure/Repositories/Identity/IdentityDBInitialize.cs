@@ -1,21 +1,16 @@
 ﻿using AppPrivy.InfraStructure.Contexto;
 using Microsoft.AspNetCore.Identity;
-using NuGet.Packaging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace AppPrivy.WebAppMvc.Areas.Identity.Repository
+namespace AppPrivy.InfraStructure.Repositories.Identity
 {
-    public class IdentityDBInitialize
-    {
-
-       
+    public static class IdentityDBInitialize
+    {       
         public static void Seed(AppPrivyContext context)
         {
             var roles = new List<string>() { "Administrador", "Blog", "Sistemas" };
-     
+                
 
             roles.ForEach((x) => {
 
@@ -24,10 +19,9 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Repository
                 grupRole.NormalizedName = x.ToUpper();
                 grupRole.Id = Guid.NewGuid().ToString();
                 grupRole.ConcurrencyStamp = Guid.NewGuid().ToString();
-                context.Roles.Add (grupRole);
+                context.Roles.AddAsync(grupRole);
 
-            });
-                     
+            });       
            
 
 

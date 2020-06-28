@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class DoacaoMaisDBInitializer 
+    public static class DoacaoMaisDBInitializer 
     {
         public static void Seed(AppPrivyContext context)
         {

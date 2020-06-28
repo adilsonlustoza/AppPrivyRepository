@@ -1,6 +1,7 @@
 ﻿using AppPrivy.Domain;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.DoacaoMais;
+using AppPrivy.InfraStructure.EntityConfig.Identity;
 using AppPrivy.InfraStructure.EntityConfig.Site;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -12,7 +13,7 @@ using System.Linq;
 namespace AppPrivy.InfraStructure.Contexto
 {
 
-    public class AppPrivyContext : IdentityDbContext// IdentityDbContext<IdentityUser,IdentityRole,string>
+    public class AppPrivyContext : IdentityDbContext
     {
         private readonly IConfiguration _configuration;
         
@@ -48,49 +49,17 @@ namespace AppPrivy.InfraStructure.Contexto
         {
             base.OnModelCreating(modelBuilder);
 
-            
-            modelBuilder.Entity<IdentityUser>(u => {
-                u.ToTable("User", "Security");
-                u.HasKey("Id").HasName("UserId");
-                u.Property("Id").IsRequired().ValueGeneratedOnAdd();
-            });
 
-            modelBuilder.Entity<IdentityRole>(u => {
-                u.ToTable("Role", "Security");
-                u.HasKey("Id").HasName("RoleId");
-                u.Property("Id").IsRequired().ValueGeneratedOnAdd();
-            });
+            //---------------------------Identity-----------------------
 
-            modelBuilder.Entity<IdentityUserClaim<string>>(u => {
-                u.ToTable("UserClaim", "Security");
-                u.HasKey("Id","UserId").HasName("UserClaimPk");
-                u.Property("Id").IsRequired().ValueGeneratedOnAdd();
-            });
+            modelBuilder.ApplyConfiguration(new IdentityRoleClaimConfiguration());
+            modelBuilder.ApplyConfiguration(new IdentityRoleConfiguration());
+            modelBuilder.ApplyConfiguration(new IdentityUserClaimConfiguration());
+            modelBuilder.ApplyConfiguration(new IdentityUserConfiguration());
+            modelBuilder.ApplyConfiguration(new IdentityUserLoginConfiguration());
+            modelBuilder.ApplyConfiguration(new IdentityUserRoleConfiguration());
+            modelBuilder.ApplyConfiguration(new IdentityUserTokenConfiguration());
 
-
-            modelBuilder.Entity<IdentityUserToken<string>>(u => {
-                u.ToTable("UserToken", "Security");
-                u.HasKey("UserId").HasName("UserTokenPk");
-               // u.Property("Id").IsRequired().ValueGeneratedOnAdd();
-            });
-
-            modelBuilder.Entity<IdentityUserLogin<string>>(u => {
-                u.ToTable("UserLogin", "Security");
-                u.HasKey("UserId").HasName("UserLoginPk");
-              //  u.Property("Id").IsRequired().ValueGeneratedOnAdd();
-            });
-            modelBuilder.Entity<IdentityRoleClaim<string>>(u => {
-                u.ToTable("RoleClaim", "Security");
-                u.HasKey("Id","RoleId").HasName("RoleClaimPk");
-                u.Property("Id").IsRequired().ValueGeneratedOnAdd();
-            });
-            modelBuilder.Entity<IdentityUserRole<string>>(u => {
-                u.ToTable("UserRole", "Security");
-                u.HasKey("UserId", "RoleId").HasName("UserRolePk");
-             
-            });
-
-            modelBuilder.HasDefaultSchema("dbo");
             //-------------------------------Doacao Mais-----------------------
             modelBuilder.ApplyConfiguration(new BazarConfiguration());
             modelBuilder.ApplyConfiguration(new CacccConfiguration());
@@ -107,6 +76,7 @@ namespace AppPrivy.InfraStructure.Contexto
             //-------------------------------Site-----------------------
             modelBuilder.ApplyConfiguration(new PesquisaConfiguration());
 
+            modelBuilder.HasDefaultSchema("dbo");
         }
 
 

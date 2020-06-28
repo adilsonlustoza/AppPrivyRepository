@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace AppPrivy.InfraStructure.Repositories.Site
 {
-    public class SiteDBInitializer 
+    public static class SiteDBInitializer 
     {
 
         public static void Seed(AppPrivyContext context)

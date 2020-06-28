@@ -27,7 +27,7 @@ using Microsoft.AspNetCore.Localization;
 using System.Globalization;
 using AppPrivy.InfraStructure.Repositories.Site;
 using System;
-using AppPrivy.WebAppMvc.Areas.Identity.Repository;
+using AppPrivy.InfraStructure.Repositories.Identity;
 
 namespace AppPrivy.WebAppMvc
 {
@@ -131,7 +131,7 @@ namespace AppPrivy.WebAppMvc
 
             services.AddTransient<IPesquisaRepository, PesquisaRepository>();
             services.AddTransient<IPesquisaService, PesquisaService>();
-            services.AddTransient<IPesquisaRepository, PesquisaRepository>();
+            //services.AddTransient<IPesquisaRepository, PesquisaRepository>();
 
             services.AddTransient<IContatoService, ContatoService>();
             services.AddTransient<IPesquisaService, PesquisaService>();
