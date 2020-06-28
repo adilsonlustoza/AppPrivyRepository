@@ -55,8 +55,8 @@ namespace Appointment.Application.ViewsModels
         public string NewPassword { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm new password")]
-        [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
+        [Display(Name = "Confirme a senha")]
+        [Compare("Senha", ErrorMessage = "The new password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
 
@@ -64,7 +64,7 @@ namespace Appointment.Application.ViewsModels
     {
         [Required]
         [Phone]
-        [Display(Name = "Phone Number")]
+        [Display(Name = "Número de Telefone")]
         public string Number { get; set; }
     }
 
@@ -76,7 +76,7 @@ namespace Appointment.Application.ViewsModels
 
         [Required]
         [Phone]
-        [Display(Name = "Phone Number")]
+        [Display(Name = "Número de Telefone")]
         public string PhoneNumber { get; set; }
     }
 
@@ -85,7 +85,6 @@ namespace Appointment.Application.ViewsModels
         public string SelectedProvider { get; set; }
         public ICollection<SelectListItem> Providers { get; set; }
     }
-
 
 
 }

@@ -114,7 +114,7 @@ namespace AppPrivy.WebAppMvc.Controllers
 
                         await _contatoAppService.SendMail(new ContactAgregation()
                         {
-                            _path = Path.Combine(_webHostEnvironment.WebRootPath,@"~\Templates\Email\ContatoEmail.html"),
+                            _path = Path.Combine(_webHostEnvironment.WebRootPath,@"Templates\Email\ContatoEmail.html"),
                             _from = contato.Email,
                             _phone = contato.Telefone,
                             _body = contato.Mensagem,

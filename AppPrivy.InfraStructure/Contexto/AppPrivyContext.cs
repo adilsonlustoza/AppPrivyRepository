@@ -2,6 +2,7 @@
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.Site;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -46,6 +47,48 @@ namespace AppPrivy.InfraStructure.Contexto
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            
+            modelBuilder.Entity<IdentityUser>(u => {
+                u.ToTable("User", "Security");
+                u.HasKey("Id").HasName("UserId");
+                u.Property("Id").IsRequired().ValueGeneratedOnAdd();
+            });
+
+            modelBuilder.Entity<IdentityRole>(u => {
+                u.ToTable("Role", "Security");
+                u.HasKey("Id").HasName("RoleId");
+                u.Property("Id").IsRequired().ValueGeneratedOnAdd();
+            });
+
+            modelBuilder.Entity<IdentityUserClaim<string>>(u => {
+                u.ToTable("UserClaim", "Security");
+                u.HasKey("Id","UserId").HasName("UserClaimPk");
+                u.Property("Id").IsRequired().ValueGeneratedOnAdd();
+            });
+
+
+            modelBuilder.Entity<IdentityUserToken<string>>(u => {
+                u.ToTable("UserToken", "Security");
+                u.HasKey("UserId").HasName("UserTokenPk");
+               // u.Property("Id").IsRequired().ValueGeneratedOnAdd();
+            });
+
+            modelBuilder.Entity<IdentityUserLogin<string>>(u => {
+                u.ToTable("UserLogin", "Security");
+                u.HasKey("UserId").HasName("UserLoginPk");
+              //  u.Property("Id").IsRequired().ValueGeneratedOnAdd();
+            });
+            modelBuilder.Entity<IdentityRoleClaim<string>>(u => {
+                u.ToTable("RoleClaim", "Security");
+                u.HasKey("Id","RoleId").HasName("RoleClaimPk");
+                u.Property("Id").IsRequired().ValueGeneratedOnAdd();
+            });
+            modelBuilder.Entity<IdentityUserRole<string>>(u => {
+                u.ToTable("UserRole", "Security");
+                u.HasKey("UserId", "RoleId").HasName("UserRolePk");
+             
+            });
 
             modelBuilder.HasDefaultSchema("dbo");
             //-------------------------------Doacao Mais-----------------------

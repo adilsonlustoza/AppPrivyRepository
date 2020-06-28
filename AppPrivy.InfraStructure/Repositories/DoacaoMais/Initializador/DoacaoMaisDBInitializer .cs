@@ -1061,8 +1061,7 @@ Para colher os recursos, a CAVD reúne diversos tipos de eventos. Além disso, r
 
             foreach (Caccc caccc in defaultCaccc)
                 context.Caccc.Add(caccc);
-
-         
+            
         }
 
     }

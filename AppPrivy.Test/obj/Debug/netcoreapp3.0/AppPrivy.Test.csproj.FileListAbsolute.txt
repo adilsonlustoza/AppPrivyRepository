@@ -90,6 +90,10 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.csprojAssemblyReference.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.csprojAssemblyReference.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.csproj.CoreCompileInputs.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.AssemblyInfoInputs.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.AssemblyInfo.cs
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -238,10 +242,6 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\netcoreapp3.0\AppPrivy.Infr
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\netcoreapp3.0\AppPrivy.CrossCutting.pdb
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\netcoreapp3.0\AppPrivy.Domain.pdb
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\netcoreapp3.0\AppPrivy.Domain.dll.config
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.csprojAssemblyReference.cache
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.csproj.CoreCompileInputs.cache
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.AssemblyInfoInputs.cache
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.AssemblyInfo.cs
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.csproj.CopyComplete
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\netcoreapp3.0\AppPrivy.Test.pdb

@@ -35,18 +35,18 @@ namespace AppPrivy.CrossCutting.Operations
         {
             try
             {
-                _host = _config["host"];
-                _login = _config["login"];
-                _password = _config["password"];
-                _port = Convert.ToInt32(_config["port"]);
-                _to = _config["to"];
-                _ssl = bool.Parse(_config["EnableSsl"]);
-                _name = _config["Name"];
-                _from = _config["From"];
+                _host = _config.GetSection("smtp:host").Value ;
+                _login = _config.GetSection("smtp:login").Value ;
+                _password = _config.GetSection("smtp:password").Value  ;
+                _port = Convert.ToInt32(_config.GetSection("smtp:port").Value) ;
+                _to = _config.GetSection("smtp:to").Value ;
+                _ssl =  bool.Parse(_config.GetSection("smtp:enablessl").Value);
+                _name = _config.GetSection("smtp:name").Value;
+                _from = _config.GetSection("smtp:from").Value;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
 
         }
@@ -78,9 +78,9 @@ namespace AppPrivy.CrossCutting.Operations
 
                 return _body;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
         }
 
@@ -111,9 +111,9 @@ namespace AppPrivy.CrossCutting.Operations
 
                 return _body;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
         }
 
@@ -137,7 +137,6 @@ namespace AppPrivy.CrossCutting.Operations
                         _mailMessage.BodyEncoding = Encoding.UTF8;
                         _mailMessage.Body = this.PopulateBodyContato(contact);
                         _mailMessage.Priority = MailPriority.Normal;
-
 
                         Func<string, string, NetworkCredential> netWorkCredential = delegate (string login, string senha)
                         {
@@ -163,14 +162,13 @@ namespace AppPrivy.CrossCutting.Operations
                 });
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
 
         }
-
 
         public async Task SendHtmlRecoveredMail(ContactAgregation contact)
         {
@@ -218,9 +216,9 @@ namespace AppPrivy.CrossCutting.Operations
                 });
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
 

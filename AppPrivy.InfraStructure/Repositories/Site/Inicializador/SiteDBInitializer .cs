@@ -23,7 +23,7 @@ namespace AppPrivy.InfraStructure.Repositories.Site
                context.Pesquisa.Add(p)
             );
 
-            context.SaveChanges();
+          
                       
         }
 

@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using AppPrivy.CrossCutting.Agregation;
+using AppPrivy.CrossCutting.Operations;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -25,20 +29,25 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ILogger<RegisterModel> _logger;
-        private readonly IEmailSender _emailSender;
+      //  private readonly IEmailSender _emailSender;
+        private readonly SendMail _emailSender;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
-            RoleManager<IdentityRole> roleManager , 
+            RoleManager<IdentityRole> roleManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+           // IEmailSender emailSender,
+            IWebHostEnvironment webHostEnvironment, 
+            SendMail emailSender)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
             _logger = logger;
             _emailSender = emailSender;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [BindProperty]
@@ -46,42 +55,41 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
         public string ReturnUrl { get; set; }
 
-        [ViewData(Key ="Grupo")]
-        SelectList SelectListGroup { get; set; }
-
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
         public class InputModel
         {
-            [Required]
-            [EmailAddress]
+            [Required(ErrorMessage = "Email é requerido.")]
+            [EmailAddress(ErrorMessage = "Email inválido")]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Required(ErrorMessage = "Senha é requerida.")]
+            [StringLength(100, ErrorMessage = "A {0} deve ter pelo menos {2} e no máximo {1}.", MinimumLength = 3)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "Senha")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Display(Name = "Confirme a senha")]
+            [Compare("Password", ErrorMessage = "A senha e a confirmação não são iguais.")]
             public string ConfirmPassword { get; set; }
 
             [Display(Name = "Papel")]
             public string IdPapel { get; set; }
-           
-            //[NotMapped]
-            //[Display(Name = "Grupo")]
-            //public SelectList SelectListGroup { get; set; }
+
+            [Display(Name = "Grupo")]
+            public SelectList Grupos { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
         {
             ReturnUrl = returnUrl;
             var roles = _roleManager.Roles?.ToList().OrderBy(p => p.Name);
-            SelectListGroup = new SelectList(roles, "Id", "Name");
+            if (Input == null)
+                Input = (InputModel)Activator.CreateInstance(typeof(InputModel));
+
+            Input.Grupos = new SelectList(roles, nameof(IdentityRole.Id), nameof(IdentityRole.Name));
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
 
@@ -91,7 +99,10 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
             var roles = _roleManager.Roles?.ToList().OrderBy(p => p.Name);
-            SelectListGroup = new SelectList(roles, "Id", "Name");
+            if (Input == null)
+                Input = (InputModel)Activator.CreateInstance(typeof(InputModel));
+
+            Input.Grupos = new SelectList(roles, nameof(IdentityRole.Id), nameof(IdentityRole.Name));
 
             if (ModelState.IsValid)
             {
@@ -103,14 +114,42 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                    var papel = await _roleManager.FindByIdAsync(Input.IdPapel);
+
+                    if (papel != null)
+                    {
+                        var roleExist= await _roleManager.RoleExistsAsync(papel.Name);
+
+                        if (roleExist)
+                        {
+                            var roleUser = await _userManager.AddToRoleAsync(user, papel.Name);
+
+                            if (roleUser.Succeeded)
+                            {
+                                var claimUser = await _userManager.AddClaimAsync(user, new System.Security.Claims.Claim("Papel", papel.Name));
+                            }
+                            
+                        }                        
+
+                    }
+
                     var callbackUrl = Url.Page(
                         "/Account/ConfirmEmail",
                         pageHandler: null,
                         values: new { area = "Identity", userId = user.Id, code = code },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    await _emailSender.SendHtmlFormattedMail( new ContactAgregation()
+                    {
+                        _path = Path.Combine(_webHostEnvironment.WebRootPath, @"Templates\Email\ContatoEmail.html"),
+                        _email = Input.Email,
+                        _message = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.",
+                        _subject="Confirmação de e-mail"
+
+                    });
+
+                    //await _emailSender.SendHtmlFormattedMail(Input.Email, "Confirme seu  email",
+                    //    $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {

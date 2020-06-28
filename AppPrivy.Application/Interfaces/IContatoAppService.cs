@@ -7,8 +7,6 @@ namespace AppPrivy.Application.Interfaces
     public interface IContatoAppService
     {
         Task SendMail(ContactAgregation contato);
-
         bool GoogleCaptcha();
-
     }
 }

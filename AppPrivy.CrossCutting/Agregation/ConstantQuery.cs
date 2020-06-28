@@ -1,6 +1,6 @@
 ﻿namespace AppPrivy.CrossCutting.Agregation
 {
-    public class ConstantQuery
+    public static class ConstantQuery
     {
         public static string QueryUpdated = @"SELECT Tabela,Atualizacao FROM
                                                             (

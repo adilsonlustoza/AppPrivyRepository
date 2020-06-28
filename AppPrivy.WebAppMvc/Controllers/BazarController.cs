@@ -30,9 +30,9 @@ namespace Appointment.WebApi.Controllers
                     return NotFound();
                 return Ok(_result);
             }
-            catch (FaultException e)
+            catch (FaultException)
             {
-                throw e;
+                throw;
             }
         }
 
@@ -51,9 +51,9 @@ namespace Appointment.WebApi.Controllers
                     return NotFound();
                 return Ok(_result);
             }
-            catch (FaultException e)
+            catch (FaultException)
             {
-                throw e;
+                throw;
             }
         }
 
@@ -72,9 +72,9 @@ namespace Appointment.WebApi.Controllers
 
             }
 
-            catch (FaultException e)
+            catch (FaultException)
             {
-                throw e;
+                throw;
             }
         }
     }

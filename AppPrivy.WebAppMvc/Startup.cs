@@ -25,6 +25,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using AppPrivy.InfraStructure.Repositories.Site;
+using System;
+using AppPrivy.WebAppMvc.Areas.Identity.Repository;
 
 namespace AppPrivy.WebAppMvc
 {
@@ -61,9 +64,18 @@ namespace AppPrivy.WebAppMvc
                     .AddEntityFrameworkStores<AppPrivyContext>()
                     .AddDefaultTokenProviders();
 
-            //services.AddTransient<UserManager<IdentityUser>>();
-            //services.AddTransient<SignInManager<IdentityUser>>();            
-            //services.AddTransient<RoleManager<IdentityUser>>();
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Default Password settings.
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 3;
+                options.Password.RequiredUniqueChars = 1;
+            });
+
+          
 
             services.AddMvc(options => options.EnableEndpointRouting = false)
               .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
@@ -159,24 +171,29 @@ namespace AppPrivy.WebAppMvc
                 SupportedUICultures = supportedCultures
             });
 
-            //using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-            //{
-            //    var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
-            //    context.Database.EnsureDeleted();
-            //    context.Database.EnsureCreated();
-            //    DoacaoMaisDBInitializer.Seed(context);
-            //}
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                try
+                {
+                    var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
+                 
+                    context.Database.EnsureDeleted();
+                    context.Database.EnsureCreated();
+
+                    DoacaoMaisDBInitializer.Seed(context);
+                    SiteDBInitializer.Seed(context);
+                    IdentityDBInitialize.Seed(context); 
+
+                    context.SaveChanges();
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine($"Erro ao criar as tabelas {0}",e.Message ); 
+                }
+            }
 
 
-            //using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-            //{
-            //    var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
-            //    context.Database.EnsureDeleted();
-            //    context.Database.EnsureCreated();
-            //    SiteDBInitializer.Seed(context);
-            //}
-
-
+         
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

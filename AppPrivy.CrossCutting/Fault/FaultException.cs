@@ -10,7 +10,16 @@ namespace AppPrivy.CrossCutting.Fault
     {
         private StreamWriter _sw;
         private string _path = AppDomain.CurrentDomain.BaseDirectory;
+
         public FaultException() : base()
+        {
+        }
+
+        public FaultException(string message) : base(message)
+        {
+        }
+
+        public FaultException(string message, AppPrivyException innerException) : base(message, innerException)
         {
         }
 
@@ -28,9 +37,9 @@ namespace AppPrivy.CrossCutting.Fault
                 _sw.Dispose();
 
             }
-            catch (AppPrivyException e)
+            catch (AppPrivyException)
             {
-                throw e;
+                throw;
             }
 
         }
@@ -46,9 +55,9 @@ namespace AppPrivy.CrossCutting.Fault
                 _sw.Dispose();
 
             }
-            catch (AppPrivyException e)
+            catch (AppPrivyException)
             {
-                throw e;
+                throw;
             }
 
         }

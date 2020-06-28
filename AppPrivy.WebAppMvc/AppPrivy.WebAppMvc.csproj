@@ -127,6 +127,8 @@
     <None Include="wwwroot\bower_components\jR3DCarousel\dist\jR3DCarousel.min.js" />
     <None Include="wwwroot\bower_components\jR3DCarousel\LICENSE" />
     <None Include="wwwroot\bower_components\jR3DCarousel\src\jR3DCarousel.js" />
+    <None Include="wwwroot\templates\email\ContatoEmail.html" />
+    <None Include="wwwroot\templates\email\RecuperarEmail.html" />
   </ItemGroup>
 
   <ItemGroup>

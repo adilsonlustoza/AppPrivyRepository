@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zyNlWrR/ORuy8k7H7KbB2MZtlagVFqGT6aJ9bgq5HAxFHbg6ggBk6WLGuTZutUgKH5OqNaaUEPXVu2mKbBU/yg==",
+  "dgSpecHash": "0z/sBGcoU1RWoJpqreQTPtj93kTCm0uoVX4yh2NpVx1tQWtMGaFbFuhRMIgoY2QtaBGCt5rSGcaVwirXbqcrHg==",
   "success": true,
   "projectFilePath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
   "expectedPackageFiles": [
@@ -69,8 +69,8 @@
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.2\\microsoft.extensions.caching.abstractions.3.1.2.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.2\\microsoft.extensions.caching.memory.3.1.2.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.commandlineutils\\1.0.0\\microsoft.extensions.commandlineutils.1.0.0.nupkg.sha512",
-    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.2\\microsoft.extensions.configuration.3.1.2.nupkg.sha512",
-    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.2\\microsoft.extensions.configuration.abstractions.3.1.2.nupkg.sha512",
+    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.5\\microsoft.extensions.configuration.3.1.5.nupkg.sha512",
+    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.5\\microsoft.extensions.configuration.abstractions.3.1.5.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.2\\microsoft.extensions.configuration.binder.3.1.2.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.3\\microsoft.extensions.dependencyinjection.3.1.3.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.3\\microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512",
@@ -87,7 +87,7 @@
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.objectpool\\2.2.0\\microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.options\\3.1.2\\microsoft.extensions.options.3.1.2.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.platformabstractions\\1.0.0\\microsoft.extensions.platformabstractions.1.0.0.nupkg.sha512",
-    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.2\\microsoft.extensions.primitives.3.1.2.nupkg.sha512",
+    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.extensions.webencoders\\2.2.0\\microsoft.extensions.webencoders.2.2.0.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
     "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",

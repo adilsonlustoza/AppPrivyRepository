@@ -1,3 +1,7 @@
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.csprojAssemblyReference.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.csproj.CoreCompileInputs.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.AssemblyInfoInputs.cache
+H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.AssemblyInfo.cs
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.1\AppPrivy.InfraStructure.deps.json
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.1\AppPrivy.InfraStructure.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.1\AppPrivy.InfraStructure.pdb
@@ -6,10 +10,6 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.1\Ap
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.1\AppPrivy.Domain.pdb
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.1\AppPrivy.Domain.dll.config
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\bin\Debug\netstandard2.1\AppPrivy.CrossCutting.pdb
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.csprojAssemblyReference.cache
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.csproj.CoreCompileInputs.cache
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.AssemblyInfoInputs.cache
-H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.AssemblyInfo.cs
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.csproj.CopyComplete
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.InfraStructure\obj\Debug\netstandard2.1\AppPrivy.InfraStructure.pdb
