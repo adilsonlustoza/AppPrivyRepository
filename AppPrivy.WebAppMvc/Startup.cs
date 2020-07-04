@@ -54,6 +54,11 @@ namespace AppPrivy.WebAppMvc
 
             });
 
+            services.Configure<CookieTempDataProviderOptions>(options =>
+            {
+                options.Cookie.IsEssential = true;
+            });
+
             services.AddDbContext<AppPrivyContext>(options =>
              options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"),
              b => b.MigrationsAssembly("AppPrivy.WebAppMvc"))
@@ -77,7 +82,7 @@ namespace AppPrivy.WebAppMvc
 
           
 
-            services.AddMvc(options => options.EnableEndpointRouting = false)
+              services.AddMvc(options => options.EnableEndpointRouting = false)
               .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
               .AddRazorPagesOptions(options =>
               {
@@ -85,6 +90,7 @@ namespace AppPrivy.WebAppMvc
                   options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
               });
 
+        
 
             services.AddAuthentication("CookieAuth")
                 .AddCookie("CookieAuth", config => {
@@ -206,12 +212,11 @@ namespace AppPrivy.WebAppMvc
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseCookiePolicy(); 
             app.UseRouting();
-
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseCookiePolicy();
+          
 
 
             app.UseEndpoints(endpoints =>

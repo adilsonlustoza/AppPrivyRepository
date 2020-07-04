@@ -4,6 +4,10 @@
     ViewData["Title"] = "Register";
 }
 
+
+
+
+
 <div class="container-fluid margin-footer">
 
     <div class="container page-header  mt-5 mb-3">
@@ -17,10 +21,10 @@
 
     <div class="container" id="container">
 
-        <div class="col-sm-12">
+        <div class="col-md-12">
 
             <div class="row">
-                <div class="col-sm-10">
+                <div class="col-md-8">
 
                     <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
 
@@ -45,19 +49,19 @@
                             <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                         </div>
 
-                                             
+
 
                         <!--Selecione o Tipo de Perfil para o usuário-->
                         <div class="form-group">
-                            <label asp-for="Input.IdPapel"  ></label>                          
-                            <select asp-for="Input.IdPapel"  asp-items="@Model.Input.Grupos"  class=" form-control"></select>
-                      
-                         
+                            <label asp-for="Input.IdPapel"></label>
+                            <select asp-for="Input.IdPapel" asp-items="@Model.Input.Grupos" class=" form-control"></select>
+
+
                         </div>
                         <!--termina aqui-->
 
                         <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
+                            <div class="col-md-offset-1 col-md-12">
                                 <input type="submit" class="btn btn-outline-secondary float-left mr-2" value="Registrar" />
                                 <a asp-page="./Login" class="btn btn-outline-secondary float-left mr-2">Voltar</a>
                             </div>
@@ -66,10 +70,24 @@
 
                 </div>
 
-              
+
             </div>
 
         </div>
+
+
+
+        @if (@TempData["Mensagem"] != null)
+        {
+            <div class="row">
+                <div class="col-md-8 mt-3 ">
+                    <div class="alert alert-info" role="alert">
+                        <p>@TempData["Mensagem"].ToString()</p>
+                    </div>
+                </div>
+            </div>
+        }
+
     </div>
 </div>
 

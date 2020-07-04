@@ -130,7 +130,7 @@ namespace AppPrivy.CrossCutting.Operations
                     using (MailMessage _mailMessage = new MailMessage())
                     {
                         _mailMessage.From = new MailAddress(_from, _name, Encoding.UTF8);
-                        _mailMessage.To.Add(_to);
+                        _mailMessage.To.Add(contact._to);
                         _mailMessage.Subject = contact._subject;
                         _mailMessage.SubjectEncoding = Encoding.UTF8;
                         _mailMessage.IsBodyHtml = true;

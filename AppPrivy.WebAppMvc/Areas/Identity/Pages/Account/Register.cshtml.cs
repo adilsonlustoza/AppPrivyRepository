@@ -53,6 +53,10 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
         [BindProperty]
         public InputModel Input { get; set; }
 
+       
+        [TempData(Key="Mensagem")]
+        public string Mensagem { get; set; }
+
         public string ReturnUrl { get; set; }
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
@@ -95,7 +99,7 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            returnUrl = returnUrl ?? Url.Content("~/");
+            returnUrl =  Url.Content(@"~/Identity/Account/Register");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
             var roles = _roleManager.Roles?.ToList().OrderBy(p => p.Name);
@@ -141,10 +145,15 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
                     await _emailSender.SendHtmlFormattedMail( new ContactAgregation()
                     {
-                        _path = Path.Combine(_webHostEnvironment.WebRootPath, @"Templates\Email\ContatoEmail.html"),
+                        _path = Path.Combine(_webHostEnvironment.WebRootPath, @"Templates\Email\ConfirmacaoEmail.html"),
                         _email = Input.Email,
-                        _message = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.",
-                        _subject="Confirmação de e-mail"
+                        _name = $"Blog Adilson",
+                        _message = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clique aqui</a>.",
+                        _subject="Confirmação de e-mail",
+                        _to = Input.Email,
+                        _body = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clique aqui</a>.",
+                        _url = callbackUrl,
+                        _phone = "(xx) xxxxx-xx"
 
                     });
 
@@ -157,6 +166,7 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
                     }
                     else
                     {
+                        Mensagem = string.Format("Foi enviado um e-mail para a confirmação do seu registro em {0}", Input.Email);
                         await _signInManager.SignInAsync(user, isPersistent: false);
                         return LocalRedirect(returnUrl);
                     }

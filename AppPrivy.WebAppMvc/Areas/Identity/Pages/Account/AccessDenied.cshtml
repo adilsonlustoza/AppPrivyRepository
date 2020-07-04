@@ -4,7 +4,29 @@
     ViewData["Title"] = "Acesso Negado";
 }
 
-<header>
-    <h1 class="text-danger">@ViewData["Title"]</h1>
-    <p class="text-danger">Você não tem acesso a este recurso.</p>
-</header>
+
+
+<div class="container-fluid margin-footer">
+
+    <div class="container page-header  mt-5 mb-3">
+
+        <h1>@ViewData["Title"]<small class="text-muted"> -  verifique a mensagem abaixo </small></h1><hr />
+
+
+    </div>
+
+    <div class="container" id="container">
+
+        <div class="col-md-12">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-danger">Você não tem acesso a este recurso.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
