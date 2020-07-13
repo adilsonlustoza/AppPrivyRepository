@@ -13,7 +13,7 @@ using System.Linq;
 namespace AppPrivy.InfraStructure.Contexto
 {
 
-    public class AppPrivyContext : IdentityDbContext
+    public class AppPrivyContext : IdentityDbContext 
     {
         private readonly IConfiguration _configuration;
         

@@ -28,6 +28,7 @@ using System.Globalization;
 using AppPrivy.InfraStructure.Repositories.Site;
 using System;
 using AppPrivy.InfraStructure.Repositories.Identity;
+using System.Diagnostics;
 
 namespace AppPrivy.WebAppMvc
 {
@@ -98,11 +99,13 @@ namespace AppPrivy.WebAppMvc
                     config.LoginPath = new PathString($"/Identity/Account/Login");
                     config.LogoutPath = new PathString($"/Identity/Account/Logout");
                     config.AccessDeniedPath = new PathString($"/Identity/Account/AccessDenied");
-                });            
+                });
 
-          //  services.AddControllersWithViews();       
-            
-            services.AddTransient<IContextManager, ContextManager>();        
+
+            services.AddControllersWithViews();       
+         
+
+            services.AddTransient<IContextManager, ContextManager>();
 
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddTransient(typeof(IServiceBase<>), typeof(ServiceBase<>));
@@ -137,7 +140,7 @@ namespace AppPrivy.WebAppMvc
 
             services.AddTransient<IPesquisaRepository, PesquisaRepository>();
             services.AddTransient<IPesquisaService, PesquisaService>();
-            //services.AddTransient<IPesquisaRepository, PesquisaRepository>();
+            services.AddTransient<IPesquisaRepository, PesquisaRepository>();
 
             services.AddTransient<IContatoService, ContatoService>();
             services.AddTransient<IPesquisaService, PesquisaService>();
@@ -146,7 +149,7 @@ namespace AppPrivy.WebAppMvc
             services.AddTransient<IPesquisaAppService, PesquisaAppService>();
 
             services.AddScoped<FaultException>();
-            services.AddScoped<SendMail>();      
+            services.AddScoped<SendMail>();
 
             services.AddRazorPages().AddRazorPagesOptions(options =>
          {
@@ -182,24 +185,24 @@ namespace AppPrivy.WebAppMvc
                 try
                 {
                     var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
-                 
+
                     context.Database.EnsureDeleted();
                     context.Database.EnsureCreated();
 
                     DoacaoMaisDBInitializer.Seed(context);
                     SiteDBInitializer.Seed(context);
-                    IdentityDBInitialize.Seed(context); 
+                    IdentityDBInitialize.Seed(context);
 
                     context.SaveChanges();
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
-                    Console.WriteLine($"Erro ao criar as tabelas {0}",e.Message ); 
+                    Debug.WriteLine($"Erro ao criar as tabelas {0}", e.Message);
                 }
             }
 
 
-         
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

@@ -2,6 +2,10 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/AppPrivy.WebAppMvc",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:61727",
       "sslPort": 44300
@@ -16,7 +20,7 @@
       }
     },
     "AppPrivy.WebAppMvc": {
-      "commandName": "Project",
+      "commandName": "IIS",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

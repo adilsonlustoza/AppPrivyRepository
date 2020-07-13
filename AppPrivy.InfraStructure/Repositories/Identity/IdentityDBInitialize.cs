@@ -12,16 +12,16 @@ namespace AppPrivy.InfraStructure.Repositories.Identity
             var roles = new List<string>() { "Administrador", "Blog", "Sistemas" };
                 
 
-            roles.ForEach((x) => {
+            //roles.ForEach((x) => {
 
-                var grupRole = new IdentityRole();
-                grupRole.Name = x;
-                grupRole.NormalizedName = x.ToUpper();
-                grupRole.Id = Guid.NewGuid().ToString();
-                grupRole.ConcurrencyStamp = Guid.NewGuid().ToString();
-                context.Roles.AddAsync(grupRole);
+            //    var grupRole = new IdentityRole();
+            //    grupRole.Name = x;
+            //    grupRole.NormalizedName = x.ToUpper();
+            //    grupRole.Id = Guid.NewGuid().ToString();
+            //    grupRole.ConcurrencyStamp = Guid.NewGuid().ToString();
+            //    context.Roles.AddAsync(grupRole);
 
-            });       
+            //});       
            
 
 

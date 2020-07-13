@@ -4,10 +4,10 @@ using AppPrivy.WebAppMvc.Controllers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Appointment.WebApi.Controllers
+namespace AppPrivy.WebAppMvc.Controllers
 {
-    [ApiController]
-    [Route("Analista/Programador/Bazar")]
+    [Route("api/[controller]")]
+    //[Route("Analista/Programador/Bazar")]
     public class BazarController : MasterController
     {
         private readonly IBazarService _bazarService;

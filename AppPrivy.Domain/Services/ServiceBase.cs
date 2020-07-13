@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Services
 {
-    public class ServiceBase<TEntity> : IDisposable, IServiceBase<TEntity> where TEntity : class
+    public class ServiceBase<TEntity> :  IServiceBase<TEntity> where TEntity : class
     {
         private readonly IRepositoryBase<TEntity> _repository;        
 
@@ -51,14 +51,19 @@ namespace AppPrivy.Domain.Services
         }
 
 
-        public void Dispose()
-        {
-            this.Dispose();
-        }
+        //public void Dispose()
+        //{
+        //    this.Dispose();
+        //}
 
         public int? SaveChanges()
         {
             return  _repository.SaveChanges();
+        }
+
+        public void Dispose()
+        {
+           
         }
     }
 }

@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Appointment.WebApi.Controllers
+namespace AppPrivy.WebAppMvc.Controllers
 {
     [ApiController]
     [Route("Analista/Programador/Usuario")]

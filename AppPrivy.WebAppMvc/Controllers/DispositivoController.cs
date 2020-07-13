@@ -9,7 +9,7 @@ using System.Net;
 using System.Threading.Tasks;
 
 
-namespace Appointment.WebApi.Controllers
+namespace AppPrivy.WebAppMvc.Controllers
 {
 
     [ApiController]

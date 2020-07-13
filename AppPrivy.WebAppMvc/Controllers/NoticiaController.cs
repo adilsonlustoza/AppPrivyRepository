@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Appointment.WebApi.Controllers
+namespace AppPrivy.WebAppMvc.Controllers
 {
     [ApiController]
     [Route("Analista/Programador/Noticia")]
