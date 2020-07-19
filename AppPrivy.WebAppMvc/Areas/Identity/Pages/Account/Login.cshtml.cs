@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 {
@@ -19,14 +21,18 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ILogger<LoginModel> _logger;
 
         public LoginModel(SignInManager<IdentityUser> signInManager, 
             ILogger<LoginModel> logger,
-            UserManager<IdentityUser> userManager)
+            UserManager<IdentityUser> userManager,
+            RoleManager<IdentityRole> roleManager
+          )
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
             _logger = logger;
         }
 
@@ -43,11 +49,12 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
-            [EmailAddress]
+            [Display(Name ="Email")]
+            [Required(ErrorMessage ="{0}  é requerido")]
+            [EmailAddress(ErrorMessage ="Formato não está correto")]
             public string Email { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "Senha é requerida")]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
@@ -78,13 +85,49 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
+               
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+               
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+
+                    var roleAdmin = await _roleManager.FindByNameAsync("Administrador");
+
+                  if (!string.IsNullOrEmpty(roleAdmin.Name))
+                    {
+                        var claims = new List<Claim>
+                        {
+                            new Claim(ClaimTypes.Name, Input.Email),
+                            new Claim(ClaimTypes.Role, "Administrador")
+                        };
+
+
+                        var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+
+                        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), new AuthenticationProperties
+                        {
+                            IsPersistent = true
+                        });
+
+
+                        if (!User.Identity.IsAuthenticated)
+                            return RedirectToPage("./AccessDenied");
+
+                        var claimsPrincipal = (ClaimsIdentity)User.Identity;
+
+                         if (claimsPrincipal.Claims.Any(p => p.Value.Contains("Admin")))
+                                return LocalRedirect("/Admin/Home/Index");                                       
+                    
+
+                    }
+
+
+
+                   
+
+                 
                 }
                 if (result.RequiresTwoFactor)
                 {

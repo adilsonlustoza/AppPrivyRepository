@@ -14,6 +14,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\admin-lte\plugins\filterizr\**" />
+    <Content Remove="wwwroot\admin-lte\plugins\filterizr\**" />
+    <EmbeddedResource Remove="wwwroot\admin-lte\plugins\filterizr\**" />
+    <None Remove="wwwroot\admin-lte\plugins\filterizr\**" />
+    <TypeScriptCompile Remove="wwwroot\admin-lte\plugins\filterizr\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\.bower.json" />
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\.gitignore" />
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\.npmignore" />
@@ -79,9 +87,15 @@
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\Makefile" />
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\package.json" />
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\README.md" />
+    <Content Include="wwwroot\bower_components\Chart.js\Chart.css" />
+    <Content Include="wwwroot\bower_components\Chart.js\Chart.min.css" />
+    <Content Include="wwwroot\bower_components\font-awesome\css\font-awesome.min.css" />
+    <Content Include="wwwroot\bower_components\Ionicons\css\ionicons.min.css" />
     <Content Include="wwwroot\bower_components\jR3DCarousel\.bower.json" />
     <Content Include="wwwroot\bower_components\jR3DCarousel\bower.json" />
     <Content Include="wwwroot\bower_components\jR3DCarousel\package.json" />
+    <Content Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.css" />
+    <Content Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -131,9 +145,23 @@
     <None Include="wwwroot\bower_components\bootstrap-lightbox\LICENSE.md" />
     <None Include="wwwroot\bower_components\bootstrap-lightbox\Makefile" />
     <None Include="wwwroot\bower_components\bootstrap-lightbox\README.md" />
+    <None Include="wwwroot\bower_components\Chart.js\Chart.bundle.js" />
+    <None Include="wwwroot\bower_components\Chart.js\Chart.bundle.min.js" />
+    <None Include="wwwroot\bower_components\Chart.js\Chart.js" />
+    <None Include="wwwroot\bower_components\Chart.js\Chart.min.js" />
+    <None Include="wwwroot\bower_components\fastclick\fastclick.js" />
+    <None Include="wwwroot\bower_components\fastclick\fastclick.min.js" />
+    <None Include="wwwroot\bower_components\jQuery-slimScroll\jquery.slimscroll.js" />
+    <None Include="wwwroot\bower_components\jQuery-slimScroll\jquery.slimscroll.min.js" />
+    <None Include="wwwroot\bower_components\jquery-sparklines\jquery.sparkline.js" />
+    <None Include="wwwroot\bower_components\jquery-sparklines\jquery.sparkline.min.js" />
     <None Include="wwwroot\bower_components\jR3DCarousel\dist\jR3DCarousel.min.js" />
     <None Include="wwwroot\bower_components\jR3DCarousel\LICENSE" />
     <None Include="wwwroot\bower_components\jR3DCarousel\src\jR3DCarousel.js" />
+    <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.js" />
+    <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.css.map" />
+    <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.js" />
+    <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.js.map" />
     <None Include="wwwroot\templates\email\ContatoEmail.html" />
     <None Include="wwwroot\templates\email\RecuperarEmail.html" />
   </ItemGroup>
@@ -154,7 +182,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -163,8 +191,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Blog\Models\" />
-    <Folder Include="Areas\Blog\Views\" />
     <Folder Include="Areas\DoacaoMais\Models\" />
     <Folder Include="wwwroot\bower_components\bootstrap-lightbox\docs\build\" />
   </ItemGroup>

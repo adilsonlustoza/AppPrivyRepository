@@ -29,6 +29,9 @@ using AppPrivy.InfraStructure.Repositories.Site;
 using System;
 using AppPrivy.InfraStructure.Repositories.Identity;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Security.Claims;
 
 namespace AppPrivy.WebAppMvc
 {
@@ -66,9 +69,11 @@ namespace AppPrivy.WebAppMvc
             );
 
             services.AddDefaultIdentity<IdentityUser>()
-                    .AddRoles<IdentityRole>() 
+                    .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<AppPrivyContext>()
                     .AddDefaultTokenProviders();
+
+         //   services.AddScoped<RoleManager<IdentityRole>>();
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -79,31 +84,35 @@ namespace AppPrivy.WebAppMvc
                 options.Password.RequireUppercase = false;
                 options.Password.RequiredLength = 3;
                 options.Password.RequiredUniqueChars = 1;
+
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.AllowedForNewUsers = true;
             });
+
+
 
           
 
-              services.AddMvc(options => options.EnableEndpointRouting = false)
-              .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
-              .AddRazorPagesOptions(options =>
-              {
-                  options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
-                  options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
-              });
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(options =>
+            {
+                options.Cookie.Name = "AppPrivy.Cookie";               
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);            
+                options.Cookie.HttpOnly = true;
+                options.Cookie.SameSite = SameSiteMode.None;
+                options.LoginPath = "/Identity/Account/Login";
+                options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+                options.SlidingExpiration = true;
+            });
 
-        
-
-            services.AddAuthentication("CookieAuth")
-                .AddCookie("CookieAuth", config => {
-                    config.Cookie.Name = "AppPrivy.Cookie";
-                    config.LoginPath = new PathString($"/Identity/Account/Login");
-                    config.LogoutPath = new PathString($"/Identity/Account/Logout");
-                    config.AccessDeniedPath = new PathString($"/Identity/Account/AccessDenied");
-                });
-
-
-            services.AddControllersWithViews();       
-         
+           services.AddMvc(options => options.EnableEndpointRouting = false)
+          .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+          .AddRazorPagesOptions(options =>
+          {
+              options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
+              options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
+          });
 
             services.AddTransient<IContextManager, ContextManager>();
 
@@ -150,21 +159,15 @@ namespace AppPrivy.WebAppMvc
 
             services.AddScoped<FaultException>();
             services.AddScoped<SendMail>();
+         
 
-            services.AddRazorPages().AddRazorPagesOptions(options =>
-         {
-             //options.RootDirectory = "/Areas";
-             //options.Conventions.AuthorizePage("/Login");
-             //options.Conventions.AuthorizeFolder("/Identity");
-             //options.Conventions.AllowAnonymousToPage("/Identity/Register");
-             //options.Conventions.AllowAnonymousToFolder("/Identity");
-             //options.Conventions.AuthorizeAreaFolder("Identity", "/Manage");
-             //options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Login");
-             
-             options.Conventions.AddAreaPageRoute("Identity", "/Login", "Account");
-         });
-
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Administrador", new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser()
+                .RequireClaim(ClaimTypes.Role, "Administrador")
+                .Build());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -180,26 +183,26 @@ namespace AppPrivy.WebAppMvc
                 SupportedUICultures = supportedCultures
             });
 
-            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-            {
-                try
-                {
-                    var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
+            //using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            //{
+            //    try
+            //    {
+            //        var context = serviceScope.ServiceProvider.GetRequiredService<AppPrivyContext>();
 
-                    context.Database.EnsureDeleted();
-                    context.Database.EnsureCreated();
+            //        context.Database.EnsureDeleted();
+            //        context.Database.EnsureCreated();
 
-                    DoacaoMaisDBInitializer.Seed(context);
-                    SiteDBInitializer.Seed(context);
-                    IdentityDBInitialize.Seed(context);
+            //        DoacaoMaisDBInitializer.Seed(context);
+            //        SiteDBInitializer.Seed(context);
+            //        IdentityDBInitialize.Seed(context);
 
-                    context.SaveChanges();
-                }
-                catch (Exception e)
-                {
-                    Debug.WriteLine($"Erro ao criar as tabelas {0}", e.Message);
-                }
-            }
+            //        context.SaveChanges();
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        Debug.WriteLine($"Erro ao criar as tabelas {0}", e.Message);
+            //    }
+            //}
 
 
 
@@ -215,34 +218,34 @@ namespace AppPrivy.WebAppMvc
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy(); 
+            app.UseCookiePolicy();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-          
+           
+       
 
 
-            app.UseEndpoints(endpoints =>
+            app.UseMvc(routes =>
             {
-                endpoints.MapControllerRoute(
+                routes.MapRoute(
+                name: "Identity",
+                template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: "Blog",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: "DoacaoMais",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
 
-                endpoints.MapControllerRoute(
-                   name: "Identity",
-                   pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
-                endpoints.MapControllerRoute(
-                name: "Blog",
-                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
-                endpoints.MapControllerRoute(
-                name: "DoacaoMais",
-                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
-                endpoints.MapRazorPages();
-            });       
-
+            });
+          
 
         }
 

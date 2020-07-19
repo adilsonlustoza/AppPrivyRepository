@@ -6,7 +6,7 @@ namespace AppPrivy.Test
     [TestClass]
     public class EFTestNum1
     {
-        private AppPrivyContext _context;
+        
 
 
         [TestMethod]
@@ -14,7 +14,7 @@ namespace AppPrivy.Test
         {
           //  _context = new AppPrivyContext(new DbContextOptions<AppPrivyContext>());
 
-            Assert.IsNotNull(_context,"Conta não foi debitada corretamente");
+            Assert.IsNotNull(null,"Conta não foi debitada corretamente");
         }
 
     }

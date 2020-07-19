@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
@@ -123,14 +124,18 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
                     if (papel != null)
                     {
                         var roleExist= await _roleManager.RoleExistsAsync(papel.Name);
-
+                       
                         if (roleExist)
                         {
                             var roleUser = await _userManager.AddToRoleAsync(user, papel.Name);
 
                             if (roleUser.Succeeded)
                             {
-                                var claimUser = await _userManager.AddClaimAsync(user, new System.Security.Claims.Claim("Papel", papel.Name));
+                                var claimRole = new Claim(ClaimTypes.Role, papel.Name);
+                                var claimUser = await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Role, papel.Name));
+                                var roleClaim = await _roleManager.FindByNameAsync(papel.Name); 
+                                var roleAddClaim = await _roleManager.AddClaimAsync(roleClaim, claimRole); 
+                             
                             }
                             
                         }                        
