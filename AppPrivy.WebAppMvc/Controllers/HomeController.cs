@@ -22,8 +22,8 @@ namespace AppPrivy.WebAppMvc.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IContatoAppService _contatoAppService;
         private readonly IPesquisaAppService _pesquisaAppService;
-        private readonly IConfiguration _configuration;
 
+        private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
@@ -134,9 +134,9 @@ namespace AppPrivy.WebAppMvc.Controllers
                     return Json(new { Data = "NoK" });
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
             finally
@@ -167,9 +167,9 @@ namespace AppPrivy.WebAppMvc.Controllers
                 return View();
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
 
 

@@ -1,13 +1,13 @@
 ﻿using AppPrivy.CrossCutting.Fault;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
-using AppPrivy.WebAppMvc.Controllers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppPrivy.WebAppMvc.Controllers
 {
-    [Route("api/[controller]")]
-    //[Route("Analista/Programador/Bazar")]
+    [ApiController]
+    [Route("Analista/Programador/Bazar")]
+   
     public class BazarController : MasterController
     {
         private readonly IBazarService _bazarService;
