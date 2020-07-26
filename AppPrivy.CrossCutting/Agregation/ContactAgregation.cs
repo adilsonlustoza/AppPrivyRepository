@@ -16,6 +16,5 @@
         public string _path { get; set; }
         public string _url { get; set; }
 
-
     }
 }

@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using AppPrivy.CrossCutting.Agregation;
 
 namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 {
@@ -92,19 +93,18 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User logged in.");
 
-                    var roleAdmin = await _roleManager.FindByNameAsync("Administrador");
+                    var roleAdmin = await _roleManager.FindByNameAsync(ConstantHelper.GrupoAdministrador);
 
                   if (!string.IsNullOrEmpty(roleAdmin.Name))
                     {
                         var claims = new List<Claim>
                         {
                             new Claim(ClaimTypes.Name, Input.Email),
-                            new Claim(ClaimTypes.Role, "Administrador")
+                            new Claim(ClaimTypes.Role, ConstantHelper.GrupoAdministrador)
                         };
 
 
                         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
 
                         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), new AuthenticationProperties
                         {
@@ -121,11 +121,7 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
                                 return LocalRedirect("/Admin/Home/Index");                                       
                     
 
-                    }
-
-
-
-                   
+                    }                
 
                  
                 }

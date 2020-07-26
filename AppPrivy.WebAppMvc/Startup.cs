@@ -25,13 +25,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
-using AppPrivy.InfraStructure.Repositories.Site;
 using System;
-using AppPrivy.InfraStructure.Repositories.Identity;
-using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
+using AppPrivy.CrossCutting.Agregation;
+using Microsoft.OpenApi.Models;
 
 namespace AppPrivy.WebAppMvc
 {
@@ -64,16 +63,15 @@ namespace AppPrivy.WebAppMvc
             });
 
             services.AddDbContext<AppPrivyContext>(options =>
-             options.UseSqlServer(Configuration.GetConnectionString("AppPrivyContext"),
-             b => b.MigrationsAssembly("AppPrivy.WebAppMvc"))
+             options.UseSqlServer(Configuration.GetConnectionString(ConstantHelper.ConnectionString),
+             b => b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc))
             );
 
             services.AddDefaultIdentity<IdentityUser>()
                     .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<AppPrivyContext>()
                     .AddDefaultTokenProviders();
-
-         //   services.AddScoped<RoleManager<IdentityRole>>();
+         
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -85,22 +83,24 @@ namespace AppPrivy.WebAppMvc
                 options.Password.RequiredLength = 3;
                 options.Password.RequiredUniqueChars = 1;
 
-                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(20);
                 options.Lockout.MaxFailedAccessAttempts = 5;
                 options.Lockout.AllowedForNewUsers = true;
             });
 
+                     
 
-
-          
-
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            services
+             .AddAuthentication(options=> {
+                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                           
+             })
             .AddCookie(options =>
             {
-                options.Cookie.Name = "AppPrivy.Cookie";               
+                options.Cookie.Name = ConstantHelper.AuthenticationCookieName;               
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(20);            
                 options.Cookie.HttpOnly = true;
-                options.Cookie.SameSite = SameSiteMode.None;
+                options.Cookie.SameSite = SameSiteMode.Unspecified;
                 options.LoginPath = "/Identity/Account/Login";
                 options.AccessDeniedPath = "/Identity/Account/AccessDenied";
                 options.SlidingExpiration = true;
@@ -163,11 +163,20 @@ namespace AppPrivy.WebAppMvc
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("Administrador", new AuthorizationPolicyBuilder()
+                 options.AddPolicy(ConstantHelper.GrupoAdministrador, new AuthorizationPolicyBuilder()
                 .RequireAuthenticatedUser()
-                .RequireClaim(ClaimTypes.Role, "Administrador")
+                .RequireClaim(ClaimTypes.Role,ConstantHelper.GrupoAdministrador)
                 .Build());
             });
+
+            services.AddSwaggerGen(c => { //<-- NOTE 'Add' instead of 'Configure'
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "AppPrivy Api",
+                    Version = "v1"
+                });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -216,15 +225,16 @@ namespace AppPrivy.WebAppMvc
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+           // app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-           
-       
 
+           
 
             app.UseMvc(routes =>
             {
@@ -245,7 +255,14 @@ namespace AppPrivy.WebAppMvc
                     template: "{controller=Home}/{action=Index}/{id?}");
 
             });
-          
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "AppPrivy API");
+                c.RoutePrefix = string.Empty;
+            });
+
 
         }
 

@@ -1,16 +1,17 @@
-﻿using AppPrivy.WebAppMvc.App_Filter;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace AppPrivy.WebAppMvc.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    
+
     public class HomeController : Controller
     {
-
-        [Authorize(Policy = "Administrador")]
+        [Authorize(Policy ="Administrador")]
         // GET: Home
         public ActionResult Index()
         {
@@ -47,7 +48,7 @@ namespace AppPrivy.WebAppMvc.Areas.Admin.Controllers
         }
 
         // GET: Home/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int id = 0)
         {
             return View();
         }
@@ -89,6 +90,20 @@ namespace AppPrivy.WebAppMvc.Areas.Admin.Controllers
             catch
             {
                 return View();
+            }
+        }
+
+        public async Task<IActionResult> Logout(string returnUrl = null)
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme).ConfigureAwait(false);
+
+            if (returnUrl != null)
+            {
+                return LocalRedirect(returnUrl);
+            }
+            else
+            {
+                return Redirect("/");
             }
         }
     }
