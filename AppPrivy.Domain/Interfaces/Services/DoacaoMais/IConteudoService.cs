@@ -3,7 +3,7 @@
 
 namespace AppPrivy.Domain.Interfaces.Services.DoacaoMais
 {
-    public interface IConteudoService:IServiceBase<Conteudo>
+    public interface IConteudoService : IServiceBase<Conteudo>
     {
     }
 }

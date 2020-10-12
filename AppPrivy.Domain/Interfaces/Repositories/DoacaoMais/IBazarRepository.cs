@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Interfaces.Repositories.DoacaoMais
 {
-    public interface IBazarRepository:IRepositoryBase<Bazar>
+    public interface IBazarRepository : IRepositoryBase<Bazar>
     {
-        Task<ICollection<Bazar>> GetAllByCacccId(int Id);          
+        Task<ICollection<Bazar>> GetAllByCacccId(int Id);
     }
 }

@@ -4,8 +4,8 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace AppPrivy.InfraStructure.EntityConfig.Site
 {
-    public class PesquisaConfiguration: IEntityTypeConfiguration<Pesquisa>
-    {    
+    public class PesquisaConfiguration : IEntityTypeConfiguration<Pesquisa>
+    {
 
         public void Configure(EntityTypeBuilder<Pesquisa> builder)
         {

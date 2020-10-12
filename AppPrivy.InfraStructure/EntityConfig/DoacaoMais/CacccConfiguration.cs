@@ -1,16 +1,12 @@
-﻿
-using AppPrivy.InfraStructure.Repositories.DoacaoMais;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
 {
-    public class CacccConfiguration : IEntityTypeConfiguration<Caccc> 
-    {   
+    public class CacccConfiguration : IEntityTypeConfiguration<Caccc>
+    {
 
         public void Configure(EntityTypeBuilder<Caccc> builder)
         {
@@ -53,7 +49,7 @@ namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
            .OnDelete(DeleteBehavior.ClientSetNull);
 
 
-        
+
 
         }
     }

@@ -18,11 +18,10 @@ namespace AppPrivy.WebAppMvc.Controllers
 {
     public class HomeController : MasterController
     {
-               
+
         private readonly ILogger<HomeController> _logger;
         private readonly IContatoAppService _contatoAppService;
         private readonly IPesquisaAppService _pesquisaAppService;
-
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IWebHostEnvironment _webHostEnvironment;
@@ -31,13 +30,13 @@ namespace AppPrivy.WebAppMvc.Controllers
 
         public HomeController
             (
-                IContatoAppService contatoAppService, 
-                IPesquisaAppService pesquisaAppService, 
-                ILogger<HomeController> logger ,
+                IContatoAppService contatoAppService,
+                IPesquisaAppService pesquisaAppService,
+                ILogger<HomeController> logger,
                 IWebHostEnvironment webHostEnvironment,
                 IHttpContextAccessor httpContextAccessor,
                 IConfiguration configuration
-            ) 
+            )
         {
             _contatoAppService = contatoAppService;
             _pesquisaAppService = pesquisaAppService;
@@ -47,9 +46,9 @@ namespace AppPrivy.WebAppMvc.Controllers
             _webHostEnvironment = webHostEnvironment;
 
         }
-                           
 
-       
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -57,7 +56,7 @@ namespace AppPrivy.WebAppMvc.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-               
+
         public IActionResult Index()
         {
             return View();
@@ -98,7 +97,7 @@ namespace AppPrivy.WebAppMvc.Controllers
 
 
         [Route("Contato")]
-        [HttpPost]       
+        [HttpPost]
         public async Task<IActionResult> Contact(ContatoViewModel contato)
         {
             try
@@ -114,7 +113,7 @@ namespace AppPrivy.WebAppMvc.Controllers
 
                         await _contatoAppService.SendMail(new ContactAgregation()
                         {
-                            _path = Path.Combine(_webHostEnvironment.WebRootPath,@"Templates\Email\ContatoEmail.html"),
+                            _path = Path.Combine(_webHostEnvironment.WebRootPath, @"Templates\Email\ContatoEmail.html"),
                             _from = contato.Email,
                             _phone = contato.Telefone,
                             _body = contato.Mensagem,
@@ -137,12 +136,7 @@ namespace AppPrivy.WebAppMvc.Controllers
             catch (Exception)
             {
                 throw;
-            }
-
-            finally
-            {
-
-            }
+            }            
 
 
         }
@@ -153,9 +147,9 @@ namespace AppPrivy.WebAppMvc.Controllers
         {
             try
             {
-                StringValues search; 
+                StringValues search;
 
-                if (formCollection.TryGetValue("search",out search))
+                if (formCollection.TryGetValue("search", out search))
                 {
                     var filter = search.ToArray().GetValue(0).ToString();
 

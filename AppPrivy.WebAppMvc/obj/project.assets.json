@@ -1511,15 +1511,6 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.OpenApi/1.1.4": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
-        }
-      },
       "Microsoft.TypeScript.MSBuild/3.8.2": {
         "type": "package",
         "build": {
@@ -2215,48 +2206,6 @@
             "rid": "win-x86"
           }
         }
-      },
-      "Swashbuckle.AspNetCore.Swagger/5.5.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.OpenApi": "1.1.4"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Swashbuckle.AspNetCore.SwaggerGen/5.5.1": {
-        "type": "package",
-        "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "5.5.1"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Swashbuckle.AspNetCore.SwaggerUI/5.5.1": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       },
       "System.AppContext/4.3.0": {
         "type": "package",
@@ -6069,23 +6018,6 @@
         "runtime.json"
       ]
     },
-    "Microsoft.OpenApi/1.1.4": {
-      "sha512": "6SW0tpbJslc8LAY1XniRfLVcJa7bJUbbwvo2/ZRqfkMbJrsqIj9045vg3STtZhDhYRKhpYgjqGU11eeW4Pzyrg==",
-      "type": "package",
-      "path": "microsoft.openapi/1.1.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Microsoft.OpenApi.dll",
-        "lib/net46/Microsoft.OpenApi.pdb",
-        "lib/net46/Microsoft.OpenApi.xml",
-        "lib/netstandard2.0/Microsoft.OpenApi.dll",
-        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
-        "lib/netstandard2.0/Microsoft.OpenApi.xml",
-        "microsoft.openapi.1.1.4.nupkg.sha512",
-        "microsoft.openapi.nuspec"
-      ]
-    },
     "Microsoft.TypeScript.MSBuild/3.8.2": {
       "sha512": "/MTwvjTT0SAvYr1OgZyJ0y/gTScZUxuOPlC18sznPifHQafapOwfgBbqYzJdDrvDOK2EWayfd3KnIhr9UpbRpg==",
       "type": "package",
@@ -7385,57 +7317,6 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Swashbuckle.AspNetCore.Swagger/5.5.1": {
-      "sha512": "YlrnRiIFQdjh+MfBtiUzPPsRwk5745dv1DeWwgNBehN3PwZjIs+gczVaS0h5KKP9ON+e8GM3ieajV6BVZtc/dQ==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/5.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.pdb",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "swashbuckle.aspnetcore.swagger.5.5.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.swagger.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore.SwaggerGen/5.5.1": {
-      "sha512": "SftLofzIA063y73rn17YCf4dSXrgZdxLBig9E/HT4IIZ9mlsm12KmsNKUXf4U+X09KO8sVq1D29XfjVtC69eAg==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/5.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
-        "swashbuckle.aspnetcore.swaggergen.5.5.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.swaggergen.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore.SwaggerUI/5.5.1": {
-      "sha512": "a2Ym9DYrvTZ/Yt8GVfn6M1ZP++Ra3KAfCNe4pTtkNiHpBgWhsYWUT3T07REtFImduBh93GAHuItZpltSOZV13A==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggerui/5.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
-        "swashbuckle.aspnetcore.swaggerui.5.5.1.nupkg.sha512",
-        "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -12729,30 +12610,29 @@
       "Microsoft.Extensions.DependencyInjection >= 3.1.3",
       "Microsoft.TypeScript.MSBuild >= 3.8.2",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.9.10",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
-      "Swashbuckle.AspNetCore.Swagger >= 5.5.1",
-      "Swashbuckle.AspNetCore.SwaggerGen >= 5.5.1",
-      "Swashbuckle.AspNetCore.SwaggerUi >= 5.5.1"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
+      "projectUniqueName": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
       "projectName": "AppPrivy.WebAppMvc",
-      "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
-      "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-      "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\obj\\",
+      "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
+      "packagesPath": "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\",
+      "outputPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.WebAppMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adilson.lustoza-ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -12766,11 +12646,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj": {
-              "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj"
+            "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Application\\AppPrivy.Application.csproj": {
+              "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Application\\AppPrivy.Application.csproj"
             },
-            "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
-              "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj"
+            "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
+              "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj"
             }
           }
         }
@@ -12827,18 +12707,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.3, )"
-          },
-          "Swashbuckle.AspNetCore.Swagger": {
-            "target": "Package",
-            "version": "[5.5.1, )"
-          },
-          "Swashbuckle.AspNetCore.SwaggerGen": {
-            "target": "Package",
-            "version": "[5.5.1, )"
-          },
-          "Swashbuckle.AspNetCore.SwaggerUi": {
-            "target": "Package",
-            "version": "[5.5.1, )"
           }
         },
         "imports": [
@@ -12859,7 +12727,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

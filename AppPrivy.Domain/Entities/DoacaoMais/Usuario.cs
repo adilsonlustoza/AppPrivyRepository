@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace AppPrivy.Domain.Entities.DoacaoMais
 {
     [Table("Usuario", Schema = "DoacaoMais")]
-    public partial class Usuario: Entity
+    public partial class Usuario : Entity
     {
         [Key]
         public int UsuarioId { get; set; }
@@ -16,7 +16,7 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         [StringLength(350)]
         public string Email { get; set; }
-        
+
         public virtual ICollection<Dispositivo> Dispositivo { get; set; }
 
     }

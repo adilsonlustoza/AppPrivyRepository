@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using AppPrivy.CrossCutting.Agregation;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using System.Security.Claims;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using AppPrivy.CrossCutting.Agregation;
+using System.Threading.Tasks;
 
 namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 {
@@ -25,7 +22,7 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ILogger<LoginModel> _logger;
 
-        public LoginModel(SignInManager<IdentityUser> signInManager, 
+        public LoginModel(SignInManager<IdentityUser> signInManager,
             ILogger<LoginModel> logger,
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager
@@ -41,7 +38,7 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
         public InputModel Input { get; set; }
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
-        
+
         [ViewData]
         public string ReturnUrl { get; set; }
 
@@ -50,9 +47,9 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Display(Name ="Email")]
-            [Required(ErrorMessage ="{0}  é requerido")]
-            [EmailAddress(ErrorMessage ="Formato não está correto")]
+            [Display(Name = "Email")]
+            [Required(ErrorMessage = "{0}  é requerido")]
+            [EmailAddress(ErrorMessage = "Formato não está correto")]
             public string Email { get; set; }
 
             [Required(ErrorMessage = "Senha é requerida")]
@@ -86,16 +83,16 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-               
+
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
-               
+
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
 
                     var roleAdmin = await _roleManager.FindByNameAsync(ConstantHelper.GrupoAdministrador);
 
-                  if (!string.IsNullOrEmpty(roleAdmin.Name))
+                    if (!string.IsNullOrEmpty(roleAdmin.Name))
                     {
                         var claims = new List<Claim>
                         {
@@ -117,13 +114,13 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
                         var claimsPrincipal = (ClaimsIdentity)User.Identity;
 
-                         if (claimsPrincipal.Claims.Any(p => p.Value.Contains("Admin")))
-                                return LocalRedirect("/Admin/Home/Index");                                       
-                    
+                        if (claimsPrincipal.Claims.Any(p => p.Value.Contains("Admin")))
+                            return LocalRedirect("/Admin/Home/Index");
 
-                    }                
 
-                 
+                    }
+
+
                 }
                 if (result.RequiresTwoFactor)
                 {

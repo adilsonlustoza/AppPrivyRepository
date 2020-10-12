@@ -36,22 +36,28 @@ namespace AppPrivy.Application
         }
 
 
-        public Boolean GoogleCaptcha()
+        public bool GoogleCaptcha()
         {
 
-            var response = _httpContextAccessor.HttpContext.Request.Query["g-recaptcha-response"];
+            try
+            {
+                var response = _httpContextAccessor.HttpContext.Request.Query["g-recaptcha-response"];
 
-            string secretKey = "6LerbkYUAAAAADWpcWLFuTFzIDpnMhxVGeGTc9mQ";
+                string secretKey = "6LerbkYUAAAAADWpcWLFuTFzIDpnMhxVGeGTc9mQ";
 
-            var client = new WebClient();
+                var client = new WebClient();
 
-            var result = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secretKey, response));
+                var result = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secretKey, response));
 
-            var obj = JObject.Parse(result);
+                var obj = JObject.Parse(result);
 
-            var captcha = (bool)obj.SelectToken("success");
+                return (bool)obj.SelectToken("success");
+            }
+            catch (Exception)
+            {
 
-            return captcha;
+                throw;
+            }
 
         }
 

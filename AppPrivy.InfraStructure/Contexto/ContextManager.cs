@@ -7,7 +7,7 @@ namespace AppPrivy.InfraStructure.Contexto
 {
     public class ContextManager : IContextManager
     {
-        
+
         private const string AppPrivyContextKey = "ContextManager.AppPrivy";
 
         private readonly IHttpContextAccessor _httpContextAccessor;
@@ -18,8 +18,8 @@ namespace AppPrivy.InfraStructure.Contexto
             _httpContextAccessor = httpContextAccessor;
             _configuration = configuration;
         }
-               
-      
+
+
 
         public AppPrivyContext AppPrivyContext()
         {
@@ -27,7 +27,7 @@ namespace AppPrivy.InfraStructure.Contexto
                 _httpContextAccessor.HttpContext.Items[AppPrivyContextKey] = new AppPrivyContext(new DbContextOptions<AppPrivyContext>(), _configuration);
             return (AppPrivyContext)_httpContextAccessor.HttpContext.Items[AppPrivyContextKey];
 
-           
+
         }
     }
 }

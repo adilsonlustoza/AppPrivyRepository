@@ -1,25 +1,23 @@
-﻿using System;
+﻿using AppPrivy.CrossCutting.Agregation;
+using AppPrivy.CrossCutting.Operations;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using AppPrivy.CrossCutting.Agregation;
-using AppPrivy.CrossCutting.Operations;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.Extensions.Logging;
 
 namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 {
@@ -30,7 +28,7 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ILogger<RegisterModel> _logger;
-      //  private readonly IEmailSender _emailSender;
+        //  private readonly IEmailSender _emailSender;
         private readonly SendMail _emailSender;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
@@ -39,8 +37,8 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
             SignInManager<IdentityUser> signInManager,
             RoleManager<IdentityRole> roleManager,
             ILogger<RegisterModel> logger,
-           // IEmailSender emailSender,
-            IWebHostEnvironment webHostEnvironment, 
+            // IEmailSender emailSender,
+            IWebHostEnvironment webHostEnvironment,
             SendMail emailSender)
         {
             _userManager = userManager;
@@ -54,8 +52,8 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
         [BindProperty]
         public InputModel Input { get; set; }
 
-       
-        [TempData(Key="Mensagem")]
+
+        [TempData(Key = "Mensagem")]
         public string Mensagem { get; set; }
 
         public string ReturnUrl { get; set; }
@@ -100,7 +98,7 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            returnUrl =  Url.Content(@"~/Identity/Account/Register");
+            returnUrl = Url.Content(@"~/Identity/Account/Register");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
             var roles = _roleManager.Roles?.ToList().OrderBy(p => p.Name);
@@ -123,8 +121,8 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
 
                     if (papel != null)
                     {
-                        var roleExist= await _roleManager.RoleExistsAsync(papel.Name);
-                       
+                        var roleExist = await _roleManager.RoleExistsAsync(papel.Name);
+
                         if (roleExist)
                         {
                             var roleUser = await _userManager.AddToRoleAsync(user, papel.Name);
@@ -133,12 +131,12 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
                             {
                                 var claimRole = new Claim(ClaimTypes.Role, papel.Name);
                                 var claimUser = await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Role, papel.Name));
-                                var roleClaim = await _roleManager.FindByNameAsync(papel.Name); 
-                                var roleAddClaim = await _roleManager.AddClaimAsync(roleClaim, claimRole); 
-                             
+                                var roleClaim = await _roleManager.FindByNameAsync(papel.Name);
+                                var roleAddClaim = await _roleManager.AddClaimAsync(roleClaim, claimRole);
+
                             }
-                            
-                        }                        
+
+                        }
 
                     }
 
@@ -148,13 +146,13 @@ namespace AppPrivy.WebAppMvc.Areas.Identity.Pages.Account
                         values: new { area = "Identity", userId = user.Id, code = code },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendHtmlFormattedMail( new ContactAgregation()
+                    await _emailSender.SendHtmlFormattedMail(new ContactAgregation()
                     {
                         _path = Path.Combine(_webHostEnvironment.WebRootPath, @"Templates\Email\ConfirmacaoEmail.html"),
                         _email = Input.Email,
                         _name = $"Blog Adilson",
                         _message = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clique aqui</a>.",
-                        _subject="Confirmação de e-mail",
+                        _subject = "Confirmação de e-mail",
                         _to = Input.Email,
                         _body = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clique aqui</a>.",
                         _url = callbackUrl,

@@ -1,20 +1,18 @@
-﻿using AppPrivy.InfraStructure.Interface;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
+using AppPrivy.InfraStructure.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class UsuarioRepository :  RepositoryBase<Usuario>, IUsuarioRepository
+    public class UsuarioRepository : RepositoryBase<Usuario>, IUsuarioRepository
     {
 
         private readonly IContextManager _contextManager;
 
-        public UsuarioRepository(IContextManager contextManager):base(contextManager)
+        public UsuarioRepository(IContextManager contextManager) : base(contextManager)
         {
             _contextManager = contextManager;
         }
@@ -23,18 +21,18 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
         {
             return this.GetById(Id).Result.Dispositivo.ToList<Dispositivo>();
         }
-     
+
         public void SaveDeviceUsuario(Dispositivo dispositivo)
         {
             try
             {
-                _contextManager.AppPrivyContext().Set<Dispositivo>().Add(dispositivo);               
+                _contextManager.AppPrivyContext().Set<Dispositivo>().Add(dispositivo);
             }
             catch (Exception e)
             {
                 throw e;
             }
-            
+
         }
     }
 }

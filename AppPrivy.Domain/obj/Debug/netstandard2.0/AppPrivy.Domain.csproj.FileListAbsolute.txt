@@ -1,0 +1,14 @@
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\bin\Debug\netstandard2.0\Resources\Constants.resx
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\bin\Debug\netstandard2.0\AppPrivy.Domain.dll.config
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\bin\Debug\netstandard2.0\AppPrivy.Domain.deps.json
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\bin\Debug\netstandard2.0\AppPrivy.Domain.dll
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\bin\Debug\netstandard2.0\AppPrivy.Domain.pdb
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\bin\Debug\netstandard2.0\AppPrivy.CrossCutting.dll
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\bin\Debug\netstandard2.0\AppPrivy.CrossCutting.pdb
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.csprojAssemblyReference.cache
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.AssemblyInfoInputs.cache
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.AssemblyInfo.cs
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.csproj.CoreCompileInputs.cache
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.csproj.CopyComplete
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.dll
+C:\CandMountain\AppPrivyRepository\AppPrivy.Domain\obj\Debug\netstandard2.0\AppPrivy.Domain.pdb

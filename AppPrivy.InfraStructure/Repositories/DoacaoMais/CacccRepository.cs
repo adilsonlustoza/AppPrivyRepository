@@ -1,13 +1,6 @@
 ﻿using AppPrivy.Domain.Entities.DoacaoMais;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AppPrivy.InfraStructure.Interface;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
-using AppPrivy.InfraStructure.Repositories;
-using AppPrivy.Domain.Entities.ObjectValue;
+using AppPrivy.InfraStructure.Interface;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
@@ -15,7 +8,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
     {
         private readonly IContextManager _contextManager;
 
-        public CacccRepository(IContextManager contextManager):base(contextManager)
+        public CacccRepository(IContextManager contextManager) : base(contextManager)
         {
             _contextManager = contextManager;
         }
@@ -26,6 +19,6 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
         //    return _contextManager.DoacaoMaisContext().Database.ExecuteSqlCommand(command, obj);
         //}
 
-       
+
     }
 }

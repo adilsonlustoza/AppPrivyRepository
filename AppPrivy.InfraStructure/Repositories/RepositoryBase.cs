@@ -1,5 +1,5 @@
-﻿using AppPrivy.InfraStructure.Interface;
-using AppPrivy.Domain.Interfaces.Repositories;
+﻿using AppPrivy.Domain.Interfaces.Repositories;
+using AppPrivy.InfraStructure.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -31,26 +31,26 @@ namespace AppPrivy.InfraStructure.Repositories
             }
         }
 
-      
+
 
         public async Task<ICollection<TEntity>> GetAll(params Expression<Func<TEntity, object>>[] children)
         {
             try
             {
-                var query = _context.AppPrivyContext().Set<TEntity>().AsQueryable(); 
+                var query = _context.AppPrivyContext().Set<TEntity>().AsQueryable();
 
-                if (query.Any() &&(children != null && children.Count() > 0))
+                if (query.Any() && (children != null && children.Count() > 0))
                     children?.ToList().ForEach(x => query.Include(x).Load());
 
                 return await query.ToListAsync();
 
-              
+
             }
             catch (Exception e)
             {
                 throw e;
             }
-           
+
         }
 
         public async Task<TEntity> GetById(int id)
@@ -60,7 +60,7 @@ namespace AppPrivy.InfraStructure.Repositories
 
                 return await _context.AppPrivyContext().Set<TEntity>().FindAsync(id);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -99,11 +99,11 @@ namespace AppPrivy.InfraStructure.Repositories
                 var query = _context.AppPrivyContext().Set<TEntity>().Where(expression);
 
                 if (children != null && children.Count() > 0)
-                        children.ToList().ForEach(x => query.Include(x).Load());
+                    children.ToList().ForEach(x => query.Include(x).Load());
 
-                    return await query.ToListAsync();
+                return await query.ToListAsync();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }

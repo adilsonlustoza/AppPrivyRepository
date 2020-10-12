@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using System.Collections.Generic;
 
 namespace AppPrivy.Domain.Services.DoacaoMais
 {
@@ -23,7 +23,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
         {
             _usuarioRepository.Add(usuario);
             return 0;
-        
+
         }
 
         public IEnumerable<Dispositivo> GetAllDispositivosPorUsuarioId(int Id)
@@ -42,5 +42,5 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
     }
 
-       
+
 }

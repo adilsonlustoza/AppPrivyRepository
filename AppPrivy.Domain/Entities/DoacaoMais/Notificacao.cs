@@ -24,23 +24,23 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         [StringLength(500)]
         public string Descricao { get; set; }
-        
+
         [StringLength(3500)]
         public string Conteudo { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime? DataInicial { get; set; }
-    
-        [DataType(DataType.Date)]
-        public DateTime? DataFinal { get; set; }   
 
-        public bool Ativa { get; set;}
+        [DataType(DataType.Date)]
+        public DateTime? DataFinal { get; set; }
+
+        public bool Ativa { get; set; }
 
         /*****************************************Relation areas**************************************************/
         [NotMapped]
         public virtual ICollection<Dispositivo> Dispositivos { get; set; }
 
-        
+
         public virtual ICollection<NotificacaoDispositivo> NotificacaoDispositivo { get; set; }
 
     }

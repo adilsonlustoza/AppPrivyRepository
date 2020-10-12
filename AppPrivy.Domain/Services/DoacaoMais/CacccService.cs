@@ -1,10 +1,10 @@
-﻿using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
-using System.Collections.Generic;
+using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using System;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Services.DoacaoMais
 {
@@ -39,7 +39,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
                 if (!CacccId.HasValue)
                     throw new ApplicationException("Deve ser fornecido um CacccId válido.");
 
-                var _caccca =  await _cacccRepository.GetById(CacccId.Value);
+                var _caccca = await _cacccRepository.GetById(CacccId.Value);
 
                 if (_caccca != null)
                 {
@@ -74,10 +74,10 @@ namespace AppPrivy.Domain.Services.DoacaoMais
                 if (string.IsNullOrWhiteSpace(CacccNome))
                     throw new ApplicationException("Deve ser fornecido um nome válido.");
 
-                var _caccca = await  _cacccRepository.Search(p => p.Nome.Trim().ToLower().Contains(CacccNome.Trim().ToLower()));
-                
-               
-                if (_caccca == null || _caccca.Count>1 )
+                var _caccca = await _cacccRepository.Search(p => p.Nome.Trim().ToLower().Contains(CacccNome.Trim().ToLower()));
+
+
+                if (_caccca == null || _caccca.Count > 1)
                     throw new ApplicationException("Sua consulta retornou um resultado inválido");
 
                 var objCaccc = _caccca.FirstOrDefault();
@@ -188,7 +188,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
                 foreach (var itemCaccc in _cacccAll)
                 {
-                    var _bazares =  await _bazarRepository.GetAllByCacccId(itemCaccc.CacccId);
+                    var _bazares = await _bazarRepository.GetAllByCacccId(itemCaccc.CacccId);
 
                     if (_bazares != null)
                     {
@@ -208,10 +208,10 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             {
                 throw e;
             }
-        }     
-      
+        }
+
     }
 
-       
+
 }
 

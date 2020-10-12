@@ -1,19 +1,19 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using AppPrivy.CrossCutting.Cache;
+﻿using AppPrivy.CrossCutting.Cache;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 
 namespace AppPrivy.Domain.Services.DoacaoMais
 {
-    public class NotificacaoService: ServiceBase<Notificacao>, INotificacaoService
+    public class NotificacaoService : ServiceBase<Notificacao>, INotificacaoService
     {
         private readonly INotificacaoRepository _notificacaoRepository;
         private const string NotificacaoCache = "NotificacaoCache";
 
-        public NotificacaoService(INotificacaoRepository notificacaoRepository) :base(notificacaoRepository)
+        public NotificacaoService(INotificacaoRepository notificacaoRepository) : base(notificacaoRepository)
         {
             _notificacaoRepository = notificacaoRepository;
         }
@@ -27,7 +27,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
         public async Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico)
         {
-            return  await _notificacaoRepository.ListaNoficacaoPorDispositivo(identificadorUnico);
+            return await _notificacaoRepository.ListaNoficacaoPorDispositivo(identificadorUnico);
         }
     }
 }

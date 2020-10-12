@@ -23,14 +23,14 @@ namespace AppPrivy.Domain
         public string Descricao { get; set; }
 
         [StringLength(500)]
-        [DataType(DataType.Url,ErrorMessage ="Url com formato incorreto")]
-        [Required(AllowEmptyStrings =false,ErrorMessage ="Url é requerida!")]
+        [DataType(DataType.Url, ErrorMessage = "Url com formato incorreto")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Url é requerida!")]
         public string Url { get; set; }
 
         [DataType(DataType.Upload)]
         public byte[] Image { get; set; }
 
     }
-          
-  
+
+
 }

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace AppPrivy.InfraStructure.Repositories.Identity
 {
     public static class IdentityDBInitialize
-    {       
+    {
         public static void Seed(AppPrivyContext context)
         {
             var roles = new List<string>() { "Administrador", "Blog", "Sistemas" };

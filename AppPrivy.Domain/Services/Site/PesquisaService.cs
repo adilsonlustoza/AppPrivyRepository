@@ -9,28 +9,28 @@ namespace AppPrivy.Domain
     public class PesquisaService : IPesquisaService
     {
         private readonly IPesquisaRepository _pesquisaRepository;
-      
+
         public PesquisaService(IPesquisaRepository pesquisaRepository)
         {
             _pesquisaRepository = pesquisaRepository;
-           
+
         }
 
         public void Add(Pesquisa obj)
-        {          
+        {
 
             try
-            {               
-
-              _pesquisaRepository.Add(obj);
-             
-            }
-            catch(Exception e)
             {
-               
+
+                _pesquisaRepository.Add(obj);
+
+            }
+            catch (Exception e)
+            {
+
                 throw e;
             }
-                  
+
 
 
         }
@@ -57,7 +57,7 @@ namespace AppPrivy.Domain
             {
                 return await _pesquisaRepository.GetById(id);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -77,7 +77,7 @@ namespace AppPrivy.Domain
 
         public async Task<ICollection<Pesquisa>> GetAll(params Expression<Func<Pesquisa, object>>[] children)
         {
-            return  await _pesquisaRepository.GetAll(children);
+            return await _pesquisaRepository.GetAll(children);
         }
 
         public int? SaveChanges()

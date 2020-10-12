@@ -26,21 +26,22 @@ namespace AppPrivy.CrossCutting.Operations
         private string _name { get; set; }
 
 
-        public SendMail(IConfiguration config) {
+        public SendMail(IConfiguration config)
+        {
             _config = config;
         }
-                     
+
 
         private void FullFill()
         {
             try
             {
-                _host = _config.GetSection("smtp:host").Value ;
-                _login = _config.GetSection("smtp:login").Value ;
-                _password = _config.GetSection("smtp:password").Value  ;
-                _port = Convert.ToInt32(_config.GetSection("smtp:port").Value) ;
-                _to = _config.GetSection("smtp:to").Value ;
-                _ssl =  bool.Parse(_config.GetSection("smtp:enablessl").Value);
+                _host = _config.GetSection("smtp:host").Value;
+                _login = _config.GetSection("smtp:login").Value;
+                _password = _config.GetSection("smtp:password").Value;
+                _port = Convert.ToInt32(_config.GetSection("smtp:port").Value);
+                _to = _config.GetSection("smtp:to").Value;
+                _ssl = bool.Parse(_config.GetSection("smtp:enablessl").Value);
                 _name = _config.GetSection("smtp:name").Value;
                 _from = _config.GetSection("smtp:from").Value;
             }

@@ -1,17 +1,17 @@
-﻿using AppPrivy.InfraStructure.Interface;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
+using AppPrivy.InfraStructure.Interface;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class BazarRepository :  RepositoryBase<Bazar>, IBazarRepository
+    public class BazarRepository : RepositoryBase<Bazar>, IBazarRepository
     {
 
         private readonly IContextManager _contextManager;
 
-        public BazarRepository(IContextManager contextManager):base(contextManager)
+        public BazarRepository(IContextManager contextManager) : base(contextManager)
         {
             _contextManager = contextManager;
         }

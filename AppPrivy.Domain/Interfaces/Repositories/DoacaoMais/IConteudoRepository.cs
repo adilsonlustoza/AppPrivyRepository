@@ -6,6 +6,6 @@ namespace AppPrivy.Domain.Interfaces.Repositories.DoacaoMais
 {
     public interface IConteudoRepository : IRepositoryBase<Conteudo>
     {
-       Task<ICollection<Conteudo>> ListaConteudoCaccc(int? CacccId);
+        Task<ICollection<Conteudo>> ListaConteudoCaccc(int? CacccId);
     }
 }

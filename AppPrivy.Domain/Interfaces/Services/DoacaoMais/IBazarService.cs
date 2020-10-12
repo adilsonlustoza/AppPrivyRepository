@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Interfaces.Services.DoacaoMais
 {
-    public interface IBazarService:IServiceBase<Bazar>
+    public interface IBazarService : IServiceBase<Bazar>
     {
         Task<IEnumerable<Bazar>> ObtemBazarPorCacccId(int? Id);
     }

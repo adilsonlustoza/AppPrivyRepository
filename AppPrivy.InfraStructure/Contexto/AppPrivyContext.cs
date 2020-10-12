@@ -3,7 +3,6 @@ using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.Identity;
 using AppPrivy.InfraStructure.EntityConfig.Site;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -13,11 +12,11 @@ using System.Linq;
 namespace AppPrivy.InfraStructure.Contexto
 {
 
-    public class AppPrivyContext : IdentityDbContext 
+    public class AppPrivyContext : IdentityDbContext
     {
         private readonly IConfiguration _configuration;
-        
-        public AppPrivyContext(DbContextOptions<AppPrivyContext> options, IConfiguration configuration ) : base(options)
+
+        public AppPrivyContext(DbContextOptions<AppPrivyContext> options, IConfiguration configuration) : base(options)
         {
             _configuration = configuration;
         }

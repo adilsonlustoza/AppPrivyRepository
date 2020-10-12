@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Services.DoacaoMais
@@ -23,7 +23,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
                 if (!CacccId.HasValue)
                     throw new ApplicationException("Deve ser fornecido um CacccId válido.");
 
-                 return await _boletimRepository.ListaBoletimCaccc(CacccId.Value);
+                return await _boletimRepository.ListaBoletimCaccc(CacccId.Value);
             }
             catch (Exception e)
             {

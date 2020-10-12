@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Services
 {
-    public class ServiceBase<TEntity> :  IServiceBase<TEntity> where TEntity : class
+    public class ServiceBase<TEntity> : IServiceBase<TEntity> where TEntity : class
     {
-        private readonly IRepositoryBase<TEntity> _repository;        
+        private readonly IRepositoryBase<TEntity> _repository;
 
         public ServiceBase(IRepositoryBase<TEntity> repository)
         {
             _repository = repository;
         }
 
-    
+
 
         public void Add(TEntity obj)
         {
             _repository.Add(obj);
         }
-               
+
         public void Remove(TEntity obj)
         {
             _repository.Remove(obj);
@@ -47,7 +47,7 @@ namespace AppPrivy.Domain.Services
 
         public async Task<ICollection<TEntity>> Search(Expression<Func<TEntity, bool>> expression, params Expression<Func<TEntity, object>>[] children)
         {
-            return   await _repository.Search(expression,children) ;
+            return await _repository.Search(expression, children);
         }
 
 
@@ -58,12 +58,12 @@ namespace AppPrivy.Domain.Services
 
         public int? SaveChanges()
         {
-            return  _repository.SaveChanges();
+            return _repository.SaveChanges();
         }
 
         public void Dispose()
         {
-           
+
         }
     }
 }

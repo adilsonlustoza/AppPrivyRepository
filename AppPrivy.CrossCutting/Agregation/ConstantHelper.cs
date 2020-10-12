@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace AppPrivy.CrossCutting.Agregation
+﻿namespace AppPrivy.CrossCutting.Agregation
 {
     public static class ConstantHelper
     {

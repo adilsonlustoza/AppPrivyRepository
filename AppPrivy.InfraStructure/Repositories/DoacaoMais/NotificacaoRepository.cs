@@ -1,19 +1,19 @@
-﻿using System.Collections.Generic;
-using AppPrivy.InfraStructure.Interface;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
+using AppPrivy.InfraStructure.Interface;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class NotificacaoRepository: RepositoryBase<Notificacao>, INotificacaoRepository
-    {      
-        
+    public class NotificacaoRepository : RepositoryBase<Notificacao>, INotificacaoRepository
+    {
+
         private readonly IContextManager _contextManager;
 
-        public NotificacaoRepository(IContextManager contextManager):base(contextManager)
+        public NotificacaoRepository(IContextManager contextManager) : base(contextManager)
         {
             _contextManager = contextManager;
         }
@@ -22,7 +22,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
         {
             try
             {
-                ICollection<Notificacao> _returnNotification=null;
+                ICollection<Notificacao> _returnNotification = null;
 
                 var result = await this.Search(p => p.Ativa && (p.DataInicial <= DateTime.Now && p.DataFinal >= DateTime.Now));
 
@@ -34,7 +34,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                         _returnNotification.Add(iEnumerator.Current);
                 }
 
-                return _returnNotification;                            
+                return _returnNotification;
             }
             catch (Exception e)
             {
@@ -52,7 +52,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 
                 if (notificacoes != null)
                     return await Task.FromResult<IList<Notificacao>>(notificacoes.Notificacao.ToList());
-                return  null ;
+                return null;
             }
             catch (Exception e)
             {

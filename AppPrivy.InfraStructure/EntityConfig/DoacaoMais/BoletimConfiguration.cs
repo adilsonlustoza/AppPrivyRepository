@@ -2,7 +2,6 @@
 using AppPrivy.Domain.Entities.DoacaoMais;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
@@ -13,7 +12,7 @@ namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
 
         public void Configure(EntityTypeBuilder<Boletim> builder)
         {
-            builder.ToTable("Boletim","DoacaoMais");
+            builder.ToTable("Boletim", "DoacaoMais");
             builder.HasKey(x => x.BoletimId);
             builder.Property(x => x.BoletimId)
            .HasColumnName("BoletimId")

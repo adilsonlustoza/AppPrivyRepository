@@ -6,9 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AppPrivy.Domain.Entities.DoacaoMais
 {
-   
+
     [Table("Disposito", Schema = "DoacaoMais")]
-    public partial class Dispositivo: Entity
+    public partial class Dispositivo : Entity
     {
 
         public Dispositivo()

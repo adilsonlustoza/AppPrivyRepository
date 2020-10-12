@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Test\\AppPrivy.Test.csproj": {}
+    "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Test\\AppPrivy.Test.csproj": {}
   },
   "projects": {
-    "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj": {
+    "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
+        "projectUniqueName": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
         "projectName": "AppPrivy.CrossCutting",
-        "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-        "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\obj\\",
+        "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\",
+        "outputPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adilson.lustoza-ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -67,24 +68,25 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
+    "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj",
+        "projectUniqueName": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Domain\\AppPrivy.Domain.csproj",
         "projectName": "AppPrivy.Domain",
-        "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj",
-        "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-        "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\obj\\",
+        "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Domain\\AppPrivy.Domain.csproj",
+        "packagesPath": "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\",
+        "outputPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adilson.lustoza-ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -98,8 +100,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj": {
-                "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj"
+              "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj": {
+                "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj"
               }
             }
           }
@@ -152,24 +154,25 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
+    "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj",
+        "projectUniqueName": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj",
         "projectName": "AppPrivy.InfraStructure",
-        "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj",
-        "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-        "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\obj\\",
+        "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj",
+        "packagesPath": "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\",
+        "outputPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adilson.lustoza-ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -183,8 +186,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
-                "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj"
+              "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
+                "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Domain\\AppPrivy.Domain.csproj"
               }
             }
           }
@@ -242,24 +245,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Test\\AppPrivy.Test.csproj": {
+    "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Test\\AppPrivy.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Test\\AppPrivy.Test.csproj",
+        "projectUniqueName": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Test\\AppPrivy.Test.csproj",
         "projectName": "AppPrivy.Test",
-        "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Test\\AppPrivy.Test.csproj",
-        "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-        "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Test\\obj\\",
+        "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Test\\AppPrivy.Test.csproj",
+        "packagesPath": "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\",
+        "outputPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adilson.lustoza-ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -273,8 +277,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
-                "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj"
+              "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
+                "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj"
               }
             }
           }
@@ -315,12 +319,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

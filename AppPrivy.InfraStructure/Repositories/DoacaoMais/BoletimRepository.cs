@@ -1,18 +1,18 @@
-﻿using AppPrivy.InfraStructure.Interface;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
+using AppPrivy.InfraStructure.Interface;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class BoletimRepository :  RepositoryBase<Boletim>, IBoletimRepository
+    public class BoletimRepository : RepositoryBase<Boletim>, IBoletimRepository
     {
 
         private readonly IContextManager _contextManager;
 
-        public BoletimRepository(IContextManager contextManager):base(contextManager)
+        public BoletimRepository(IContextManager contextManager) : base(contextManager)
         {
             _contextManager = contextManager;
         }

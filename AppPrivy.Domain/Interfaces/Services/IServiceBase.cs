@@ -17,5 +17,5 @@ namespace AppPrivy.Domain.Interfaces.Services
         int? SaveChanges();
         void Dispose();
     }
-       
+
 }

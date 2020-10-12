@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Services.DoacaoMais
 {
-    public class BazarService: ServiceBase<Bazar>, IBazarService
+    public class BazarService : ServiceBase<Bazar>, IBazarService
     {
         private readonly IBazarRepository _bazarRepository;
 
-        public BazarService(IBazarRepository bazarRepository):base(bazarRepository)
+        public BazarService(IBazarRepository bazarRepository) : base(bazarRepository)
         {
             _bazarRepository = bazarRepository;
         }
@@ -21,7 +21,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             if (!Id.HasValue)
                 throw new ApplicationException("Parametro invalido");
 
-            var lstBazar =  await _bazarRepository.GetAllByCacccId(Id.Value);
+            var lstBazar = await _bazarRepository.GetAllByCacccId(Id.Value);
 
             if (lstBazar != null)
                 return lstBazar;

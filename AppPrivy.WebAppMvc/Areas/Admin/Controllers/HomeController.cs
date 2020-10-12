@@ -11,7 +11,7 @@ namespace AppPrivy.WebAppMvc.Areas.Admin.Controllers
 
     public class HomeController : Controller
     {
-        [Authorize(Policy ="Administrador")]
+        [Authorize(Policy = "Administrador")]
         // GET: Home
         public ActionResult Index()
         {

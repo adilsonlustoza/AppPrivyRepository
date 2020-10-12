@@ -1,17 +1,17 @@
-﻿using System.Collections.Generic;
-using AppPrivy.InfraStructure.Interface;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
+using AppPrivy.InfraStructure.Interface;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
-    public class ContaBancariaRepository: RepositoryBase<ContaBancaria>, IContaBancariaRepository
+    public class ContaBancariaRepository : RepositoryBase<ContaBancaria>, IContaBancariaRepository
     {
         private readonly IContextManager _contextManager;
 
-        public ContaBancariaRepository(IContextManager contextManager):base(contextManager)
+        public ContaBancariaRepository(IContextManager contextManager) : base(contextManager)
         {
             _contextManager = contextManager;
         }

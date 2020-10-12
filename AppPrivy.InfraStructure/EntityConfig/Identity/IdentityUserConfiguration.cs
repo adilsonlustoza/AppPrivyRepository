@@ -12,7 +12,7 @@ namespace AppPrivy.InfraStructure.EntityConfig.Identity
             u.ToTable("User", "Security");
             u.HasKey("Id").HasName("UserId");
             u.Property("Id").IsRequired().ValueGeneratedOnAdd();
-          
+
         }
     }
 }

@@ -8,7 +8,7 @@ namespace AppPrivy.InfraStructure.EntityConfig.Identity
     {
         public void Configure(EntityTypeBuilder<IdentityUserLogin<string>> u)
         {
-            u.ToTable("UserLogin", "Security");            
+            u.ToTable("UserLogin", "Security");
             u.HasKey("UserId").HasName("UserLoginPk");
         }
     }

@@ -1,11 +1,8 @@
 using AppPrivy.Application;
 using AppPrivy.Application.Interfaces;
+using AppPrivy.CrossCutting.Agregation;
 using AppPrivy.CrossCutting.Fault;
 using AppPrivy.CrossCutting.Operations;
-using AppPrivy.InfraStructure.Contexto;
-using AppPrivy.InfraStructure.Interface;
-using AppPrivy.InfraStructure.Repositories;
-using AppPrivy.InfraStructure.Repositories.DoacaoMais;
 using AppPrivy.Domain;
 using AppPrivy.Domain.Interfaces;
 using AppPrivy.Domain.Interfaces.Repositories;
@@ -14,23 +11,25 @@ using AppPrivy.Domain.Interfaces.Services;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using AppPrivy.Domain.Services;
 using AppPrivy.Domain.Services.DoacaoMais;
+using AppPrivy.InfraStructure.Contexto;
+using AppPrivy.InfraStructure.Interface;
+using AppPrivy.InfraStructure.Repositories;
+using AppPrivy.InfraStructure.Repositories.DoacaoMais;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Localization;
-using System.Globalization;
 using System;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Globalization;
 using System.Security.Claims;
-using AppPrivy.CrossCutting.Agregation;
-using Microsoft.OpenApi.Models;
 
 namespace AppPrivy.WebAppMvc
 {
@@ -71,7 +70,7 @@ namespace AppPrivy.WebAppMvc
                     .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<AppPrivyContext>()
                     .AddDefaultTokenProviders();
-         
+
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -88,17 +87,18 @@ namespace AppPrivy.WebAppMvc
                 options.Lockout.AllowedForNewUsers = true;
             });
 
-                     
+
 
             services
-             .AddAuthentication(options=> {
+             .AddAuthentication(options =>
+             {
                  options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                           
+
              })
             .AddCookie(options =>
             {
-                options.Cookie.Name = ConstantHelper.AuthenticationCookieName;               
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);            
+                options.Cookie.Name = ConstantHelper.AuthenticationCookieName;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.SameSite = SameSiteMode.Unspecified;
                 options.LoginPath = "/Identity/Account/Login";
@@ -106,13 +106,13 @@ namespace AppPrivy.WebAppMvc
                 options.SlidingExpiration = true;
             });
 
-           services.AddMvc(options => options.EnableEndpointRouting = false)
-          .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
-          .AddRazorPagesOptions(options =>
-          {
-              options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
-              options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
-          });
+            services.AddMvc(options => options.EnableEndpointRouting = false)
+           .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+           .AddRazorPagesOptions(options =>
+           {
+               options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
+               options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
+           });
 
             services.AddTransient<IContextManager, ContextManager>();
 
@@ -159,23 +159,23 @@ namespace AppPrivy.WebAppMvc
 
             services.AddScoped<FaultException>();
             services.AddScoped<SendMail>();
-         
+
 
             services.AddAuthorization(options =>
             {
-                 options.AddPolicy(ConstantHelper.GrupoAdministrador, new AuthorizationPolicyBuilder()
-                .RequireAuthenticatedUser()
-                .RequireClaim(ClaimTypes.Role,ConstantHelper.GrupoAdministrador)
-                .Build());
+                options.AddPolicy(ConstantHelper.GrupoAdministrador, new AuthorizationPolicyBuilder()
+               .RequireAuthenticatedUser()
+               .RequireClaim(ClaimTypes.Role, ConstantHelper.GrupoAdministrador)
+               .Build());
             });
 
-            services.AddSwaggerGen(c => { //<-- NOTE 'Add' instead of 'Configure'
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Title = "AppPrivy Api",
-                    Version = "v1"
-                });
-            });
+            //services.AddSwaggerGen(c => { //<-- NOTE 'Add' instead of 'Configure'
+            //    c.SwaggerDoc("v1", new OpenApiInfo
+            //    {
+            //        Title = "AppPrivy Api",
+            //        Version = "v1"
+            //    });
+            //});
 
         }
 
@@ -226,7 +226,7 @@ namespace AppPrivy.WebAppMvc
                 app.UseHsts();
             }
 
-           // app.UseSession();
+            // app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -234,7 +234,7 @@ namespace AppPrivy.WebAppMvc
             app.UseAuthentication();
             app.UseAuthorization();
 
-           
+
 
             app.UseMvc(routes =>
             {
@@ -256,12 +256,12 @@ namespace AppPrivy.WebAppMvc
 
             });
 
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "AppPrivy API");
-                c.RoutePrefix = string.Empty;
-            });
+            //app.UseSwagger();
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AppPrivy API");
+            //    c.RoutePrefix = string.Empty;
+            //});
 
 
         }

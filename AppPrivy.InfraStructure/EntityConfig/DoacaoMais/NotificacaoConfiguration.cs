@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
 {
-    public class NotificacaoConfiguration: IEntityTypeConfiguration<Notificacao>
-    {      
+    public class NotificacaoConfiguration : IEntityTypeConfiguration<Notificacao>
+    {
 
         public void Configure(EntityTypeBuilder<Notificacao> builder)
         {
-            builder.ToTable("Notificacao", "DoacaoMais");          
+            builder.ToTable("Notificacao", "DoacaoMais");
 
             builder.HasKey(x => x.NotificacaoId);
 
@@ -19,7 +19,7 @@ namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
            .ValueGeneratedOnAdd();
 
 
-          
+
 
         }
     }

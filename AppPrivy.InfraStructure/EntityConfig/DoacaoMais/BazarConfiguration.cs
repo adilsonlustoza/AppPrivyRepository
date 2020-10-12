@@ -8,14 +8,14 @@ namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
 {
 
     public class BazarConfiguration : IEntityTypeConfiguration<Bazar>
-    {    
+    {
 
 
         public void Configure(EntityTypeBuilder<Bazar> builder)
-        {          
+        {
 
             builder.ToTable("Bazar", "DoacaoMais");
-            builder.HasKey(x => x.BazarId); 
+            builder.HasKey(x => x.BazarId);
             builder.Property(x => x.BazarId)
            .HasColumnName("BazarId")
            .IsRequired()

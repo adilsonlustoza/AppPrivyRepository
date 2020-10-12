@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace AppPrivy.WebAppMvc.Controllers
 {
@@ -10,7 +7,7 @@ namespace AppPrivy.WebAppMvc.Controllers
         public MasterController() { }
 
     }
-      
-        
-    
+
+
+
 }

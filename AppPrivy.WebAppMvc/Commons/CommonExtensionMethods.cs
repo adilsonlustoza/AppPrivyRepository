@@ -6,7 +6,7 @@ namespace AppPrivy.WebAppMvc.Commons
     public static class CommonExtensionMethods
     {
         private const string RequestedWithHeader = "X-Requested-With";
-        private const string XmlHttpRequest = "XMLHttpRequest";       
+        private const string XmlHttpRequest = "XMLHttpRequest";
 
         public static bool IsAjaxRequest(this HttpRequest request)
         {

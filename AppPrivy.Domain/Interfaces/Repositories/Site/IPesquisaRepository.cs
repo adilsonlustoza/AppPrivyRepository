@@ -2,7 +2,7 @@
 
 namespace AppPrivy.Domain
 {
-    public interface IPesquisaRepository:IRepositoryBase<Pesquisa>
+    public interface IPesquisaRepository : IRepositoryBase<Pesquisa>
     {
     }
 }

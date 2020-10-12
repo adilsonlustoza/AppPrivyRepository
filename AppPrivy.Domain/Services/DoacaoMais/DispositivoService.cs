@@ -1,12 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using AppPrivy.CrossCutting.UnitOfWork;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
-using System.Linq;
 using System;
-using System.Transactions;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using AppPrivy.CrossCutting.UnitOfWork;
+using System.Transactions;
 
 namespace AppPrivy.Domain.Services.DoacaoMais
 {
@@ -14,14 +14,14 @@ namespace AppPrivy.Domain.Services.DoacaoMais
     {
         private readonly IDispositivoRepository _dispositivoRepository;
         private readonly INotificacaoRepository _notificacaoRepository;
-      
 
 
-        public DispositivoService(IDispositivoRepository dispositivoRepository,INotificacaoRepository notificacaoRepository) :base(dispositivoRepository)
+
+        public DispositivoService(IDispositivoRepository dispositivoRepository, INotificacaoRepository notificacaoRepository) : base(dispositivoRepository)
         {
             _dispositivoRepository = dispositivoRepository;
             _notificacaoRepository = notificacaoRepository;
-          
+
         }
 
 
@@ -46,9 +46,9 @@ namespace AppPrivy.Domain.Services.DoacaoMais
         {
             try
             {
-                ICollection<Dispositivo> _dispositivos=null;
+                ICollection<Dispositivo> _dispositivos = null;
                 Notificacao _notificacao = null;
-                int? _result=0;
+                int? _result = 0;
 
 
                 using (IUnitOfWork _unitOfWork = new TransactionScopeUnitOfWorkFactory(IsolationLevel.Serializable).Create())
@@ -80,11 +80,11 @@ namespace AppPrivy.Domain.Services.DoacaoMais
                     else
                     {
 
-                         new List<Notificacao>().Add(_notificacao);
+                        new List<Notificacao>().Add(_notificacao);
 
-                         dispositivo.Notificacao.Add(_notificacao);
+                        dispositivo.Notificacao.Add(_notificacao);
                         _dispositivoRepository.Add(dispositivo);
-                        
+
                         _result = _dispositivoRepository.SaveChanges();
 
                     }
@@ -99,13 +99,13 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
 
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                
+
                 throw e;
             }
         }
 
-     
+
     }
 }

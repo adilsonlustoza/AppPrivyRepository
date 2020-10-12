@@ -6,6 +6,6 @@ namespace AppPrivy.Domain.Interfaces.Repositories.DoacaoMais
 {
     public interface IContaBancariaRepository : IRepositoryBase<ContaBancaria>
     {
-       Task<ICollection<ContaBancaria>> ListaContaBancariaCaccc(int? CacccId);
+        Task<ICollection<ContaBancaria>> ListaContaBancariaCaccc(int? CacccId);
     }
 }

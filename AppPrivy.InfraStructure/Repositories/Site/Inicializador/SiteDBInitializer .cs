@@ -1,10 +1,10 @@
-﻿using AppPrivy.InfraStructure.Contexto;
-using AppPrivy.Domain;
+﻿using AppPrivy.Domain;
+using AppPrivy.InfraStructure.Contexto;
 using System.Collections.Generic;
 
 namespace AppPrivy.InfraStructure.Repositories.Site
 {
-    public static class SiteDBInitializer 
+    public static class SiteDBInitializer
     {
 
         public static void Seed(AppPrivyContext context)
@@ -23,8 +23,8 @@ namespace AppPrivy.InfraStructure.Repositories.Site
                context.Pesquisa.Add(p)
             );
 
-          
-                      
+
+
         }
 
     }
