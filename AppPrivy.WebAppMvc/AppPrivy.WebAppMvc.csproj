@@ -193,6 +193,7 @@
   <ItemGroup>
     <Folder Include="Areas\DoacaoMais\Models\" />
     <Folder Include="wwwroot\bower_components\bootstrap-lightbox\docs\build\" />
+    <Folder Include="wwwroot\css\scss\" />
   </ItemGroup>
 
 
