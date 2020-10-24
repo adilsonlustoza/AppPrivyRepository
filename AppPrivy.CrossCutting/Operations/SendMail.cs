@@ -1,4 +1,5 @@
 ﻿using AppPrivy.CrossCutting.Agregation;
+using AppPrivy.CrossCutting.Fault;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
@@ -128,10 +129,10 @@ namespace AppPrivy.CrossCutting.Operations
 
                     this.FullFill();
 
-                    using (MailMessage _mailMessage = new MailMessage())
+                    using (var _mailMessage = new MailMessage())
                     {
                         _mailMessage.From = new MailAddress(_from, _name, Encoding.UTF8);
-                        _mailMessage.To.Add(contact._to);
+                        _mailMessage.To.Add(_to);
                         _mailMessage.Subject = contact._subject;
                         _mailMessage.SubjectEncoding = Encoding.UTF8;
                         _mailMessage.IsBodyHtml = true;
@@ -144,7 +145,7 @@ namespace AppPrivy.CrossCutting.Operations
                             return new NetworkCredential(login, senha);
                         };
 
-                        using (SmtpClient smtp = new SmtpClient(_host, _port))
+                        using (var smtp = new SmtpClient(_host, _port))
                         {
                             try
                             {
@@ -154,7 +155,7 @@ namespace AppPrivy.CrossCutting.Operations
                             }
                             catch (SmtpException e)
                             {
-                                throw new SmtpException("Erro no servidor SMTP", e);
+                                new FaultException("SmtpClient", e);
                             }
                         }
                     }
@@ -163,9 +164,9 @@ namespace AppPrivy.CrossCutting.Operations
                 });
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                new FaultException("ESendHtmlFormattedMail", e);
             }
 
 
@@ -181,7 +182,7 @@ namespace AppPrivy.CrossCutting.Operations
 
                     this.FullFill();
 
-                    using (MailMessage _mailMessage = new MailMessage())
+                    using (var _mailMessage = new MailMessage())
                     {
                         _mailMessage.From = new MailAddress(_from, _name, Encoding.UTF8);
                         _mailMessage.To.Add(contact._to);
@@ -198,7 +199,7 @@ namespace AppPrivy.CrossCutting.Operations
                             return new NetworkCredential(login, senha);
                         };
 
-                        using (SmtpClient smtp = new SmtpClient(_host, _port))
+                        using (var smtp = new SmtpClient(_host, _port))
                         {
                             try
                             {
@@ -208,7 +209,7 @@ namespace AppPrivy.CrossCutting.Operations
                             }
                             catch (SmtpException e)
                             {
-                                throw new SmtpException("Erro no servidor SMTP", e);
+                                new FaultException("SmtpClient", e);
                             }
                         }
                     }
@@ -217,9 +218,9 @@ namespace AppPrivy.CrossCutting.Operations
                 });
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                new FaultException("SendHtmlRecoveredMail", e);
             }
 
 

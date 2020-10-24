@@ -9,4 +9,3 @@ C:\CandMountain\AppPrivyRepository\AppPrivy.CrossCutting\obj\Debug\netstandard2.
 C:\CandMountain\AppPrivyRepository\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csproj.CoreCompileInputs.cache
 C:\CandMountain\AppPrivyRepository\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.dll
 C:\CandMountain\AppPrivyRepository\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.pdb
-C:\CandMountain\AppPrivyRepository\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csprojAssemblyReference.cache

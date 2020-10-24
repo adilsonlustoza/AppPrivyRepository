@@ -40,7 +40,7 @@ namespace AppPrivy.WebAppApi.Controllers
             }
             catch (FaultException e)
             {
-                await _fault.WriteError(e);
+                await _fault.WriteError("ListarTodosDispositivosAsync", e);
             }
 
             return StatusCode(StatusCodes.Status500InternalServerError);
@@ -64,7 +64,7 @@ namespace AppPrivy.WebAppApi.Controllers
             }
             catch (Exception e)
             {
-                await _fault.WriteError(e);
+                await _fault.WriteError("SalvarDispositivo", e);
 
             }
 

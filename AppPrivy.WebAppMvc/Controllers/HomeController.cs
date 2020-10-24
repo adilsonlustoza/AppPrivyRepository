@@ -108,7 +108,7 @@ namespace AppPrivy.WebAppMvc.Controllers
 
                     var captcha = _contatoAppService.GoogleCaptcha();
 
-                    if (true)
+                    if (captcha)
                     {
 
                         await _contatoAppService.SendMail(new ContactAgregation()

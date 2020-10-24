@@ -1,7 +1,7 @@
 ﻿
 var url = window.location.href;
 
-$('.btn.btn-primary').on('click', function () {
+$('.btn.btn-outline-primary').on('click', function () {
     ajaxObjects.sendPost(url, 'form', true, '.btn.btn-primary');
 });
 

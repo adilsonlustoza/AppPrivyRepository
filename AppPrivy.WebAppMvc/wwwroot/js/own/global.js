@@ -22,31 +22,31 @@ $(window).on('resize', function () {
 });
 
 
-$('div.menu').click(function () {
-    try {
-        var display = $('.mobile-hamburger nav').css('display');
+//$('div.menu').click(function () {
+//    try {
+//        var display = $('.mobile-hamburger nav').css('display');
 
-        if (display === 'block')
-            $('.mobile-hamburger nav').css('display', 'none');
-        else
-            $('.mobile-hamburger nav').css({ 'display': 'block', 'position': 'absolute', ' margin-top': '5.5' });
-    }
-    catch (err) {
-        console.log(`div.menu click error : ${err.message}`);
-    }
-});
-
-
-
-$('#banner1').css({ 'background-color': 'transparent', 'width': '24%', 'height': '10%', 'left': '55%', 'top': '66%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/SistemasWeb\'' });
-$('#banner2').css({ 'background-color': 'transparent', 'width': '15%', 'height': '10%', 'left': '70%', 'top': '73%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/EngenhariaDeSoftware\'' });
-$('#banner3').css({ 'background-color': 'transparent', 'width': '22%', 'height': '15%', 'left': '63%', 'top': '42%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/\'' });
-$('#banner4').css({ 'background-color': 'transparent', 'width': '18%', 'height': '10%', 'left': '25%', 'top': '63%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/Android\'' });
-$('#banner5').css({ 'background-color': 'transparent', 'width': '26%', 'height': '10%', 'left': '65%', 'top': '71%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/Contato\'' });
+//        if (display === 'block')
+//            $('.mobile-hamburger nav').css('display', 'none');
+//        else
+//            $('.mobile-hamburger nav').css({ 'display': 'block', 'position': 'absolute', ' margin-top': '5.5' });
+//    }
+//    catch (err) {
+//        console.log(`div.menu click error : ${err.message}`);
+//    }
+//});
 
 
 
-const Search = (event) =>
+//$('#banner1').css({ 'background-color': 'transparent', 'width': '24%', 'height': '10%', 'left': '55%', 'top': '66%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/SistemasWeb\'' });
+//$('#banner2').css({ 'background-color': 'transparent', 'width': '15%', 'height': '10%', 'left': '70%', 'top': '73%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/EngenhariaDeSoftware\'' });
+//$('#banner3').css({ 'background-color': 'transparent', 'width': '22%', 'height': '15%', 'left': '63%', 'top': '42%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/\'' });
+//$('#banner4').css({ 'background-color': 'transparent', 'width': '18%', 'height': '10%', 'left': '25%', 'top': '63%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/Android\'' });
+//$('#banner5').css({ 'background-color': 'transparent', 'width': '26%', 'height': '10%', 'left': '65%', 'top': '71%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'Analista/Programador/Contato\'' });
+
+
+
+const Search = () =>
 {
     try {
         var objFrm = $('#frmPesquisa');
@@ -85,7 +85,6 @@ $(function () {
 $(document).ready(function () {
 
     var url = window.location.href;
-    var selected = url.indexOf('SistemasWeb');
     
     $(".menu nav ul li a").each(function () {     
 
@@ -98,6 +97,30 @@ $(document).ready(function () {
        
         
     });
+
+
+    $('div.menu').click(function () {
+        try {
+            var display = $('.mobile-hamburger nav').css('display');
+
+            if (display === 'block')
+                $('.mobile-hamburger nav').css('display', 'none');
+            else
+                $('.mobile-hamburger nav').css({ 'display': 'block', 'position': 'absolute', ' margin-top': '5.5' });
+        }
+        catch (err) {
+            console.log(`div.menu click error : ${err.message}`);
+        }
+    });
+
+
+
+    $('#banner1').css({ 'background-color': 'transparent', 'width': '24%', 'height': '10%', 'left': '55%', 'top': '66%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'/SistemasWeb\'' });
+    $('#banner2').css({ 'background-color': 'transparent', 'width': '15%', 'height': '10%', 'left': '70%', 'top': '73%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'/EngenhariaDeSoftware\'' });
+    $('#banner3').css({ 'background-color': 'transparent', 'width': '22%', 'height': '15%', 'left': '63%', 'top': '42%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'/Programador/\'' });
+    $('#banner4').css({ 'background-color': 'transparent', 'width': '18%', 'height': '10%', 'left': '25%', 'top': '63%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'/Android\'' });
+    $('#banner5').css({ 'background-color': 'transparent', 'width': '26%', 'height': '10%', 'left': '65%', 'top': '71%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'/Contato\'' });
+
 
    
     

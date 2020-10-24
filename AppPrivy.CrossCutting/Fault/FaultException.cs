@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using AppPrivyException = System.Exception;
@@ -10,6 +11,8 @@ namespace AppPrivy.CrossCutting.Fault
     {
         private StreamWriter _sw;
         private string _path = AppDomain.CurrentDomain.BaseDirectory;
+        private string _directory = "Log";
+        private string _file = "AppPrivy_{0}.log";
 
         public FaultException() : base()
         {
@@ -17,29 +20,37 @@ namespace AppPrivy.CrossCutting.Fault
 
         public FaultException(string message) : base(message)
         {
+              WriteInfo(message).ConfigureAwait(false); 
         }
 
         public FaultException(string message, AppPrivyException innerException) : base(message, innerException)
         {
+             WriteError(message, innerException).ConfigureAwait(false) ;
         }
 
-        public async Task WriteError(AppPrivyException exception)
+        public async Task WriteError(string message, AppPrivyException exception)
         {
             try
             {
-                _sw = new StreamWriter(_path, true);
-                await _sw.WriteLineAsync("Mensagem : " + exception.Message + Environment.NewLine);
-                await _sw.WriteLineAsync("Trace : " + exception.StackTrace + Environment.NewLine);
-                await _sw.WriteLineAsync("Exception : " + exception.InnerException + Environment.NewLine);
-                await _sw.WriteLineAsync("Source : " + exception.Source + Environment.NewLine);
-                await _sw.FlushAsync();
-                _sw.Close();
-                _sw.Dispose();
+                if (!Directory.Exists(string.Format(@"{0}\{1}", _path, _directory)))
+                    Directory.CreateDirectory(string.Format(@"{0}\{1}", _path, _directory));
+
+
+                using (_sw = new StreamWriter(string.Format(@"{0}\{1}\{2}", _path, _directory, string.Format(_file, DateTime.Now.ToString("yyyyMMdd"))), true))
+                {
+                    await _sw.WriteLineAsync("Operation : " + message);
+                    await _sw.WriteLineAsync("Mensagem : " + exception.Message);
+                    await _sw.WriteLineAsync("Trace : " + exception.StackTrace);
+                    await _sw.WriteLineAsync("Exception : " + exception.InnerException);
+                    await _sw.WriteLineAsync("Source : " + exception.Source);
+                    await _sw.WriteLineAsync(Environment.NewLine);
+                   
+                }
 
             }
-            catch (AppPrivyException)
+            catch (AppPrivyException e)
             {
-                throw;
+                Debug.WriteLine(e.Message) ;
             }
 
         }
@@ -48,16 +59,21 @@ namespace AppPrivy.CrossCutting.Fault
         {
             try
             {
-                _sw = new StreamWriter(_path, true);
-                await _sw.WriteLineAsync(mensage);
-                await _sw.FlushAsync();
-                _sw.Close();
-                _sw.Dispose();
+
+                if (!Directory.Exists(string.Format(@"{0}\{1}", _path, _directory)))
+                    Directory.CreateDirectory(string.Format(@"{0}\{1}", _path, _directory));
+
+                using (_sw = new StreamWriter(string.Format(@"{0}\{1}\{2}", _path, _directory, string.Format(_file, DateTime.Now.ToString("yyyyMMdd"))), true))
+                {
+                    await _sw.WriteLineAsync(mensage);
+                    await _sw.WriteLineAsync(Environment.NewLine);
+                    
+                }
 
             }
-            catch (AppPrivyException)
+            catch (AppPrivyException e)
             {
-                throw;
+                Debug.WriteLine(e.Message);
             }
 
         }

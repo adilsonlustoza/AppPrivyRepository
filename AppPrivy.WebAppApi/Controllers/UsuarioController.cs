@@ -53,7 +53,7 @@ namespace AppPrivy.WebAppApi.Controllers
             }
             catch (FaultException e)
             {
-                await _fault.WriteError(e);
+                await _fault.WriteError("ListarTodosDispositivos", e);
             }
 
             return null;
