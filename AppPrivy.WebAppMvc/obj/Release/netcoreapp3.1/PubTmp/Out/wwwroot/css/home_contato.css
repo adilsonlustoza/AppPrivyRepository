@@ -1,0 +1,30 @@
+﻿#CaptchaInputText {
+    border:1px solid #cccccc;   
+    border-radius: 4px;
+    position:relative;
+    height:30px;   
+    width:100%;
+    margin-top:10px;
+}
+
+#txtCaptcha {
+    position:relative;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+textarea{
+    resize:none;
+}
+
+.openTop
+{
+    margin-top:30px;
+ 
+}
+
+.textCertificate{
+    padding-right:55px;
+    padding-left:55px;
+    text-align:justify;
+}

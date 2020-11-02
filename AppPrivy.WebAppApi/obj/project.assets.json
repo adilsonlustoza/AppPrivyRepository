@@ -8774,25 +8774,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.WebAppApi\\AppPrivy.WebAppApi.csproj",
+      "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppApi\\AppPrivy.WebAppApi.csproj",
       "projectName": "AppPrivy.WebAppApi",
-      "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.WebAppApi\\AppPrivy.WebAppApi.csproj",
-      "packagesPath": "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\",
-      "outputPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.WebAppApi\\obj\\",
+      "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppApi\\AppPrivy.WebAppApi.csproj",
+      "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
+      "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\adilson.lustoza-ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -8806,14 +8804,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Application\\AppPrivy.Application.csproj": {
-              "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Application\\AppPrivy.Application.csproj"
+            "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj": {
+              "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj"
             },
-            "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
-              "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.Domain\\AppPrivy.Domain.csproj"
+            "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
+              "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj"
             },
-            "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
-              "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj"
+            "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
+              "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj"
             }
           }
         }

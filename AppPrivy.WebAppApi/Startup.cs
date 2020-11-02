@@ -160,7 +160,7 @@ namespace AppPrivy.WebAppApi
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mac API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api Doação Mais V1");
             });
         }
     }

@@ -149,9 +149,12 @@ namespace AppPrivy.CrossCutting.Operations
                         {
                             try
                             {
+                                
                                 smtp.Credentials = netWorkCredential(_login, _password);
+                                smtp.UseDefaultCredentials = false;
                                 smtp.EnableSsl = _ssl;
-                                smtp.Send(_mailMessage);
+                                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                                smtp.SendMailAsync(_mailMessage);
                             }
                             catch (SmtpException e)
                             {
@@ -204,8 +207,10 @@ namespace AppPrivy.CrossCutting.Operations
                             try
                             {
                                 smtp.Credentials = netWorkCredential(_login, _password);
+                                smtp.UseDefaultCredentials = false;
                                 smtp.EnableSsl = _ssl;
-                                smtp.Send(_mailMessage);
+                                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                                smtp.SendMailAsync(_mailMessage);
                             }
                             catch (SmtpException e)
                             {

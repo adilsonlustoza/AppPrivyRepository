@@ -752,25 +752,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
+      "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
       "projectName": "AppPrivy.CrossCutting",
-      "projectPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
-      "packagesPath": "C:\\Users\\adilson.lustoza-ext\\.nuget\\packages\\",
-      "outputPath": "C:\\CandMountain\\AppPrivyRepository\\AppPrivy.CrossCutting\\obj\\",
+      "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
+      "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
+      "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\adilson.lustoza-ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
