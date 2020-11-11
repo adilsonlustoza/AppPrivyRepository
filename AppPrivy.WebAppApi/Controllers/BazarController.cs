@@ -69,7 +69,6 @@ namespace AppPrivy.WebAppApi.Controllers
                     return NotFound();
                 return Ok(_result);
 
-
             }
 
             catch (FaultException)

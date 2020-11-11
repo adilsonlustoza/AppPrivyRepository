@@ -551,12 +551,15 @@
     body {
         width: 100%;
     }
+
     div.menu-hamburger {
         display: none;
     }
+
     div.mobile-hamburger {
         display: none;
     }
+
     .menu {
         position: fixed;
         width: 100%;
@@ -566,24 +569,63 @@
         border-top: 5px solid #0085B2;
         z-index: 1000;
     }
-    .menu nav ul {
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
-        height: 110px;
-        top: 10px;
+
+        .menu nav ul {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            height: 110px;
+            top: 10px;
+        }
+
+            .menu nav ul li {
+                position: relative;
+                text-decoration: none;
+                list-style-type: none;
+                font-stretch: expanded;
+                cursor: pointer;
+                margin-right: 1.70%;
+                display: inline-block;
+                top: 25px;
+            }
+                /*
+    @supports (not (-webkit-hyphens:none)) and (not (-moz-appearance:none)) and (list-style-type:"*") {
+        .menu nav ul li {
+            margin-right: 3.60%
+        }
+        .nav .submenu ul{
+            width:500px;
+        }
     }
-    .menu nav ul li {
-        position: relative;
-        text-decoration: none;
-        list-style-type: none;
-        font-stretch: expanded;
-        cursor: pointer;
-        margin-right: 1.70%;
-        display: inline-block;
-        top: 25px;
+    
+    @supports (not (-webkit-hyphens:none)) and (not (-moz-appearance:none)) {
+        .menu nav ul li {
+            margin-right: 3.60%
+        }
+
+        .nav .submenu ul {
+            width: 500px;
+        }
     }
- 
+    @supports (-ms-ime-align:auto) {
+        .menu nav ul li {
+            margin-right: 3.60%
+        }
+
+        .nav .submenu ul {
+            width: 500px;
+        }
+    }
+    _:-ms-lang(x), _:-webkit-full-screen, .menu nav ul li {
+        margin-right: 3.60%;
+    }
+
+    _:-ms-lang(x), _:-webkit-full-screen, .nav .submenu ul {       
+            width: 500px;        
+    }*/
+
+   
+
     .menu nav ul li:last-child {    
         margin-right: 0;       
     }
@@ -597,8 +639,7 @@
         font-stretch: ultra-condensed;
     }
     .menu nav ul li a:hover {
-        color: #5bc0de;
-        /*border-bottom: 3px solid #0085B2;*/
+        color: #5bc0de;     
     }
     input#txtSearch {
         position: relative;
@@ -644,7 +685,7 @@
         background-color: #3f3f3f;
         padding-top: 0px;
         height: 150px;
-        width: 530px;
+        width: 510px;
         border-radius: 12px 12px;
         display: none;
         top: 48px;
@@ -659,7 +700,7 @@
         position: relative;
         display: block;
         padding-top: 1.0%;
-        margin-left: 20px;
+        margin-left: 16px;
         float: left;
         top: 5px;
     }
@@ -719,86 +760,6 @@
         font-style: normal;
         font-weight: bolder;
     }
-    /*
-
-
-    nav.submenu ul li:nth-child(1) a:before {
-        font-family: 'Font Awesome 5 Brands';
-        content: "\f17a";
-        font-size: 14px;
-        float: left;
-        margin-top: 5px;
-        margin-left: -17px;
-        color: #fff;
-        position: relative;
-        margin-right: 1px;
-        top: -5px;
-    }
-
-    nav.submenu ul li:nth-child(1):hover a:before {
-        font-family: 'Font Awesome 5 Brands';
-        content: "\f17a";
-        font-size: 14px;
-        float: left;
-        margin-top: 5px;
-        margin-left: -17px;
-        color: #d9534f;
-        position: relative;
-        margin-right: 1px;
-        top: -5px;
-    }
-
-    nav.submenu ul li:nth-child(2) a:before {
-        content: "\f4d5";
-        font-family: 'Font Awesome 5 Brands';
-        font-size: 14px;
-        float: left;
-        margin-top: 5px;
-        margin-left: -17px;
-        color: #fff;
-        position: relative;
-        margin-right: 1px;
-        top: -5px;
-    }
-
-    nav.submenu ul li:nth-child(2):hover a:before {
-        content: "\f4d5";
-        font-family: 'Font Awesome 5 Brands';
-        font-size: 14px;
-        float: left;
-        margin-top: 5px;
-        margin-left: -17px;
-        color: #f0ad4e;
-        position: relative;
-        margin-right: 1px;
-        top: -5px;
-    }
-
-    nav.submenu ul li:nth-child(3) a:before {
-        content: "\f17b";
-        font-family: 'Font Awesome 5 Brands';
-        font-size: 14px;
-        float: left;
-        margin-top: 5px;
-        margin-left: -17px;
-        color: #fff;
-        position: relative;
-        margin-right: 1px;
-        top: -5px;
-    }
-
-    nav.submenu ul li:nth-child(3):hover a:before {
-        content: "\f17b";
-        font-family: 'Font Awesome 5 Brands';
-        font-size: 14px;
-        float: left;
-        margin-top: 5px;
-        margin-left: -17px;
-        color: #5cb85c;
-        position: relative;
-        margin-right: 1px;
-        top: -5px;
-    }
-
-    */
+  
 }
+

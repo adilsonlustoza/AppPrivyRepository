@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {}
+    "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {}
   },
   "projects": {
-    "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj": {
+    "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
+        "projectUniqueName": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
         "projectName": "AppPrivy.CrossCutting",
-        "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-        "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\obj\\",
+        "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\adils\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adils\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -71,20 +71,20 @@
         }
       }
     },
-    "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
+    "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj",
+        "projectUniqueName": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj",
         "projectName": "AppPrivy.Domain",
-        "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj",
-        "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-        "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\obj\\",
+        "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj",
+        "packagesPath": "C:\\Users\\adils\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adils\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -98,8 +98,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj": {
-                "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj"
+              "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj": {
+                "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj"
               }
             }
           }
@@ -156,20 +156,20 @@
         }
       }
     },
-    "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
+    "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj",
+        "projectUniqueName": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj",
         "projectName": "AppPrivy.InfraStructure",
-        "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj",
-        "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-        "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\obj\\",
+        "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj",
+        "packagesPath": "C:\\Users\\adils\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adils\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -183,8 +183,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
-                "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj"
+              "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
+                "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj"
               }
             }
           }

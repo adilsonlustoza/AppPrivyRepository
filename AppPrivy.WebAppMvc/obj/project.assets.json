@@ -12614,23 +12614,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\": {},
+    "C:\\Users\\adils\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
+      "projectUniqueName": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
       "projectName": "AppPrivy.WebAppMvc",
-      "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
-      "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-      "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\obj\\",
+      "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
+      "packagesPath": "C:\\Users\\adils\\.nuget\\packages\\",
+      "outputPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adils\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -12644,11 +12644,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj": {
-              "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj"
+            "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj": {
+              "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj"
             },
-            "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
-              "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj"
+            "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
+              "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj"
             }
           }
         }

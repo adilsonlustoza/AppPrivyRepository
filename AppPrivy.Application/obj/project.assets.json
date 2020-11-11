@@ -5395,23 +5395,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\": {},
+    "C:\\Users\\adils\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj",
+      "projectUniqueName": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj",
       "projectName": "AppPrivy.Application",
-      "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj",
-      "packagesPath": "C:\\Users\\Adilson Lustoza\\.nuget\\packages\\",
-      "outputPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\obj\\",
+      "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj",
+      "packagesPath": "C:\\Users\\adils\\.nuget\\packages\\",
+      "outputPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Adilson Lustoza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adils\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5425,8 +5425,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
-              "projectPath": "H:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj"
+            "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
+              "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj"
             }
           }
         }

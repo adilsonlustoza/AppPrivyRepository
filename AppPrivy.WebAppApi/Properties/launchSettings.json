@@ -21,12 +21,10 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "http://doacaomais.adilsonlustoza.com.br;",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Production"
-      }
-
-      //"applicationUrl": "\"https://localhost:5001;http://localhost:5000;http://doacaomais.adilsonlustoza.com.br\";"
+      },
+      "applicationUrl": ""
     },
     "Docker": {
       "commandName": "Docker",

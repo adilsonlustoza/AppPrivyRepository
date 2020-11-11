@@ -1,139 +1,144 @@
 ﻿
 <header id="headerMenu">
-    
-        <div class="menu">
 
-            <div class="container-fluid">
-                <nav class="container">
-                    <ul>
-                        <li>
-                            <img src="~/Images/logo/logo.png" class="img-responsive" alt="Adilson Lustoza" onclick="javascript:window.document.location.href='@Url.Action("Index","Home")'  " />
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Index","Home")"><span class="fas  fa-home" aria-hidden="true"></span>&nbsp;HOME </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("About","Home")"><span class="fas  fa-user-alt" aria-hidden="true"></span>&nbsp;SOBRE</a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Portfolio","Home")"> <span class="fas fa-briefcase" aria-hidden="true"></span>&nbsp;PORTFÓLIO</a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Services","Home")"> <span class="fas fa-wrench" aria-hidden="true"></span>&nbsp;SERVIÇOS</a>
+    <div class="menu">
 
-                            <nav class="submenu">
-                                <ul>
-                                    <li>
-                                        <a asp-action="WebSystem"  asp-controller="Home">
-                                        
-                                        <div class="card"  style="width: 9rem; height:8rem">
+        <div class="container-fluid">
+            <nav class="container">
+                <ul>
+                    <li>
+                        <img src="~/Images/logo/logo.png" class="img-responsive" alt="Adilson Lustoza" onclick="javascript:window.document.location.href='@Url.Action("Index","Home")'  " />
+                    </li>
+                    <li>
+                        <a asp-action="Index" asp-controller="Home"><span class="fas  fa-home" aria-hidden="true"></span>&nbsp;HOME </a>
+                    </li>
+                    <li>
+                        <a asp-action="About" asp-controller="Home"><span class="fas  fa-user-alt" aria-hidden="true"></span>&nbsp;SOBRE</a>
+                    </li>
+                    <li>
+                        <a asp-action="Portfolio" asp-controller="Home"> <span class="fas fa-briefcase" aria-hidden="true"></span>&nbsp;PORTFÓLIO</a>
+                    </li>
+                    <li>
+                        <a asp-action="Services" asp-controller="Home"> <span class="fas fa-wrench" aria-hidden="true"></span>&nbsp;SERVIÇOS</a>
+
+                        <nav class="submenu">
+                            <ul>
+                                <li>
+                                    <a asp-action="WebSystem" asp-controller="Home">
+
+                                        <div class="card" style="width: 143px; height: 125px">
                                             <div class="card-body">
                                                 <h5 class="card-title small">
-                                                     <img src="~/Images/servicos/servicos-sistema-web.png"  class="img-fluid float-left">    
-                                                        <span class="submenuSpanFont">Sistema Web</span>                                                      
-                                                </h5>         
+                                                    <img src="~/Images/servicos/servicos-sistema-web.png" class="img-fluid float-left">
+                                                    <span class="submenuSpanFont">Sistema Web</span>
+                                                </h5>
                                             </div>
                                         </div>
 
-                                        </a>
-                                      </li>
-                                    <li><a href="@Url.Action("SoftwareEngineer","Home")">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-action="SoftwareEngineer" asp-controller="Home">
 
-                                        <div class="card" style="width: 9rem; height:8rem">
+                                        <div class="card" style="width: 143px; height: 125px">
                                             <div class="card-body">
-                                               <h5 class="card-title small">
-                                                     <img src="~/Images/servicos/servicos-engenharia-software.png"  class="img-fluid float-left">  
-                                                        <span class="submenuSpanFont">Eng. Software</span>                                                        
-                                                  </h5>         
-                                             
+                                                <h5 class="card-title small">
+                                                    <img src="~/Images/servicos/servicos-engenharia-software.png" class="img-fluid float-left">
+                                                    <span class="submenuSpanFont">Eng. Software</span>
+                                                </h5>
+
                                             </div>
                                         </div>
 
 
-                                    </a></li>
-                                    <li><a href="@Url.Action("Mobile","Home")">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-action="Mobile" asp-controller="Home">
 
 
-                                    <div class="card" style="width: 9rem; height:8rem">
+                                        <div class="card" style="width: 143px; height: 125px">
                                             <div class="card-body">
-                                               
-                                                 <h5 class="card-title small">
-                                                     <img src="~/Images/servicos/servicos-sistema-android.png"  class="img-fluid float-left"> 
-                                                     <span class="submenuSpanFont">Aplic. Móveis</span>                                                     
-                                                  </h5>       
-                                                                                           
-                                             
+
+                                                <h5 class="card-title small">
+                                                    <img src="~/Images/servicos/servicos-sistema-android.png" class="img-fluid float-left">
+                                                    <span class="submenuSpanFont">Aplic. Móveis</span>
+                                                </h5>
+
+
                                             </div>
-                                       </div>
+                                        </div>
 
 
-                                    </a></li>
-                                </ul>
-                            </nav>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
 
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Blog","Home")"> <span class="fas fa-graduation-cap" aria-hidden="true"></span>&nbsp;BLOG</a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Contact","Home")"> <span class="fas fa-envelope" aria-hidden="true"></span>&nbsp;CONTATO</a>
-                        </li>
-                        <li>
-                            <form class="form-inline" action="@Url.Action("Search","Home")" id="frmPesquisa" method="post">
-                                <div class="form-group">
-                                    <input type="text" id="txtSearch" name="search" placeholder="Pesquisar" ><span class="fa fa-search" aria-hidden="true" onclick="Search(event);"></span>
-                                </div>
-                            </form>
-                        </li>
+                    </li>
+                    <li>
+                        <a asp-action="Blog" asp-controller="Home"> <span class="fas fa-graduation-cap" aria-hidden="true"></span>&nbsp;BLOG</a>
+                    </li>
+                    <li>
+                        <a asp-action="Contact" asp-controller="Home"> <span class="fas fa-envelope" aria-hidden="true"></span>&nbsp;CONTATO</a>
+                    </li>
+                    <li>
+                        <form class="form-inline" asp-action="Search" asp-controller="Home" id="frmPesquisa" method="post" asp-antiforgery="true">
+                            <div class="form-group">
+                                <input type="text" id="txtSearch" name="search" placeholder="Pesquisar"><span class="fa fa-search" aria-hidden="true" onclick="Search(event);"></span>
+                            </div>
+                        </form>
+                    </li>
 
-                    </ul>
-                </nav>
-            </div>
-            <!--Region Hamburger-->
+                </ul>
+            </nav>
+        </div>
+        <!--Region Hamburger-->
 
-            <div class="menu-hamburger">
-                <span>MENU</span>
-                <span><img alt="Mobile Menu" src="~/Images/menu/menu.png"  /></span>
-            </div>  
-            
+        <div class="menu-hamburger">
+            <span>MENU</span>
+            <span><img alt="Mobile Menu" src="~/Images/menu/menu.png" /></span>
+        </div>
+
+        <div class="mobile-hamburger">
+
             <div class="mobile-hamburger">
-
-                <div class="mobile-hamburger">
-                    <div class="mobile-hamburger-logo">
-                        <img src="~/Images/logo/logo.png" class="img-responsive" alt="Adilson Lustoza" onclick="javascript:window.document.location.href='@Url.Action("Index","Home")'" />
-                    </div>
+                <div class="mobile-hamburger-logo">
+                    <img src="~/Images/logo/logo.png" class="img-responsive" alt="Adilson Lustoza" onclick="javascript:window.document.location.href='@Url.Action("Index","Home")'" />
                 </div>
-
-                <nav>
-                    <ul>
-
-                        <li>
-                            <a href="@Url.Content("/")"><span class="fas  fa-home" aria-hidden="true"></span>&nbsp;HOME </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Content("/Sobre")"><span class="fas  fa-user-alt" aria-hidden="true"></span>&nbsp;PERFIL</a>
-                        </li>
-                        <li>
-                            <a href="@Url.Content("/Portfolio")"> <span class="fas fa-briefcase" aria-hidden="true"></span>&nbsp;PORTFÓLIO</a>
-                        </li>
-                        <li>
-                            <a href="@Url.Content("/Servicos")"> <span class="fas fa-wrench" aria-hidden="true"></span>&nbsp;SERVIÇOS</a>
-                        </li>
-
-                        <li>
-                            <a href="@Url.Content("/Blog")"> <span class="fas fa-graduation-cap" aria-hidden="true"></span>&nbsp;BLOG</a>
-                        </li>
-
-                        <li>
-                            <a href="@Url.Content("/Contato")"> <span class="fas fa-envelope" aria-hidden="true"></span>&nbsp;CONTATO</a>
-                        </li>
-
-                    </ul>
-                </nav>
-
             </div>
+
+            <nav>
+                <ul>
+
+                    <li>
+                        <a href="@Url.Content("/")"><span class="fas  fa-home" aria-hidden="true"></span>&nbsp;HOME </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Content("/Sobre")"><span class="fas  fa-user-alt" aria-hidden="true"></span>&nbsp;PERFIL</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Content("/Portfolio")"> <span class="fas fa-briefcase" aria-hidden="true"></span>&nbsp;PORTFÓLIO</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Content("/Servicos")"> <span class="fas fa-wrench" aria-hidden="true"></span>&nbsp;SERVIÇOS</a>
+                    </li>
+
+                    <li>
+                        <a href="@Url.Content("/Blog")"> <span class="fas fa-graduation-cap" aria-hidden="true"></span>&nbsp;BLOG</a>
+                    </li>
+
+                    <li>
+                        <a href="@Url.Content("/Contato")"> <span class="fas fa-envelope" aria-hidden="true"></span>&nbsp;CONTATO</a>
+                    </li>
+
+                </ul>
+            </nav>
 
         </div>
-    
+
+    </div>
+
 </header>
+
 

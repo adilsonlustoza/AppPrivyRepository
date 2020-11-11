@@ -34,6 +34,96 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Arquivos\Imagens\DoacaoMais\apoio_risu.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\auxilio_doenca.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\bazar01_img01_caccc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\bazar02_img01_caccc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\bazar03_img01_caccc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\bazar_cmhp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\business_people.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\cancer_kid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\cancer_livro.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\causas_tratamento.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\doacao.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\leucemia.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\linfoma.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\logo-aacc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\logo_caccc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\logo_cajec.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\logo_camacc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\logo_cavd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\logo_cmph.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\logo_marca_aacc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\logo_marta_kuboiama.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\museu_amanha.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\ossos_doentes.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\pessoas_premio.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\retinoblastoma.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\saiba_mais.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\sarcoma.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\sistema_nervoso_central.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\todos_contra_cancer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Arquivos\Imagens\DoacaoMais\tumor_de_wilms.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Dockerfile">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
