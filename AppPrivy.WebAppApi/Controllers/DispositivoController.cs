@@ -11,7 +11,7 @@ namespace AppPrivy.WebAppApi.Controllers
 {
 
     [ApiController]
-    [Route("Analista/Programador/Dispositivo")]
+    [Route("Analista/Programador/[controller]")]
     public class DispositivoController : ControllerBase
     {
 

@@ -7,7 +7,7 @@ namespace AppPrivy.WebAppApi.Controllers
 {
 
     [ApiController]
-    [Route("Analista/Programador/Conteudo")]
+    [Route("Analista/Programador/[controller]")]
     public class ConteudoController : ControllerBase
     {
         private readonly IConteudoService _conteudoService;

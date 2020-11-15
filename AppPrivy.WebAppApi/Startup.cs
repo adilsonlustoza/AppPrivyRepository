@@ -15,21 +15,16 @@ using AppPrivy.InfraStructure.Contexto;
 using AppPrivy.InfraStructure.Interface;
 using AppPrivy.InfraStructure.Repositories;
 using AppPrivy.InfraStructure.Repositories.DoacaoMais;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 using System.Globalization;
-using System.Security.Claims;
 
 namespace AppPrivy.WebAppApi
 {

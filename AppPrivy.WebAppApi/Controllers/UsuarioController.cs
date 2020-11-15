@@ -2,7 +2,9 @@
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,14 +14,18 @@ using System.Threading.Tasks;
 namespace AppPrivy.WebAppApi.Controllers
 {
     [ApiController]
-    [Route("Analista/Programador/Usuario")]
+    [Route("Analista/Programador/[controller]")]
     public class UsuarioController : ControllerBase
     {
-        private readonly IUsuarioService _usuarioService;
-        private readonly IDispositoService _dispositivoService;
-        private readonly INotificacaoService _notificacaoService;
+        private readonly IUsuarioService _usuarioService;      
         private readonly FaultException _fault;
         protected readonly IHttpContextAccessor _httpContextAccessor;
+
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly ILogger<Usuario> _logger;
+
         //  protected readonly IWebHostEnvironment _webHostEnvironment;
 
         public UsuarioController(
@@ -31,52 +37,39 @@ namespace AppPrivy.WebAppApi.Controllers
                                  IHttpContextAccessor httpContextAccessor
                                )
         {
-            _usuarioService = usuarioService;
-            _dispositivoService = dispositoService;
-            _notificacaoService = notificacaoService;
+            _usuarioService = usuarioService;           
             _fault = fault;
             _httpContextAccessor = httpContextAccessor;
             //  _webHostEnvironment = webHostEnvironment;
         }
 
-        [HttpGet]
-        [Route("ListarTodosDispositivos")]
-        public async Task<IActionResult> ListarTodosDispositivos()
-        {
-            try
-            {
-                var _result = await _dispositivoService.GetAll();
-
-                if (_result == null)
-                    return NotFound();
-                return Ok(_result);
-            }
-            catch (FaultException e)
-            {
-                await _fault.WriteError("ListarTodosDispositivos", e);
-            }
-
-            return null;
-        }
 
         [HttpPost]
-        [Route("SalvarDispositivo")]
-        public IActionResult SalvarDispositivo(Dispositivo dispositivo)
+        [Route("ObterToken")]
+        private async Task<IActionResult> GetToken(Usuario usuario)
         {
             try
             {
-                _dispositivoService.AddUpdateDispositivoUsuario(dispositivo);
-                return Ok(string.Format("Dispositivo salvo : {0}", dispositivo.DispositivoId));
+                var result = await _signInManager.PasswordSignInAsync(usuario.Email, usuario.Senha, isPersistent: false, lockoutOnFailure: false);
+
+
+                if (result.Succeeded)                
+                    return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status200OK, "OK"));                
+                else
+                    return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status401Unauthorized, "Login ou Senha estão incorretos"));
+
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return BadRequest("Erro ao salvar o dispositivo :" + e.Source);
+                return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status400BadRequest, ex.Message));
             }
         }
+
+
 
         [HttpPost]
         [Route("SalvarUsuario")]
-        public IActionResult SalvarUsuario(Usuario usuario)
+        public IActionResult SaveUser(Usuario usuario)
         {
             try
             {
@@ -94,7 +87,7 @@ namespace AppPrivy.WebAppApi.Controllers
 
         [HttpPost]
         [Route("SalvarListaUsuarios")]
-        public IActionResult SalvarListaUsuarios(List<Usuario> usuarios)
+        public IActionResult SaveUsers(List<Usuario> usuarios)
         {
             try
             {
@@ -106,25 +99,7 @@ namespace AppPrivy.WebAppApi.Controllers
                         return BadRequest(string.Format("Erro ao criar usuario {0}", item.Login));
                 }
 
-                return Ok(string.Format("Usuarios  criados"));
-
-                /*
-
-                   [{
- 			                    "Login": "Priscila",
- 			                    "Email": "priscila@mail.com"
- 		                    },
- 		                    {
- 			                    "Login": "Isaac",
- 			                    "Email": "isaac@mail.com"
- 		                    },
- 		                    {
- 			                    "Login": "Sofia",
- 			                    "Email": "sofia@mail.com"
- 		                    }
- 	                    ]
-
-                 */
+                return Ok(string.Format("Usuarios  criados"));              
             }
             catch (Exception e)
             {
@@ -132,118 +107,70 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
-        [HttpPost]
-        [Route("Cabecalho")]
-        public IActionResult Cabecalho(object varCabecalho)
-        {
-            try
-            {
-                var _sb = new StringBuilder();
-                int count = 0;
+       
 
-                var _dicHeaders = this.HttpContext.Request.Headers.GetEnumerator();
-
-                while (_dicHeaders.MoveNext())
-                {
-                    _sb.AppendLine(string.Format("*************************************************"));
-
-                    _sb.AppendLine(string.Format("Chave {0}", _dicHeaders.Current.Key));
-
-                    foreach (var item in _dicHeaders.Current.Value)
-                    {
-                        _sb.AppendLine(string.Format(" {0} {1} ", ++count, item.ToString()));
-                    }
-
-                    _sb.AppendLine(string.Format("*************************************************"));
-                }
-
-                return Ok(_sb.ToString());
-            }
-            catch (Exception e)
-            {
-                return BadRequest("Erro ao salvar o usuario :" + e.Message);
-            }
-        }
-
-        [HttpPost]
-        [Route("SalvarArquivo")]
-        public IActionResult SalvarArquivo()
-        {
-            try
-            {
-                var httpRequest = this.HttpContext.Request;
-
-                if (httpRequest.Form.Files.Count > 0)
-                {
-                    var postedFile = httpRequest.Form.Files[0];
-
-                    if (postedFile != null && postedFile.Length > 0)
-                    {
-                        int MaxContentLength = 1024 * 1024 * 5; //Size = 1 MB
-                        if (postedFile.Length > MaxContentLength)
-                        {
-                            var message = string.Format("Please Upload a file upto 5 mb.");
-                            return BadRequest(message.ToString());
-                        }
-                        else
-                        {
-                            var ms = new MemoryStream();
-                            httpRequest.Form.Files[0].CopyTo(ms);
-                            byte[] fileContent = ms.ToArray();
-                            //var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "~/Arquivos/" + postedFile.FileName);
-
-                            //  System.IO.File.Create(filePath);
-                            //File.Create(filePath);
-                            // postedFile.SaveAs(filePath);
-                        }
-                    }
-                }
-
-                return Ok(string.Format("Arquivo salvo"));
-            }
-            catch (Exception e)
-            {
-                return BadRequest("Erro ao salvar o arquivo :" + e.Message);
-            }
-        }
+      
 
         [HttpGet]
         [Route("ListarUsuarios")]
-        public IActionResult ListarUsuarios()
+        public IActionResult ListUsers()
         {
-            var _result = _usuarioService.GetAll();
+            try
+            {
+                var _result = _usuarioService.GetAll();
 
-            if (_result == null)
-                return NotFound();
-            return Ok(_result);
+                if (_result == null)
+                    return NotFound();
+                return Ok(_result);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         [HttpGet]
         [Route("ObterUsuario")]
-        public IActionResult ObterUsuario(int? Id)
+        public IActionResult GetUser(int? Id)
         {
-            if (!Id.HasValue)
-                return NotFound();
+            try
+            {
+                if (!Id.HasValue)
+                    return NotFound();
 
-            var _result = _usuarioService.GetById(Id.Value);
+                var _result = _usuarioService.GetById(Id.Value);
 
-            if (_result == null)
-                return NotFound();
-            return Ok(_result);
+                if (_result == null)
+                    return NotFound();
+                return Ok(_result);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         [HttpGet]
         [Route("ObterUsuarioPorLogin/{login}")]
-        public IActionResult ObterUsuarioPorLogin(string login)
+        public IActionResult GetUserByLogin(string login)
         {
-            if (string.IsNullOrWhiteSpace(login))
-                return NotFound();
+            try
+            {
+                if (string.IsNullOrWhiteSpace(login))
+                    return NotFound();
 
-            var _result = _usuarioService.Search(p => p.Login.Contains(login));
+                var _result = _usuarioService.Search(p => p.Login.Contains(login));
 
-            if (_result == null)
-                return NotFound();
-            return Ok(_result);
+                if (_result == null)
+                    return NotFound();
+                return Ok(_result);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

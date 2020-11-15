@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace AppPrivy.WebAppApi.Controllers
 {
     [ApiController]
-    [Route("Analista/Programador/Notificacao")]
+    [Route("Analista/Programador/[controller]")]
     public class NotificacaoController : ControllerBase
     {
         private readonly INotificacaoService _notificacaoService;

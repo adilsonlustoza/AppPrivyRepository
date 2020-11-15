@@ -8,7 +8,7 @@ namespace AppPrivy.WebAppApi.Controllers
 {
 
     [ApiController]
-    [Route("Analista/Programador/Caccc")]
+    [Route("Analista/Programador/[controller]")]
     public class CacccController : ControllerBase
     {
 

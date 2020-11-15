@@ -65,6 +65,12 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\static
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.pdb
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.genruntimeconfig.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.csprojAssemblyReference.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.AssemblyInfoInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.AssemblyInfo.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.csproj.CoreCompileInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.MvcApplicationPartsAssemblyInfo.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.MvcApplicationPartsAssemblyInfo.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Release\netcoreapp3.1\appsettings.Development.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Release\netcoreapp3.1\AppPrivy.WebAppApi.exe
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Release\netcoreapp3.1\Resources\Constants.resx
@@ -118,12 +124,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Release\netcoreapp3.1\AppPri
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Release\netcoreapp3.1\AppPrivy.Domain.dll.config
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Release\netcoreapp3.1\AppPrivy.InfraStructure.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Release\netcoreapp3.1\AppPrivy.CrossCutting.pdb
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.csprojAssemblyReference.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.AssemblyInfoInputs.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.AssemblyInfo.cs
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.csproj.CoreCompileInputs.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.MvcApplicationPartsAssemblyInfo.cs
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\AppPrivy.WebAppApi.MvcApplicationPartsAssemblyInfo.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\staticwebassets\AppPrivy.WebAppApi.StaticWebAssets.Manifest.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\staticwebassets\AppPrivy.WebAppApi.StaticWebAssets.xml
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\scopedcss\bundle\AppPrivy.WebAppApi.styles.css

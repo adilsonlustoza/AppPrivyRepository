@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace AppPrivy.WebAppApi.Controllers
 {
     [ApiController]
-    [Route("Analista/Programador/ContaBancaria")]
+    [Route("Analista/Programador/[controller]")]
     public class ContaBancariaController : ControllerBase
     {
         private readonly IContaBancariaService _contaBancariaService;

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace AppPrivy.WebAppApi.Controllers
 {
     [ApiController]
-    [Route("Analista/Programador/Noticia")]
+    [Route("Analista/Programador/[controller]")]
     public class NoticiaController : ControllerBase
     {
 
