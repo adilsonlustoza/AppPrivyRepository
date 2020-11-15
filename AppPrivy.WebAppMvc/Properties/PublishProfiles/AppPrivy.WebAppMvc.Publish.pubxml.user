@@ -9,7 +9,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
   </PropertyGroup>
   <ItemGroup>
     <DestinationConnectionStrings Include="AppPrivyContext">
-      <Value>Password=Apto104F%3bPersist Security Info=True%3bUser ID=User104F%3bInitial Catalog=MeusProjetosCore%3bData Source=Latitude</Value>
+      <Value>Data Source=sql5059.site4now.net%3binitial catalog=DB_A44382_lustoza%3bpersist security info=True%3buser id=DB_A44382_lustoza_admin%3bpassword=Apto104F%400914%3bMultipleActiveResultSets=True%3b</Value>
     </DestinationConnectionStrings>
   </ItemGroup>
 </Project>

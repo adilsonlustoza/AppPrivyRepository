@@ -2,11 +2,20 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "AutoMapper/9.0.0": {
+      "AdminLTE/2.4.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
-          "System.Reflection.Emit": "4.3.0"
+          "FontAwesome": "4.7.0",
+          "Tether.New": "1.3.3",
+          "bootstrap": "3.3.7",
+          "jQuery": "3.1.1"
+        }
+      },
+      "AutoMapper/10.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "System.Reflection.Emit": "4.7.0"
         },
         "compile": {
           "lib/netstandard2.0/AutoMapper.dll": {}
@@ -14,6 +23,39 @@
         "runtime": {
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
+      },
+      "bootstrap/3.3.7": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "[1.9.1, 4.0.0)"
+        }
+      },
+      "Castle.Core/4.4.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.TraceSource": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.5/Castle.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/Castle.Core.dll": {}
+        }
+      },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
+      "jQuery/3.1.1": {
+        "type": "package"
       },
       "Libuv/1.9.1": {
         "type": "package",
@@ -1511,13 +1553,6 @@
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
       },
-      "Microsoft.TypeScript.MSBuild/3.8.2": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.TypeScript.MSBuild.props": {},
-          "build/Microsoft.TypeScript.MSBuild.targets": {}
-        }
-      },
       "Microsoft.VisualBasic/10.1.0": {
         "type": "package",
         "dependencies": {
@@ -1543,13 +1578,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.VisualBasic.dll": {}
-        }
-      },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.9.10": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props": {},
-          "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration/3.1.3": {
@@ -2280,7 +2308,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Collections.NonGeneric.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.NonGeneric.dll": {}
@@ -2298,7 +2326,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Collections.Specialized.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.Specialized.dll": {}
@@ -2333,7 +2361,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/System.ComponentModel.Primitives.dll": {}
         },
         "runtime": {
           "lib/netstandard1.0/System.ComponentModel.Primitives.dll": {}
@@ -2359,7 +2387,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.5/_._": {}
+          "ref/netstandard1.5/System.ComponentModel.TypeConverter.dll": {}
         },
         "runtime": {
           "lib/netstandard1.5/System.ComponentModel.TypeConverter.dll": {}
@@ -2577,6 +2605,33 @@
         },
         "compile": {
           "ref/netstandard1.0/System.Diagnostics.Tools.dll": {}
+        }
+      },
+      "System.Diagnostics.TraceSource/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Diagnostics.TraceSource.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Diagnostics.TraceSource.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Diagnostics.TraceSource.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Diagnostics.Tracing/4.3.0": {
@@ -3256,20 +3311,13 @@
           "lib/netstandard1.3/System.Reflection.DispatchProxy.dll": {}
         }
       },
-      "System.Reflection.Emit/4.3.0": {
+      "System.Reflection.Emit/4.7.0": {
         "type": "package",
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.1/System.Reflection.Emit.dll": {}
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.3/System.Reflection.Emit.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Reflection.Emit.ILGeneration/4.3.0": {
@@ -3280,7 +3328,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Emit.ILGeneration.dll": {}
+          "ref/netstandard1.0/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {}
@@ -4190,7 +4238,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XmlDocument.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
@@ -4224,12 +4272,15 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Tether.New/1.3.3": {
+        "type": "package"
+      },
       "AppPrivy.Application/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "AppPrivy.Domain": "1.0.0",
-          "AutoMapper": "9.0.0",
+          "AutoMapper": "10.1.1",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Newtonsoft.Json": "12.0.3"
@@ -4292,21 +4343,197 @@
     }
   },
   "libraries": {
-    "AutoMapper/9.0.0": {
-      "sha512": "xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+    "AdminLTE/2.4.0": {
+      "sha512": "uzKibPEeaPJafWUTCB1TC+H1HZKZDIenftDK7qDTw3ldO4kphrMwfmGAJTkCHp/lL7KRoycBegp2qac8XCPGNw==",
       "type": "package",
-      "path": "automapper/9.0.0",
+      "path": "adminlte/2.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "automapper.9.0.0.nupkg.sha512",
+        "adminlte.2.4.0.nupkg.sha512",
+        "adminlte.nuspec",
+        "content/admin-lte/css/AdminLTE.css",
+        "content/admin-lte/css/AdminLTE.min.css",
+        "content/admin-lte/css/adminlte.css.map",
+        "content/admin-lte/css/adminlte.min.css.map",
+        "content/admin-lte/css/alt/AdminLTE-bootstrap-social.css",
+        "content/admin-lte/css/alt/AdminLTE-bootstrap-social.min.css",
+        "content/admin-lte/css/alt/AdminLTE-fullcalendar.css",
+        "content/admin-lte/css/alt/AdminLTE-fullcalendar.min.css",
+        "content/admin-lte/css/alt/AdminLTE-select2.css",
+        "content/admin-lte/css/alt/AdminLTE-select2.min.css",
+        "content/admin-lte/css/alt/AdminLTE-without-plugins.css",
+        "content/admin-lte/css/alt/AdminLTE-without-plugins.min.css",
+        "content/admin-lte/css/skins/_all-skins.css",
+        "content/admin-lte/css/skins/_all-skins.min.css",
+        "content/admin-lte/css/skins/skin-black-light.css",
+        "content/admin-lte/css/skins/skin-black-light.min.css",
+        "content/admin-lte/css/skins/skin-black.css",
+        "content/admin-lte/css/skins/skin-black.min.css",
+        "content/admin-lte/css/skins/skin-blue-light.css",
+        "content/admin-lte/css/skins/skin-blue-light.min.css",
+        "content/admin-lte/css/skins/skin-blue.css",
+        "content/admin-lte/css/skins/skin-blue.min.css",
+        "content/admin-lte/css/skins/skin-green-light.css",
+        "content/admin-lte/css/skins/skin-green-light.min.css",
+        "content/admin-lte/css/skins/skin-green.css",
+        "content/admin-lte/css/skins/skin-green.min.css",
+        "content/admin-lte/css/skins/skin-purple-light.css",
+        "content/admin-lte/css/skins/skin-purple-light.min.css",
+        "content/admin-lte/css/skins/skin-purple.css",
+        "content/admin-lte/css/skins/skin-purple.min.css",
+        "content/admin-lte/css/skins/skin-red-light.css",
+        "content/admin-lte/css/skins/skin-red-light.min.css",
+        "content/admin-lte/css/skins/skin-red.css",
+        "content/admin-lte/css/skins/skin-red.min.css",
+        "content/admin-lte/css/skins/skin-yellow-light.css",
+        "content/admin-lte/css/skins/skin-yellow-light.min.css",
+        "content/admin-lte/css/skins/skin-yellow.css",
+        "content/admin-lte/css/skins/skin-yellow.min.css",
+        "content/admin-lte/img/avatar.png",
+        "content/admin-lte/img/avatar04.png",
+        "content/admin-lte/img/avatar2.png",
+        "content/admin-lte/img/avatar3.png",
+        "content/admin-lte/img/avatar5.png",
+        "content/admin-lte/img/boxed-bg.jpg",
+        "content/admin-lte/img/boxed-bg.png",
+        "content/admin-lte/img/credit/american-express.png",
+        "content/admin-lte/img/credit/cirrus.png",
+        "content/admin-lte/img/credit/mastercard.png",
+        "content/admin-lte/img/credit/mestro.png",
+        "content/admin-lte/img/credit/paypal.png",
+        "content/admin-lte/img/credit/paypal2.png",
+        "content/admin-lte/img/credit/visa.png",
+        "content/admin-lte/img/default-50x50.gif",
+        "content/admin-lte/img/icons.png",
+        "content/admin-lte/img/photo1.png",
+        "content/admin-lte/img/photo2.png",
+        "content/admin-lte/img/photo3.jpg",
+        "content/admin-lte/img/photo4.jpg",
+        "content/admin-lte/img/user1-128x128.jpg",
+        "content/admin-lte/img/user2-160x160.jpg",
+        "content/admin-lte/img/user3-128x128.jpg",
+        "content/admin-lte/img/user4-128x128.jpg",
+        "content/admin-lte/img/user5-128x128.jpg",
+        "content/admin-lte/img/user6-128x128.jpg",
+        "content/admin-lte/img/user7-128x128.jpg",
+        "content/admin-lte/img/user8-128x128.jpg",
+        "content/admin-lte/js/adminlte.js",
+        "content/admin-lte/js/adminlte.min.js",
+        "content/admin-lte/js/demo.js",
+        "content/admin-lte/js/pages/dashboard.js",
+        "content/admin-lte/js/pages/dashboard2.js"
+      ]
+    },
+    "AutoMapper/10.1.1": {
+      "sha512": "uMgbqOdu9ZG5cIOty0C85hzzayBH2i9BthnS5FlMqKtMSHDv4ts81a2jS1VFaDBVhlBeIqJ/kQKjQY95BZde9w==",
+      "type": "package",
+      "path": "automapper/10.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.10.1.1.nupkg.sha512",
         "automapper.nuspec",
+        "icon.png",
         "lib/net461/AutoMapper.dll",
-        "lib/net461/AutoMapper.pdb",
         "lib/net461/AutoMapper.xml",
         "lib/netstandard2.0/AutoMapper.dll",
-        "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "bootstrap/3.3.7": {
+      "sha512": "3YTWhPNh6UcnUvzw9u6A2/hy2w0h4lznxPbX6FY47lFia3+Ib4zBixTpW6YieYA/b2fLXbkjoD59OjcVF3cJXw==",
+      "type": "package",
+      "path": "bootstrap/3.3.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bootstrap.3.3.7.nupkg.sha512",
+        "bootstrap.nuspec",
+        "content/Content/bootstrap-theme.css",
+        "content/Content/bootstrap-theme.css.map",
+        "content/Content/bootstrap-theme.min.css",
+        "content/Content/bootstrap-theme.min.css.map",
+        "content/Content/bootstrap.css",
+        "content/Content/bootstrap.css.map",
+        "content/Content/bootstrap.min.css",
+        "content/Content/bootstrap.min.css.map",
+        "content/Scripts/bootstrap.js",
+        "content/Scripts/bootstrap.min.js",
+        "content/fonts/glyphicons-halflings-regular.eot",
+        "content/fonts/glyphicons-halflings-regular.svg",
+        "content/fonts/glyphicons-halflings-regular.ttf",
+        "content/fonts/glyphicons-halflings-regular.woff",
+        "content/fonts/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "Castle.Core/4.4.1": {
+      "sha512": "zanbjWC0Y05gbx4eGXkzVycOQqVOFVeCjVsDSyuao9P4mtN1w3WxxTo193NGC7j3o2u3AJRswaoC6hEbnGACnQ==",
+      "type": "package",
+      "path": "castle.core/4.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ASL - Apache Software Foundation License.txt",
+        "CHANGELOG.md",
+        "LICENSE",
+        "castle.core.4.4.1.nupkg.sha512",
+        "castle.core.nuspec",
+        "lib/net35/Castle.Core.dll",
+        "lib/net35/Castle.Core.xml",
+        "lib/net40/Castle.Core.dll",
+        "lib/net40/Castle.Core.xml",
+        "lib/net45/Castle.Core.dll",
+        "lib/net45/Castle.Core.xml",
+        "lib/netstandard1.3/Castle.Core.dll",
+        "lib/netstandard1.3/Castle.Core.xml",
+        "lib/netstandard1.5/Castle.Core.dll",
+        "lib/netstandard1.5/Castle.Core.xml",
+        "readme.txt"
+      ]
+    },
+    "FontAwesome/4.7.0": {
+      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "type": "package",
+      "path": "fontawesome/4.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/font-awesome.css",
+        "Content/Content/font-awesome.min.css",
+        "Content/fonts/FontAwesome.otf",
+        "Content/fonts/fontawesome-webfont.eot",
+        "Content/fonts/fontawesome-webfont.svg",
+        "Content/fonts/fontawesome-webfont.ttf",
+        "Content/fonts/fontawesome-webfont.woff",
+        "Content/fonts/fontawesome-webfont.woff2",
+        "fontawesome.4.7.0.nupkg.sha512",
+        "fontawesome.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "jQuery/3.1.1": {
+      "sha512": "XGsgwse025NxNPHjY7GE8HMFNzjqsa7a/PmNS1S5bVU++pNpZmiTnzUBK6OmECnqG/fIMVaAYHTnfoYd/Wz28g==",
+      "type": "package",
+      "path": "jquery/3.1.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-3.1.1-vsdoc.js",
+        "Content/Scripts/jquery-3.1.1.js",
+        "Content/Scripts/jquery-3.1.1.min.js",
+        "Content/Scripts/jquery-3.1.1.min.map",
+        "Content/Scripts/jquery-3.1.1.slim.js",
+        "Content/Scripts/jquery-3.1.1.slim.min.js",
+        "Content/Scripts/jquery-3.1.1.slim.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-3.1.1.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.3.1.1.nupkg.sha512",
+        "jquery.nuspec"
       ]
     },
     "Libuv/1.9.1": {
@@ -6018,103 +6245,6 @@
         "runtime.json"
       ]
     },
-    "Microsoft.TypeScript.MSBuild/3.8.2": {
-      "sha512": "/MTwvjTT0SAvYr1OgZyJ0y/gTScZUxuOPlC18sznPifHQafapOwfgBbqYzJdDrvDOK2EWayfd3KnIhr9UpbRpg==",
-      "type": "package",
-      "path": "microsoft.typescript.msbuild/3.8.2",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Microsoft.TypeScript.MSBuild.props",
-        "build/Microsoft.TypeScript.MSBuild.targets",
-        "microsoft.typescript.msbuild.3.8.2.nupkg.sha512",
-        "microsoft.typescript.msbuild.nuspec",
-        "tools/Microsoft.TypeScript.Default.props",
-        "tools/Microsoft.TypeScript.targets",
-        "tools/net45/System.IO.FileSystem.Primitives.dll",
-        "tools/net45/System.IO.FileSystem.dll",
-        "tools/net45/TypeScript.Tasks.dll",
-        "tools/netstandard1.3/TypeScript.Tasks.dll",
-        "tools/tsc/cancellationToken.js",
-        "tools/tsc/cs/diagnosticMessages.generated.json",
-        "tools/tsc/de/diagnosticMessages.generated.json",
-        "tools/tsc/en/diagnosticMessages.generated.json",
-        "tools/tsc/es/diagnosticMessages.generated.json",
-        "tools/tsc/fr/diagnosticMessages.generated.json",
-        "tools/tsc/it/diagnosticMessages.generated.json",
-        "tools/tsc/ja/diagnosticMessages.generated.json",
-        "tools/tsc/ko/diagnosticMessages.generated.json",
-        "tools/tsc/lib.d.ts",
-        "tools/tsc/lib.dom.d.ts",
-        "tools/tsc/lib.dom.iterable.d.ts",
-        "tools/tsc/lib.es2015.collection.d.ts",
-        "tools/tsc/lib.es2015.core.d.ts",
-        "tools/tsc/lib.es2015.d.ts",
-        "tools/tsc/lib.es2015.generator.d.ts",
-        "tools/tsc/lib.es2015.iterable.d.ts",
-        "tools/tsc/lib.es2015.promise.d.ts",
-        "tools/tsc/lib.es2015.proxy.d.ts",
-        "tools/tsc/lib.es2015.reflect.d.ts",
-        "tools/tsc/lib.es2015.symbol.d.ts",
-        "tools/tsc/lib.es2015.symbol.wellknown.d.ts",
-        "tools/tsc/lib.es2016.array.include.d.ts",
-        "tools/tsc/lib.es2016.d.ts",
-        "tools/tsc/lib.es2016.full.d.ts",
-        "tools/tsc/lib.es2017.d.ts",
-        "tools/tsc/lib.es2017.full.d.ts",
-        "tools/tsc/lib.es2017.intl.d.ts",
-        "tools/tsc/lib.es2017.object.d.ts",
-        "tools/tsc/lib.es2017.sharedmemory.d.ts",
-        "tools/tsc/lib.es2017.string.d.ts",
-        "tools/tsc/lib.es2017.typedarrays.d.ts",
-        "tools/tsc/lib.es2018.asyncgenerator.d.ts",
-        "tools/tsc/lib.es2018.asynciterable.d.ts",
-        "tools/tsc/lib.es2018.d.ts",
-        "tools/tsc/lib.es2018.full.d.ts",
-        "tools/tsc/lib.es2018.intl.d.ts",
-        "tools/tsc/lib.es2018.promise.d.ts",
-        "tools/tsc/lib.es2018.regexp.d.ts",
-        "tools/tsc/lib.es2019.array.d.ts",
-        "tools/tsc/lib.es2019.d.ts",
-        "tools/tsc/lib.es2019.full.d.ts",
-        "tools/tsc/lib.es2019.object.d.ts",
-        "tools/tsc/lib.es2019.string.d.ts",
-        "tools/tsc/lib.es2019.symbol.d.ts",
-        "tools/tsc/lib.es2020.bigint.d.ts",
-        "tools/tsc/lib.es2020.d.ts",
-        "tools/tsc/lib.es2020.full.d.ts",
-        "tools/tsc/lib.es2020.promise.d.ts",
-        "tools/tsc/lib.es2020.string.d.ts",
-        "tools/tsc/lib.es2020.symbol.wellknown.d.ts",
-        "tools/tsc/lib.es5.d.ts",
-        "tools/tsc/lib.es6.d.ts",
-        "tools/tsc/lib.esnext.array.d.ts",
-        "tools/tsc/lib.esnext.asynciterable.d.ts",
-        "tools/tsc/lib.esnext.bigint.d.ts",
-        "tools/tsc/lib.esnext.d.ts",
-        "tools/tsc/lib.esnext.full.d.ts",
-        "tools/tsc/lib.esnext.intl.d.ts",
-        "tools/tsc/lib.esnext.symbol.d.ts",
-        "tools/tsc/lib.scripthost.d.ts",
-        "tools/tsc/lib.webworker.d.ts",
-        "tools/tsc/lib.webworker.importscripts.d.ts",
-        "tools/tsc/node_modules/@microsoft/typescript-etw/bin/ia32/typescript-etw.node",
-        "tools/tsc/node_modules/@microsoft/typescript-etw/index.js",
-        "tools/tsc/node_modules/@microsoft/typescript-etw/package.json",
-        "tools/tsc/pl/diagnosticMessages.generated.json",
-        "tools/tsc/pt-BR/diagnosticMessages.generated.json",
-        "tools/tsc/ru/diagnosticMessages.generated.json",
-        "tools/tsc/tr/diagnosticMessages.generated.json",
-        "tools/tsc/tsc.js",
-        "tools/tsc/tsserver.js",
-        "tools/tsc/typesMap.json",
-        "tools/tsc/typingsInstaller.js",
-        "tools/tsc/watchGuard.js",
-        "tools/tsc/zh-CN/diagnosticMessages.generated.json",
-        "tools/tsc/zh-TW/diagnosticMessages.generated.json"
-      ]
-    },
     "Microsoft.VisualBasic/10.1.0": {
       "sha512": "jgBfelga8QHZDTtUBtLNgcDPuXzaplCeXLqQcf5qB4jeVdPpX1AtnZnGeHbbi2tmp+P96hgI+KhXbUN567K60Q==",
       "type": "package",
@@ -6163,69 +6293,6 @@
         "ref/xamarinios10/Microsoft.VisualBasic.dll",
         "ref/xamarintvos10/Microsoft.VisualBasic.dll",
         "ref/xamarinwatchos10/Microsoft.VisualBasic.dll"
-      ]
-    },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.9.10": {
-      "sha512": "d5/5CDc4TAjrgO9oyyj+FHUDVumxgrlCMJqDtUX4GyTnr1Q/BP88PhnVunRZ9AQcL2UQkM4EkRNyFelPXunHtw==",
-      "type": "package",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.9.10",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "EULA.md",
-        "build/Container.props",
-        "build/Container.targets",
-        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props",
-        "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets",
-        "build/ToolsTarget.props",
-        "build/ToolsTarget.targets",
-        "microsoft.visualstudio.azure.containers.tools.targets.1.9.10.nupkg.sha512",
-        "microsoft.visualstudio.azure.containers.tools.targets.nuspec",
-        "tools/Microsoft.VisualStudio.Containers.Tools.Common.dll",
-        "tools/Microsoft.VisualStudio.Containers.Tools.Shared.dll",
-        "tools/Microsoft.VisualStudio.Containers.Tools.Tasks.dll",
-        "tools/Newtonsoft.Json.dll",
-        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/cs/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/de/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/de/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/de/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/es/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/es/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/es/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/fr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/it/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/it/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/it/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/ja/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/ko/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/pl/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/pt-BR/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/ru/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/tr/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/utils/KillProcess.exe",
-        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/zh-Hans/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll",
-        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Common.resources.dll",
-        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
-        "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll"
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/3.1.3": {
@@ -8236,6 +8303,47 @@
         "system.diagnostics.tools.nuspec"
       ]
     },
+    "System.Diagnostics.TraceSource/4.3.0": {
+      "sha512": "VnYp1NxGx8Ww731y2LJ1vpfb/DKVNKEZ8Jsh5SgQTZREL/YpWRArgh9pI8CDLmgHspZmLL697CaLvH85qQpRiw==",
+      "type": "package",
+      "path": "system.diagnostics.tracesource/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Diagnostics.TraceSource.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Diagnostics.TraceSource.dll",
+        "ref/netstandard1.3/System.Diagnostics.TraceSource.dll",
+        "ref/netstandard1.3/System.Diagnostics.TraceSource.xml",
+        "ref/netstandard1.3/de/System.Diagnostics.TraceSource.xml",
+        "ref/netstandard1.3/es/System.Diagnostics.TraceSource.xml",
+        "ref/netstandard1.3/fr/System.Diagnostics.TraceSource.xml",
+        "ref/netstandard1.3/it/System.Diagnostics.TraceSource.xml",
+        "ref/netstandard1.3/ja/System.Diagnostics.TraceSource.xml",
+        "ref/netstandard1.3/ko/System.Diagnostics.TraceSource.xml",
+        "ref/netstandard1.3/ru/System.Diagnostics.TraceSource.xml",
+        "ref/netstandard1.3/zh-hans/System.Diagnostics.TraceSource.xml",
+        "ref/netstandard1.3/zh-hant/System.Diagnostics.TraceSource.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.3/System.Diagnostics.TraceSource.dll",
+        "runtimes/win/lib/net46/System.Diagnostics.TraceSource.dll",
+        "runtimes/win/lib/netstandard1.3/System.Diagnostics.TraceSource.dll",
+        "system.diagnostics.tracesource.4.3.0.nupkg.sha512",
+        "system.diagnostics.tracesource.nuspec"
+      ]
+    },
     "System.Diagnostics.Tracing/4.3.0": {
       "sha512": "rswfv0f/Cqkh78rA5S8eN8Neocz234+emGCtTF3lxPY96F+mmmUen6tbn0glN6PMvlKQb9bPAY5e9u7fgPTkKw==",
       "type": "package",
@@ -9913,26 +10021,34 @@
         "system.reflection.dispatchproxy.nuspec"
       ]
     },
-    "System.Reflection.Emit/4.3.0": {
-      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+    "System.Reflection.Emit/4.7.0": {
+      "sha512": "VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
       "type": "package",
-      "path": "system.reflection.emit/4.3.0",
+      "path": "system.reflection.emit/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
-        "lib/monotouch10/_._",
+        "lib/MonoTouch10/_._",
         "lib/net45/_._",
         "lib/netcore50/System.Reflection.Emit.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Reflection.Emit.dll",
+        "lib/netstandard1.1/System.Reflection.Emit.xml",
         "lib/netstandard1.3/System.Reflection.Emit.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.xml",
+        "lib/netstandard2.1/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
         "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
         "ref/net45/_._",
+        "ref/netcoreapp2.0/_._",
         "ref/netstandard1.1/System.Reflection.Emit.dll",
         "ref/netstandard1.1/System.Reflection.Emit.xml",
         "ref/netstandard1.1/de/System.Reflection.Emit.xml",
@@ -9944,9 +10060,19 @@
         "ref/netstandard1.1/ru/System.Reflection.Emit.xml",
         "ref/netstandard1.1/zh-hans/System.Reflection.Emit.xml",
         "ref/netstandard1.1/zh-hant/System.Reflection.Emit.xml",
+        "ref/netstandard2.0/System.Reflection.Emit.dll",
+        "ref/netstandard2.0/System.Reflection.Emit.xml",
+        "ref/netstandard2.1/_._",
+        "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
-        "system.reflection.emit.4.3.0.nupkg.sha512",
-        "system.reflection.emit.nuspec"
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.dll",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.xml",
+        "system.reflection.emit.4.7.0.nupkg.sha512",
+        "system.reflection.emit.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
@@ -12576,6 +12702,27 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Tether.New/1.3.3": {
+      "sha512": "rICgnDefBGi+YTLEZ51P6ko+/6FGmK8bG9YlHyDGgjusLwCTefNiraVARbRH5pDrvCphG1RN+2Hhm1IsfI7utQ==",
+      "type": "package",
+      "path": "tether.new/1.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Content/tether/tether-theme-arrows-dark.css",
+        "content/Content/tether/tether-theme-arrows-dark.min.css",
+        "content/Content/tether/tether-theme-arrows.css",
+        "content/Content/tether/tether-theme-arrows.min.css",
+        "content/Content/tether/tether-theme-basic.css",
+        "content/Content/tether/tether-theme-basic.min.css",
+        "content/Content/tether/tether.css",
+        "content/Content/tether/tether.min.css",
+        "content/Scripts/tether.js",
+        "content/Scripts/tether.min.js",
+        "tether.new.1.3.3.nupkg.sha512",
+        "tether.new.nuspec"
+      ]
+    },
     "AppPrivy.Application/1.0.0": {
       "type": "project",
       "path": "../AppPrivy.Application/AppPrivy.Application.csproj",
@@ -12599,8 +12746,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AdminLTE >= 2.4.0",
       "AppPrivy.Application >= 1.0.0",
       "AppPrivy.InfraStructure >= 1.0.0",
+      "Castle.Core >= 4.4.1",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.2",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.1.2",
       "Microsoft.AspNetCore.Razor.Tools >= 1.1.0-preview4-final",
@@ -12608,8 +12757,6 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.2",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.2",
       "Microsoft.Extensions.DependencyInjection >= 3.1.3",
-      "Microsoft.TypeScript.MSBuild >= 3.8.2",
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.9.10",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3"
     ]
   },
@@ -12664,6 +12811,14 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "AdminLTE": {
+            "target": "Package",
+            "version": "[2.4.0, )"
+          },
+          "Castle.Core": {
+            "target": "Package",
+            "version": "[4.4.1, )"
+          },
           "Microsoft.AspNetCore.Identity.UI": {
             "target": "Package",
             "version": "[3.1.2, )"
@@ -12693,16 +12848,6 @@
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[3.1.3, )"
-          },
-          "Microsoft.TypeScript.MSBuild": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[3.8.2, )"
-          },
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
-            "target": "Package",
-            "version": "[1.9.10, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",

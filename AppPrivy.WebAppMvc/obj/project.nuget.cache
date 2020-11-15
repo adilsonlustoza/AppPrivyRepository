@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "4Fxx0Y6khJQ5n9R8ORT804xdMkjJgzFVL+gevqnOyLvcoeWYCM1ZDnG2Z4ghgZFUgJTIpnsG3P5W14w4zs6jOQ==",
+  "dgSpecHash": "iiyqPOtimPBc4VPj8mdl3W5oze16unZk/xXnnpgBlxYSwjZp2ew/q98Yww+Tb5rsjgP3wCbpSwbzWtL/XZzkzg==",
   "success": true,
   "projectFilePath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\adils\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\adminlte\\2.4.0\\adminlte.2.4.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\bootstrap\\3.3.7\\bootstrap.3.3.7.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\jquery\\3.1.1\\jquery.3.1.1.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -100,9 +105,7 @@
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.netcore.runtime.coreclr\\1.1.0\\microsoft.netcore.runtime.coreclr.1.1.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.netcore.windows.apisets\\1.0.1\\microsoft.netcore.windows.apisets.1.0.1.nupkg.sha512",
-    "C:\\Users\\adils\\.nuget\\packages\\microsoft.typescript.msbuild\\3.8.2\\microsoft.typescript.msbuild.3.8.2.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.visualbasic\\10.1.0\\microsoft.visualbasic.10.1.0.nupkg.sha512",
-    "C:\\Users\\adils\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.9.10\\microsoft.visualstudio.azure.containers.tools.targets.1.9.10.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.3\\microsoft.visualstudio.web.codegeneration.3.1.3.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.1.3\\microsoft.visualstudio.web.codegeneration.contracts.3.1.3.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.1.3\\microsoft.visualstudio.web.codegeneration.core.3.1.3.nupkg.sha512",
@@ -175,6 +178,7 @@
     "C:\\Users\\adils\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.diagnostics.process\\4.3.0\\system.diagnostics.process.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",
@@ -206,7 +210,7 @@
     "C:\\Users\\adils\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.reflection.dispatchproxy\\4.3.0\\system.reflection.dispatchproxy.4.3.0.nupkg.sha512",
-    "C:\\Users\\adils\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",
@@ -262,7 +266,8 @@
     "C:\\Users\\adils\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\adils\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\adils\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\tether.new\\1.3.3\\tether.new.1.3.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -78,7 +78,10 @@
     @{
         var userAgent = Context.Request.Headers["User-Agent"][0];
         if (!string.IsNullOrEmpty(userAgent) && userAgent.Contains("Edg"))
-            @Html.Raw("<link href=\"/css/microsoft_brownser.css\" rel=\"stylesheet\" asp-append-version=\"true\" />")
+        {
+            <link href="~/css/microsoft_brownser.css" rel="stylesheet" asp-append-version="true" />
+        }
+
     }
 
 

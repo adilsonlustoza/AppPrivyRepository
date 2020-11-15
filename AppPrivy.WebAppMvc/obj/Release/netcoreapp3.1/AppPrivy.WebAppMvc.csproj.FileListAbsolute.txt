@@ -519,14 +519,15 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\AppPri
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\AppPrivy.WebAppMvc.genruntimeconfig.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\Microsoft.DiaSymReader.Native.x86.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\Microsoft.DiaSymReader.Native.amd64.dll
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\backup.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\web.config
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\appsettings.Development.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\appsettings.json
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\backup.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\libman.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\AppPrivy.WebAppMvc.StaticWebAssets.xml
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\AppPrivy.WebAppMvc.exe
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\Resources\Constants.resx
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\wwwroot\bower_components\jR3DCarousel\dist\jR3DCarousel.min.js
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\AppPrivy.WebAppMvc.deps.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\AppPrivy.WebAppMvc.runtimeconfig.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\AppPrivy.WebAppMvc.runtimeconfig.dev.json
@@ -799,6 +800,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\refs\W
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\AppPrivy.WebAppMvc.Views.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\AppPrivy.WebAppMvc.Views.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\AutoMapper.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\Castle.Core.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

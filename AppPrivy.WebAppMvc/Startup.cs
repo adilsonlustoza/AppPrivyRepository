@@ -88,23 +88,9 @@ namespace AppPrivy.WebAppMvc
             });
 
 
-
             services
-             .AddAuthentication(options =>
-             {
-                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-
-             })
-            .AddCookie(options =>
-            {
-                options.Cookie.Name = ConstantHelper.AuthenticationCookieName;
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
-                options.Cookie.HttpOnly = true;
-                options.Cookie.SameSite = SameSiteMode.Unspecified;
-                options.LoginPath = "/Identity/Account/Login";
-                options.AccessDeniedPath = "/Identity/Account/AccessDenied";
-                options.SlidingExpiration = true;
-            });
+               .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+               .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme);
 
             services.AddMvc(options => options.EnableEndpointRouting = false)
            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
@@ -168,15 +154,9 @@ namespace AppPrivy.WebAppMvc
                .RequireClaim(ClaimTypes.Role, ConstantHelper.GrupoAdministrador)
                .Build());
             });
-
-            //services.AddSwaggerGen(c => { //<-- NOTE 'Add' instead of 'Configure'
-            //    c.SwaggerDoc("v1", new OpenApiInfo
-            //    {
-            //        Title = "AppPrivy Api",
-            //        Version = "v1"
-            //    });
-            //});
-
+           
+            services.AddSession();
+            services.AddMemoryCache();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -226,7 +206,9 @@ namespace AppPrivy.WebAppMvc
                 app.UseHsts();
             }
 
-            // app.UseSession();
+          
+
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -234,18 +216,13 @@ namespace AppPrivy.WebAppMvc
             app.UseAuthentication();
             app.UseAuthorization();
 
-
-
+          
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                 name: "Identity",
                 template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
-                routes.MapRoute(
-                    name: "Blog",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
+                               
                 routes.MapRoute(
                     name: "DoacaoMais",
                     template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
@@ -254,14 +231,7 @@ namespace AppPrivy.WebAppMvc
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
 
-            });
-
-            //app.UseSwagger();
-            //app.UseSwaggerUI(c =>
-            //{
-            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AppPrivy API");
-            //    c.RoutePrefix = string.Empty;
-            //});
+            });          
 
 
         }

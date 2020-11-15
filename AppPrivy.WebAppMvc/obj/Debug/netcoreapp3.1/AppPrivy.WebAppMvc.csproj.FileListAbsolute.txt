@@ -1046,6 +1046,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\libman.j
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.StaticWebAssets.xml
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.exe
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Resources\Constants.resx
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\wwwroot\bower_components\jR3DCarousel\dist\jR3DCarousel.min.js
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.deps.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.runtimeconfig.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.runtimeconfig.dev.json
@@ -1318,6 +1319,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\refs\Win
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.Views.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.Views.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\AutoMapper.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Castle.Core.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

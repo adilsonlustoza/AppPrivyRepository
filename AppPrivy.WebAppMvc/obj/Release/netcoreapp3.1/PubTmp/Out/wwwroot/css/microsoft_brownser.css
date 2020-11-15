@@ -178,7 +178,24 @@
             text-align: center;
         }
 
-         
+        #headerMenu > div > div.container-fluid > nav > ul > li:nth-child(5) > nav > ul > li:nth-child(2) > a > div > div > h5 {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            vertical-align: central;
+            text-align: center;
+        }
+
+
+        #headerMenu > div > div.container-fluid > nav > ul > li:nth-child(5) > nav > ul > li:nth-child(3) > a > div > div > h5 {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            vertical-align: central;
+            text-align: center;
+        }
     }
 
     @supports (-ms-ime-align:auto) {

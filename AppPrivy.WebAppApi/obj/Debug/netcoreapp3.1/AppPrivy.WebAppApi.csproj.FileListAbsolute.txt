@@ -191,11 +191,11 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.csproj.CoreCompileInputs.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.MvcApplicationPartsAssemblyInfo.cs
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.MvcApplicationPartsAssemblyInfo.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.RazorTargetAssemblyInfo.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.csproj.CopyComplete
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\staticwebassets\AppPrivy.WebAppApi.StaticWebAssets.Manifest.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\staticwebassets\AppPrivy.WebAppApi.StaticWebAssets.xml
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\AppPrivy.WebAppApi.styles.css
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.RazorTargetAssemblyInfo.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.csproj.CopyComplete
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.genruntimeconfig.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\AppPrivy.WebAppApi.styles.css
