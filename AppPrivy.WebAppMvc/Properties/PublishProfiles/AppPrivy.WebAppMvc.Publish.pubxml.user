@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\PROJETOS\NetCore\AppPrivyWebPublish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AppPrivyContext">
+      <Value>Password=Apto104F%3bPersist Security Info=True%3bUser ID=User104F%3bInitial Catalog=MeusProjetosCore%3bData Source=Latitude</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

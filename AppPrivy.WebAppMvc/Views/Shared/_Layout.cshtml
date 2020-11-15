@@ -20,12 +20,11 @@
         <!--------------------------------Popper------------------------------------>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                   asp-fallback-src="~/scripts/popper.min.js"
-                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+                asp-fallback-src="~/scripts/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                 crossorigin="anonymous"
-                asp-append-version="true"
-                ></script>
-    
+                asp-append-version="true"></script>
+
         <!--------------------------------Jquery------------------------------------>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
                 asp-fallback-src="~/scripts/jquery-3.4.1.min.js"
@@ -59,13 +58,11 @@
         <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
 
         <!--------------------------------Scripts Projeto------------------------------------>
-        <script src="~/js/own/global.js" asp-append-version="true" ></script>
+        <script src="~/js/own/global.js" asp-append-version="true"></script>
 
     </environment>
 
 
-
-   
 
     <environment include="Development">
         <link href="~/css/fonts/Roboto.css" rel="stylesheet" asp-append-version="true" />
@@ -77,6 +74,15 @@
         <link href="~/css/menu_responsivo.css" rel="stylesheet" asp-append-version="true" />
         <link href="~/css/rodape_responsivo.css" rel="stylesheet" asp-append-version="true" />
     </environment>
+
+    @{
+        var userAgent = Context.Request.Headers["User-Agent"][0];
+        if (!string.IsNullOrEmpty(userAgent) && userAgent.Contains("Edg"))
+            @Html.Raw("<link href=\"/css/microsoft_brownser.css\" rel=\"stylesheet\" asp-append-version=\"true\" />")
+    }
+
+
+
 
 
 </head>

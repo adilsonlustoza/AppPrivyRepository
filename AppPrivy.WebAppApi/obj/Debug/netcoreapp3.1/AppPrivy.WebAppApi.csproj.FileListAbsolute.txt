@@ -136,7 +136,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\netcoreapp3.1\appsetti
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\netcoreapp3.1\AppPrivy.WebAppApi.exe
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\netcoreapp3.1\Resources\Constants.resx
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\netcoreapp3.1\appsettings.json
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\netcoreapp3.1\AppPrivy.WebAppApi.deps.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\netcoreapp3.1\AppPrivy.WebAppApi.runtimeconfig.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\netcoreapp3.1\AppPrivy.WebAppApi.runtimeconfig.dev.json
@@ -199,3 +198,4 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\staticwe
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\AppPrivy.WebAppApi.genruntimeconfig.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\AppPrivy.WebAppApi.styles.css
