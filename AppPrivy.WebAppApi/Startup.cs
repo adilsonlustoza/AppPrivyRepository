@@ -23,8 +23,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using System.Globalization;
+using System.IO;
 
 namespace AppPrivy.WebAppApi
 {
@@ -145,8 +145,10 @@ namespace AppPrivy.WebAppApi
             //{
             //    app.UseDeveloperExceptionPage();
             //}
-
-            app.UseDefaultFiles();
+            var options = new DefaultFilesOptions();
+            options.DefaultFileNames.Clear();
+            options.DefaultFileNames.Add(Path.Combine(env.WebRootPath, "index.html"));
+            app.UseDefaultFiles(options);
 
             app.UseStaticFiles();          
 

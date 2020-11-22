@@ -30,6 +30,8 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\PubTmp
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Arquivos\Imagens\DoacaoMais\sistema_nervoso_central.jpg
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Arquivos\Imagens\DoacaoMais\todos_contra_cancer.png
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Arquivos\Imagens\DoacaoMais\tumor_de_wilms.jpg
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Images\swagger.png
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\index.html
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\PubTmp\Out\web.config
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json

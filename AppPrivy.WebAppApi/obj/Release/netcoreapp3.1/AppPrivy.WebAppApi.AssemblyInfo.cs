@@ -11,7 +11,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("8c019bec-19ce-486f-84df-a723fd805506")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("346274f1-de15-4825-916e-3d4a7514704d")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppPrivy.WebAppApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
