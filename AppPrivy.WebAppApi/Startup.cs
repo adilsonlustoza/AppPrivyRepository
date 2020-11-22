@@ -23,6 +23,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json.Serialization;
 using System.Globalization;
 using System.IO;
 
@@ -30,7 +31,7 @@ namespace AppPrivy.WebAppApi
 {
     public class Startup
     {
-      
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -43,9 +44,15 @@ namespace AppPrivy.WebAppApi
         {
 
 
+
             services.AddControllers().AddNewtonsoftJson(options =>
-              options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            {
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+            }
+
             );
+
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton(Configuration);
@@ -111,7 +118,7 @@ namespace AppPrivy.WebAppApi
             services.AddTransient<IPesquisaAppService, PesquisaAppService>();
 
             services.AddScoped<FaultException>();
-            services.AddScoped<SendMail>();                     
+            services.AddScoped<SendMail>();
 
             services.AddSwaggerGen(c =>
             {
@@ -150,7 +157,7 @@ namespace AppPrivy.WebAppApi
             options.DefaultFileNames.Add(Path.Combine(env.WebRootPath, "index.html"));
             app.UseDefaultFiles(options);
 
-            app.UseStaticFiles();          
+            app.UseStaticFiles();
 
             app.UseHttpsRedirection();
 
@@ -158,7 +165,7 @@ namespace AppPrivy.WebAppApi
 
             app.UseAuthorization();
 
-            app.UseDeveloperExceptionPage();           
+            app.UseDeveloperExceptionPage();
 
             app.UseEndpoints(endpoints =>
             {
@@ -169,7 +176,7 @@ namespace AppPrivy.WebAppApi
             app.UseSwaggerUI(c =>
             {
                 c.RoutePrefix = "swagger";
-                c.SwaggerEndpoint("v1/swagger.json", "Api Doação Mais V1");              
+                c.SwaggerEndpoint("v1/swagger.json", "Api Doação Mais V1");
             });
         }
     }
