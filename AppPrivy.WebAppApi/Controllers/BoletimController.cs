@@ -1,5 +1,8 @@
-﻿using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+﻿using AppPrivy.CrossCutting.Fault;
+using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 
@@ -22,35 +25,62 @@ namespace AppPrivy.WebAppApi.Controllers
         [Route("ListarBoletim")]
         public async Task<IActionResult> ListarBoletim()
         {
-            var _result = await _boletimService.GetAll();
+            try
+            {
+                var _result = await _boletimService.GetAll();
 
-            if (_result == null)
-                return NotFound();
-            return Ok(_result);
+                if (_result == null)
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
+            }
+            catch (FaultException e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
         }
 
         [HttpGet]
         [Route("ListarBoletimPorCacccId/{Id}")]
         public async Task<IActionResult> ListarBoletimPorCaccc(int? Id)
         {
-            var _result = await _boletimService.ListaBoletimCaccc(Id);
+            try
+            {
+                if (!Id.HasValue)
+                    new ArgumentException("Invalid parameter!");
 
-            if (_result == null)
-                return NotFound();
-            return Ok(_result);
+                var _result = await _boletimService.ListaBoletimCaccc(Id);
+
+                if (_result == null)
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
+            }
+            catch (FaultException e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
         }
 
 
 
         [HttpGet]
         [Route("ListarBoletimPorCacccNome/{caccc}")]
-        public IActionResult ListarBoletimPorCacccNome(string caccc)
+        public async Task<IActionResult> ListarBoletimPorCacccNome(string caccc)
         {
-            var _result = _boletimService.Search(p => p.Caccc.Nome.Contains(caccc));
+            try
+            {
+                if (string.IsNullOrEmpty(caccc) )
+                    new ArgumentException("Invalid parameter!");
 
-            if (_result == null)
-                return NotFound();
-            return Ok(_result);
+                var _result = await _boletimService.Search(p => p.Caccc.Nome.Contains(caccc));
+
+                if (_result == null)
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
+            }
+            catch (FaultException e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
         }
     }
 }

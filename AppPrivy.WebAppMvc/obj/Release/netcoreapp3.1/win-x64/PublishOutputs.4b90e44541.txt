@@ -1,4 +1,11 @@
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\Resources\Constants.resx
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\bower_components\bootstrap-lightbox\docs\assets\css\bootstrap-lightbox.min.css
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\bower_components\bootstrap-lightbox\docs\assets\css\styles.css
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\bootstrap-lightbox.js
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\scale.fix.js
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\prettify.css
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\prettify.js
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\bower_components\jR3DCarousel\dist\jR3DCarousel.min.js
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\AppPrivy.WebAppMvc.exe
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\Microsoft.DiaSymReader.Native.x86.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\Microsoft.DiaSymReader.Native.amd64.dll

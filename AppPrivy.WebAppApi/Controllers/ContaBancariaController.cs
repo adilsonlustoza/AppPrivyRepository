@@ -1,6 +1,8 @@
 ﻿using AppPrivy.CrossCutting.Fault;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace AppPrivy.WebAppApi.Controllers
@@ -21,12 +23,21 @@ namespace AppPrivy.WebAppApi.Controllers
         [Route("ListarContasBancarias")]
         public async Task<IActionResult> ListarContasBancarias()
         {
-            var _result = await _contaBancariaService.GetAll();
+            try
+            {
+                var _result = await _contaBancariaService.GetAll();
 
-            if (_result == null)
-                return NotFound();
-            return Ok(_result);
-        }
+                if (_result == null)
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
+            }
+            catch (FaultException e)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+            }
+        }        
+        
+    
 
 
         [HttpGet]
@@ -36,15 +47,18 @@ namespace AppPrivy.WebAppApi.Controllers
 
             try
             {
+                if(!Id.HasValue )
+                 new ArgumentException("Invalid parameter!");
+
                 var _result = await _contaBancariaService.Search(p => p.CacccId == Id.Value);
 
                 if (_result == null)
-                    return NotFound();
-                return Ok(_result);
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                throw e;
+                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
             }
         }
     }

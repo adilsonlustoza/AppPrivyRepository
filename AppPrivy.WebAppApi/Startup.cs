@@ -42,6 +42,11 @@ namespace AppPrivy.WebAppApi
         public void ConfigureServices(IServiceCollection services)
         {
 
+
+            services.AddControllers().AddNewtonsoftJson(options =>
+              options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
+
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton(Configuration);
 
@@ -136,16 +141,22 @@ namespace AppPrivy.WebAppApi
             });
 
 
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+
+            app.UseDefaultFiles();
+
+            app.UseStaticFiles();          
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseDeveloperExceptionPage();           
 
             app.UseEndpoints(endpoints =>
             {
@@ -155,7 +166,8 @@ namespace AppPrivy.WebAppApi
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api Doação Mais V1");
+                c.RoutePrefix = "swagger";
+                c.SwaggerEndpoint("v1/swagger.json", "Api Doação Mais V1");              
             });
         }
     }

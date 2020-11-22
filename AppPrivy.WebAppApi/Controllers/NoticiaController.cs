@@ -1,5 +1,6 @@
 ﻿using AppPrivy.CrossCutting.Fault;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
@@ -30,12 +31,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _noticiaService.GetAll();
 
                 if (_result == null)
-                    return NotFound();
-                return Ok(_result);
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                throw e;
+                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
             }
         }
 
@@ -49,17 +50,17 @@ namespace AppPrivy.WebAppApi.Controllers
             try
             {
                 if (!Id.HasValue)
-                    throw new ApplicationException("Parametro inválido");
+                    throw new ApplicationException("Invalid parameter");
 
                 var _result = await _noticiaService.Search(p => p.CacccId == Id.Value);
 
                 if (_result == null)
-                    return NotFound();
-                return Ok(_result);
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                throw e;
+                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
             }
         }
 
@@ -72,17 +73,17 @@ namespace AppPrivy.WebAppApi.Controllers
             {
 
                 if (string.IsNullOrEmpty(caccc))
-                    throw new ApplicationException("Parametro inválido");
+                    throw new ArgumentException("Invalid parameter");
 
                 var _result = await _noticiaService.Search(p => p.Caccc.Nome.ToLower().Trim().Contains(caccc.ToLower().Trim()));
 
                 if (_result == null)
-                    return NotFound();
-                return Ok(_result);
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                throw e;
+                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
             }
         }
 
@@ -94,7 +95,7 @@ namespace AppPrivy.WebAppApi.Controllers
             try
             {
                 if (!Id.HasValue)
-                    throw new ApplicationException("Parametro inválido");
+                    throw new ArgumentException("Invalid parameter");
 
                 var _noticias = await _noticiaService.Search(p => p.CacccId == Id.Value);
 
@@ -103,12 +104,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = _noticias.Union(_comuns);
 
                 if (_result == null)
-                    return NotFound();
-                return Ok(_result);
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
             }
-            catch (FaultException ex)
+            catch (FaultException e)
             {
-                throw ex;
+                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
             }
         }
 

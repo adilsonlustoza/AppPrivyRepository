@@ -16,14 +16,11 @@ namespace AppPrivy.WebAppApi.Controllers
     {
 
         private readonly IDispositoService _dispositivoService;
-        private readonly FaultException _fault;
-
-
-        public DispositivoController(IDispositoService dispositoService, FaultException faultException)
+        
+        public DispositivoController(IDispositoService dispositoService)
         {
 
-            _dispositivoService = dispositoService;
-            _fault = faultException;
+            _dispositivoService = dispositoService;           
         }
 
 
@@ -34,16 +31,17 @@ namespace AppPrivy.WebAppApi.Controllers
             try
             {
                 var _result = await _dispositivoService.GetAll(p => p.Notificacao);
+              
                 if (_result == null)
-                    return NotFound();
-                return Ok(null);
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                await _fault.WriteError("ListarTodosDispositivosAsync", e);
+                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
             }
 
-            return StatusCode(StatusCodes.Status500InternalServerError);
+          
         }
 
 
@@ -59,16 +57,17 @@ namespace AppPrivy.WebAppApi.Controllers
         {
             try
             {
-                var result = await _dispositivoService.AddUpdateDispositivoUsuario(dispositivo);
-                return Ok(string.Format("Dispositivo salvo : {0}", result));
+                var _result = await _dispositivoService.AddUpdateDispositivoUsuario(dispositivo);
+
+                if (_result == null)
+                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Code {0} device not updated", dispositivo.Code   ));
+                return StatusCode(StatusCodes.Status200OK, string.Format("Code {0} device updated", dispositivo.Code));
+               
             }
             catch (Exception e)
             {
-                await _fault.WriteError("SalvarDispositivo", e);
-
-            }
-
-            return StatusCode(StatusCodes.Status500InternalServerError);
+                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+            }        
 
         }
 

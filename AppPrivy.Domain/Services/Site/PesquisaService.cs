@@ -1,4 +1,5 @@
-﻿using AppPrivy.Domain.Interfaces;
+﻿using AppPrivy.CrossCutting.Operations;
+using AppPrivy.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -74,6 +75,8 @@ namespace AppPrivy.Domain
                 throw e;
             }
         }
+
+      
 
         public async Task<ICollection<Pesquisa>> GetAll(params Expression<Func<Pesquisa, object>>[] children)
         {

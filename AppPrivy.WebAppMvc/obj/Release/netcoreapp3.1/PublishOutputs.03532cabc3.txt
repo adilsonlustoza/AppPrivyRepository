@@ -4255,6 +4255,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\PubTmp
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\templates\email\RecuperarEmail.html
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\PubTmp\Out\web.config
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\PubTmp\Out\backup.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\PubTmp\Out\libman.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Release\netcoreapp3.1\PubTmp\Out\refs\Microsoft.AspNetCore.Antiforgery.dll

@@ -115,7 +115,7 @@ $(document).ready(function () {
 
 
 
-    $('#banner1').css({ 'background-color': 'transparent', 'width': '24%', 'height': '10%', 'left': '55%', 'top': '66%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'/SistemasWeb\'' });
+    $('#banner1').css({ 'background-color': 'transparent', 'width': '24%', 'height': '10%', 'left': '55%', 'top': '66%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'\SistemasWeb\'' });
     $('#banner2').css({ 'background-color': 'transparent', 'width': '15%', 'height': '10%', 'left': '70%', 'top': '73%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'/EngenhariaDeSoftware\'' });
     $('#banner3').css({ 'background-color': 'transparent', 'width': '22%', 'height': '15%', 'left': '63%', 'top': '42%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'/Programador/\'' });
     $('#banner4').css({ 'background-color': 'transparent', 'width': '18%', 'height': '10%', 'left': '25%', 'top': '63%', 'cursor': 'pointer' }).attr({ 'onclick': 'javascript:window.location.href=\'/Android\'' });

@@ -7,7 +7,6 @@ namespace AppPrivy.Test
     {
 
 
-
         [TestMethod]
         public void TesteConexao()
         {
