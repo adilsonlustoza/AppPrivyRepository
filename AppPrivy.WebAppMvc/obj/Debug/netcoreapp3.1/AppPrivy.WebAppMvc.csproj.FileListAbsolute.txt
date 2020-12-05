@@ -1502,7 +1502,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.RazorCoreGenerate.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_MainMenu.cshtml.g.cs
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
@@ -1563,3 +1562,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\AppPrivy.WebAppMvc.genruntimeconfig.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index_bkp.cshtml.g.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_SideBar.cshtml.g.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppMvc\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_Footer.cshtml.g.cs

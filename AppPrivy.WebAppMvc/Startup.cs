@@ -52,7 +52,7 @@ namespace AppPrivy.WebAppMvc
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
+                options.MinimumSameSitePolicy = SameSiteMode.Lax;
 
             });
 
@@ -90,7 +90,9 @@ namespace AppPrivy.WebAppMvc
 
             services
                .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-               .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme);
+              .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme);
+           
+
 
             services.AddMvc(options => options.EnableEndpointRouting = false)
            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
@@ -206,16 +208,17 @@ namespace AppPrivy.WebAppMvc
                 app.UseHsts();
             }
 
-          
+            app.UseAuthentication();
+            app.UseAuthorization();
+
 
             app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseRouting();
-            app.UseAuthentication();
-            app.UseAuthorization();
 
+        
           
             app.UseMvc(routes =>
             {
@@ -223,9 +226,9 @@ namespace AppPrivy.WebAppMvc
                 name: "Identity",
                 template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
                                
-                routes.MapRoute(
-                    name: "DoacaoMais",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                //routes.MapRoute(
+                //    name: "DoacaoMais",
+                //    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
                 routes.MapRoute(
                     name: "default",

@@ -27,7 +27,6 @@ namespace AppPrivy.WebAppMvc.Controllers
         private readonly IWebHostEnvironment _webHostEnvironment;
 
 
-
         public HomeController
             (
                 IContatoAppService contatoAppService,
@@ -46,7 +45,6 @@ namespace AppPrivy.WebAppMvc.Controllers
             _webHostEnvironment = webHostEnvironment;
 
         }
-
 
 
 

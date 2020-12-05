@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "http://localhost/AppPrivy.WebAppMvc",
+      "applicationUrl": "http://localhost/AppPrivyWebAppMvc",
       "sslPort": 0
     },
     "iisExpress": {

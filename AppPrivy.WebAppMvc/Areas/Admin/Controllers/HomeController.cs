@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -11,7 +10,7 @@ namespace AppPrivy.WebAppMvc.Areas.Admin.Controllers
 
     public class HomeController : Controller
     {
-        [Authorize(Policy = "Administrador")]
+       // [Authorize(Policy = "Administrador")]
         // GET: Home
         public ActionResult Index()
         {

@@ -9,17 +9,19 @@ namespace AppPrivy.InfraStructure.Repositories.Identity
     {
         public static void Seed(AppPrivyContext context)
         {
-            var roles = new List<string>() { "Administrador", "Blog", "Sistemas" };
+            var roles = new List<string>() { "Administrador", "Convidado" };
 
 
             roles.ForEach((x) =>
             {
 
-                var grupRole = new IdentityRole();
-                grupRole.Name = x;
-                grupRole.NormalizedName = x.ToUpper();
-                grupRole.Id = Guid.NewGuid().ToString();
-                grupRole.ConcurrencyStamp = Guid.NewGuid().ToString();
+                var grupRole = new IdentityRole
+                {
+                    Name = x,
+                    NormalizedName = x.ToUpper(),
+                    Id = Guid.NewGuid().ToString(),
+                    ConcurrencyStamp = Guid.NewGuid().ToString()
+                };
                 context.Roles.AddAsync(grupRole);
 
             });
