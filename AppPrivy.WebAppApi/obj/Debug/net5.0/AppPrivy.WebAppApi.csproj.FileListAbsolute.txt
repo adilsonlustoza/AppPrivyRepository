@@ -1,6 +1,7 @@
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\web.config
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\appsettings.Development.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\appsettings.json
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\appsettings.production.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\AppPrivy.WebAppApi.exe
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\Resources\Constants.resx
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\AppPrivy.WebAppApi.deps.json
