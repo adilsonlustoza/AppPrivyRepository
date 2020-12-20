@@ -1047,6 +1047,15 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "NSwag.Annotations/13.9.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NSwag.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NSwag.Annotations.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -1265,6 +1274,19 @@
           "build/Swashbuckle.AspNetCore.props": {}
         }
       },
+      "Swashbuckle.AspNetCore.Newtonsoft/5.6.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.0.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "5.6.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Newtonsoft.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Newtonsoft.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/5.6.3": {
         "type": "package",
         "dependencies": {
@@ -1410,7 +1432,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/System.ComponentModel.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.ComponentModel.dll": {}
@@ -1433,7 +1455,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/System.ComponentModel.Primitives.dll": {}
         },
         "runtime": {
           "lib/netstandard1.0/System.ComponentModel.Primitives.dll": {}
@@ -2557,6 +2579,15 @@
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
+      "System.Text.Json/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2737,7 +2768,11 @@
           "AutoMapper": "10.1.1",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
-          "Newtonsoft.Json": "12.0.3"
+          "NSwag.Annotations": "13.9.4",
+          "Newtonsoft.Json": "12.0.3",
+          "Swashbuckle.AspNetCore.Newtonsoft": "5.6.3",
+          "Swashbuckle.AspNetCore.SwaggerGen": "5.6.3",
+          "System.ComponentModel.Primitives": "4.3.0"
         },
         "compile": {
           "bin/placeholder/AppPrivy.Application.dll": {}
@@ -2768,7 +2803,8 @@
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Microsoft.EntityFrameworkCore.Design": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
-          "Microsoft.Extensions.Identity.Stores": "3.1.0"
+          "Microsoft.Extensions.Identity.Stores": "3.1.0",
+          "System.Text.Json": "5.0.0"
         },
         "compile": {
           "bin/placeholder/AppPrivy.Domain.dll": {}
@@ -4167,6 +4203,23 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
+    "NSwag.Annotations/13.9.4": {
+      "sha512": "qsOYnNMUJJ5VpgYmQsyNkDKbJnMaRo4lGBgkaBlZsHsWGG+HizNkx+HuHkRtI0ks28jqZXpVDxDmnuyq/SwFnw==",
+      "type": "package",
+      "path": "nswag.annotations/13.9.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NSwag.Annotations.dll",
+        "lib/net45/NSwag.Annotations.xml",
+        "lib/netstandard1.0/NSwag.Annotations.dll",
+        "lib/netstandard1.0/NSwag.Annotations.xml",
+        "lib/netstandard2.0/NSwag.Annotations.dll",
+        "lib/netstandard2.0/NSwag.Annotations.xml",
+        "nswag.annotations.13.9.4.nupkg.sha512",
+        "nswag.annotations.nuspec"
+      ]
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "sha512": "HdSSp5MnJSsg08KMfZThpuLPJpPwE5hBXvHwoKWosyHHfe8Mh5WKT0ylEOf6yNzX6Ngjxe4Whkafh5q7Ymac4Q==",
       "type": "package",
@@ -4464,6 +4517,21 @@
         "build/Swashbuckle.AspNetCore.props",
         "swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Newtonsoft/5.6.3": {
+      "sha512": "nLVhWdyyOoapuA6NiSBPHBZcYiPUR7PaKwDfpojI0z/E/5RTkx1cLy2Ks0pSgtsAiFtwkYPAbqIEDEB+VNIjfA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.newtonsoft/5.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Newtonsoft.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Newtonsoft.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Newtonsoft.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Newtonsoft.pdb",
+        "swashbuckle.aspnetcore.newtonsoft.5.6.3.nupkg.sha512",
+        "swashbuckle.aspnetcore.newtonsoft.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore.Swagger/5.6.3": {
@@ -8205,6 +8273,28 @@
         "version.txt"
       ]
     },
+    "System.Text.Json/5.0.0": {
+      "sha512": "+luxMQNZ2WqeffBU7Ml6njIvxc8169NW2oU+ygNudXQGZiarjE7DOtN7bILiQjTZjkmwwRZGTtLzmdrSI/Ustw==",
+      "type": "package",
+      "path": "system.text.json/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.5.0.0.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Text.RegularExpressions/4.3.0": {
       "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
       "type": "package",
@@ -8823,7 +8913,10 @@
       "AppPrivy.InfraStructure >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.9",
-      "Swashbuckle.AspNetCore >= 5.6.3"
+      "NSwag.Annotations >= 13.9.4",
+      "Swashbuckle.AspNetCore >= 5.6.3",
+      "Swashbuckle.AspNetCore.SwaggerGen >= 5.6.3",
+      "System.ComponentModel.Primitives >= 4.3.0"
     ]
   },
   "packageFolders": {
@@ -8888,9 +8981,21 @@
             "target": "Package",
             "version": "[1.10.9, )"
           },
+          "NSwag.Annotations": {
+            "target": "Package",
+            "version": "[13.9.4, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.6.3, )"
+          },
+          "Swashbuckle.AspNetCore.SwaggerGen": {
+            "target": "Package",
+            "version": "[5.6.3, )"
+          },
+          "System.ComponentModel.Primitives": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           }
         },
         "imports": [
@@ -8911,7 +9016,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,5 @@
-﻿using AppPrivy.CrossCutting.Fault;
+﻿using AppPrivy.Application.ViewsModels.DoacaoMais;
+using AppPrivy.CrossCutting.Fault;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,6 +21,29 @@ namespace AppPrivy.WebAppApi.Controllers
             _cacccService = cacccService;
         }
 
+
+        [HttpPost]
+        [Route("SalvarCaccc")]
+        public async Task<IActionResult> SalvarCaccc(CacccViewModel viewModel )
+        {
+            try
+            {
+
+                if (ModelState.IsValid)
+                {
+                    var result =  await Task.FromResult<CacccViewModel>(viewModel);
+                    
+                    return StatusCode(StatusCodes.Status200OK, string.Format("Your search returned no results!"));
+                }
+
+                return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+               
+            }
+            catch (FaultException e)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+            }
+        }
 
 
         [HttpGet]

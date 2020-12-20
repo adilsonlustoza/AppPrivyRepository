@@ -30,6 +30,8 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\Microsoft.Ident
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\Newtonsoft.Json.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\NSwag.Annotations.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Newtonsoft.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll

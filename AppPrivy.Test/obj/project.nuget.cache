@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vFM6fRgxpmWGfO2HwnRFNSovuuu33+siHgOm8sfzzmeCrxknifPyEXXfZke2Zf47AskIIArbxNP65oCYlBLLWA==",
+  "dgSpecHash": "O0XYXoN4IECpwwrsZy+IrVlXgiNhB8nMMC/iOayJSN/fE5gC81l15+Kwb1A2VVvrykRkVkurHWHwYUpPrZe0MQ==",
   "success": true,
   "projectFilePath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Test\\AppPrivy.Test.csproj",
   "expectedPackageFiles": [
@@ -142,6 +142,7 @@
     "C:\\Users\\adils\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",

@@ -23,10 +23,10 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         }
 
-        [Key]
+        [Key]       
         public int CacccId { get; set; }
 
-        [StringLength(150)]
+        [StringLength(150)]            
         public string Nome { get; set; }
 
         [StringLength(150)]

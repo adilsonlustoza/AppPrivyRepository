@@ -26,6 +26,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json.Serialization;
 using System.Globalization;
 using System.IO;
+using System.Text.Json;
+using Microsoft.Extensions.Hosting;
 
 namespace AppPrivy.WebAppApi
 {
@@ -40,18 +42,15 @@ namespace AppPrivy.WebAppApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+     
         public void ConfigureServices(IServiceCollection services)
         {
-
-
 
             services.AddControllers().AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-            }
-
-            );
+            } );
 
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -129,10 +128,22 @@ namespace AppPrivy.WebAppApi
                     Description = "API Doação Mais - API Analyzers",
                     Contact = new Microsoft.OpenApi.Models.OpenApiContact() { Name = "Adilson Lustoza", Email = "adilsonlustoza@gmail.com" }
                 });
+                
             });
 
+            services.AddSwaggerGenNewtonsoftSupport();
 
             services.AddControllers();
+
+            services
+             .AddMvcCore()
+            .AddDataAnnotations()
+            .AddCors()
+            .AddJsonOptions(
+                options => {
+                    options.JsonSerializerOptions.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
+                    options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -148,10 +159,12 @@ namespace AppPrivy.WebAppApi
             });
 
 
-            //if (env.IsDevelopment())
-            //{
-            //    app.UseDeveloperExceptionPage();
-            //}
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+
             var options = new DefaultFilesOptions();
             options.DefaultFileNames.Clear();
             options.DefaultFileNames.Add(Path.Combine(env.WebRootPath, "index.html"));
@@ -178,6 +191,8 @@ namespace AppPrivy.WebAppApi
                 c.RoutePrefix = "swagger";
                 c.SwaggerEndpoint("v1/swagger.json", "Api Doação Mais V1");
             });
+
+           
         }
     }
 }
