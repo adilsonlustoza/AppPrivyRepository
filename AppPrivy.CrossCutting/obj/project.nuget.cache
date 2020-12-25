@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v94gk05I6Fbr36VQwBOFQPldf+P7uxTVoLtBDqusrKtYG6fOaVOfssAqUfsb+C9eiGmv8edhiyUgdNtwxmo/bA==",
+  "dgSpecHash": "2DZrjeiCWSvqB4VDVt8gmHCLD+P/ZwQmaEdevhRCN4p6jyg9mpF1kiKpvTaTR+7fu3jxcb6QW6OzYoQKQAxN5w==",
   "success": true,
   "projectFilePath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",

@@ -31,12 +31,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _noticiaService.GetAll();
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -55,12 +55,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _noticiaService.Search(p => p.CacccId == Id.Value);
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -78,12 +78,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _noticiaService.Search(p => p.Caccc.Nome.ToLower().Trim().Contains(caccc.ToLower().Trim()));
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -104,12 +104,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = _noticias.Union(_comuns);
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 

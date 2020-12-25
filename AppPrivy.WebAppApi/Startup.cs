@@ -28,11 +28,19 @@ using System.Globalization;
 using System.IO;
 using System.Text.Json;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Reflection;
+using System;
+using Serilog;
 
 namespace AppPrivy.WebAppApi
 {
     public class Startup
     {
+
 
         public Startup(IConfiguration configuration)
         {
@@ -45,6 +53,8 @@ namespace AppPrivy.WebAppApi
      
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
 
             services.AddControllers().AddNewtonsoftJson(options =>
             {
@@ -119,24 +129,14 @@ namespace AppPrivy.WebAppApi
             services.AddScoped<FaultException>();
             services.AddScoped<SendMail>();
 
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "Api Doação Mais",
-                    Description = "API Doação Mais - API Analyzers",
-                    Contact = new Microsoft.OpenApi.Models.OpenApiContact() { Name = "Adilson Lustoza", Email = "adilsonlustoza@gmail.com" }
-                });
-                
-            });
-
+           
+      
             services.AddSwaggerGenNewtonsoftSupport();
 
             services.AddControllers();
 
             services
-             .AddMvcCore()
+            .AddMvcCore()
             .AddDataAnnotations()
             .AddCors()
             .AddJsonOptions(
@@ -144,6 +144,65 @@ namespace AppPrivy.WebAppApi
                     options.JsonSerializerOptions.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
                     options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
                 });
+
+
+            services.AddSwaggerGen(opt =>
+            {
+
+
+                opt.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+                {
+                    Description = "Authorization header. Example: \"bearer {token}\"",
+                    In = ParameterLocation.Header,
+                    Name = "authorization",
+                    Type = SecuritySchemeType.ApiKey
+                });
+
+
+                opt.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Doação Mais API",
+                    Description = "Aplicatio Doação Mais - ASP.NET Core Web API",
+                    TermsOfService = new Uri("https://www.adilsonlustoza.com.br/Android"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Adilson Lustoza",
+                        Email = string.Empty,
+                        Url = new Uri("https://www.adilsonlustoza.com.br/"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Use under police",
+                        Url = new Uri("https://www.adilsonlustoza.com.br/Politica"),
+                    }
+                });
+
+                
+
+            });
+
+           
+
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddCookie(cfg => { cfg.SlidingExpiration = true; })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateAudience = false,
+                    ValidateIssuer = false,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("aaa".ToCharArray() ))
+                };
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -165,10 +224,10 @@ namespace AppPrivy.WebAppApi
             }
 
 
-            var options = new DefaultFilesOptions();
-            options.DefaultFileNames.Clear();
-            options.DefaultFileNames.Add(Path.Combine(env.WebRootPath, "index.html"));
-            app.UseDefaultFiles(options);
+            //var options = new DefaultFilesOptions();
+            //options.DefaultFileNames.Clear();
+            //options.DefaultFileNames.Add(Path.Combine(env.WebRootPath, "index.html"));
+            //app.UseDefaultFiles(options);
 
             app.UseStaticFiles();
 
@@ -188,11 +247,12 @@ namespace AppPrivy.WebAppApi
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.RoutePrefix = "swagger";
-                c.SwaggerEndpoint("v1/swagger.json", "Api Doação Mais V1");
-            });
+               // c.RoutePrefix = string.Empty;
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api Doação Mais V1");
+            });            
 
-           
+
         }
+     
     }
 }

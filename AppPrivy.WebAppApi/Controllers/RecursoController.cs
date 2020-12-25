@@ -41,7 +41,7 @@ namespace AppPrivy.WebAppApi.Controllers
             }
             catch (Exception e)
             {
-                 return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status400BadRequest,"Erro ao salvar o usuario :" + e.Message));
+                 return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status500InternalServerError,"Erro ao salvar o usuario :" + e.Message));
             }
         }
 
@@ -83,7 +83,7 @@ namespace AppPrivy.WebAppApi.Controllers
             }
             catch (Exception e)
             {
-                return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status400BadRequest,"Erro ao salvar o arquivo :" + e.Message));
+                return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status500InternalServerError,"Erro ao salvar o arquivo :" + e.Message));
             }
         }
     }

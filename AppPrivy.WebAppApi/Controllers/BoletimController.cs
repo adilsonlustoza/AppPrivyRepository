@@ -30,7 +30,7 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _boletimService.GetAll();
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
@@ -51,7 +51,7 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _boletimService.ListaBoletimCaccc(Id);
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
@@ -74,7 +74,7 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _boletimService.Search(p => p.Caccc.Nome.Contains(caccc));
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)

@@ -33,12 +33,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _dispositivoService.GetAll(p => p.Notificacao);
               
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
 
           
@@ -60,13 +60,13 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _dispositivoService.AddUpdateDispositivoUsuario(dispositivo);
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Code {0} device not updated", dispositivo.Code   ));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Code {0} device not updated", dispositivo.Code   ));
                 return StatusCode(StatusCodes.Status200OK, string.Format("Code {0} device updated", dispositivo.Code));
                
             }
             catch (Exception e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }        
 
         }

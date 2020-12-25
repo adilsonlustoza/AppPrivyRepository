@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FR0i9N6AJugqYLKMIQeTahf34tcqS/RwHgX81GGyo6PaxV4bOMqGUono0Suxbd3tEUa8L7QIySrnbhumYv6fVg==",
+  "dgSpecHash": "+Tq1tBM1n+KoeQaTv0j6i0uiBZer97AUqmCwcSDrLq+YP8a8TmGpqY1kEsAmI95YDrRFYKBgwcuitwcdgNtVVg==",
   "success": true,
   "projectFilePath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
   "expectedPackageFiles": [
@@ -160,6 +160,7 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\swashbuckle.aspnetcore.newtonsoft\\5.6.3\\swashbuckle.aspnetcore.newtonsoft.5.6.3.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

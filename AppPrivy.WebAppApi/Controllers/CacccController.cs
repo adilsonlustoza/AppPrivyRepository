@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.WebAppApi.Controllers
 {
-
+    [Produces("application/json")]
     [ApiController]
     [Route("Analista/Programador/[controller]")]
     public class CacccController : ControllerBase
@@ -20,7 +20,11 @@ namespace AppPrivy.WebAppApi.Controllers
         {
             _cacccService = cacccService;
         }
-
+        /// <summary>
+        /// Salvar Ong 
+        /// </summary>
+        /// <param name="viewModel">Name</param>
+        /// <returns></returns>
 
         [HttpPost]
         [Route("SalvarCaccc")]
@@ -36,12 +40,12 @@ namespace AppPrivy.WebAppApi.Controllers
                     return StatusCode(StatusCodes.Status200OK, string.Format("Your search returned no results!"));
                 }
 
-                return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -52,15 +56,16 @@ namespace AppPrivy.WebAppApi.Controllers
         {
             try
             {
+                             
                 var _result = await _cacccService.GetAll();
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -73,12 +78,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _cacccService.ListarCacccBazares();
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -91,13 +96,13 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _cacccService.ConteudoContasPorCaccc(Id);
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
 
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -111,12 +116,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _cacccService.ConteudoContasPorNomeCaccc(caccc);
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -130,12 +135,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _cacccService.ListarConteudoContasPorCaccc();
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 

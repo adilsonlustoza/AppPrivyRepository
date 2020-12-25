@@ -150,6 +150,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
             "System.Runtime.Caching": {
               "target": "Package",
               "version": "[4.7.0, )"

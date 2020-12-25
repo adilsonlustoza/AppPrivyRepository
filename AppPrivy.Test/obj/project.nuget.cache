@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O0XYXoN4IECpwwrsZy+IrVlXgiNhB8nMMC/iOayJSN/fE5gC81l15+Kwb1A2VVvrykRkVkurHWHwYUpPrZe0MQ==",
+  "dgSpecHash": "VAvLwkvgaHuusDQ5Jsk4jk5XCG3cCzJk3pFRCanYflLDo0HI6rfLabOrQk7VPder/ujhWgMgM/o+Y6m1nosfew==",
   "success": true,
   "projectFilePath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Test\\AppPrivy.Test.csproj",
   "expectedPackageFiles": [
@@ -69,6 +69,7 @@
     "C:\\Users\\adils\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

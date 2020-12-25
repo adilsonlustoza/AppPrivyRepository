@@ -35,12 +35,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _codigo = _usuarioService.AdicionarUsuario(usuario);
 
                 if (_codigo == 0)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _codigo);
             }
             catch (Exception e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -55,7 +55,7 @@ namespace AppPrivy.WebAppApi.Controllers
                     var _codigo = _usuarioService.AdicionarUsuario(item);
 
                     if (_codigo == 0)
-                        return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                        return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
 
                 }
 
@@ -63,7 +63,7 @@ namespace AppPrivy.WebAppApi.Controllers
             }
             catch (Exception e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -78,13 +78,13 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = _usuarioService.GetAll();
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
 
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -100,12 +100,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = _usuarioService.GetById(Id.Value);
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
 
@@ -121,12 +121,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = _usuarioService.Search(p => p.Login.Contains(login));
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (Exception e)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, e.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
     }

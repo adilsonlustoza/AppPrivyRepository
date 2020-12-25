@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.WebAppApi.Controllers
 {
+    
     [ApiController]
     [Route("Analista/Programador/[controller]")]
 
@@ -19,6 +20,10 @@ namespace AppPrivy.WebAppApi.Controllers
             _bazarService = bazarService;
         }
 
+        /// <summary>
+        /// Lista os bazares associados as instituições
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarBazar")]
@@ -29,7 +34,7 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _bazarService.GetAll();
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
@@ -51,7 +56,7 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _bazarService.ObtemBazarPorCacccId(cacccId);
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
             catch (FaultException e)
@@ -72,7 +77,7 @@ namespace AppPrivy.WebAppApi.Controllers
                 var _result = await _bazarService.Search(p => p.Caccc.Nome.Contains(caccc));
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status404NotFound, string.Format("Your search returned no results!"));
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
 
             }

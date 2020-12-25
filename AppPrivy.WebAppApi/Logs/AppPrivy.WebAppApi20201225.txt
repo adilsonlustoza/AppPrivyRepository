@@ -1,0 +1,97 @@
+2020-12-25 10:48:47.438 -03:00 [INF] Starting up
+2020-12-25 10:49:01.806 -03:00 [DBG] Hosting starting
+2020-12-25 10:49:02.396 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2020-12-25 10:49:02.403 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2020-12-25 10:49:02.430 -03:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2020-12-25 10:49:02.431 -03:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2020-12-25 10:49:02.456 -03:00 [INF] Creating key {9e191fb0-a121-4fe9-aacf-cfa88debd919} with creation date 2020-12-25 13:49:02Z, activation date 2020-12-25 13:49:02Z, and expiration date 2021-03-25 13:49:02Z.
+2020-12-25 10:49:02.495 -03:00 [DBG] Descriptor deserializer type for key {9e191fb0-a121-4fe9-aacf-cfa88debd919} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2020-12-25 10:49:02.511 -03:00 [DBG] No key escrow sink found. Not writing key {9e191fb0-a121-4fe9-aacf-cfa88debd919} to escrow.
+2020-12-25 10:49:02.668 -03:00 [WRN] No XML encryptor configured. Key {9e191fb0-a121-4fe9-aacf-cfa88debd919} may be persisted to storage in unencrypted form.
+2020-12-25 10:49:02.698 -03:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2020-12-25 10:49:02.700 -03:00 [DBG] Found key {9e191fb0-a121-4fe9-aacf-cfa88debd919}.
+2020-12-25 10:49:02.751 -03:00 [DBG] Considering key {9e191fb0-a121-4fe9-aacf-cfa88debd919} with expiration date 2021-03-25 13:49:02Z as default key.
+2020-12-25 10:49:02.862 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2020-12-25 10:49:02.890 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2020-12-25 10:49:02.933 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2020-12-25 10:49:02.950 -03:00 [DBG] Using key {9e191fb0-a121-4fe9-aacf-cfa88debd919} as the default key.
+2020-12-25 10:49:02.955 -03:00 [DBG] Key ring with default key {9e191fb0-a121-4fe9-aacf-cfa88debd919} was loaded during application startup.
+2020-12-25 10:49:04.697 -03:00 [DBG] Loaded hosting startup assembly AppPrivy.WebAppApi
+2020-12-25 10:49:04.751 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-12-25 10:49:04.756 -03:00 [INF] Hosting environment: Production
+2020-12-25 10:49:04.760 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi
+2020-12-25 10:49:04.760 -03:00 [DBG] Hosting started
+2020-12-25 10:49:04.808 -03:00 [DBG] Connection ID "17798225728978812945" disconnecting.
+2020-12-25 10:49:04.871 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/WebAppApi/swagger/index.html - -
+2020-12-25 10:49:04.880 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2020-12-25 10:49:04.881 -03:00 [VRB] All hosts are allowed.
+2020-12-25 10:49:04.977 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2020-12-25 10:49:05.005 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US","en"]'.
+2020-12-25 10:49:05.026 -03:00 [DBG] The request path /swagger/index.html does not match an existing file
+2020-12-25 10:49:05.187 -03:00 [WRN] Failed to determine the https port for redirect.
+2020-12-25 10:49:05.323 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2020-12-25 10:49:05.324 -03:00 [DBG] Request did not match any endpoints
+2020-12-25 10:49:06.281 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: An item with the same key has already been added. Key: v1
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.SwaggerDoc(SwaggerGenOptions swaggerGenOptions, String name, OpenApiInfo info)
+   at AppPrivy.WebAppApi.Startup.<>c.<ConfigureServices>b__4_7(SwaggerGenOptions opt) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\Startup.cs:line 173
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnvironment)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method1(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-12-25 10:49:06.791 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/WebAppApi/swagger/index.html - - - 500 - text/html;+charset=utf-8 1822.9911ms
+2020-12-25 10:49:55.381 -03:00 [INF] Application is shutting down...
+2020-12-25 10:49:55.385 -03:00 [DBG] Hosting stopping
+2020-12-25 10:49:55.388 -03:00 [DBG] Hosting stopped
