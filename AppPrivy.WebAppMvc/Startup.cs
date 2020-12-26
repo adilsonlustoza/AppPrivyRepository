@@ -25,11 +25,11 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Globalization;
 using System.Security.Claims;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace AppPrivy.WebAppMvc
 {
@@ -107,30 +107,7 @@ namespace AppPrivy.WebAppMvc
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddTransient(typeof(IServiceBase<>), typeof(ServiceBase<>));
             services.AddTransient(typeof(IAppServiceBase<>), typeof(AppServiceBase<>));
-
-            services.AddTransient<IBazarRepository, BazarRepository>();
-            services.AddTransient<IBazarService, BazarService>();
-
-            services.AddTransient<IBoletimRepository, BoletimRepository>();
-            services.AddTransient<IBoletimService, BoletimService>();
-
-            services.AddTransient<ICacccRepository, CacccRepository>();
-            services.AddTransient<ICacccService, CacccService>();
-
-            services.AddTransient<IContaBancariaRepository, ContaBancariaRepository>();
-            services.AddTransient<IContaBancariaService, ContaBancariaService>();
-
-            services.AddTransient<IConteudoRepository, ConteudoRepository>();
-            services.AddTransient<IConteudoService, ConteudoService>();
-
-            services.AddTransient<IDispositivoRepository, DispositivoRepository>();
-            services.AddTransient<IDispositoService, DispositivoService>();
-
-            services.AddTransient<INoticiaRepository, NoticiaRepository>();
-            services.AddTransient<INoticiaService, NoticiaService>();
-
-            services.AddTransient<INotificacaoRepository, NotificacaoRepository>();
-            services.AddTransient<INotificacaoService, NotificacaoService>();
+           
 
             services.AddTransient<IUsuarioRepository, UsuarioRepository>();
             services.AddTransient<IUsuarioService, UsuarioService>();

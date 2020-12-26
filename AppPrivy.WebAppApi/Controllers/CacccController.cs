@@ -1,6 +1,7 @@
 ﻿using AppPrivy.Application.ViewsModels.DoacaoMais;
 using AppPrivy.CrossCutting.Fault;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -21,26 +22,39 @@ namespace AppPrivy.WebAppApi.Controllers
             _cacccService = cacccService;
         }
         /// <summary>
-        /// Salvar Ong 
+        /// Create a new Ong
         /// </summary>
-        /// <param name="viewModel">Name</param>
-        /// <returns></returns>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST / Analista/Programador/Caccc/SalvarCaccc
+        ///     {
+        ///         "Ong Name": "Ong Name",
+        ///         "Ong surname": "Ong surname"
+        ///         "Cnpj": cnpj
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="viewModel">viewModel</param>       
+        /// <returns>New Ong Created! </returns>
+        /// <response code="201">Returns new Ong Creted</response>
+        /// <response code="400">it wasn`t able to created a new Ong</response>            
 
+        [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
         [Route("SalvarCaccc")]
-        public async Task<IActionResult> SalvarCaccc(CacccViewModel viewModel )
+        public async Task<IActionResult> SalvarCaccc([FromBody]CacccViewModel viewModel )
         {
             try
             {
 
                 if (ModelState.IsValid)
                 {
-                    var result =  await Task.FromResult<CacccViewModel>(viewModel);
-                    
-                    return StatusCode(StatusCodes.Status200OK, string.Format("Your search returned no results!"));
+                    var result =  await Task.FromResult<CacccViewModel>(viewModel);                    
+                    return StatusCode(StatusCodes.Status201Created,$"The ong {result.Cnpj} was created!");
                 }
 
-                return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status400BadRequest, $"The ong {viewModel.Cnpj}  wasn't created");
                
             }
             catch (FaultException e)
@@ -50,6 +64,11 @@ namespace AppPrivy.WebAppApi.Controllers
         }
 
 
+        /// <summary>
+        /// List all Ongs
+        /// </summary>
+        /// <returns></returns>
+        [Authorize]
         [HttpGet]
         [Route("ListarCaccc")]
         public async Task<IActionResult> ListarCaccc()
@@ -69,6 +88,11 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// List all stores associated the Ongs
+        /// </summary>
+        /// <returns></returns>
+
         [HttpGet]
         [Route("ListarCacccBazares")]
         public async Task<IActionResult> ListarCacccBazares()
@@ -86,6 +110,11 @@ namespace AppPrivy.WebAppApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
+
+        /// <summary>
+        /// Brings a summary of the Ong through the Ong Id
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ConteudoContasPorCaccc/{Id}")]

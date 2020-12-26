@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppPrivy.WebAppApi</name>
+    </assembly>
+    <members>
+        <member name="M:AppPrivy.WebAppApi.Controllers.BazarController.ListarBazar">
+            <summary>
+            Lista os bazares associados as instituições
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebAppApi.Controllers.CacccController.SalvarCaccc(AppPrivy.Application.ViewsModels.DoacaoMais.CacccViewModel)">
+             <summary>
+             Create a new Ong
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST / Analista/Programador/Caccc/SalvarCaccc
+                 {
+                     "Ong Name": "Ong Name",
+                     "Ong surname": "Ong surname"
+                     "Cnpj": cnpj
+                 }
+            
+             </remarks>
+             <param name="viewModel">viewModel</param>       
+             <returns>New Ong Created! </returns>
+             <response code="201">Returns new Ong Creted</response>
+             <response code="400">it wasn`t able to created a new Ong</response>            
+        </member>
+        <member name="M:AppPrivy.WebAppApi.Controllers.CacccController.ListarCaccc">
+            <summary>
+            List all Ongs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebAppApi.Controllers.CacccController.ListarCacccBazares">
+            <summary>
+            List all stores associated the Ongs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebAppApi.Controllers.CacccController.ConteudoContasPorCaccc(System.Nullable{System.Int32})">
+            <summary>
+            Brings a summary of the Ong through the Ong Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebAppApi.Controllers.DispositivoController.SalvarDispositivo(AppPrivy.Domain.Entities.DoacaoMais.Dispositivo)">
+            <summary>
+            This is how we create a documentation
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -12,14 +12,13 @@ namespace AppPrivy.WebAppApi.Controllers
     [Route("Analista/Programador/[controller]")]
     public class UsuarioController : ControllerBase
     {
-        private readonly IUsuarioService _usuarioService;       
-        //private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly IUsuarioService _usuarioService;            
 
 
         public UsuarioController(IUsuarioService usuarioService)
         {
             _usuarioService = usuarioService;
-          //  _signInManager = signInManager;
+      
         }
           
 

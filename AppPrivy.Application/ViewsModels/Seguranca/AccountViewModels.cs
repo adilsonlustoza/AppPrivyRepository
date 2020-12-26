@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -43,6 +45,19 @@ namespace Appointment.Application.ViewsModels
         public bool RememberMe { get; set; }
     }
 
+    public class UserToken
+    {
+        public string Email { get; set; }
+
+        public string Password { get; set; }
+      
+        public string Token { get; set; }
+       
+        public DateTime? Expiration { get; set; }
+
+    }
+
+
     public class ForgotViewModel
     {
         [Required]
@@ -61,17 +76,25 @@ namespace Appointment.Application.ViewsModels
         [Required]
         [DataType(DataType.Password, ErrorMessage = "Senha é requerida!")]
         [Display(Name = "Senha")]
+        
         public string Password { get; set; }
 
+
+        [JsonIgnore]
         [Display(Name = "Relembrar?")]
         public bool RememberMe { get; set; }
 
+        [JsonIgnore]  
         [Required]
         [Display(Name = "Papel")]
         public string IdPapel { get; set; }
 
+        [JsonIgnore]
         [NotMapped]
         public SelectList SelectListGroup { get; set; }
+
+
+
 
     }
 

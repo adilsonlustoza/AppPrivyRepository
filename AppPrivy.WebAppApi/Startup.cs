@@ -25,16 +25,19 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json.Serialization;
 using System.Globalization;
-using System.IO;
 using System.Text.Json;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using System.Reflection;
 using System;
 using Serilog;
+using System.IO;
+using System.Reflection;
+using AppPrivy.Application.Services.Site;
+using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
 
 namespace AppPrivy.WebAppApi
 {
@@ -50,7 +53,7 @@ namespace AppPrivy.WebAppApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-     
+
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -60,7 +63,7 @@ namespace AppPrivy.WebAppApi
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-            } );
+            });
 
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -82,6 +85,8 @@ namespace AppPrivy.WebAppApi
              options.UseSqlServer(Configuration.GetConnectionString(ConstantHelper.ConnectionString),
              b => b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc))
             );
+
+
 
             services.AddTransient<IContextManager, ContextManager>();
 
@@ -126,11 +131,20 @@ namespace AppPrivy.WebAppApi
             services.AddTransient<IContatoAppService, ContatoAppService>();
             services.AddTransient<IPesquisaAppService, PesquisaAppService>();
 
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                  .AddEntityFrameworkStores<AppPrivyContext>()
+                  .AddDefaultTokenProviders();
+
+
+
+            services.AddTransient<IAuthService, AuthService>();
+
             services.AddScoped<FaultException>();
             services.AddScoped<SendMail>();
 
-           
-      
+
+
             services.AddSwaggerGenNewtonsoftSupport();
 
             services.AddControllers();
@@ -140,7 +154,8 @@ namespace AppPrivy.WebAppApi
             .AddDataAnnotations()
             .AddCors()
             .AddJsonOptions(
-                options => {
+                options =>
+                {
                     options.JsonSerializerOptions.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
                     options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
                 });
@@ -150,14 +165,35 @@ namespace AppPrivy.WebAppApi
             {
 
 
-                opt.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+                opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
-                    Description = "Authorization header. Example: \"bearer {token}\"",
+                    Description = @"JWT Authorization header using the Bearer scheme. \r\n\r\n 
+                  Enter 'Bearer' [space] and then your token in the text input below.
+                  \r\n\r\nExample: 'Bearer 12345abcdef'",
+                    Name = "Authorization",
                     In = ParameterLocation.Header,
-                    Name = "authorization",
-                    Type = SecuritySchemeType.ApiKey
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
                 });
 
+                opt.AddSecurityRequirement(new OpenApiSecurityRequirement()
+          {
+            {
+              new OpenApiSecurityScheme
+              {
+                    Reference = new OpenApiReference
+                      {
+                        Type = ReferenceType.SecurityScheme,
+                        Id = "Bearer"
+                      },
+                      Scheme = "oauth2",
+                      Name = "Bearer",
+                      In = ParameterLocation.Header,
+
+                    },
+                    new List<string>()
+                  }
+            });
 
                 opt.SwaggerDoc("v1", new OpenApiInfo
                 {
@@ -178,11 +214,17 @@ namespace AppPrivy.WebAppApi
                     }
                 });
 
-                
+
+                // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                opt.IncludeXmlComments(xmlPath);
+
+
 
             });
 
-           
+
 
             services.AddAuthentication(x =>
             {
@@ -196,10 +238,15 @@ namespace AppPrivy.WebAppApi
                 x.SaveToken = true;
                 x.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateAudience = false,
-                    ValidateIssuer = false,
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("aaa".ToCharArray() ))
+
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    ValidAudience = Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey
+                       (Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                 };
             });
 
@@ -224,16 +271,19 @@ namespace AppPrivy.WebAppApi
             }
 
 
-            //var options = new DefaultFilesOptions();
-            //options.DefaultFileNames.Clear();
-            //options.DefaultFileNames.Add(Path.Combine(env.WebRootPath, "index.html"));
-            //app.UseDefaultFiles(options);
 
             app.UseStaticFiles();
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(x => x
+               .AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader());
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
@@ -247,12 +297,12 @@ namespace AppPrivy.WebAppApi
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-               // c.RoutePrefix = string.Empty;
+                // c.RoutePrefix = string.Empty;
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api Doação Mais V1");
-            });            
+            });
 
 
         }
-     
+
     }
 }
