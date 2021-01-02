@@ -702,7 +702,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
@@ -2484,7 +2484,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.Configuration": "3.1.5",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Newtonsoft.Json": "12.0.3",
           "Serilog": "2.10.0",
           "System.Runtime.Caching": "4.7.0"
         },
@@ -3313,18 +3316,24 @@
         "packageIcon.png"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
-      "sha512": "jjo4YXRx6MIpv6DiRxJjSpl+sPP0+5VW0clMEdLyIAz44PPwrDTFrd5PZckIxIXl1kKZ2KK6IL2nkt0+ug2MQg==",
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+      "sha512": "NxP6ahFcBnnSfwNBi2KH2Oz8Xl5Sm2krjId/jRR3I7teFphwiUoUeZPwTNA21EX+5PtjqmyAvKaOeBXcJjcH/w==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/3.1.0",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
-        "packageIcon.png"
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Extensions.ObjectPool/2.2.0": {

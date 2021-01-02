@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace AppPrivy.Domain.Entities.DoacaoMais
 {
@@ -23,35 +24,49 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         }
 
-        [Key]       
+        [Key]
+        [JsonIgnore]
         public int CacccId { get; set; }
 
-        [StringLength(150)]            
+        [StringLength(150)]
+        [Required(ErrorMessage = "{0} é requerido.")]
         public string Nome { get; set; }
 
         [StringLength(150)]
         public string Apelido { get; set; }
 
+
+
+        [RegularExpression(@"^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$", ErrorMessage = "{0} é invalido.")]
+        [Required(ErrorMessage = "{0} é requerido.")]
         public string Cnpj { get; set; }
 
+
+        [EmailAddress(ErrorMessage = "{0} é invalido")]
+        [Required(ErrorMessage = "{0} é requerido.")]
         public string Email { get; set; }
 
+        [EmailAddress(ErrorMessage = "{0} é invalido")]
         public string EmailPagSeguro { get; set; }
 
+        [EmailAddress(ErrorMessage = "{0} é invalido")]
         public string EmailPayPal { get; set; }
 
-        [StringLength(500)]
+        [Url(ErrorMessage ="{0} é inválido")]
         public string UrlImagem { get; set; }
 
-        [StringLength(15)]
+       
+        [RegularExpression(@"^\(?\d{2}\)? \d{4,5}-\d{4}$", ErrorMessage = "{0} é invalido.")]
+        [Required(ErrorMessage ="{0} é requerido.")]
         public string Telefone { get; set; }
 
-        [StringLength(15)]
+        [RegularExpression(@"^\d{4,5}\-\d{4}$", ErrorMessage = "{0} é invalido")]
         public string Celular { get; set; }
 
         public bool Autorizado { get; set; }
 
         [StringLength(50)]
+        [Required(ErrorMessage = "{0} é requerido.")]
         public string Responsavel { get; set; }
 
 

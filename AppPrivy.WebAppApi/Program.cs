@@ -14,7 +14,7 @@ namespace AppPrivy.WebAppApi
                              .Enrich.FromLogContext()
                              .MinimumLevel.Verbose()
                              .WriteTo.Console()
-                             .WriteTo.File($"Logs\\{Assembly.GetCallingAssembly().GetName().Name}.txt", rollingInterval: RollingInterval.Day)
+                             .WriteTo.File($"Logs\\{Assembly.GetCallingAssembly().GetName().Name}-.txt", rollingInterval: RollingInterval.Day)
                              .CreateLogger();
 
             try

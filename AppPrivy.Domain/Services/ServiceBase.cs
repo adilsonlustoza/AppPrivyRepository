@@ -16,8 +16,6 @@ namespace AppPrivy.Domain.Services
             _repository = repository;
         }
 
-
-
         public void Add(TEntity obj)
         {
             _repository.Add(obj);
@@ -51,10 +49,7 @@ namespace AppPrivy.Domain.Services
         }
 
 
-        //public void Dispose()
-        //{
-        //    this.Dispose();
-        //}
+     
 
         public int? SaveChanges()
         {
@@ -63,6 +58,7 @@ namespace AppPrivy.Domain.Services
 
         public void Dispose()
         {
+            this.Dispose();
 
         }
     }

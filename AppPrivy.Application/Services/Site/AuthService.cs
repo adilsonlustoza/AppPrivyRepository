@@ -41,6 +41,8 @@ namespace AppPrivy.Application.Services.Site
 
                 return Task.FromResult(new UserToken
                 {
+                    Email = userInfo.Email,
+                    Password = "******",
                     Token = $"bearer {new JwtSecurityTokenHandler().WriteToken(token)}",
                     Expiration = expiration
                 });

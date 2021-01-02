@@ -1,5 +1,5 @@
-﻿using AppPrivy.Application.ViewsModels.DoacaoMais;
-using AppPrivy.CrossCutting.Fault;
+﻿using AppPrivy.CrossCutting.Fault;
+using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -22,20 +22,23 @@ namespace AppPrivy.WebAppApi.Controllers
             _cacccService = cacccService;
         }
         /// <summary>
-        /// Create a new Ong
+        /// Cria uma nova Ong
         /// </summary>
         /// <remarks>
         /// Sample request:
         ///
         ///     POST / Analista/Programador/Caccc/SalvarCaccc
         ///     {
-        ///         "Ong Name": "Ong Name",
-        ///         "Ong surname": "Ong surname"
-        ///         "Cnpj": cnpj
+        ///         "Nome": "Nome",               
+        ///         "Cnpj":  "99.999.999/9999-99"
+        ///         "Emai":  "email@dominio.com.br"
+        ///         "UrlImagem":"http://dominio.com.br/path/image.jpg"
+        ///         "Telefone":"(99) 9999-9999"
+        ///         "Responsavel":"Responsavel"
         ///     }
         ///
         /// </remarks>
-        /// <param name="viewModel">viewModel</param>       
+        /// <param name="caccc"></param>        
         /// <returns>New Ong Created! </returns>
         /// <response code="201">Returns new Ong Creted</response>
         /// <response code="400">it wasn`t able to created a new Ong</response>            
@@ -43,18 +46,18 @@ namespace AppPrivy.WebAppApi.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
         [Route("SalvarCaccc")]
-        public async Task<IActionResult> SalvarCaccc([FromBody]CacccViewModel viewModel )
+        public async Task<IActionResult> SalvarCaccc([FromBody]Caccc caccc)
         {
             try
             {
 
                 if (ModelState.IsValid)
                 {
-                    var result =  await Task.FromResult<CacccViewModel>(viewModel);                    
+                    var result =  await Task.FromResult<Caccc>(caccc);                    
                     return StatusCode(StatusCodes.Status201Created,$"The ong {result.Cnpj} was created!");
                 }
 
-                return StatusCode(StatusCodes.Status400BadRequest, $"The ong {viewModel.Cnpj}  wasn't created");
+                return StatusCode(StatusCodes.Status400BadRequest, $"The ong {caccc.Cnpj}  wasn't created");
                
             }
             catch (FaultException e)

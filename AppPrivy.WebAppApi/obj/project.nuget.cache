@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2iaIOBj2+971o2SpKQsAyCfjurjPGxZNHJRxxUBApIXXQV+PllDBbBM0JqkpUktrKBK/PpAaiKUwYUGtab1emw==",
+  "dgSpecHash": "v/SKS4w6yK7p25mz3dt6JKOJQ0Ai341UdgDRjAJJ9jAAOjI2YZaMwmZnurKJgeAscGScQPLKfk+V1nxSKnxkbg==",
   "success": true,
   "projectFilePath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppApi\\AppPrivy.WebAppApi.csproj",
   "expectedPackageFiles": [
@@ -66,7 +66,7 @@
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.localization\\2.2.0\\microsoft.extensions.localization.2.2.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\2.2.0\\microsoft.extensions.localization.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.logging\\3.1.0\\microsoft.extensions.logging.3.1.0.nupkg.sha512",
-    "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0\\microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.objectpool\\2.2.0\\microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.options\\3.1.0\\microsoft.extensions.options.3.1.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",

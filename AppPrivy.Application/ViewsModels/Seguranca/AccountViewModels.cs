@@ -47,12 +47,18 @@ namespace Appointment.Application.ViewsModels
 
     public class UserToken
     {
+        
+        [Required(ErrorMessage ="{0} é requerido")]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
+        [Required(ErrorMessage = "{0} é requerido")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
       
         public string Token { get; set; }
-       
+
+        [DataType(DataType.Date)]
         public DateTime? Expiration { get; set; }
 
     }

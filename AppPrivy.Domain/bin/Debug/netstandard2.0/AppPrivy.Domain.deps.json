@@ -41,6 +41,29 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "dependencies": {
           "System.Threading.Tasks.Extensions": "4.5.4"
@@ -235,7 +258,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Binder": "3.1.0",
           "Microsoft.Extensions.DependencyInjection": "3.1.0",
-          "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
           "Microsoft.Extensions.Options": "3.1.0"
         },
         "runtime": {
@@ -245,11 +268,11 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.100.19.56504"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
           }
         }
       },
@@ -297,6 +320,14 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -771,7 +802,10 @@
       },
       "AppPrivy.CrossCutting/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.Configuration": "3.1.5",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Newtonsoft.Json": "12.0.3",
           "Serilog": "2.10.0",
           "System.Runtime.Caching": "4.7.0"
         },
@@ -800,6 +834,20 @@
       "sha512": "sha512-RxAPOabRsVg8vMXEI8K8yHRtNmJ+zYdMHooutC9AN3rPqUY065xFatR1hLajmTqsFdP7IHjFtKsVZd4yg5dNVw==",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/3.1.0",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "hashPath": "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
       "type": "package",
@@ -934,12 +982,12 @@
       "path": "microsoft.extensions.logging/3.1.0",
       "hashPath": "microsoft.extensions.logging.3.1.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jjo4YXRx6MIpv6DiRxJjSpl+sPP0+5VW0clMEdLyIAz44PPwrDTFrd5PZckIxIXl1kKZ2KK6IL2nkt0+ug2MQg==",
-      "path": "microsoft.extensions.logging.abstractions/3.1.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512"
+      "sha512": "sha512-NxP6ahFcBnnSfwNBi2KH2Oz8Xl5Sm2krjId/jRR3I7teFphwiUoUeZPwTNA21EX+5PtjqmyAvKaOeBXcJjcH/w==",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/3.1.0": {
       "type": "package",
@@ -982,6 +1030,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",

@@ -2,6 +2,31 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/3.1.5": {
         "type": "package",
         "dependencies": {
@@ -24,6 +49,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/3.1.5": {
@@ -61,6 +95,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "Serilog/2.10.0": {
@@ -206,10 +249,45 @@
             "rid": "win"
           }
         }
+      },
+      "System.Text.Encodings.Web/4.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
+      "sha512": "Nxs7Z1q3f1STfLYKJSVXCs1iBl+Ya6E8o4Oy1bCxJ/rNI44E/0f6tbsrVqAWfB7jlnJfyaAtIalBVxPKUPQb4Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0": {
+      "sha512": "ziFz5zH8f33En4dX81LW84I6XrYXKf9jg6aM39cM+LffN9KJahViKZ61dGMSO2gd3e+qe5yBRwsesvyqlZaSMg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Configuration/3.1.5": {
       "sha512": "LZfdAP8flK4hkaniUv6TlstDX9FXLmJMX1A4mpLghAsZxTaJIgf+nzBNiPRdy/B5Vrs74gRONX3JrIUJQrebmA==",
       "type": "package",
@@ -240,6 +318,26 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "microsoft.extensions.configuration.abstractions.3.1.5.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/5.0.0": {
+      "sha512": "NxP6ahFcBnnSfwNBi2KH2Oz8Xl5Sm2krjId/jRR3I7teFphwiUoUeZPwTNA21EX+5PtjqmyAvKaOeBXcJjcH/w==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Extensions.Primitives/3.1.5": {
@@ -400,6 +498,37 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "Serilog/2.10.0": {
@@ -775,12 +904,34 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Text.Encodings.Web/4.5.0": {
+      "sha512": "Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
+      "type": "package",
+      "path": "system.text.encodings.web/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.4.5.0.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.Extensions.Configuration >= 3.1.5",
+      "Microsoft.Extensions.Logging.Abstractions >= 5.0.0",
       "NETStandard.Library >= 2.0.3",
+      "Newtonsoft.Json >= 12.0.3",
       "Serilog >= 2.10.0",
       "System.Runtime.Caching >= 4.7.0"
     ]
@@ -829,15 +980,27 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
             "version": "[3.1.5, )"
+          },
+          "Microsoft.Extensions.Logging.Abstractions": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
           },
           "Serilog": {
             "target": "Package",

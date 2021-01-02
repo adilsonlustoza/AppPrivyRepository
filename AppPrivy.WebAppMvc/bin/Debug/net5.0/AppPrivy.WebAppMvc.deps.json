@@ -3479,7 +3479,10 @@
       },
       "AppPrivy.CrossCutting/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.Extensions.Configuration": "3.1.5",
+          "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
+          "Newtonsoft.Json": "12.0.3",
           "Serilog": "2.10.0",
           "System.Runtime.Caching": "4.7.0"
         },

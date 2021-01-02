@@ -38,6 +38,8 @@ using System.Reflection;
 using AppPrivy.Application.Services.Site;
 using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
+using AppPrivy.CrossCutting.Middleware;
+using Microsoft.Extensions.Logging;
 
 namespace AppPrivy.WebAppApi
 {
@@ -57,7 +59,8 @@ namespace AppPrivy.WebAppApi
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
+            services.AddLogging(loggingBuilder =>   loggingBuilder.AddSerilog(dispose: true));
+
 
             services.AddControllers().AddNewtonsoftJson(options =>
             {
@@ -250,6 +253,10 @@ namespace AppPrivy.WebAppApi
                 };
             });
 
+
+            services.AddSingleton(Log.Logger);
+            services.AddTransient(typeof(ErrorHandlingMiddleware));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -275,6 +282,9 @@ namespace AppPrivy.WebAppApi
             app.UseStaticFiles();
 
             app.UseHttpsRedirection();
+
+
+            app.UseMiddleware<ErrorHandlingMiddleware>();
 
             app.UseRouting();
 

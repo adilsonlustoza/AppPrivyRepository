@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "S98Yt5/s6bL16SQV9nQoOnyRz2ymDQ6n9VZO0+Ak3SMVUCnUrCR3gLR/3RPj3GbJ+RB6FK4zO9Q4moq4KhCh/Q==",
+  "dgSpecHash": "UXyW3OA91ZXlwVwPdUYrPcKrgbmUP14rMNXuG3P8N2h6U7OE5/y9XxAar0KCGLd0KY67zESzsConVhBh+lcJZA==",
   "success": true,
   "projectFilePath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj",
   "expectedPackageFiles": [
@@ -32,7 +32,7 @@
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.0\\microsoft.extensions.identity.core.3.1.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.0\\microsoft.extensions.identity.stores.3.1.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.logging\\3.1.0\\microsoft.extensions.logging.3.1.0.nupkg.sha512",
-    "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0\\microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.options\\3.1.0\\microsoft.extensions.options.3.1.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
@@ -41,6 +41,7 @@
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

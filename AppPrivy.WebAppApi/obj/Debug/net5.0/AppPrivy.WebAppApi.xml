@@ -4,28 +4,50 @@
         <name>AppPrivy.WebAppApi</name>
     </assembly>
     <members>
+        <member name="M:AppPrivy.WebAppApi.Controllers.AuthController.Login(Appointment.Application.ViewsModels.UserToken)">
+             <summary>
+             Obtêm Token para cadastro
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Analista/Programador/Auth/Login
+                 {
+                     "Email": "email@dominio.com.br",               
+                     "Password":  "*******"        
+                 }
+            
+             </remarks>
+             <param name="loginViewModel"></param>        
+             <returns>Token</returns>
+             <response code="201">Token</response>
+             <response code="400">it wasn`t able to created a new token</response>            
+        </member>
         <member name="M:AppPrivy.WebAppApi.Controllers.BazarController.ListarBazar">
             <summary>
             Lista os bazares associados as instituições
             </summary>
             <returns></returns>
         </member>
-        <member name="M:AppPrivy.WebAppApi.Controllers.CacccController.SalvarCaccc(AppPrivy.Application.ViewsModels.DoacaoMais.CacccViewModel)">
+        <member name="M:AppPrivy.WebAppApi.Controllers.CacccController.SalvarCaccc(AppPrivy.Domain.Entities.DoacaoMais.Caccc)">
              <summary>
-             Create a new Ong
+             Cria uma nova Ong
              </summary>
              <remarks>
              Sample request:
             
                  POST / Analista/Programador/Caccc/SalvarCaccc
                  {
-                     "Ong Name": "Ong Name",
-                     "Ong surname": "Ong surname"
-                     "Cnpj": cnpj
+                     "Nome": "Nome",               
+                     "Cnpj":  "99.999.999/9999-99"
+                     "Emai":  "email@dominio.com.br"
+                     "UrlImagem":"http://dominio.com.br/path/image.jpg"
+                     "Telefone":"(99) 9999-9999"
+                     "Responsavel":"Responsavel"
                  }
             
              </remarks>
-             <param name="viewModel">viewModel</param>       
+             <param name="caccc"></param>        
              <returns>New Ong Created! </returns>
              <response code="201">Returns new Ong Creted</response>
              <response code="400">it wasn`t able to created a new Ong</response>            
