@@ -1,3 +1,7 @@
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.csprojAssemblyReference.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.AssemblyInfoInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.AssemblyInfo.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.csproj.CoreCompileInputs.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.1\Resources\Constants.resx
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.1\AppPrivy.Application.deps.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.1\AppPrivy.Application.dll
@@ -7,10 +11,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.1\AppPr
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.1\AppPrivy.Domain.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.1\AppPrivy.Domain.dll.config
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\bin\Debug\netstandard2.1\AppPrivy.CrossCutting.pdb
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.csprojAssemblyReference.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.AssemblyInfoInputs.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.AssemblyInfo.cs
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.csproj.CoreCompileInputs.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.csproj.CopyComplete
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Application\obj\Debug\netstandard2.1\AppPrivy.Application.pdb

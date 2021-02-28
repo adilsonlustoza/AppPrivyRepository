@@ -1,0 +1,38 @@
+2021-02-22 20:34:15.358 -03:00 [INF] Starting up
+2021-02-22 20:34:54.439 -03:00 [DBG] Hosting starting
+2021-02-22 20:34:57.321 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-02-22 20:34:57.476 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-02-22 20:34:57.549 -03:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2021-02-22 20:34:57.550 -03:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2021-02-22 20:34:57.675 -03:00 [INF] Creating key {0e58652b-a6ec-4057-8e55-edde175f191e} with creation date 2021-02-22 23:34:57Z, activation date 2021-02-22 23:34:57Z, and expiration date 2021-05-23 23:34:57Z.
+2021-02-22 20:34:57.774 -03:00 [DBG] Descriptor deserializer type for key {0e58652b-a6ec-4057-8e55-edde175f191e} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2021-02-22 20:34:57.823 -03:00 [DBG] No key escrow sink found. Not writing key {0e58652b-a6ec-4057-8e55-edde175f191e} to escrow.
+2021-02-22 20:34:57.930 -03:00 [WRN] No XML encryptor configured. Key {0e58652b-a6ec-4057-8e55-edde175f191e} may be persisted to storage in unencrypted form.
+2021-02-22 20:34:57.961 -03:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2021-02-22 20:34:57.965 -03:00 [DBG] Found key {0e58652b-a6ec-4057-8e55-edde175f191e}.
+2021-02-22 20:34:58.040 -03:00 [DBG] Considering key {0e58652b-a6ec-4057-8e55-edde175f191e} with expiration date 2021-05-23 23:34:57Z as default key.
+2021-02-22 20:34:58.727 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-02-22 20:34:58.737 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-02-22 20:34:58.747 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-02-22 20:34:58.837 -03:00 [DBG] Using key {0e58652b-a6ec-4057-8e55-edde175f191e} as the default key.
+2021-02-22 20:34:58.839 -03:00 [DBG] Key ring with default key {0e58652b-a6ec-4057-8e55-edde175f191e} was loaded during application startup.
+2021-02-22 20:35:03.490 -03:00 [DBG] Loaded hosting startup assembly AppPrivy.WebAppApi
+2021-02-22 20:35:03.705 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-22 20:35:03.867 -03:00 [INF] Hosting environment: Production
+2021-02-22 20:35:03.949 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi
+2021-02-22 20:35:04.003 -03:00 [DBG] Hosting started
+2021-02-22 20:35:04.179 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/WebAppApi/swagger/index.html - -
+2021-02-22 20:35:04.196 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-02-22 20:35:04.196 -03:00 [VRB] All hosts are allowed.
+2021-02-22 20:35:04.664 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en"]'.
+2021-02-22 20:35:04.705 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US","en"]'.
+2021-02-22 20:35:04.742 -03:00 [DBG] The request path /swagger/index.html does not match an existing file
+2021-02-22 20:35:04.986 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-02-22 20:35:05.136 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2021-02-22 20:35:05.137 -03:00 [DBG] Request did not match any endpoints
+2021-02-22 20:35:06.576 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-02-22 20:35:06.845 -03:00 [DBG] The request path /swagger/index.html does not match an existing file
+2021-02-22 20:35:07.129 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/WebAppApi/swagger/index.html - - - 404 - - 2865.3556ms
+2021-02-22 20:54:21.839 -03:00 [INF] Application is shutting down...
+2021-02-22 20:54:21.844 -03:00 [DBG] Hosting stopping
+2021-02-22 20:54:21.847 -03:00 [DBG] Hosting stopped

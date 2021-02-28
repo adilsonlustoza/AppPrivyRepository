@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.IO;
@@ -11,6 +12,12 @@ namespace AppPrivy.WebAppApi.Controllers
     [ApiController]
     public class RecursoController : ControllerBase
     {
+
+
+        /// <summary>
+        /// Check Http Header Resource
+        /// </summary>
+        /// <returns></returns>
 
         [HttpHead]
         [Route("Cabecalho")]
@@ -45,6 +52,11 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Save File By Send By Form
+        /// </summary>
+        /// <returns></returns>
+        [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
         [Route("SalvarArquivo")]
         public async Task<IActionResult> SaveFile()

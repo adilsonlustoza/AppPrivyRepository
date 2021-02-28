@@ -107,10 +107,10 @@ namespace AppPrivy.WebAppMvc
             services.AddTransient(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
             services.AddTransient(typeof(IServiceBase<>), typeof(ServiceBase<>));
             services.AddTransient(typeof(IAppServiceBase<>), typeof(AppServiceBase<>));
-           
 
-            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
-            services.AddTransient<IUsuarioService, UsuarioService>();
+
+            //services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            //services.AddTransient<IUsuarioService, UsuarioService>();
 
             services.AddTransient<IPesquisaRepository, PesquisaRepository>();
             services.AddTransient<IPesquisaService, PesquisaService>();

@@ -7,6 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using AppPrivy.CrossCutting.Fault;
 
 namespace AppPrivy.Application.Services.Site
 {
@@ -21,12 +22,11 @@ namespace AppPrivy.Application.Services.Site
         {
             try
             {
-                var claims = new[]
-                    {
-                new Claim(ClaimTypes.Sid, userInfo.Email),
-                new Claim(ClaimTypes.Role, "DoacaoMais"),
-                new Claim(ClaimTypes.Name, Guid.NewGuid().ToString())
-            };
+                var claims = new[] {
+                                     new Claim(ClaimTypes.Sid, userInfo.Email),
+                                     new Claim(ClaimTypes.Role, "DoacaoMais")               
+                                  };
+
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:key"]));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
                 // tempo de expiração do token: 1 hora
@@ -47,9 +47,9 @@ namespace AppPrivy.Application.Services.Site
                     Expiration = expiration
                 });
             }
-            catch (Exception)
+            catch (FaultException e )
             {
-                throw;
+                throw e;
             }
 
 

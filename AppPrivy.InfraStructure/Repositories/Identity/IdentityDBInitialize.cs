@@ -9,7 +9,7 @@ namespace AppPrivy.InfraStructure.Repositories.Identity
     {
         public static void Seed(AppPrivyContext context)
         {
-            var roles = new List<string>() { "Administrador", "Convidado" };
+            var roles = new List<string>() { "Administrador","Gestor do Blog", "Público" };
 
 
             roles.ForEach((x) =>

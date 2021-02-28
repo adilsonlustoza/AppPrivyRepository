@@ -21,6 +21,10 @@ namespace AppPrivy.WebAppApi.Controllers
             _noticiaService = noticiaService;
         }
 
+        /// <summary>
+        /// List all articles
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarNoticia")]
@@ -41,7 +45,10 @@ namespace AppPrivy.WebAppApi.Controllers
         }
 
 
-
+        /// <summary>
+        /// List all articles by instituion Id
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarNoticiaPorCacccId/{Id}")]
@@ -64,6 +71,10 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// List all articles by instituion name
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarNoticiaPorCacccNome/{caccc}")]
@@ -87,6 +98,10 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// List all general articles by instituion Id
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarNoticiasGeraisPorCacccId/{Id}")]

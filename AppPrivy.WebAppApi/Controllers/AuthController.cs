@@ -29,7 +29,7 @@ namespace AppPrivy.WebAppApi.Controllers
         }
 
         /// <summary>
-        /// Obtêm Token para cadastro
+        /// Request the Token by Login
         /// </summary>
         /// <remarks>
         /// Sample request:

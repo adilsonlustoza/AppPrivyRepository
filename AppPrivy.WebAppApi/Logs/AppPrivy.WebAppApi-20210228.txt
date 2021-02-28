@@ -1,0 +1,28 @@
+2021-02-28 11:42:58.105 -03:00 [INF] Starting up
+2021-02-28 11:43:10.393 -03:00 [FTL] Application start-up failed
+System.ArgumentException: Open generic service type 'Microsoft.Extensions.Options.IOptions`1[TOptions]' requires registering an open generic implementation type. (Parameter 'descriptors')
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.Populate()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory..ctor(IEnumerable`1 descriptors)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine..ctor(IEnumerable`1 serviceDescriptors)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CompiledServiceProviderEngine..ctor(IEnumerable`1 serviceDescriptors)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at DotNurse.Injector.DotNurseServiceProvider..ctor(IServiceCollection defaultServiceCollection)
+   at DotNurse.Injector.DotNurseServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AppPrivy.WebAppApi.Program.Main(String[] args) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\Program.cs:line 25
+2021-02-28 11:43:19.877 -03:00 [INF] Starting up
+2021-02-28 11:43:21.561 -03:00 [FTL] Application start-up failed
+System.ArgumentException: Open generic service type 'Microsoft.Extensions.Options.IOptions`1[TOptions]' requires registering an open generic implementation type. (Parameter 'descriptors')
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.Populate()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory..ctor(IEnumerable`1 descriptors)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine..ctor(IEnumerable`1 serviceDescriptors)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CompiledServiceProviderEngine..ctor(IEnumerable`1 serviceDescriptors)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at DotNurse.Injector.DotNurseServiceProvider..ctor(IServiceCollection defaultServiceCollection)
+   at DotNurse.Injector.DotNurseServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AppPrivy.WebAppApi.Program.Main(String[] args) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi\Program.cs:line 25

@@ -21,6 +21,11 @@ namespace AppPrivy.WebAppApi.Controllers
         }
 
 
+        /// <summary>
+        /// List all actives notifications
+        /// </summary>
+        /// <returns></returns>
+
         [HttpGet]
         [Route("ListarNotificacoesAtivas")]
         public async Task<IActionResult> ListarNotificacoesAtivas()
@@ -41,6 +46,11 @@ namespace AppPrivy.WebAppApi.Controllers
             }
          
         }
+
+        /// <summary>
+        /// List all actives notifications by device unique identifier
+        /// </summary>
+        /// <returns></returns>
 
 
         [HttpGet]

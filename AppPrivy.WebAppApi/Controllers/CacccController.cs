@@ -3,6 +3,7 @@ using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -22,7 +23,7 @@ namespace AppPrivy.WebAppApi.Controllers
             _cacccService = cacccService;
         }
         /// <summary>
-        /// Cria uma nova Ong
+        /// Create a new institution [Required Authorization]
         /// </summary>
         /// <remarks>
         /// Sample request:
@@ -53,7 +54,7 @@ namespace AppPrivy.WebAppApi.Controllers
 
                 if (ModelState.IsValid)
                 {
-                    var result =  await Task.FromResult<Caccc>(caccc);                    
+                    var result =  await Task.FromResult<Caccc>(caccc);
                     return StatusCode(StatusCodes.Status201Created,$"The ong {result.Cnpj} was created!");
                 }
 
@@ -68,10 +69,141 @@ namespace AppPrivy.WebAppApi.Controllers
 
 
         /// <summary>
-        /// List all Ongs
+        /// Update a institution [Required Authorization]
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     PUT / Analista/Programador/Caccc/AtualizaCaccc/2
+        ///     
+        ///     {
+        ///         "Nome": "Nome",               
+        ///         "Cnpj":  "99.999.999/9999-99"
+        ///         "Emai":  "email@dominio.com.br"
+        ///         "UrlImagem":"http://dominio.com.br/path/image.jpg"
+        ///         "Telefone":"(99) 9999-9999"
+        ///         "Responsavel":"Responsavel"
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="Id"></param>      
+        /// <param name="caccc"></param>      
+        /// <returns>Update institution </returns>
+        /// <response code="200">Returns institution updated</response>
+        /// <response code="400">it wasn`t able to update a institution</response>          
+
+        [Authorize(Roles = "DoacaoMais")]
+        [HttpPut]
+        [Route("AtualizarCaccc/{Id:int?}")]
+        public async Task<IActionResult> AtualizarCaccc(int? Id, [FromBody] Caccc caccc)
+        {
+            try
+            {
+
+                if (ModelState.IsValid)
+                {
+                    var result = await Task.FromResult<Caccc>(caccc);
+                    return StatusCode(StatusCodes.Status201Created, $"The ong {result.Cnpj} was created!");
+                }
+
+                return StatusCode(StatusCodes.Status400BadRequest, $"The ong {caccc.Cnpj}  wasn't created");
+
+            }
+            catch (FaultException e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+
+        /// <summary>
+        /// Partial update a institution [Required Authorization]
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     PATCH /Analista/Programador/Caccc/AtualizarParcialCaccc/3
+        ///     
+        ///     {
+        ///         "Nome": "Nome",               
+        ///         "Cnpj":  "99.999.999/9999-99"
+        ///         "Emai":  "email@dominio.com.br"
+        ///         "UrlImagem":"http://dominio.com.br/path/image.jpg"
+        ///         "Telefone":"(99) 9999-9999"
+        ///         "Responsavel":"Responsavel"
+        ///     }
+        ///
+        /// </remarks>
+        /// <param name="Id"></param>      
+        /// <param name="caccc"></param>      
+        /// <returns>Update institution </returns>
+        /// <response code="200">Returns institution updated</response>
+        /// <response code="400">it wasn`t able to update a institution</response>          
+
+        [Authorize(Roles = "DoacaoMais")]
+        [HttpPatch]
+        [Route("AtualizarParcialCaccc/{Id:int?}")]
+        public async Task<IActionResult> AtualizarParcialCaccc(int? Id, [FromBody] JsonPatchDocument<Caccc> caccc)
+        {
+            try
+            {
+
+                if (ModelState.IsValid)
+                {
+                    
+                    return StatusCode(StatusCodes.Status201Created, $"The ong {await Task.FromResult<int?>(Id)} was created!");
+                }
+
+                return StatusCode(StatusCodes.Status400BadRequest, $"The ong {Id}  wasn't created");
+
+            }
+            catch (FaultException e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+        /// <summary>
+        /// Delete a institution [Required Authorization]
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     DELETE / Analista/Programador/Caccc/AtualizaCaccc/8
+        ///        
+        /// </remarks>
+        /// <param name="Id"></param>        
+        /// <returns>Delete institution </returns>
+        /// <response code="200">Returns institution deleted</response>
+        /// <response code="400">it wasn`t able to deleted a institution</response>          
+
+        [Authorize(Roles = "DoacaoMais")]
+        [HttpDelete]
+        [Route("ApagarCaccc/{Id:int?}")]
+        public async Task<IActionResult> ApagarCaccc(int? Id)
+        {
+            try
+            {
+
+                if (ModelState.IsValid)
+                {
+                  
+                    return StatusCode(StatusCodes.Status201Created, $"The ong {await Task.FromResult<int>(Id.Value)} was deleted!");
+                }
+
+                return StatusCode(StatusCodes.Status400BadRequest, $"The ong {Id}  wasn't deleted");
+
+            }
+            catch (FaultException e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+
+        /// <summary>
+        /// List all Institution
         /// </summary>
         /// <returns></returns>
-        [Authorize]
         [HttpGet]
         [Route("ListarCaccc")]
         public async Task<IActionResult> ListarCaccc()
@@ -115,7 +247,7 @@ namespace AppPrivy.WebAppApi.Controllers
         }
 
         /// <summary>
-        /// Brings a summary of the Ong through the Ong Id
+        /// Brings a summary of the Institution through the Id
         /// </summary>
         /// <returns></returns>
 
@@ -138,6 +270,10 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Brings a summary of the Institution through the Name
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ConteudoContasPorNomeCaccc/{caccc}")]
@@ -156,6 +292,11 @@ namespace AppPrivy.WebAppApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
+
+        /// <summary>
+        /// List all content of all institutions
+        /// </summary>
+        /// <returns></returns>
 
 
         [HttpGet]

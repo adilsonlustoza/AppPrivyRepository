@@ -21,7 +21,7 @@ namespace AppPrivy.WebAppApi.Controllers
         }
 
         /// <summary>
-        /// Lista os bazares associados as instituições
+        /// Lists stores linked to institutions
         /// </summary>
         /// <returns></returns>
 
@@ -43,6 +43,10 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Lists stores by cacccId linked to institutions 
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarBazarPorCacccId/{cacccId}")]
@@ -64,6 +68,11 @@ namespace AppPrivy.WebAppApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
+
+        /// <summary>
+        /// Lists stores by name linked to institutions 
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarBazarPorCacccNome/{caccc}")]

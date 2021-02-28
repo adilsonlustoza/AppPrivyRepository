@@ -19,6 +19,11 @@ namespace AppPrivy.WebAppApi.Controllers
             _conteudoService = conteudoService;
         }
 
+        /// <summary>
+        /// List all content of all institution
+        /// </summary>
+        /// <returns></returns>
+
         [HttpGet]
         [Route("ListarConteudo")]
         public async Task<IActionResult> ListarConteudo()
@@ -36,6 +41,12 @@ namespace AppPrivy.WebAppApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
+
+
+        /// <summary>
+        /// List all content by institution Id
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarConteudoPorCacccId/{Id}")]
@@ -55,6 +66,10 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// List all content by institution name
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarConteudoPorCacccNome/{caccc}")]

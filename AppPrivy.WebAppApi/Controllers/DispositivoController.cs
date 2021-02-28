@@ -24,9 +24,13 @@ namespace AppPrivy.WebAppApi.Controllers
         }
 
 
+        /// <summary>
+        /// List all devices 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("ListarTodosDispositivos")]
-        public async Task<IActionResult> ListarTodosDispositivosAsync()
+        public async Task<IActionResult> ListarTodosDispositivos()
         {
             try
             {
@@ -45,9 +49,8 @@ namespace AppPrivy.WebAppApi.Controllers
         }
 
 
-        // GET api/documentation
         /// <summary>
-        /// This is how we create a documentation
+        /// Save one device
         /// </summary>
         /// <returns></returns>
 

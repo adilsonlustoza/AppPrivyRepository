@@ -1,4 +1,5 @@
-﻿using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.CrossCutting.Fault;
+using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.InfraStructure.Interface;
 using System;
@@ -25,7 +26,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 
                 return await this.Search(p => p.CacccId == CacccId);
             }
-            catch (Exception e)
+            catch (FaultException e)
             {
                 throw e;
             }

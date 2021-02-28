@@ -18,6 +18,10 @@ namespace AppPrivy.WebAppApi.Controllers
             _contaBancariaService = contaBancariaService;
         }
 
+        /// <summary>
+        /// List all bank account
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarContasBancarias")]
@@ -35,11 +39,14 @@ namespace AppPrivy.WebAppApi.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
-        }        
-        
-    
+        }
 
 
+
+        /// <summary>
+        /// List bank accounts by institution Id
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("ListarContasBancariasPorCacccId/{Id}")]
         public async Task<IActionResult> ListarContasBancariasPorCacccId(int? Id)

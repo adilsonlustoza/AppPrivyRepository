@@ -54,8 +54,7 @@ namespace Appointment.Application.ViewsModels
 
         [Required(ErrorMessage = "{0} é requerido")]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
-      
+        public string Password { get; set; }      
         public string Token { get; set; }
 
         [DataType(DataType.Date)]

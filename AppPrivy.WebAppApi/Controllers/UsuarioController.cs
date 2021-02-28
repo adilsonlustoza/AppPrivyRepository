@@ -1,6 +1,7 @@
 ﻿using AppPrivy.CrossCutting.Fault;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,8 +21,13 @@ namespace AppPrivy.WebAppApi.Controllers
             _usuarioService = usuarioService;
       
         }
-          
 
+
+        /// <summary>
+        /// Add New User
+        /// </summary>
+        /// <returns></returns>
+        [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
         [Route("SalvarUsuario")]
         public IActionResult AddUser(Usuario usuario)
@@ -43,6 +49,12 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Add New List of User
+        /// </summary>
+        /// <returns></returns>
+        /// 
+        [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
         [Route("SalvarListaUsuarios")]
         public IActionResult AddUserList(ICollection<Usuario> usuarios)
@@ -66,8 +78,13 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// List All Users
+        /// </summary>
+        /// <returns></returns>
+        /// 
 
-
+        [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
         [Route("ListarUsuarios")]
         public IActionResult UserList()
@@ -87,6 +104,11 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Get User By Id
+        /// </summary>
+        /// <returns></returns>
+        [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
         [Route("ObterUsuario")]
         public IActionResult GetUser(int? Id)
@@ -108,6 +130,11 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Get User By Login
+        /// </summary>
+        /// <returns></returns>
+        [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
         [Route("ObterUsuarioPorLogin/{login}")]
         public IActionResult GetUserByLogin(string login)

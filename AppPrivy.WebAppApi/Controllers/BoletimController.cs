@@ -20,6 +20,10 @@ namespace AppPrivy.WebAppApi.Controllers
             _boletimService = boletimService;
         }
 
+        /// <summary>
+        /// List all linked articles with institutions
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarBoletim")]
@@ -38,6 +42,11 @@ namespace AppPrivy.WebAppApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
+
+        /// <summary>
+        /// List all linked articles by institution Id
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarBoletimPorCacccId/{Id}")]
@@ -60,7 +69,10 @@ namespace AppPrivy.WebAppApi.Controllers
             }
         }
 
-
+        /// <summary>
+        /// List all linked articles by institution name
+        /// </summary>
+        /// <returns></returns>
 
         [HttpGet]
         [Route("ListarBoletimPorCacccNome/{caccc}")]

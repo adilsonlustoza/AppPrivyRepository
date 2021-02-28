@@ -39,14 +39,11 @@ using AppPrivy.Application.Services.Site;
 using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
 using AppPrivy.CrossCutting.Middleware;
-using Microsoft.Extensions.Logging;
 
 namespace AppPrivy.WebAppApi
 {
     public class Startup
     {
-
-
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -140,13 +137,10 @@ namespace AppPrivy.WebAppApi
                   .AddDefaultTokenProviders();
 
 
-
             services.AddTransient<IAuthService, AuthService>();
 
             services.AddScoped<FaultException>();
             services.AddScoped<SendMail>();
-
-
 
             services.AddSwaggerGenNewtonsoftSupport();
 
@@ -283,7 +277,6 @@ namespace AppPrivy.WebAppApi
 
             app.UseHttpsRedirection();
 
-
             app.UseMiddleware<ErrorHandlingMiddleware>();
 
             app.UseRouting();
@@ -305,9 +298,10 @@ namespace AppPrivy.WebAppApi
             });
 
             app.UseSwagger();
+
             app.UseSwaggerUI(c =>
             {
-                // c.RoutePrefix = string.Empty;
+                c.RoutePrefix = string.Empty;
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api Doação Mais V1");
             });
 
