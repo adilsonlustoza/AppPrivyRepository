@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\PROJETOS\NetCore\SiteAppPrivyWebPublish</_PublishTargetUrl>
+    <History>True|2021-03-06T19:25:02.9606995Z;True|2021-03-06T15:32:16.4072134-03:00;True|2021-03-06T11:52:19.4439979-03:00;True|2021-03-06T11:38:25.6172743-03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AppPrivyContext">
+      <Value>Data Source=sql5059.site4now.net%3binitial catalog=DB_A44382_lustoza%3bpersist security info=True%3buser id=DB_A44382_lustoza_admin%3bpassword=Apto104F%400914%3bMultipleActiveResultSets=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,65 @@
+/********************************************************All Medias**********************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+    font-family: 'Open Sans', 'Roboto',Verdana, Arial,sans-serif;
+    font-size-adjust: inherit;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+body{ overflow-x:hidden;}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.go-center{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
+    vertical-align:central;
+    text-align:center;    
+
+}
+.img-center-horizontal {
+    position:relative;
+    clear:both;
+    float: none;
+    margin: 0 auto;    
+}
+
+.aui-format-span
+{
+    font-style: normal;
+    font-size: medium;   
+    text-align:justify;
+
+}
+
+.animateLoader
+ {
+    width: 100px;
+    height: 100px;
+    background: url(../../images/commons/ajax-loader.gif) no-repeat center;
+    z-index: 999;
+    position: relative;  
+}
+
+.margin-footer{
+    margin-bottom:120px;
+    z-index:999;
+}
+
+.aui-skip-line-1 {
+   clear:both;
+   position:relative;
+   margin:0 auto;
+   width:100%;
+   min-height:100px;
+}

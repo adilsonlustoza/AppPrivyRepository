@@ -1,0 +1,210 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>e55fa56e-f002-4ef6-aa59-e36e81b6087f</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <AssemblyName>AppPrivy.WebAppSiteBlog</AssemblyName>
+    <StartupObject>AppPrivy.WebAppSiteBlog.Program</StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  
+  <PropertyGroup>   
+    <ResourceLanguages>en</ResourceLanguages>
+</PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\.bower.json" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\.gitignore" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\.npmignore" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\.travis.yml" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\component.json" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\css\bootstrap-lightbox.css" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\css\bootstrap-lightbox.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\css\bootstrap.min.css" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\css\pygment_trac.css" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\css\qunit.css" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\css\styles.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\img\glyphicons-halflings-white.png" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\img\glyphicons-halflings.png" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\img\large.png" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\img\small.png" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\img\Thumbs.db" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\bootstrap-lightbox.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\bootstrap-lightbox.min.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\bootstrap.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\bootstrap.min.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\jquery.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\jquery.min.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\less.min.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\qunit.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\scale.fix.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-apollo.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-clj.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-css.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-go.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-hs.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-lisp.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-lua.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-ml.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-n.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-proto.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-scala.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-sql.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-tex.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-vb.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-vhdl.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-wiki.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-xq.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-yaml.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\prettify.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\prettify.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\.jshintrc" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\bootstrap-lightbox.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\.jshintrc" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\index.html" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\pixel.png" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\run-qunit.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\test-manual.html" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\unit\bootstrap-lightbox.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\unit\qunit-setup.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\bootstrap.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\bootstrap.min.css" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\jquery.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\less.min.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\qunit.css" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\qunit.js" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\less\bootstrap-lightbox.less" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\LICENSE.md" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\Makefile" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\package.json" />
+    <Content Include="wwwroot\bower_components\bootstrap-lightbox\README.md" />
+    <Content Include="wwwroot\bower_components\Chart.js\Chart.css" />
+    <Content Include="wwwroot\bower_components\Chart.js\Chart.min.css" />
+    <Content Include="wwwroot\bower_components\font-awesome\css\font-awesome.min.css" />
+    <Content Include="wwwroot\bower_components\Ionicons\css\ionicons.min.css" />
+    <Content Include="wwwroot\bower_components\jR3DCarousel\.bower.json" />
+    <Content Include="wwwroot\bower_components\jR3DCarousel\bower.json" />
+    <Content Include="wwwroot\bower_components\jR3DCarousel\package.json" />
+    <Content Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.css" />
+    <Content Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\.gitignore" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\.npmignore" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\.travis.yml" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\img\Thumbs.db" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\bootstrap-lightbox.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\bootstrap-lightbox.min.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\bootstrap.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\jquery.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\jquery.min.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\less.min.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\qunit.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\scale.fix.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-apollo.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-clj.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-css.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-go.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-hs.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-lisp.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-lua.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-ml.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-n.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-proto.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-scala.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-sql.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-tex.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-vb.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-vhdl.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-wiki.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-xq.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\lang-yaml.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\prettify.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\.jshintrc" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\bootstrap-lightbox.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\.jshintrc" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\run-qunit.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\unit\bootstrap-lightbox.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\unit\qunit-setup.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\bootstrap.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\jquery.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\less.min.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\qunit.js" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\less\bootstrap-lightbox.less" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\LICENSE.md" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\Makefile" />
+    <None Include="wwwroot\bower_components\bootstrap-lightbox\README.md" />
+    <None Include="wwwroot\bower_components\Chart.js\Chart.bundle.js" />
+    <None Include="wwwroot\bower_components\Chart.js\Chart.bundle.min.js" />
+    <None Include="wwwroot\bower_components\Chart.js\Chart.js" />
+    <None Include="wwwroot\bower_components\Chart.js\Chart.min.js" />
+    <None Include="wwwroot\bower_components\fastclick\fastclick.js" />
+    <None Include="wwwroot\bower_components\fastclick\fastclick.min.js" />
+    <None Include="wwwroot\bower_components\jQuery-slimScroll\jquery.slimscroll.js" />
+    <None Include="wwwroot\bower_components\jQuery-slimScroll\jquery.slimscroll.min.js" />
+    <None Include="wwwroot\bower_components\jquery-sparklines\jquery.sparkline.js" />
+    <None Include="wwwroot\bower_components\jquery-sparklines\jquery.sparkline.min.js" />
+    <None Include="wwwroot\bower_components\jR3DCarousel\dist\jR3DCarousel.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\bower_components\jR3DCarousel\LICENSE" />
+    <None Include="wwwroot\bower_components\jR3DCarousel\src\jR3DCarousel.js" />
+    <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.js" />
+    <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.css.map" />
+    <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.js" />
+    <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.js.map" />
+    <None Include="wwwroot\templates\email\ContatoEmail.html" />
+    <None Include="wwwroot\templates\email\RecuperarEmail.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AdminLTE" Version="2.4.0" />
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Tools" Version="1.1.0-preview4-final" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" ExcludeAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppPrivy.Application\AppPrivy.Application.csproj" />
+    <ProjectReference Include="..\AppPrivy.InfraStructure\AppPrivy.InfraStructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\bower_components\bootstrap-lightbox\docs\build\" />
+    <Folder Include="wwwroot\css\scss\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+
+
+</Project>

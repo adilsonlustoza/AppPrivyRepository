@@ -10,8 +10,7 @@ using Microsoft.EntityFrameworkCore;
 namespace AppPrivy.Domain
 {
     [Table("PostCategory", Schema = "Blog")]
-    //[Index(nameof(CategoryId), Name = "idx_pc_category")]
-    //[Index(nameof(PostId), Name = "idx_pc_post")]
+   
     public partial class PostCategory
     {
         [Key]
