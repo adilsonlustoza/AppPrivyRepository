@@ -2,6 +2,7 @@
 using AppPrivy.CrossCutting.Agregation;
 using AppPrivy.Domain;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Net;
@@ -13,11 +14,13 @@ namespace AppPrivy.Application
     {
         private readonly IContatoService _contatoService;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IConfiguration _configuration;
 
-        public ContatoAppService(IContatoService contatoService, IHttpContextAccessor httpContextAccessor)
+        public ContatoAppService(IContatoService contatoService, IHttpContextAccessor httpContextAccessor,IConfiguration configuration)
         {
             _contatoService = contatoService;
             _httpContextAccessor = httpContextAccessor;
+            _configuration = configuration;
         }
 
         public async Task SendMail(ContactAgregation contato)
@@ -41,9 +44,9 @@ namespace AppPrivy.Application
 
             try
             {
-                var response = _httpContextAccessor.HttpContext.Request.Query["g-recaptcha-response"];
+                var response = _httpContextAccessor.HttpContext.Request.Form["g-recaptcha-response"];
 
-                string secretKey = "6LerbkYUAAAAADWpcWLFuTFzIDpnMhxVGeGTc9mQ";
+                string secretKey = _configuration.GetSection("Google").GetSection("CaptchaSecretKey").Value;  
 
                 var client = new WebClient();
 

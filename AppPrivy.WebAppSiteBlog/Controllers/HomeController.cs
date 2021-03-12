@@ -89,6 +89,7 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         public IActionResult Contact()
         {
             ViewBag.Message = "Pagina de Contato";
+            ViewBag.SiteKey= _configuration.GetSection("Google").GetSection("CaptchaSiteKey").Value;
 
             return View();
         }

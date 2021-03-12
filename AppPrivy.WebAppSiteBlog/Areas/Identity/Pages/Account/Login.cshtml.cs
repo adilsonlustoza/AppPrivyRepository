@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -102,19 +103,23 @@ namespace AppPrivy.WebAppSiteBlog.Areas.Identity.Pages.Account
 
                         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
+                    
 
                         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), new AuthenticationProperties
                         {
-                            IsPersistent = true
+                            IsPersistent = true,
+                            AllowRefresh = true
+
                         });
 
+                                              
 
-                        if (!User.Identity.IsAuthenticated)
-                            return RedirectToPage("./AccessDenied");
+                        
+                        if (!claimsIdentity.IsAuthenticated)
+                           return RedirectToPage("./AccessDenied");
 
-                        var claimsPrincipal = (ClaimsIdentity)User.Identity;
-
-                        if (claimsPrincipal.Claims.Any(p => p.Value.Contains("Admin")))
+                    
+                        if (claimsIdentity.Claims.Any(p => p.Value.Contains("Admin")))
                             return LocalRedirect("/Admin/Home/Index");
 
                     }

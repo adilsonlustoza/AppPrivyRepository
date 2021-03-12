@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XlmK7ot9gv4ML8gttnUQKydkhMt8rH5Pt5DAr4v23Mm+tacXZ8gL4+07DIXEiMRjJmQBpham71Qkf4+c+snKWg==",
+  "dgSpecHash": "alkZ3XjKedSP4adlcVxCxtv6yU99iyAFRlSZ8hZq7avcUd1Fpjx3NyXlMYK3tQbaMntsYtNTgLuIiTDmYQhBYg==",
   "success": true,
-  "projectFilePath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppMvc\\AppPrivy.WebAppMvc.csproj",
+  "projectFilePath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebAppSiteBlog\\AppPrivy.WebAppSiteBlog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adils\\.nuget\\packages\\adminlte\\2.4.0\\adminlte.2.4.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
@@ -308,7 +308,10 @@
     "C:\\Users\\adils\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\adils\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\adils\\.nuget\\packages\\tether.new\\1.3.3\\tether.new.1.3.3.nupkg.sha512"
+    "C:\\Users\\adils\\.nuget\\packages\\tether.new\\1.3.3\\tether.new.1.3.3.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.3\\microsoft.netcore.app.runtime.win-x64.5.0.3.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.3\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.3.nupkg.sha512",
+    "C:\\Users\\adils\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.3\\microsoft.aspnetcore.app.runtime.win-x64.5.0.3.nupkg.sha512"
   ],
   "logs": []
 }

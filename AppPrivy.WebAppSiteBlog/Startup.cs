@@ -47,8 +47,10 @@ namespace AppPrivy.WebAppSiteBlog
 
             services.Configure<CookiePolicyOptions>(options =>
             {
-                options.CheckConsentNeeded = context => true;
+                options.ConsentCookie.IsEssential = true;
+                options.CheckConsentNeeded = context => false;
                 options.MinimumSameSitePolicy = SameSiteMode.Lax;
+               
 
             });
 
@@ -85,11 +87,30 @@ namespace AppPrivy.WebAppSiteBlog
 
 
             services
-               .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-              .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme);
-           
+                .AddAuthentication(options =>
+               {
+                   options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                   options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                   options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+               })
+               .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme,
+                               options =>
+                               {
+                                   options.Cookie.IsEssential = true;
+                                   options.Cookie.HttpOnly = true;
+                                   options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                                   options.Cookie.SameSite = SameSiteMode.Lax;
+                                   options.Cookie.Name = "AppPrivyCookie";
+                                   options.LoginPath = "/Identity/Account/Login";
+                                   options.LogoutPath = "/Identity/Account/Logout";
+                               }
 
 
+
+               );
+
+
+          
             services.AddMvc(options => options.EnableEndpointRouting = false)
            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
            .AddRazorPagesOptions(options =>
@@ -105,8 +126,6 @@ namespace AppPrivy.WebAppSiteBlog
             services.AddTransient(typeof(IAppServiceBase<>), typeof(AppServiceBase<>));
 
 
-            //services.AddTransient<IUsuarioRepository, UsuarioRepository>();
-            //services.AddTransient<IUsuarioService, UsuarioService>();
 
             services.AddTransient<IPesquisaRepository, PesquisaRepository>();
             services.AddTransient<IPesquisaService, PesquisaService>();
@@ -130,7 +149,7 @@ namespace AppPrivy.WebAppSiteBlog
                .Build());
             });
            
-            services.AddSession();
+            services.AddSession(p=>p.Cookie.IsEssential=true);
             services.AddMemoryCache();
         }
 
@@ -181,6 +200,9 @@ namespace AppPrivy.WebAppSiteBlog
                 app.UseHsts();
             }
 
+          
+
+
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -191,8 +213,8 @@ namespace AppPrivy.WebAppSiteBlog
             app.UseCookiePolicy();
             app.UseRouting();
 
-        
           
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

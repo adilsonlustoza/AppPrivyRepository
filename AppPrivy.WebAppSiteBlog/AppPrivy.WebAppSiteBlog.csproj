@@ -16,6 +16,7 @@
   
   <PropertyGroup>   
     <ResourceLanguages>en</ResourceLanguages>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
 </PropertyGroup>
 
   <ItemGroup>
@@ -179,6 +180,7 @@
 
   <ItemGroup>
     <PackageReference Include="AdminLTE" Version="2.4.0" />
+    <PackageReference Include="AspNetCore.Authentication.Cookies.Owin" Version="1.0.0" />
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
     <PackageReference Include="Castle.Core" Version="4.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.3" />
@@ -193,6 +195,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="App_Filter\" />
     <Folder Include="wwwroot\bower_components\bootstrap-lightbox\docs\build\" />
     <Folder Include="wwwroot\css\scss\" />
   </ItemGroup>
@@ -203,6 +206,12 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 
