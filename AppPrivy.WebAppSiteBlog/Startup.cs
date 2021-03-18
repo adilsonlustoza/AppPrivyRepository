@@ -113,6 +113,7 @@ namespace AppPrivy.WebAppSiteBlog
           
             services.AddMvc(options => options.EnableEndpointRouting = false)
            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+           .AddRazorRuntimeCompilation()
            .AddRazorPagesOptions(options =>
            {
                options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");

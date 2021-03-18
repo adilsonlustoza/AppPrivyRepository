@@ -124,7 +124,7 @@ namespace AppPrivy.CrossCutting.Operations
             try
             {
 
-                await Task.Run(() =>
+                await Task.Run(async () =>
                 {
 
                     this.FullFill();
@@ -154,7 +154,8 @@ namespace AppPrivy.CrossCutting.Operations
                                 smtp.UseDefaultCredentials = false;
                                 smtp.EnableSsl = _ssl;
                                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                                smtp.SendMailAsync(_mailMessage);
+                                await smtp.SendMailAsync(_mailMessage);
+                             
                             }
                             catch (SmtpException e)
                             {

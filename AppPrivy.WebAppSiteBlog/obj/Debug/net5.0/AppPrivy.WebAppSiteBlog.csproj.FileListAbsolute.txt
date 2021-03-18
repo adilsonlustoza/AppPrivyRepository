@@ -491,3 +491,4 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.W
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\ref\AppPrivy.WebAppSiteBlog.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.genruntimeconfig.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Humanizer.dll
