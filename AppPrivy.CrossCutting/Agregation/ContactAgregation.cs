@@ -2,19 +2,19 @@
 {
     public class ContactAgregation
     {
-        public string _name { get; set; }
-        public string _email { get; set; }
-        public string _phone { get; set; }
-        public string _subject { get; set; }
-        public byte[] file { get; set; }
-        public string _message { get; set; }
-        public int _contactType { get; set; }
-        public bool _notification { get; set; }
-        public string _body { get; set; }
-        public string _from { get; set; }
-        public string _to { get; set; }
-        public string _path { get; set; }
-        public string _url { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Subject { get; set; }
+        public byte[] File { get; set; }
+        public string Message { get; set; }
+        public int ContactType { get; set; }
+        public bool Notification { get; set; }
+        public string Body { get; set; }
+        public string From { get; set; }
+        public string To { get; set; }
+        public string Path { get; set; }
+        public string Url { get; set; }
 
     }
 }

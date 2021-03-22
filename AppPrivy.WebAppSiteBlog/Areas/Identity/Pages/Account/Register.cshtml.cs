@@ -148,15 +148,15 @@ namespace AppPrivy.WebAppSiteBlog.Areas.Identity.Pages.Account
 
                     await _emailSender.SendHtmlFormattedMail(new ContactAgregation()
                     {
-                        _path = Path.Combine(_webHostEnvironment.WebRootPath, @"Templates\Email\ConfirmacaoEmail.html"),
-                        _email = Input.Email,
-                        _name = $"Blog Adilson",
-                        _message = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clique aqui</a>.",
-                        _subject = "Confirmação de e-mail",
-                        _to = Input.Email,
-                        _body = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clique aqui</a>.",
-                        _url = callbackUrl,
-                        _phone = "(xx) xxxxx-xx"
+                       Path = Path.Combine(_webHostEnvironment.WebRootPath, @"Templates\Email\ConfirmacaoEmail.html"),
+                       Email = Input.Email,
+                       Name = $"Blog Adilson",
+                       Message = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clique aqui</a>.",
+                       Subject = "Confirmação de e-mail",
+                       To = Input.Email,
+                       Body = $"Por favor, confirme sua conta <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clique aqui</a>.",
+                       Url = callbackUrl,
+                       Phone = "(xx) xxxxx-xx"
 
                     });
 

@@ -4417,6 +4417,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\refs\System.Diagnostics.TraceSource.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\refs\System.Diagnostics.Tracing.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\refs\System.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\refs\System.Drawing.Common.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\refs\System.Drawing.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\refs\System.Drawing.Primitives.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\refs\System.Dynamic.Runtime.dll
@@ -4597,6 +4598,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Microsoft.Extensions.Identity.Stores.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\System.Diagnostics.DiagnosticSource.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\AppPrivy.WebAppSiteBlog.Views.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\AspNetCore.Authentication.Cookies.Owin.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\AutoMapper.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Castle.Core.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\EntityFramework.SqlServer.dll
@@ -4655,6 +4657,9 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\NuGet.RuntimeModel.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\NuGet.Versioning.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Serilog.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Serilog.Extensions.Logging.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Serilog.Sinks.Console.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Serilog.Sinks.File.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.Newtonsoft.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll

@@ -7,7 +7,8 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
-using AppPrivy.CrossCutting.Fault;
+using AppPrivy.CrossCutting.WLog;
+using System.Reflection;
 
 namespace AppPrivy.Application.Services.Site
 {
@@ -18,7 +19,7 @@ namespace AppPrivy.Application.Services.Site
         {
             _configuration = configuration;
         }
-        public Task<UserToken> BuildToken(UserToken userInfo)
+        public async Task<UserToken> BuildToken(UserToken userInfo)
         {
             try
             {
@@ -30,7 +31,7 @@ namespace AppPrivy.Application.Services.Site
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:key"]));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
                 // tempo de expiração do token: 1 hora
-                var expiration = DateTime.UtcNow.AddHours(1);
+                var expiration = DateTime.UtcNow.AddMinutes(20);
 
                 JwtSecurityToken token = new JwtSecurityToken(
                    issuer: _configuration["Jwt:Issuer"],
@@ -39,7 +40,7 @@ namespace AppPrivy.Application.Services.Site
                    expires: expiration,
                    signingCredentials: creds);
 
-                return Task.FromResult(new UserToken
+                return  await Task.FromResult(new UserToken
                 {
                     Email = userInfo.Email,
                     Password = "******",
@@ -47,12 +48,12 @@ namespace AppPrivy.Application.Services.Site
                     Expiration = expiration
                 });
             }
-            catch (FaultException e )
+            catch (Exception e )
             {
-                throw e;
+                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
             }
 
-
+            return await Task.FromResult<UserToken>(null);
         }
     }
 }

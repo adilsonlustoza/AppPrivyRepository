@@ -23,18 +23,33 @@
         <div class="col-md-12">
             <div class="col-md-9 float-left">
 
-                <form asp-controller="home" asp-action="contact">
+
+                <form asp-controller="home" asp-action="contact" novalidate>
 
 
                     <div class="form-horizontal">
 
-                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    @if (!string.IsNullOrEmpty(TempData["Message"]?.ToString()))
+                                    {
+                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                            <strong>Atenção : </strong> @TempData["Message"]?.ToString()
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true"></span>
+                                            </button>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="form-group">
                             <label asp-for="Nome" class="control-label col-md-2"></label>
                             <div class="col-md-10">
                                 <input type="text" asp-for="Nome" class="form-control input100" placeholder="Entre com o seu nome" />
-                                <span asp-validation-for="Nome" class="text-danger"></span>
+                                <span asp-validation-for="Nome" class="text-danger"></span>                               
                             </div>
 
                         </div>
@@ -44,7 +59,7 @@
                             <div class="col-md-10">
                                 <input type="text" asp-for="Email" class="form-control input100" placeholder="Entre com o seu e-mail" />
                                 <span asp-validation-for="Email" class="text-danger"></span>
-                            </div>                           
+                            </div>
                         </div>
 
                         <div class="form-group">
@@ -53,7 +68,7 @@
                                 <input type="text" asp-for="Telefone" class="form-control input100" placeholder="(99) 99999-9999" }l" />
                                 <span asp-validation-for="Telefone" class="text-danger"></span>
                             </div>
-                           
+
                         </div>
 
                         <div class="form-group">
@@ -62,27 +77,27 @@
                                 <input type="text" asp-for="Assunto" class="form-control input100" placeholder="Entre com o assunto" }l" />
                                 <span asp-validation-for="Assunto" class="text-danger"></span>
                             </div>
-                          
+
                         </div>
 
                         <div class="form-group">
                             <label asp-for="Mensagem" class="control-label col-md-2"></label>
-                            <div class="col-md-10"> 
-                                <textarea   asp-for="Mensagem" class="form-control input100" placeholder="Entre com a mensagem" rows="4" cols="40" >
+                            <div class="col-md-10">
+                                <textarea asp-for="Mensagem" class="form-control input100" placeholder="Entre com a mensagem" rows="4" cols="40">
 </textarea>
                                 <span asp-validation-for="Mensagem" class="text-danger"></span>
                             </div>
 
 
-                          
+
                         </div>
 
                         <div class="form-group ">
-                            <label asp-for="TipoContato" class="control-label col-md-2"></label>                           
+                            <label asp-for="TipoContato" class="control-label col-md-2"></label>
                             <div class="col-md-10">
                                 <input type="radio" asp-for="TipoContato" value="1" checked />Leitor
-                                 &nbsp;&nbsp;
-                                <input type="radio" asp-for="TipoContato" value="2" />Empresa                               
+                                &nbsp;&nbsp;
+                                <input type="radio" asp-for="TipoContato" value="2" />Empresa
                             </div>
                         </div>
 
@@ -93,7 +108,7 @@
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" asp-for="Novidades" checked="checked" /> Desejo receber informativos e atualizações do site
-                                     
+
                                     </label>
                                 </div>
 
@@ -109,9 +124,11 @@
 
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <div class="btn btn-outline-primary" style="cursor:pointer">
-                                    <span class="fa fa-mail-bulk" aria-hidden="true">&nbsp;Enviar</span>
-                                </div>
+
+                                <button class="btn btn-outline-primary" aria-hidden="true">
+                                    <span class="fa fa-mail-bulk">&nbsp;Enviar</span>
+                                </button>
+
                             </div>
                         </div>
 

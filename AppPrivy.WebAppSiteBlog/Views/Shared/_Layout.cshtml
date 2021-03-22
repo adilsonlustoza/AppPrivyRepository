@@ -17,6 +17,9 @@
 
     <environment include="Development">
 
+        @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">*@
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!--------------------------------Popper------------------------------------>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -95,17 +98,7 @@
     @{await Html.RenderPartialAsync("_MenuTop"); }
 
     <div class="container-fluid layout_main">
-
-        @if (TempData["Message"] != null)
-        {
-
-            <script type="text/javascript">
-                $(function () {
-                    $.toaster({ priority: 'info', title: 'Mensagem', message: '@TempData["Message"].ToString()' });
-                });
-            </script>
-        }
-
+       
         @RenderBody()
 
     </div>

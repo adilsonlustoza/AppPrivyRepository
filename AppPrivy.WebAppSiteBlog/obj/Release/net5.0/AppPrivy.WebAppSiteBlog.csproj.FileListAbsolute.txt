@@ -490,3 +490,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\AppPrivy
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\ref\AppPrivy.WebAppSiteBlog.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\AppPrivy.WebAppSiteBlog.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\AppPrivy.WebAppSiteBlog.genruntimeconfig.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\AspNetCore.Authentication.Cookies.Owin.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\Serilog.Extensions.Logging.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\Serilog.Sinks.Console.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\Serilog.Sinks.File.dll

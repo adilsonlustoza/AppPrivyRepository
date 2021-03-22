@@ -1,45 +1,42 @@
 ﻿using AppPrivy.Application.Interfaces;
 using AppPrivy.Application.ViewsModels;
 using AppPrivy.CrossCutting.Agregation;
-using AppPrivy.WebAppSiteBlog.Commons;
+using AppPrivy.CrossCutting.WLog;
 using AppPrivy.WebAppSiteBlog.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Primitives;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace AppPrivy.WebAppSiteBlog.Controllers
 {
     public class HomeController : MasterController
     {
-
-        private readonly ILogger<HomeController> _logger;
+       
         private readonly IContatoAppService _contatoAppService;
         private readonly IPesquisaAppService _pesquisaAppService;
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IWebHostEnvironment _webHostEnvironment;
-
+       
 
         public HomeController
             (
                 IContatoAppService contatoAppService,
-                IPesquisaAppService pesquisaAppService,
-                ILogger<HomeController> logger,
+                IPesquisaAppService pesquisaAppService,              
                 IWebHostEnvironment webHostEnvironment,
                 IHttpContextAccessor httpContextAccessor,
                 IConfiguration configuration
             )
         {
             _contatoAppService = contatoAppService;
-            _pesquisaAppService = pesquisaAppService;
-            _logger = logger;
+            _pesquisaAppService = pesquisaAppService;        
             _httpContextAccessor = httpContextAccessor;
             _configuration = configuration;
             _webHostEnvironment = webHostEnvironment;
@@ -57,22 +54,23 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
 
         public IActionResult Index()
         {
+            AppPrivyLog.GetInstance().Information($"Remote Ip Address {this.HttpContext?.Connection?.RemoteIpAddress?.ToString()}");
             return View();
         }
 
         [Route("Sobre")]
         public IActionResult About()
         {
+            AppPrivyLog.GetInstance().Information($"Remote Ip Address {this.HttpContext?.Connection?.RemoteIpAddress?.ToString()}");
             ViewBag.Message = "Sobre";
-
             return View();
         }
 
         [Route("Portfolio")]
         public IActionResult Portfolio()
         {
+            AppPrivyLog.GetInstance().Information($"Remote Ip Address {this.HttpContext?.Connection?.RemoteIpAddress?.ToString()}");
             ViewBag.Message = "Portfolio";
-
             return View();
         }
 
@@ -80,17 +78,17 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         [Route("Servicos")]
         public IActionResult Services()
         {
+            AppPrivyLog.GetInstance().Information($"Remote Ip Address {this.HttpContext?.Connection?.RemoteIpAddress?.ToString()}");
             ViewBag.Message = "Servicos";
-
             return View();
         }
 
         [Route("Contato")]
         public IActionResult Contact()
         {
-            ViewBag.Message = "Pagina de Contato";
+            AppPrivyLog.GetInstance().Information($"Remote Ip Address {this.HttpContext?.Connection?.RemoteIpAddress?.ToString()}");
+            ViewBag.Message = "Página de Contato";
             ViewBag.SiteKey= _configuration.GetSection("Google").GetSection("CaptchaSiteKey").Value;
-
             return View();
         }
 
@@ -101,42 +99,41 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         {
             try
             {
-
+                AppPrivyLog.GetInstance().Information($"Remote Ip Address {this.HttpContext?.Connection?.RemoteIpAddress?.ToString()}");
+               
                 if (ModelState.IsValid)
                 {
 
                     var captcha = _contatoAppService.GoogleCaptcha();
+                 
 
                     if (captcha)
                     {
-
                         await _contatoAppService.SendMail(new ContactAgregation()
                         {
-                            _path = Path.Combine(_webHostEnvironment.WebRootPath, @"Templates\Email\ContatoEmail.html"),
-                            _from = contato.Email,
-                            _phone = contato.Telefone,
-                            _body = contato.Mensagem,
-                            _subject = contato.Assunto,
-                            _email = contato.Email,
-                            _name = contato.Nome,
-                            _contactType = contato.TipoContato.HasValue ? (contato.TipoContato.Value.Equals("Empresa") ? 2 : 1) : 0,
+                            Path = Path.Combine(_webHostEnvironment.WebRootPath, @"Templates\Email\ContatoEmail.html"),
+                            From = contato.Email,
+                            Phone = contato.Telefone,
+                            Body = contato.Mensagem,
+                            Subject = contato.Assunto,
+                            Email = contato.Email,
+                            Name = contato.Nome,
+                            ContactType = contato.TipoContato.HasValue ? (contato.TipoContato.Value.Equals("Empresa") ? 2 : 1) : 0,
                         });
                     }
 
-
-                    if (this.Request.IsAjaxRequest())
-                        return Json(new { contato, Data = "Ok" });
-                    return Json(new { Data = "NoK" });
+                 
+                    TempData["Message"] = "Email enviado com sucesso!";
                 }
-                else
-                    return Json(new { Data = "NoK" });
 
+               
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
-            }            
+                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
+            }
 
+            return RedirectToAction();
 
         }
 
@@ -146,25 +143,27 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         {
             try
             {
+                AppPrivyLog.GetInstance().Information($"Remote Ip Address {this.HttpContext?.Connection?.RemoteIpAddress?.ToString()}");
+             
                 StringValues search;
-
+            
+               
                 if (formCollection.TryGetValue("search", out search))
                 {
+                   
                     var filter = search.ToArray().GetValue(0).ToString();
-
                     var _result = await _pesquisaAppService.Search(filter);
-
                     return View(_result);
                 }
-
-                return View();
+           
+              
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
             }
-
+            return View();
 
         }
 
@@ -172,7 +171,6 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         public IActionResult Mobile()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
@@ -180,7 +178,6 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         public IActionResult WebSystem()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
@@ -188,7 +185,6 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         public IActionResult SoftwareEngineer()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
@@ -196,7 +192,6 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         public IActionResult Blog()
         {
             ViewBag.Message = "Blog";
-
             return View();
         }
 
@@ -204,7 +199,6 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         public IActionResult Politica()
         {
             ViewBag.Message = "Politica";
-
             return View();
         }
 

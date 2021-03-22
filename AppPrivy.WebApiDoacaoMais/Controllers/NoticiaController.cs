@@ -1,4 +1,4 @@
-﻿using AppPrivy.CrossCutting.Fault;
+﻿using AppPrivy.CrossCutting.WLog;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -38,7 +38,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
-            catch (FaultException e)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
@@ -65,7 +65,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
-            catch (FaultException e)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
@@ -92,7 +92,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
-            catch (FaultException e)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
@@ -122,7 +122,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
             }
-            catch (FaultException e)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }

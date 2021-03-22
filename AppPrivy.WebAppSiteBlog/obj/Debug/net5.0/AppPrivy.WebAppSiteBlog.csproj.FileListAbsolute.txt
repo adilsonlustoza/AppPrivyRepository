@@ -367,6 +367,9 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\NuGet.Repo
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\NuGet.RuntimeModel.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\NuGet.Versioning.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Serilog.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Serilog.Sinks.File.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Swashbuckle.AspNetCore.Newtonsoft.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -491,4 +494,3 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.W
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\ref\AppPrivy.WebAppSiteBlog.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.genruntimeconfig.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Humanizer.dll

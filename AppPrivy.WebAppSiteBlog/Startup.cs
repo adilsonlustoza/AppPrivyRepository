@@ -1,7 +1,6 @@
 using AppPrivy.Application;
 using AppPrivy.Application.Interfaces;
-using AppPrivy.CrossCutting.Agregation;
-using AppPrivy.CrossCutting.Fault;
+using AppPrivy.CrossCutting.WLog;
 using AppPrivy.CrossCutting.Operations;
 using AppPrivy.Domain;
 using AppPrivy.Domain.Interfaces;
@@ -26,6 +25,7 @@ using System;
 using System.Globalization;
 using System.Security.Claims;
 using Microsoft.Extensions.DependencyInjection;
+using AppPrivy.CrossCutting.Commom;
 
 namespace AppPrivy.WebAppSiteBlog
 {
@@ -60,7 +60,7 @@ namespace AppPrivy.WebAppSiteBlog
             });
 
             services.AddDbContext<AppPrivyContext>(options =>
-             options.UseSqlServer(Configuration.GetConnectionString(ConstantHelper.ConnectionString),
+             options.UseSqlServer(Configuration.GetConnectionString(ConstantHelper.AppPrivyContext),
              b => b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc))
             );
 
@@ -138,7 +138,7 @@ namespace AppPrivy.WebAppSiteBlog
             services.AddTransient<IContatoAppService, ContatoAppService>();
             services.AddTransient<IPesquisaAppService, PesquisaAppService>();
 
-            services.AddScoped<FaultException>();
+          //  services.AddScoped<AppPrivyLog>();
             services.AddScoped<SendMail>();
 
 

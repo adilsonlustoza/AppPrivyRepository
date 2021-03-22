@@ -70,20 +70,38 @@ namespace AppPrivy.CrossCutting.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AppPrivyContext.
+        /// </summary>
+        public static string AppPrivyContext {
+            get {
+                return ResourceManager.GetString("AppPrivyContext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AppPrivyContextKey.
+        /// </summary>
+        public static string AppPrivyContextKey {
+            get {
+                return ResourceManager.GetString("AppPrivyContextKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to logs/AppPrivyLog.log.
+        /// </summary>
+        public static string AppPrivyLogFolderPath {
+            get {
+                return ResourceManager.GetString("AppPrivyLogFolderPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AppPrivy.Cookie.
         /// </summary>
         public static string AuthenticationCookieName {
             get {
                 return ResourceManager.GetString("AuthenticationCookieName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to AppPrivyContext.
-        /// </summary>
-        public static string ConnnectionString {
-            get {
-                return ResourceManager.GetString("ConnnectionString", resourceCulture);
             }
         }
         

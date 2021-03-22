@@ -57,6 +57,9 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\Microsoft.VisualStud
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\Newtonsoft.Json.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\NuGet.Frameworks.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\Serilog.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\Serilog.Sinks.File.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\System.CodeDom.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\System.Data.SqlClient.dll

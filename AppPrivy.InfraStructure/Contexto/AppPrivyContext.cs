@@ -1,4 +1,5 @@
-﻿using AppPrivy.Domain;
+﻿using AppPrivy.CrossCutting.Commom;
+using AppPrivy.Domain;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.Identity;
@@ -25,7 +26,7 @@ namespace AppPrivy.InfraStructure.Contexto
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(_configuration.GetConnectionString("AppPrivyContext"), builder => builder.EnableRetryOnFailure());
+                optionsBuilder.UseSqlServer(_configuration.GetConnectionString(ConstantHelper.AppPrivyContext), builder => builder.EnableRetryOnFailure());
             }
         }
 

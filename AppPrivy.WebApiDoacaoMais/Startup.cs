@@ -2,7 +2,7 @@ using AppPrivy.Application;
 using AppPrivy.Application.Interfaces;
 using AppPrivy.Application.Services.Site;
 using AppPrivy.CrossCutting.Agregation;
-using AppPrivy.CrossCutting.Fault;
+using AppPrivy.CrossCutting.WLog;
 using AppPrivy.CrossCutting.Operations;
 using AppPrivy.Domain;
 using AppPrivy.Domain.Interfaces;
@@ -42,6 +42,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using AppPrivy.CrossCutting.Commom;
 
 namespace AppPrivy.WebApiDoacaoMais
 {
@@ -86,7 +87,7 @@ namespace AppPrivy.WebApiDoacaoMais
             });
 
             services.AddDbContext<AppPrivyContext>(options =>
-             options.UseSqlServer(Configuration.GetConnectionString(ConstantHelper.ConnectionString),
+             options.UseSqlServer(Configuration.GetConnectionString(ConstantHelper.AppPrivyContext),
              b => b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc))
             );
 
@@ -142,7 +143,7 @@ namespace AppPrivy.WebApiDoacaoMais
 
             services.AddTransient<IAuthService, AuthService>();
 
-            services.AddScoped<FaultException>();
+            services.AddScoped<AppPrivyLog>();
             services.AddScoped<SendMail>();
 
             services.AddSwaggerGenNewtonsoftSupport();

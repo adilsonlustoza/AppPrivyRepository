@@ -1,6 +1,6 @@
 ﻿using Appointment.Application.ViewsModels;
 using AppPrivy.Application.Interfaces;
-using AppPrivy.CrossCutting.Fault;
+using AppPrivy.CrossCutting.WLog;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -62,7 +62,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                 else
                     return StatusCode(StatusCodes.Status400BadRequest, $"It wans`t able to login!!!");
             }
-            catch (FaultException ex)
+            catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
               

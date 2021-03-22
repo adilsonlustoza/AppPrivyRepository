@@ -29,3 +29,14 @@ textarea{
     text-align:justify;
 }
 
+.form-control.input-validation-error:not(textarea) {
+    border-color: #d9534f;
+    color: #d9534f;  
+}
+
+.form-control.valid {
+    border-color: green;
+    color: green;  
+}
+
+

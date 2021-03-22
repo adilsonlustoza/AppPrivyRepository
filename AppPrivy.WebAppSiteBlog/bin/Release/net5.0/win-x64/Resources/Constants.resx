@@ -117,14 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AppPrivyContext" xml:space="preserve">
+    <value>AppPrivyContext</value>
+  </data>
+  <data name="AppPrivyContextKey" xml:space="preserve">
+    <value>AppPrivyContextKey</value>
+  </data>
+  <data name="AppPrivyLogFolderPath" xml:space="preserve">
+    <value>logs/AppPrivyLog.log</value>
+  </data>
   <data name="AppPrivy_WebAppMvc" xml:space="preserve">
     <value>AppPrivy.WebAppMvc</value>
   </data>
   <data name="AuthenticationCookieName" xml:space="preserve">
     <value>AppPrivy.Cookie</value>
-  </data>
-  <data name="ConnnectionString" xml:space="preserve">
-    <value>AppPrivyContext</value>
   </data>
   <data name="GrupoAdministrador" xml:space="preserve">
     <value>Administrador</value>

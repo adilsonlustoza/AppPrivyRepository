@@ -1,10 +1,11 @@
 ﻿using AppPrivy.CrossCutting.Agregation;
-using AppPrivy.CrossCutting.Fault;
+using AppPrivy.CrossCutting.WLog;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
 using System.Net;
 using System.Net.Mail;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,9 +47,9 @@ namespace AppPrivy.CrossCutting.Operations
                 _name = _config.GetSection("smtp:name").Value;
                 _from = _config.GetSection("smtp:from").Value;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
             }
 
         }
@@ -58,9 +59,9 @@ namespace AppPrivy.CrossCutting.Operations
             try
             {
 
-                if (!string.IsNullOrEmpty(contactAgregation._path))
+                if (!string.IsNullOrEmpty(contactAgregation.Path))
                 {
-                    using (_stream = new FileStream(contactAgregation._path, FileMode.Open, FileAccess.ReadWrite))
+                    using (_stream = new FileStream(contactAgregation.Path, FileMode.Open, FileAccess.ReadWrite))
                     {
                         using (TextReader tx = new StreamReader(_stream, Encoding.ASCII))
                         {
@@ -68,22 +69,24 @@ namespace AppPrivy.CrossCutting.Operations
 
                             if (!string.IsNullOrEmpty(_body))
                             {
-                                _body = _body.Replace("{UserName}", contactAgregation._name);
-                                _body = _body.Replace("{Email}", contactAgregation._email);
-                                _body = _body.Replace("{Phone}", contactAgregation._phone);
-                                _body = _body.Replace("{Subject}", contactAgregation._subject);
-                                _body = _body.Replace("{Message}", contactAgregation._body);
+                                _body = _body.Replace("{UserName}", contactAgregation.Name);
+                                _body = _body.Replace("{Email}", contactAgregation.Email);
+                                _body = _body.Replace("{Phone}", contactAgregation.Phone);
+                                _body = _body.Replace("{Subject}", contactAgregation.Subject);
+                                _body = _body.Replace("{Message}", contactAgregation.Body);
                             }
                         }
                     }
                 }
 
-                return _body;
+             
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
             }
+
+            return _body;
         }
 
         private string PopulateBodyRecoveryMail(ContactAgregation contactAgregation)
@@ -91,9 +94,9 @@ namespace AppPrivy.CrossCutting.Operations
             try
             {
 
-                if (!string.IsNullOrEmpty(contactAgregation._path))
+                if (!string.IsNullOrEmpty(contactAgregation.Path))
                 {
-                    using (_stream = new FileStream(contactAgregation._path, FileMode.Open, FileAccess.ReadWrite))
+                    using (_stream = new FileStream(contactAgregation.Path, FileMode.Open, FileAccess.ReadWrite))
                     {
                         using (TextReader tx = new StreamReader(_stream, Encoding.ASCII))
                         {
@@ -101,22 +104,24 @@ namespace AppPrivy.CrossCutting.Operations
 
                             if (!string.IsNullOrEmpty(_body))
                             {
-                                _body = _body.Replace("{UserName}", contactAgregation._name);
-                                _body = _body.Replace("{Email}", contactAgregation._email);
-                                _body = _body.Replace("{Phone}", contactAgregation._phone);
-                                _body = _body.Replace("{Subject}", contactAgregation._subject);
-                                _body = _body.Replace("{Message}", contactAgregation._url);
+                                _body = _body.Replace("{UserName}", contactAgregation.Name);
+                                _body = _body.Replace("{Email}", contactAgregation.Email);
+                                _body = _body.Replace("{Phone}", contactAgregation.Phone);
+                                _body = _body.Replace("{Subject}", contactAgregation.Subject);
+                                _body = _body.Replace("{Message}", contactAgregation.Url);
                             }
                         }
                     }
                 }
 
-                return _body;
+               
             }
-            catch (Exception)
+            catch (Exception e )
             {
-                throw;
+                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
             }
+
+            return _body;
         }
 
         public async Task SendHtmlFormattedMail(ContactAgregation contact)
@@ -129,11 +134,11 @@ namespace AppPrivy.CrossCutting.Operations
 
                     this.FullFill();
 
-                    using (var _mailMessage = new MailMessage())
+                    using (_mailMessage = new MailMessage())
                     {
                         _mailMessage.From = new MailAddress(_from, _name, Encoding.UTF8);
                         _mailMessage.To.Add(_to);
-                        _mailMessage.Subject = contact._subject;
+                        _mailMessage.Subject = contact.Subject;
                         _mailMessage.SubjectEncoding = Encoding.UTF8;
                         _mailMessage.IsBodyHtml = true;
                         _mailMessage.BodyEncoding = Encoding.UTF8;
@@ -159,7 +164,7 @@ namespace AppPrivy.CrossCutting.Operations
                             }
                             catch (SmtpException e)
                             {
-                                new FaultException("SmtpClient", e);
+                                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
                             }
                         }
                     }
@@ -170,7 +175,7 @@ namespace AppPrivy.CrossCutting.Operations
             }
             catch (Exception e)
             {
-                new FaultException("ESendHtmlFormattedMail", e);
+                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
             }
 
 
@@ -189,8 +194,8 @@ namespace AppPrivy.CrossCutting.Operations
                     using (var _mailMessage = new MailMessage())
                     {
                         _mailMessage.From = new MailAddress(_from, _name, Encoding.UTF8);
-                        _mailMessage.To.Add(contact._to);
-                        _mailMessage.Subject = contact._subject;
+                        _mailMessage.To.Add(contact.To);
+                        _mailMessage.Subject = contact.Subject;
                         _mailMessage.SubjectEncoding = Encoding.UTF8;
                         _mailMessage.IsBodyHtml = true;
                         _mailMessage.BodyEncoding = Encoding.UTF8;
@@ -215,7 +220,7 @@ namespace AppPrivy.CrossCutting.Operations
                             }
                             catch (SmtpException e)
                             {
-                                new FaultException("SmtpClient", e);
+                                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
                             }
                         }
                     }
@@ -226,7 +231,7 @@ namespace AppPrivy.CrossCutting.Operations
             }
             catch (Exception e)
             {
-                new FaultException("SendHtmlRecoveredMail", e);
+                AppPrivyLog.GetInstance().Error(MethodBase.GetCurrentMethod().Name, e);
             }
 
 
