@@ -101,17 +101,14 @@ namespace AppPrivy.WebAppSiteBlog.Areas.Identity.Pages.Account
                         };
 
                         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
-                    
+                                           
 
                         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity), new AuthenticationProperties
                         {
                             IsPersistent = true,
                             AllowRefresh = true
 
-                        });
-
-                                              
+                        });                                              
 
                         
                         if (!claimsIdentity.IsAuthenticated)
@@ -125,6 +122,9 @@ namespace AppPrivy.WebAppSiteBlog.Areas.Identity.Pages.Account
 
 
                 }
+                else 
+                    TempData.Add("Message", "Usuário ou senha incorreto!");
+                //ModelState.AddModelError(string.Empty,"Usuário ou senha incorreto!");
 
                 if (result.RequiresTwoFactor)
                 {

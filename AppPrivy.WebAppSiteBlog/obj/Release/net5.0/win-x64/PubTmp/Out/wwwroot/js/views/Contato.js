@@ -20,3 +20,11 @@ $("#Telefone")
             element.mask("(99) 9999-9999?9");
         }
     });
+
+    $('input,textarea').on('keyup blur change click submit',function()
+    {  
+       if( $(this).attr('aria-invalid')==='true')    
+           $(this).removeClass('is-valid').addClass('is-invalid');
+      else if( $(this).attr('aria-invalid')==='false')    
+           $(this).removeClass('is-invalid').addClass('is-valid');
+    });

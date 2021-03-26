@@ -29,7 +29,7 @@ namespace AppPrivy.WebAppSiteBlog.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required(ErrorMessage = "{0} é requerido")]
-            [EmailAddress]
+            [EmailAddress(ErrorMessage ="{0} não é válido.")]         
             public string Email { get; set; }
         }
 
