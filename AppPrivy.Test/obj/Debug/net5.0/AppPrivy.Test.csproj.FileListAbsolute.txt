@@ -1,4 +1,9 @@
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\CoverletSourceRootsMapping
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.csprojAssemblyReference.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.AssemblyInfoInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.AssemblyInfo.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.csproj.CoreCompileInputs.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\testhost.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\testhost.exe
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -163,11 +168,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\AppPrivy.InfraStruct
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\AppPrivy.CrossCutting.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\AppPrivy.Domain.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\bin\Debug\net5.0\AppPrivy.Domain.dll.config
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.csprojAssemblyReference.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.GeneratedMSBuildEditorConfig.editorconfig
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.AssemblyInfoInputs.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.AssemblyInfo.cs
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.csproj.CoreCompileInputs.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.csproj.CopyComplete
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\AppPrivy.Test.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Test\obj\Debug\net5.0\ref\AppPrivy.Test.dll

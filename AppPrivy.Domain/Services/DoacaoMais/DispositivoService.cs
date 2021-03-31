@@ -14,6 +14,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
     {
         private readonly IDispositivoRepository _dispositivoRepository;
         private readonly INotificacaoRepository _notificacaoRepository;
+       
 
 
 
@@ -31,14 +32,14 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
             using (IUnitOfWork _unitOfWork = new TransactionScopeUnitOfWorkFactory(IsolationLevel.Serializable).Create())
             {
-                _dispositivoRepository.AddDispositivoUsuario(dispositivo);
+                await this.Add(dispositivo);
 
-                _result = _dispositivoRepository.SaveChanges();
+                _result = await this.SaveChanges();
 
                 _unitOfWork.Commit();
             }
 
-            return await Task.FromResult<int>(_result.Value);
+            return await Task.FromResult<int?>(_result);
 
         }
 
@@ -63,7 +64,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
                             _notificacao = await _notificacaoRepository.GetById(notificacaoId);
                     }
 
-                    _dispositivos = await _dispositivoRepository.Search(p => p.Serial == dispositivo.Serial, x => x.Notificacao);
+                    _dispositivos = await this.Search(p => p.Serial == dispositivo.Serial, x => x.Notificacao);
 
 
                     if (_dispositivos != null && _dispositivos.Count() > 0)
@@ -73,9 +74,10 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
                         if (dispositivoEncontrado != null && !dispositivoEncontrado.Notificacao.Contains(_notificacao))
                             dispositivoEncontrado.Notificacao.Add(_notificacao);
-                        _dispositivoRepository.Update(dispositivoEncontrado);
 
-                        _result = _dispositivoRepository.SaveChanges();
+                        await this.Update(dispositivoEncontrado);
+
+                        _result = await this.SaveChanges();
                     }
                     else
                     {
@@ -83,9 +85,10 @@ namespace AppPrivy.Domain.Services.DoacaoMais
                         new List<Notificacao>().Add(_notificacao);
 
                         dispositivo.Notificacao.Add(_notificacao);
-                        _dispositivoRepository.Add(dispositivo);
 
-                        _result = _dispositivoRepository.SaveChanges();
+                        await this.Add(dispositivo);
+
+                        _result = await _dispositivoRepository.SaveChanges();
 
                     }
 

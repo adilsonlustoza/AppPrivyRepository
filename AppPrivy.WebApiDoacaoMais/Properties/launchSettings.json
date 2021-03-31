@@ -16,13 +16,13 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "swagger",
-      "ancmHostingModel": "InProcess"
+      "launchUrl": "/Index.html",
+      "ancmHostingModel": "OutOfProcess"
     },
     "IIS": {
       "commandName": "IIS",
-      "launchBrowser": true,
-      "launchUrl": "swagger"
+      "workingDirectory": "/Index.html",
+      "launchBrowser": true
     }
   }
 }

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace AppPrivy.WebApiDoacaoMais.Controllers
 {
@@ -30,18 +31,18 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
         [Route("SalvarUsuario")]
-        public IActionResult AddUser(Usuario usuario)
+        public async Task<IActionResult> AddUser(Usuario usuario)
         {
             try
             {
                 if (usuario == null)
                     new ArgumentException("Invalid parameter!"); 
 
-                var _codigo = _usuarioService.AdicionarUsuario(usuario);
+                var user =  await _usuarioService.AdicionarUsuario(usuario);
 
-                if (_codigo == 0)
+                if (user == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
-                return StatusCode(StatusCodes.Status200OK, _codigo);
+                return StatusCode(StatusCodes.Status200OK, user);
             }
             catch (Exception e)
             {
@@ -57,15 +58,15 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
         [Route("SalvarListaUsuarios")]
-        public IActionResult AddUserList(ICollection<Usuario> usuarios)
+        public async Task<IActionResult> AddUserList(ICollection<Usuario> usuarios)
         {
             try
             {
                 foreach (var item in usuarios)
                 {
-                    var _codigo = _usuarioService.AdicionarUsuario(item);
+                    var usuario = await _usuarioService.AdicionarUsuario(item);
 
-                    if (_codigo == 0)
+                    if (usuario==null)
                         return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
 
                 }

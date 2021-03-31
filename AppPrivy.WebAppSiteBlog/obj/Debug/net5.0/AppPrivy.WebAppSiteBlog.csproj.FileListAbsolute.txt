@@ -1,3 +1,11 @@
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.csprojAssemblyReference.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.AssemblyInfoInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.AssemblyInfo.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.csproj.CoreCompileInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.MvcApplicationPartsAssemblyInfo.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.RazorAssemblyInfo.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.RazorAssemblyInfo.cs
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Microsoft.DiaSymReader.Native.x86.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\Microsoft.DiaSymReader.Native.amd64.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\web.config
@@ -414,15 +422,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\AppPrivy.I
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\AppPrivy.CrossCutting.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\AppPrivy.Domain.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Debug\net5.0\AppPrivy.Domain.dll.config
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.csprojAssemblyReference.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.GeneratedMSBuildEditorConfig.editorconfig
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.AssemblyInfoInputs.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.AssemblyInfo.cs
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.csproj.CoreCompileInputs.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.MvcApplicationPartsAssemblyInfo.cs
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.MvcApplicationPartsAssemblyInfo.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.RazorAssemblyInfo.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\AppPrivy.WebAppSiteBlog.RazorAssemblyInfo.cs
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\staticwebassets\AppPrivy.WebAppSiteBlog.StaticWebAssets.Manifest.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\staticwebassets\AppPrivy.WebAppSiteBlog.StaticWebAssets.xml
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Debug\net5.0\scopedcss\bundle\AppPrivy.WebAppSiteBlog.styles.css

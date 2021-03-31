@@ -17,13 +17,13 @@ namespace AppPrivy.Domain
 
         }
 
-        public void Add(Pesquisa obj)
+        public async Task<Pesquisa> Add(Pesquisa obj)
         {
 
             try
             {
 
-                _pesquisaRepository.Add(obj);
+              return await  _pesquisaRepository.Add(obj);
 
             }
             catch (Exception e)
@@ -36,14 +36,14 @@ namespace AppPrivy.Domain
 
         }
 
-        public void Update(Pesquisa obj)
+        public async Task Update(Pesquisa obj)
         {
-            _pesquisaRepository.Update(obj);
+           await _pesquisaRepository.Update(obj);
         }
 
-        public void Remove(Pesquisa obj)
+        public async Task Remove(Pesquisa obj)
         {
-            _pesquisaRepository.Remove(obj);
+            await _pesquisaRepository.Remove(obj);
         }
 
         public void Dispose()
@@ -83,9 +83,9 @@ namespace AppPrivy.Domain
             return await _pesquisaRepository.GetAll(children);
         }
 
-        public int? SaveChanges()
+        public async Task<int?> SaveChanges()
         {
-            return _pesquisaRepository.SaveChanges();
+            return await _pesquisaRepository.SaveChanges();
         }
     }
 }

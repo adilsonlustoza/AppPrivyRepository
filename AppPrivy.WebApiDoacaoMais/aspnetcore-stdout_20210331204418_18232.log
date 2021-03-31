@@ -1,0 +1,20 @@
+[17:44:54 INF] Starting up
+[17:45:05 FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: AppPrivy.CrossCutting.WLog.AppPrivyLog Lifetime: Scoped ImplementationType: AppPrivy.CrossCutting.WLog.AppPrivyLog': A suitable constructor for type 'AppPrivy.CrossCutting.WLog.AppPrivyLog' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: AppPrivy.CrossCutting.WLog.AppPrivyLog Lifetime: Scoped ImplementationType: AppPrivy.CrossCutting.WLog.AppPrivyLog': A suitable constructor for type 'AppPrivy.CrossCutting.WLog.AppPrivyLog' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.
+ ---> System.InvalidOperationException: A suitable constructor for type 'AppPrivy.CrossCutting.WLog.AppPrivyLog' could not be located. Ensure the type is concrete and services are registered for all parameters of a public constructor.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at AppPrivy.WebApiDoacaoMais.Program.Main(String[] args) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\Program.cs:line 33

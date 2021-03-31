@@ -129,6 +129,12 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi2\obj\Debug\net5.0\AppPrivy.WebAp
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi2\obj\Debug\net5.0\ref\AppPrivy.WebApiDoacaoMais.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi2\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppApi2\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.genruntimeconfig.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.csprojAssemblyReference.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.AssemblyInfoInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.AssemblyInfo.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.csproj.CoreCompileInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.MvcApplicationPartsAssemblyInfo.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\web.config
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\appsettings.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.WebApiDoacaoMais.exe
@@ -172,6 +178,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.WebApiDoacaoMais.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\ref\AppPrivy.WebApiDoacaoMais.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.WebApiDoacaoMais.pdb
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.WebApiDoacaoMais.xml
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AutoMapper.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\EntityFramework.SqlServer.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\EntityFramework.dll
@@ -245,13 +252,7 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.CrossCutting.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.Domain.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.Domain.dll.config
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.csprojAssemblyReference.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.GeneratedMSBuildEditorConfig.editorconfig
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.AssemblyInfoInputs.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.AssemblyInfo.cs
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.csproj.CoreCompileInputs.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.MvcApplicationPartsAssemblyInfo.cs
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.MvcApplicationPartsAssemblyInfo.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\staticwebassets\AppPrivy.WebApiDoacaoMais.StaticWebAssets.Manifest.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\staticwebassets\AppPrivy.WebApiDoacaoMais.StaticWebAssets.xml
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\scopedcss\bundle\AppPrivy.WebApiDoacaoMais.styles.css
@@ -259,5 +260,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.csproj.CopyComplete
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\ref\AppPrivy.WebApiDoacaoMais.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.xml
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.genruntimeconfig.cache

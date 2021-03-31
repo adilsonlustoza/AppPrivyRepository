@@ -16,20 +16,20 @@ namespace AppPrivy.Domain.Services
             _repository = repository;
         }
 
-        public void Add(TEntity obj)
+        public async Task<TEntity> Add(TEntity obj)
         {
-            _repository.Add(obj);
+           return await _repository.Add(obj);
         }
 
-        public void Remove(TEntity obj)
+        public async Task Remove(TEntity obj)
         {
-            _repository.Remove(obj);
+           await _repository.Remove(obj);
 
         }
 
-        public void Update(TEntity obj)
+        public async Task Update(TEntity obj)
         {
-            _repository.Update(obj);
+            await _repository.Update(obj);
 
         }
 
@@ -51,9 +51,9 @@ namespace AppPrivy.Domain.Services
 
      
 
-        public int? SaveChanges()
+        public async Task<int?> SaveChanges()
         {
-            return _repository.SaveChanges();
+            return await _repository.SaveChanges();
         }
 
         public void Dispose()

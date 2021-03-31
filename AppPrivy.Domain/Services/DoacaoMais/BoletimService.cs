@@ -31,5 +31,10 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             }
 
         }
+
+        Task<IEnumerable<Boletim>> IBoletimService.ListaBoletimCaccc(int? CacccId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

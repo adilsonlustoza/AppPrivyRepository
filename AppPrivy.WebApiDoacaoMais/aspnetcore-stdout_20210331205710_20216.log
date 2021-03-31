@@ -1,0 +1,413 @@
+[17:57:49 INF] Starting up
+[17:58:03 DBG] Hosting starting
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[63]
+      User profile is available. Using 'C:\Users\adils\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[17:58:03 INF] User profile is available. Using 'C:\Users\adils\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[17:58:03 DBG] Reading data from file 'C:\Users\adils\AppData\Local\ASP.NET\DataProtection-Keys\key-00640ac3-6c0a-4dfd-97ec-9880fbd9ce47.xml'.
+[17:58:03 DBG] Reading data from file 'C:\Users\adils\AppData\Local\ASP.NET\DataProtection-Keys\key-23f7a1b8-94a0-47c1-aabd-df3a82ede36a.xml'.
+[17:58:03 DBG] Found key {00640ac3-6c0a-4dfd-97ec-9880fbd9ce47}.
+[17:58:03 DBG] Found key {23f7a1b8-94a0-47c1-aabd-df3a82ede36a}.
+[17:58:03 DBG] Considering key {23f7a1b8-94a0-47c1-aabd-df3a82ede36a} with expiration date 2021-05-23 23:47:09Z as default key.
+[17:58:03 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[17:58:03 DBG] Decrypting secret element using Windows DPAPI.
+[17:58:03 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[17:58:03 DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[17:58:03 DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[17:58:03 DBG] Using key {23f7a1b8-94a0-47c1-aabd-df3a82ede36a} as the default key.
+[17:58:03 DBG] Key ring with default key {23f7a1b8-94a0-47c1-aabd-df3a82ede36a} was loaded during application startup.
+[17:58:04 DBG] Loaded hosting startup assembly AppPrivy.WebApiDoacaoMais
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[17:58:04 INF] Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+[17:58:04 INF] Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+[17:58:04 INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+[17:58:04 DBG] Hosting started
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:44305/swagger/index.html - -
+[17:58:04 INF] Request starting HTTP/2 GET https://localhost:44305/swagger/index.html - -
+[17:58:04 DBG] Wildcard detected, all requests with hosts will be allowed.
+[17:58:04 VRB] All hosts are allowed.
+[17:58:04 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US", "en", "pt"]'.
+[17:58:04 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US", "en", "pt"]'.
+[17:58:04 DBG] The request path /swagger/index.html does not match an existing file
+[17:58:04 DBG] The request path /swagger/index.html does not match an existing file
+[17:58:04 DBG] No candidates found for the request path '/swagger/index.html'
+[17:58:04 DBG] Request did not match any endpoints
+[17:58:04 DBG] Connection ID "17798225741863714828" disconnecting.
+info[17:58:04 INF] Request finished HTTP/2 GET https://localhost:44305/swagger/index.html - - - 404 - - 535.0790ms
+: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:44305/swagger/index.html - - - 404 - - 535.0790ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:44305/ - -
+[17:58:12 INF] Request starting HTTP/2 GET https://localhost:44305/ - -
+[17:58:12 VRB] All hosts are allowed.
+[17:58:12 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US", "en", "pt"]'.
+[17:58:12 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US", "en", "pt"]'.
+[17:58:12 DBG] Connection ID "18302628887244308487" disconnecting.
+info[17:58:12 INF] Request finished HTTP/2 GET https://localhost:44305/ - - - 301 - - 84.2200ms
+: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:44305/ - - - 301 - - 84.2200ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:44305/index.html - -
+[17:58:14 INF] Request starting HTTP/2 GET https://localhost:44305/index.html - -
+[17:58:14 VRB] All hosts are allowed.
+[17:58:14 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US", "en", "pt"]'.
+[17:58:14 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US", "en", "pt"]'.
+[17:58:15 DBG] Connection ID "18302628887244308489" disconnecting.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:44305/index.html - - - 200 - text/html;charset=utf-8 371.7533ms
+[17:58:15 INF] Request finished HTTP/2 GET https://localhost:44305/index.html - - - 200 - text/html;charset=utf-8 371.7533ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:44305/swagger-ui.css - -
+[17:58:16 INF] Request starting HTTP/2 GET https://localhost:44305/swagger-ui.css - -
+[17:58:16 INF] Request starting HTTP/2 GET https://localhost:44305/swagger-ui-bundle.js - -
+[17:58:16 VRB] All hosts are allowed.
+[17:58:16 VRB] All hosts are allowed.
+[17:58:16 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US", "en", "pt"]'.
+info[17:58:16 INF] Request starting HTTP/2 GET https://localhost:44305/swagger-ui-standalone-preset.js - -
+[17:58:16 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US", "en", "pt"]'.
+[17:58:16 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US", "en", "pt"]'.
+[17:58:16 VRB] All hosts are allowed.
+[17:58:16 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US", "en", "pt"]'.
+[17:58:16 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US", "en", "pt"]'.
+[17:58:16 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US", "en", "pt"]'.
+[17:58:16 VRB] Range header's value is empty.
+[17:58:16 VRB] Range header's value is empty.
+[17:58:16 VRB] Range header's value is empty.
+: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:44305/swagger-ui-bundle.js - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:44305/swagger-ui-standalone-preset.js - -
+info[17:58:16 INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[17:58:16 DBG] Connection ID "17942340925644603399" disconnecting.
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[17:58:16 INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[17:58:16 INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+info[17:58:16 DBG] Connection ID "18302628891539275792" disconnecting.
+[17:58:16 INF] Request finished HTTP/2 GET https://localhost:44305/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 280.8141ms
+: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[17:58:16 INF] Request finished HTTP/2 GET https://localhost:44305/swagger-ui.css - - - 200 142933 text/css 566.9337ms
+[17:58:16 DBG] Connection ID "17870283331606675466" disconnecting.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:44305/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 280.8141ms
+info[17:58:17 INF] Request finished HTTP/2 GET https://localhost:44305/swagger-ui-bundle.js - - - 200 986342 application/javascript 789.3314ms
+: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:44305/swagger-ui.css - - - 200 142933 text/css 566.9337ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:44305/swagger-ui-bundle.js - - - 200 986342 application/javascript 789.3314ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:44305/swagger/v3/swagger.json - -
+[17:58:19 INF] Request starting HTTP/2 GET https://localhost:44305/swagger/v3/swagger.json - -
+[17:58:19 VRB] All hosts are allowed.
+[17:58:19 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US", "en", "pt"]'.
+[17:58:19 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US", "en", "pt"]'.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:44305/favicon-32x32.png - -
+[17:58:19 INF] Request starting HTTP/2 GET https://localhost:44305/favicon-32x32.png - -
+[17:58:19 VRB] All hosts are allowed.
+[17:58:19 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US", "en", "pt"]'.
+[17:58:19 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US", "en", "pt"]'.
+[17:58:19 VRB] Range header's value is empty.
+[17:58:19 INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[17:58:19 DBG] Connection ID "17942340925644603401" disconnecting.
+info[17:58:19 INF] Request finished HTTP/2 GET https://localhost:44305/favicon-32x32.png - - - 200 628 image/png 21.0736ms
+: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:44305/favicon-32x32.png - - - 200 628 image/png 21.0736ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:44305/swagger/v3/swagger.json - - - 200 - application/json;charset=utf-8 996.3963ms
+[17:58:20 DBG] Connection ID "17870283331606675468" disconnecting.
+[17:58:20 INF] Request finished HTTP/2 GET https://localhost:44305/swagger/v3/swagger.json - - - 200 - application/json;charset=utf-8 996.3963ms
+[18:02:28 INF] Request starting HTTP/1.1 POST https://localhost:44305/Analista/Programador/Auth/Login application/json 59
+[18:02:28 VRB] All hosts are allowed.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST https://localhost:44305/Analista/Programador/Auth/Login application/json 59
+[18:02:28 DBG] POST requests are not supported
+[18:02:28 DBG] POST requests are not supported
+[18:02:28 DBG] 1 candidate(s) found for the request path '/Analista/Programador/Auth/Login'
+[18:02:28 DBG] Endpoint 'AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais)' with route pattern 'Analista/Programador/Auth/Login' is valid for the request path '/Analista/Programador/Auth/Login'
+[18:02:28 DBG] Request matched endpoint 'AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais)'
+[18:02:28 INF] Executing endpoint 'AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais)'
+[18:02:28 DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[3]
+      Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Appointment.Application.ViewsModels.UserToken]] Login(Appointment.Application.ViewsModels.UserToken) on controller AppPrivy.WebApiDoacaoMais.Controllers.AuthController (AppPrivy.WebApiDoacaoMais).
+[18:02:28 INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Appointment.Application.ViewsModels.UserToken]] Login(Appointment.Application.ViewsModels.UserToken) on controller AppPrivy.WebApiDoacaoMais.Controllers.AuthController (AppPrivy.WebApiDoacaoMais).
+[18:02:28 DBG] Execution plan of authorization filters (in the following order): ["None"]
+[18:02:28 DBG] Execution plan of resource filters (in the following order): ["None"]
+[18:02:28 DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[18:02:28 DBG] Execution plan of exception filters (in the following order): ["None"]
+[18:02:28 DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[18:02:28 DBG] Executing controller factory for controller AppPrivy.WebApiDoacaoMais.Controllers.AuthController (AppPrivy.WebApiDoacaoMais)
+[18:02:29 DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+[18:02:29 DBG] Executed controller factory for controller AppPrivy.WebApiDoacaoMais.Controllers.AuthController (AppPrivy.WebApiDoacaoMais)
+[18:02:29 DBG] Attempting to bind parameter 'loginViewModel' of type 'Appointment.Application.ViewsModels.UserToken' ...
+[18:02:29 DBG] Attempting to bind parameter 'loginViewModel' of type 'Appointment.Application.ViewsModels.UserToken' using the name '' in request data ...
+[18:02:29 DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+[18:02:29 DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+[18:02:29 DBG] Done attempting to bind parameter 'loginViewModel' of type 'Appointment.Application.ViewsModels.UserToken'.
+[18:02:29 DBG] Done attempting to bind parameter 'loginViewModel' of type 'Appointment.Application.ViewsModels.UserToken'.
+[18:02:29 DBG] Attempting to validate the bound parameter 'loginViewModel' of type 'Appointment.Application.ViewsModels.UserToken' ...
+[18:02:29 DBG] Done attempting to validate the bound parameter 'loginViewModel' of type 'Appointment.Application.ViewsModels.UserToken'.
+[18:02:29 VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+[18:02:29 VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+[18:02:29 VRB] Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+[18:02:29 VRB] Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[1]
+      Executing action method AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais) - Validation state: Valid
+[18:02:29 INF] Executing action method AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais) - Validation state: Valid
+[18:02:29 VRB] Executing action method AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais) with arguments (["Appointment.Application.ViewsModels.UserToken"])
+[18:02:39 DBG] The index {'NotificacaoId'} was not created on entity type 'NotificacaoDispositivo' as the properties are already covered by the index {'NotificacaoId', 'DispositivoId'}.
+[18:02:39 DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+[18:02:39 DBG] The property 'UsuarioId.Dispositivo' was created in shadow state because there are no eligible CLR members with a matching name.
+[18:02:39 DBG] The property 'BoletimId.Notificacao' was created in shadow state because there are no eligible CLR members with a matching name.
+[18:02:39 DBG] The property 'BazarId.Bazar.Endereco#Endereco' was created in shadow state because there are no eligible CLR members with a matching name.
+[18:02:39 DBG] The property 'CacccId.Caccc.Endereco#Endereco' was created in shadow state because there are no eligible CLR members with a matching name.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 5.0.3 initialized 'AppPrivyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=AppPrivy.WebAppMvc 
+[18:02:40 INF] Entity Framework Core 5.0.3 initialized 'AppPrivyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=AppPrivy.WebAppMvc 
+[18:02:40 DBG] Compiling query expression: 
+'DbSet<IdentityUser>()
+    .FirstOrDefault(u => u.NormalizedUserName == __normalizedUserName_0)'
+[18:02:40 DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityUser.Id (string) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityUser.AccessFailedCount (int) Required, 1], [Property: IdentityUser.ConcurrencyStamp (string) Concurrency, 2], [Property: IdentityUser.Email (string) MaxLength(256), 3], [Property: IdentityUser.EmailConfirmed (bool) Required, 4], [Property: IdentityUser.LockoutEnabled (bool) Required, 5], [Property: IdentityUser.LockoutEnd (Nullable<DateTimeOffset>), 6], [Property: IdentityUser.NormalizedEmail (string) Index MaxLength(256), 7], [Property: IdentityUser.NormalizedUserName (string) Index MaxLength(256), 8], [Property: IdentityUser.PasswordHash (string), 9], [Property: IdentityUser.PhoneNumber (string), 10], [Property: IdentityUser.PhoneNumberConfirmed (bool) Required, 11], [Property: IdentityUser.SecurityStamp (string), 12], [Property: IdentityUser.TwoFactorEnabled (bool) Required, 13], [Property: IdentityUser.UserName (string) MaxLength(256), 14], }
+            SELECT TOP(1) u.Id, u.AccessFailedCount, u.ConcurrencyStamp, u.Email, u.EmailConfirmed, u.LockoutEnabled, u.LockoutEnd, u.NormalizedEmail, u.NormalizedUserName, u.PasswordHash, u.PhoneNumber, u.PhoneNumberConfirmed, u.SecurityStamp, u.TwoFactorEnabled, u.UserName
+            FROM Security.User AS u
+            WHERE u.NormalizedUserName == @__normalizedUserName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityUser>, 
+        AppPrivy.InfraStructure.Contexto.AppPrivyContext, 
+        False, 
+        False
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[18:02:41 DBG] Creating DbCommand for 'ExecuteReader'.
+[18:02:41 DBG] Created DbCommand for 'ExecuteReader' (243ms).
+[18:02:41 DBG] Opening connection to database 'appprivy' on server 'Latitude'.
+[18:02:42 DBG] Opened connection to database 'appprivy' on server 'Latitude'.
+[18:02:42 DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Security].[User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (398ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+      FROM [Security].[User] AS [u]
+      WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+[18:02:42 INF] Executed DbCommand (398ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Security].[User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+[18:02:42 DBG] Context 'AppPrivyContext' started tracking 'IdentityUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[18:02:43 DBG] A data reader was disposed.
+[18:02:43 DBG] Closing connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Closed connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Compiling query expression: 
+'DbSet<IdentityUserClaim<string>>()
+    .Where(uc => uc.UserId.Equals(__user_Id_0))
+    .Select(c => c.ToClaim())'
+[18:02:43 DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+        SELECT u.Id, u.UserId, u.ClaimType, u.ClaimValue
+        FROM Security.UserClaim AS u
+        WHERE u.UserId == @__user_Id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    AppPrivy.InfraStructure.Contexto.AppPrivyContext, 
+    False, 
+    False
+)'
+[18:02:43 DBG] Creating DbCommand for 'ExecuteReader'.
+[18:02:43 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[18:02:43 DBG] Opening connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Opened connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Executing DbCommand [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[UserId], [u].[ClaimType], [u].[ClaimValue]
+FROM [Security].[UserClaim] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (23ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[UserId], [u].[ClaimType], [u].[ClaimValue]
+      FROM [Security].[UserClaim] AS [u]
+      WHERE [u].[UserId] = @__user_Id_0
+[18:02:43 INF] Executed DbCommand (23ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[UserId], [u].[ClaimType], [u].[ClaimValue]
+FROM [Security].[UserClaim] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+[18:02:43 DBG] Context 'AppPrivyContext' started tracking 'IdentityUserClaim<string>' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[18:02:43 DBG] A data reader was disposed.
+[18:02:43 DBG] Closing connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Closed connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Compiling query expression: 
+'DbSet<IdentityUserRole<string>>()
+    .Join(
+        inner: DbSet<IdentityRole>(), 
+        outerKeySelector: userRole => userRole.RoleId, 
+        innerKeySelector: role => role.Id, 
+        resultSelector: (userRole, role) => new { 
+            userRole = userRole, 
+            role = role
+         })
+    .Where(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.userRole.UserId.Equals(__userId_0))
+    .Select(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.role.Name)'
+[18:02:43 DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<string>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT r.Name
+        FROM Security.UserRole AS u
+        INNER JOIN Security.Role AS r ON u.RoleId == r.Id
+        WHERE u.UserId == @__userId_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, string>, 
+    AppPrivy.InfraStructure.Contexto.AppPrivyContext, 
+    False, 
+    False
+)'
+[18:02:43 DBG] Creating DbCommand for 'ExecuteReader'.
+[18:02:43 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[18:02:43 DBG] Opening connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Opened connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Executing DbCommand [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[Name]
+FROM [Security].[UserRole] AS [u]
+INNER JOIN [Security].[Role] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[UserId] = @__userId_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (31ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Name]
+      FROM [Security].[UserRole] AS [u]
+      INNER JOIN [Security].[Role] AS [r] ON [u].[RoleId] = [r].[Id]
+      WHERE [u].[UserId] = @__userId_0
+[18:02:43 INF] Executed DbCommand (31ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[Name]
+FROM [Security].[UserRole] AS [u]
+INNER JOIN [Security].[Role] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[UserId] = @__userId_0
+[18:02:43 DBG] A data reader was disposed.
+[18:02:43 DBG] Closing connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Closed connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Compiling query expression: 
+'DbSet<IdentityRole>()
+    .FirstOrDefault(r => r.NormalizedName == __normalizedName_0)'
+[18:02:43 DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityRole>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityRole>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityRole.Id (string) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityRole.ConcurrencyStamp (string) Concurrency, 1], [Property: IdentityRole.Name (string) MaxLength(256), 2], [Property: IdentityRole.NormalizedName (string) Index MaxLength(256), 3], }
+            SELECT TOP(1) r.Id, r.ConcurrencyStamp, r.Name, r.NormalizedName
+            FROM Security.Role AS r
+            WHERE r.NormalizedName == @__normalizedName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityRole>, 
+        AppPrivy.InfraStructure.Contexto.AppPrivyContext, 
+        False, 
+        False
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[18:02:43 DBG] Creating DbCommand for 'ExecuteReader'.
+[18:02:43 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[18:02:43 DBG] Opening connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Opened connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Security].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (21ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+      FROM [Security].[Role] AS [r]
+      WHERE [r].[NormalizedName] = @__normalizedName_0
+[18:02:43 INF] Executed DbCommand (21ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Security].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+[18:02:43 DBG] Context 'AppPrivyContext' started tracking 'IdentityRole' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+[18:02:43 DBG] A data reader was disposed.
+[18:02:43 DBG] Closing connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Closed connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Compiling query expression: 
+'DbSet<IdentityRoleClaim<string>>()
+    .Where(rc => rc.RoleId.Equals(__role_Id_0))
+    .Select(c => new Claim(
+        c.ClaimType, 
+        c.ClaimValue
+    ))'
+[18:02:43 DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+        SELECT r.ClaimType, r.ClaimValue
+        FROM Security.RoleClaim AS r
+        WHERE r.RoleId == @__role_Id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    AppPrivy.InfraStructure.Contexto.AppPrivyContext, 
+    False, 
+    False
+)'
+[18:02:43 DBG] Creating DbCommand for 'ExecuteReader'.
+[18:02:43 DBG] Created DbCommand for 'ExecuteReader' (0ms).
+[18:02:43 DBG] Opening connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Opened connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Executing DbCommand [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[ClaimType], [r].[ClaimValue]
+FROM [Security].[RoleClaim] AS [r]
+WHERE [r].[RoleId] = @__role_Id_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[ClaimType], [r].[ClaimValue]
+      FROM [Security].[RoleClaim] AS [r]
+      WHERE [r].[RoleId] = @__role_Id_0
+[18:02:43 INF] Executed DbCommand (10ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [r].[ClaimType], [r].[ClaimValue]
+FROM [Security].[RoleClaim] AS [r]
+WHERE [r].[RoleId] = @__role_Id_0
+[18:02:43 DBG] A data reader was disposed.
+[18:02:43 DBG] Closing connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 DBG] Closed connection to database 'appprivy' on server 'Latitude'.
+[18:02:43 VRB] Performing protect operation to key {23f7a1b8-94a0-47c1-aabd-df3a82ede36a} with purposes ('E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais', 'Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware', 'Identity.Application', 'v2').
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler[10]
+      AuthenticationScheme: Identity.Application signed in.
+[18:02:43 INF] AuthenticationScheme: Identity.Application signed in.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action method AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 24154.7108ms.
+[18:02:53 INF] Executed action method AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 24154.7108ms.
+[18:02:53 VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+[18:02:53 VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+[18:02:53 VRB] Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+[18:02:53 VRB] Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+[18:02:53 VRB] Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+[18:02:53 VRB] Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+[18:02:53 VRB] Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+[18:02:53 DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+[18:02:53 DBG] No information found on request to perform content negotiation.
+[18:02:53 DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[18:02:53 DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+[18:02:53 DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'Appointment.Application.ViewsModels.UserToken'.
+[18:02:53 INF] Executing ObjectResult, writing value of type 'Appointment.Application.ViewsModels.UserToken'.
+[18:02:53 VRB] After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+[18:02:53 VRB] Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+[18:02:53 VRB] Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[2]
+      Executed action AppPrivy.WebApiDoacaoMais.Controllers.Au

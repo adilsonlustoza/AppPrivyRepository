@@ -19,11 +19,15 @@ namespace AppPrivy.InfraStructure.Repositories
 
         }
 
-        public void Add(TEntity obj)
+        public async Task<TEntity> Add(TEntity obj)
         {
             try
             {
-                _context.AppPrivyContext().Set<TEntity>().Add(obj);
+               var contextResult= await _context.AppPrivyContext().Set<TEntity>().AddAsync(obj);
+
+                if (contextResult.State == EntityState.Added)
+                    return contextResult.Entity;
+                return null;
             }
             catch (Exception e)
             {
@@ -66,11 +70,12 @@ namespace AppPrivy.InfraStructure.Repositories
             }
         }
 
-        public void Remove(TEntity obj)
+        public async Task Remove(TEntity obj)
         {
             try
             {
                 _context.AppPrivyContext().Set<TEntity>().Remove(obj);
+                 await Task.FromResult<TEntity>(obj);
             }
             catch (Exception e)
             {
@@ -79,11 +84,12 @@ namespace AppPrivy.InfraStructure.Repositories
 
         }
 
-        public void Update(TEntity obj)
+        public async Task Update(TEntity obj)
         {
             try
             {
-                _context.AppPrivyContext().Entry(obj).State = EntityState.Modified;
+                 _context.AppPrivyContext().Entry(obj).State = EntityState.Modified;
+                  await Task.FromResult<TEntity>(obj);
             }
             catch (Exception e)
             {
@@ -121,9 +127,9 @@ namespace AppPrivy.InfraStructure.Repositories
             GC.SuppressFinalize(this);
         }
 
-        public int? SaveChanges()
+        public async Task<int?> SaveChanges()
         {
-            return _context.AppPrivyContext().SaveChanges();
+            return await _context.AppPrivyContext().SaveChangesAsync();
         }
     }
 }

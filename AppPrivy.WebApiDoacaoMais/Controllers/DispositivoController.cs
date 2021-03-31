@@ -60,7 +60,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         {
             try
             {
-                var _result = await _dispositivoService.AddUpdateDispositivoUsuario(dispositivo);
+                var _result = await _dispositivoService.Add(dispositivo);
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Code {0} device not updated", dispositivo.Code   ));

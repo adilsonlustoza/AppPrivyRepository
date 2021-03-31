@@ -1,0 +1,43 @@
+[18:07:54 INF] Starting up
+[18:08:07 DBG] Hosting starting
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[63]
+      User profile is available. Using 'C:\Users\adils\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[18:08:07 INF] User profile is available. Using 'C:\Users\adils\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[18:08:07 DBG] Reading data from file 'C:\Users\adils\AppData\Local\ASP.NET\DataProtection-Keys\key-00640ac3-6c0a-4dfd-97ec-9880fbd9ce47.xml'.
+[18:08:07 DBG] Reading data from file 'C:\Users\adils\AppData\Local\ASP.NET\DataProtection-Keys\key-23f7a1b8-94a0-47c1-aabd-df3a82ede36a.xml'.
+[18:08:07 DBG] Found key {00640ac3-6c0a-4dfd-97ec-9880fbd9ce47}.
+[18:08:07 DBG] Found key {23f7a1b8-94a0-47c1-aabd-df3a82ede36a}.
+[18:08:07 DBG] Considering key {23f7a1b8-94a0-47c1-aabd-df3a82ede36a} with expiration date 2021-05-23 23:47:09Z as default key.
+[18:08:07 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[18:08:07 DBG] Decrypting secret element using Windows DPAPI.
+[18:08:07 DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[18:08:08 DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[18:08:08 DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[18:08:08 DBG] Using key {23f7a1b8-94a0-47c1-aabd-df3a82ede36a} as the default key.
+[18:08:08 DBG] Key ring with default key {23f7a1b8-94a0-47c1-aabd-df3a82ede36a} was loaded during application startup.
+[18:08:08 DBG] Loaded hosting startup assembly AppPrivy.WebApiDoacaoMais
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[18:08:08 INF] Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+[18:08:08 INF] Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+[18:08:08 INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+[18:08:08 DBG] Hosting started
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:44305/swagger/index.html - -
+[18:08:08 INF] Request starting HTTP/2 GET https://localhost:44305/swagger/index.html - -
+[18:08:08 DBG] Wildcard detected, all requests with hosts will be allowed.
+[18:08:08 VRB] All hosts are allowed.
+[18:08:08 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US", "en", "pt"]'.
+[18:08:08 DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US", "en", "pt"]'.
+[18:08:09 DBG] The request path /swagger/index.html does not match an existing file
+[18:08:09 DBG] The request path /swagger/index.html does not match an existing file
+[18:08:09 DBG] No candidates found for the request path '/swagger/index.html'
+[18:08:09 DBG] Request did not match any endpoints
+[18:08:09 DBG] Connection ID "18302628891539275794" disconnecting.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 GET https://localhost:44305/swagger/index.html - - - 404 - - 806.0777ms
+[18:08:10 INF] Request finished HTTP/2 GET https://localhost:44305/swagger/index.html - - -

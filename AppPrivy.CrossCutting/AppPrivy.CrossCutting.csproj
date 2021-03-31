@@ -7,6 +7,8 @@
   <PropertyGroup>
     <ResourceLanguages>en</ResourceLanguages>
   </PropertyGroup>
+	
+	
 
   <ItemGroup>
     <Compile Remove="Ioc\**" />

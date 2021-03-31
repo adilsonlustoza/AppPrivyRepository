@@ -55,8 +55,9 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
                 if (ModelState.IsValid)
                 {
-                    var result =  await Task.FromResult<Caccc>(caccc);
-                    return StatusCode(StatusCodes.Status201Created,$"The ong {result.Cnpj} was created!");
+                    var result = await _cacccService.Add(caccc);
+                         
+                    return StatusCode(StatusCodes.Status201Created,$"The ong {result} was created!");
                 }
 
                 return StatusCode(StatusCodes.Status400BadRequest, $"The ong {caccc.Cnpj}  wasn't created");

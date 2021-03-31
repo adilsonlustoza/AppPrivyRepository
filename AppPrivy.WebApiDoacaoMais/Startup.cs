@@ -61,7 +61,6 @@ namespace AppPrivy.WebApiDoacaoMais
 
              services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
 
-
             services.AddOptions();
 
             services.AddControllers().AddNewtonsoftJson(options =>
@@ -143,7 +142,6 @@ namespace AppPrivy.WebApiDoacaoMais
 
             services.AddTransient<IAuthService, AuthService>();
 
-            services.AddScoped<AppPrivyLog>();
             services.AddScoped<SendMail>();
 
             services.AddSwaggerGenNewtonsoftSupport();
@@ -217,10 +215,10 @@ namespace AppPrivy.WebApiDoacaoMais
                 });
 
 
-                // Set the comments path for the Swagger JSON and UI.
-                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //opt.IncludeXmlComments(xmlPath);
+               // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                opt.IncludeXmlComments(xmlPath);
 
 
 
@@ -270,10 +268,17 @@ namespace AppPrivy.WebApiDoacaoMais
 
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v3/swagger.json", "Doacao Mais v3"));
+                app.UseDeveloperExceptionPage();              
+                
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c => {
+                                    c.SwaggerEndpoint("/swagger/v3/swagger.json", "Doacao Mais v3");
+                                     c.RoutePrefix = string.Empty;
+                                  }
+                            );
 
             app.UseHttpsRedirection();
 

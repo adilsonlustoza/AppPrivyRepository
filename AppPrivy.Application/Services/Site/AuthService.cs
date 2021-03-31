@@ -29,8 +29,7 @@ namespace AppPrivy.Application.Services.Site
                                   };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:key"]));
-                var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-                // tempo de expiração do token: 1 hora
+                var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);             
                 var expiration = DateTime.UtcNow.AddMinutes(20);
 
                 JwtSecurityToken token = new JwtSecurityToken(

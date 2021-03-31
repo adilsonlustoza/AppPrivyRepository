@@ -3,6 +3,7 @@ using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.InfraStructure.Interface;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
@@ -16,20 +17,20 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
             _contextManager = contextManager;
         }
 
-        public IEnumerable<Dispositivo> GetAllDispositivosPorUsuarioId(int Id)
+        public  async Task<IEnumerable<Dispositivo>> GetAllDispositivosPorUsuarioId(int Id)
         {
-            return _contextManager
+            return await Task.FromResult<IEnumerable<Dispositivo>>( _contextManager
                    .AppPrivyContext()
                    .Set<Usuario>()
                    .Where(p => p.UsuarioId == Id)
                    .FirstOrDefault()
                    .Dispositivo.
-                   ToList();
+                   ToList());
         }
 
-        public void AddDispositivoUsuario(Dispositivo dispositivo)
+        public async Task AddDispositivoUsuario(Dispositivo dispositivo)
         {
-            this.Add(dispositivo);
+          await   this.Add(dispositivo);
 
         }
     }

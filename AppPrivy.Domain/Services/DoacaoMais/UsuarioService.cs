@@ -2,6 +2,7 @@
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Services.DoacaoMais
 {
@@ -19,16 +20,11 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             _dispositivoRepository = dispositivoRepository;
         }
 
-        public int AdicionarUsuario(Usuario usuario)
-        {
-            _usuarioRepository.Add(usuario);
-            return 0;
+      
 
-        }
-
-        public IEnumerable<Dispositivo> GetAllDispositivosPorUsuarioId(int Id)
+        public  async Task<IEnumerable<Dispositivo>> GetAllDispositivosPorUsuarioId(int Id)
         {
-            return _dispositivoRepository.GetAllDispositivosPorUsuarioId(Id);
+            return  await _dispositivoRepository.GetAllDispositivosPorUsuarioId(Id);
         }
 
 
@@ -39,7 +35,11 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
         }
 
-
+        public async Task<Usuario> AdicionarUsuario(Usuario usuario)
+        {
+           return await _usuarioRepository.Add(usuario);
+           
+        }
     }
 
 
