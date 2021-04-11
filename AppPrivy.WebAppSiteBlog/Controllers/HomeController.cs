@@ -13,6 +13,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using System.Reflection;
+using Microsoft.Extensions.Logging;
 
 namespace AppPrivy.WebAppSiteBlog.Controllers
 {
@@ -24,7 +25,7 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IWebHostEnvironment _webHostEnvironment;
-       
+        private readonly ILogger<HomeController> _logger;
 
         public HomeController
             (
@@ -32,7 +33,8 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
                 IPesquisaAppService pesquisaAppService,              
                 IWebHostEnvironment webHostEnvironment,
                 IHttpContextAccessor httpContextAccessor,
-                IConfiguration configuration
+                IConfiguration configuration,
+                ILogger<HomeController> logger
             )
         {
             _contatoAppService = contatoAppService;
@@ -40,6 +42,7 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
             _httpContextAccessor = httpContextAccessor;
             _configuration = configuration;
             _webHostEnvironment = webHostEnvironment;
+            _logger = logger;
 
         }
 
@@ -54,7 +57,7 @@ namespace AppPrivy.WebAppSiteBlog.Controllers
 
         public IActionResult Index()
         {
-            AppPrivyLog.GetInstance().Information($"Remote Ip Address {this.HttpContext?.Connection?.RemoteIpAddress?.ToString()}");
+            _logger.LogInformation($"Remote Ip Address {this.HttpContext?.Connection?.RemoteIpAddress?.ToString()}");
             return View();
         }
 

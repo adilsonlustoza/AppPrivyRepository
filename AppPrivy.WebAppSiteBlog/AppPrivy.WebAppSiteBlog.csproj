@@ -18,6 +18,10 @@
     <ResourceLanguages>en</ResourceLanguages>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
 </PropertyGroup>
+  
+  <ItemGroup>
+    <Content Remove="wwwroot\favicon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\.bower.json" />
@@ -174,6 +178,9 @@
     <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.css.map" />
     <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.js" />
     <None Include="wwwroot\bower_components\jvectormap\jquery-jvectormap.min.js.map" />
+    <None Include="wwwroot\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\templates\email\ContatoEmail.html" />
     <None Include="wwwroot\templates\email\RecuperarEmail.html" />
   </ItemGroup>
@@ -206,12 +213,6 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="favicon.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 

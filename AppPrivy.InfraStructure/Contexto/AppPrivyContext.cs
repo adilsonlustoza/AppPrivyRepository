@@ -33,12 +33,11 @@ namespace AppPrivy.InfraStructure.Contexto
         //-------------------------------Doacao Mais-----------------------
         public virtual DbSet<Bazar> Bazar { get; set; }
         public virtual DbSet<Caccc> Caccc { get; set; }
-        public virtual DbSet<Boletim> Campanha { get; set; }
+        public virtual DbSet<Campanha> Campanha { get; set; }
         public virtual DbSet<ContaBancaria> ContaBancaria { get; set; }
         public virtual DbSet<Conteudo> Conteudo { get; set; }
         public virtual DbSet<Noticia> Evento { get; set; }
-        public virtual DbSet<Notificacao> Notificacao { get; set; }
-        public virtual DbSet<Paciente> Paciente { get; set; }
+        public virtual DbSet<Notificacao> Notificacao { get; set; }    
         public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Dispositivo> Dispositivo { get; set; }
 
@@ -63,11 +62,10 @@ namespace AppPrivy.InfraStructure.Contexto
             //-------------------------------Doacao Mais-----------------------
             modelBuilder.ApplyConfiguration(new BazarConfiguration());
             modelBuilder.ApplyConfiguration(new CacccConfiguration());
-            modelBuilder.ApplyConfiguration(new BoletimConfiguration());
+            modelBuilder.ApplyConfiguration(new CampanhaConfiguration());
             modelBuilder.ApplyConfiguration(new ContaBancariaConfiguration());
             modelBuilder.ApplyConfiguration(new ConteudoConfiguration());
-            modelBuilder.ApplyConfiguration(new DispositivoConfiguration());
-            modelBuilder.ApplyConfiguration(new PacienteConfiguration());
+            modelBuilder.ApplyConfiguration(new DispositivoConfiguration());           
             modelBuilder.ApplyConfiguration(new NoticiaConfiguration());
             modelBuilder.ApplyConfiguration(new NotificacaoConfiguration());
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
@@ -91,7 +89,7 @@ namespace AppPrivy.InfraStructure.Contexto
 
                 if (entry.State == EntityState.Modified)
                 {
-                    entry.Property("DataCadastro").IsModified = false;
+                    entry.Property("DataCadastro").IsModified = true;
                 }
             }
             return base.SaveChanges();

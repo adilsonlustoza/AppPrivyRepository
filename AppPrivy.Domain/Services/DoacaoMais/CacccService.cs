@@ -13,14 +13,14 @@ namespace AppPrivy.Domain.Services.DoacaoMais
         private readonly ICacccRepository _cacccRepository;
         private readonly IBazarRepository _bazarRepository;
         private readonly IConteudoRepository _conteudoRepository;
-        private readonly IBoletimRepository _campanhaRepository;
+        private readonly ICampanhaRepository _campanhaRepository;
         private readonly IContaBancariaRepository _contaBancariaRepository;
 
         public CacccService(
                             ICacccRepository cacccRepository,
                             IBazarRepository bazarRepository,
                             IConteudoRepository conteudoRepository,
-                            IBoletimRepository campanhaRepository,
+                            ICampanhaRepository campanhaRepository,
                             IContaBancariaRepository contaBancariaRepository
 
             ) : base(cacccRepository)

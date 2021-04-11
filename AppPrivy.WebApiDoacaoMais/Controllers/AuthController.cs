@@ -1,10 +1,11 @@
 ﻿using Appointment.Application.ViewsModels;
 using AppPrivy.Application.Interfaces;
-using AppPrivy.CrossCutting.WLog;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace AppPrivy.WebApiDoacaoMais.Controllers
@@ -17,15 +18,20 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-      
-        public readonly SignInManager<IdentityUser> _signInManager;
-        public readonly IAuthService _authService;
 
-        public AuthController(IAuthService authService, SignInManager<IdentityUser> signInManager)
+        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly IAuthService _authService;
+        private readonly ILogger<AuthController> _logger;
+
+        public AuthController(IAuthService authService,
+                              SignInManager<IdentityUser> signInManager,
+                              ILogger<AuthController> logger
+            )
         {           
                    
             _authService = authService;
             _signInManager = signInManager;
+            _logger = logger;
         }
 
         /// <summary>
@@ -34,36 +40,35 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <remarks>
         /// Sample request:
         ///
-        ///     POST /Analista/Programador/Auth/Login
-        ///     {
-        ///         "Email": "email@dominio.com.br",               
-        ///         "Password":  "*******"        
-        ///     }
-        ///
+        ///     Head /Analista/Programador/Auth/Login
+        ///     
+        ///    "Email": "email@dominio.com.br"             
+        ///    "Password":  "*******"        
+        ///     
         /// </remarks>
-        /// <param name="loginViewModel"></param>        
-        /// <returns>Token</returns>
+        /// <param name="userToken"></param>
+        // <returns>Token</returns>
         /// <response code="201">Token</response>
         /// <response code="400">it wasn`t able to created a new token</response>            
 
-        [HttpPost("Login")]
-        public async Task<ActionResult<UserToken>> Login([FromBody] UserToken loginViewModel)
+
+        [HttpHead("Login")]
+        [ResponseCache(NoStore = true)]
+        public async Task<ActionResult<UserToken>> Login([FromHeader] UserToken userToken)
         {
             try
             {
-                
-                var result = await _signInManager.PasswordSignInAsync(loginViewModel.Email, loginViewModel.Password,
-                        isPersistent: false, lockoutOnFailure: false);
-              
+                var result = await _signInManager.PasswordSignInAsync(userToken.Email, userToken.Password,
+                        isPersistent: false, lockoutOnFailure: false);              
 
                 if (result.Succeeded)
-                    return  StatusCode(StatusCodes.Status200OK, await _authService.BuildToken(loginViewModel));
-
+                    return  StatusCode(StatusCodes.Status200OK, await _authService.BuildToken(userToken));
                 else
                     return StatusCode(StatusCodes.Status400BadRequest, $"It wans`t able to login!!!");
             }
             catch (Exception ex)
             {
+                _logger.Log(LogLevel.Error,"Exception Error in Method {0} - {1}: ", ex.TargetSite.ReflectedType.FullName,ex);
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
               
             }

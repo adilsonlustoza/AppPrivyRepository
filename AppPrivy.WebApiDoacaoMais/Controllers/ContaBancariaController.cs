@@ -1,7 +1,7 @@
-﻿using AppPrivy.CrossCutting.WLog;
-using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+﻿using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
@@ -12,6 +12,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
     public class ContaBancariaController : ControllerBase
     {
         private readonly IContaBancariaService _contaBancariaService;
+        private readonly ILogger<ContaBancariaController> _logger;
 
         public ContaBancariaController(IContaBancariaService contaBancariaService)
         {
@@ -25,6 +26,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpGet]
         [Route("ListarContasBancarias")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> ListarContasBancarias()
         {
             try

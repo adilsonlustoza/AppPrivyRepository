@@ -5,23 +5,8 @@
     </assembly>
     <members>
         <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login(Appointment.Application.ViewsModels.UserToken)">
-             <summary>
-             Request the Token by Login
-             </summary>
-             <remarks>
-             Sample request:
-            
-                 POST /Analista/Programador/Auth/Login
-                 {
-                     "Email": "email@dominio.com.br",               
-                     "Password":  "*******"        
-                 }
-            
-             </remarks>
-             <param name="loginViewModel"></param>        
-             <returns>Token</returns>
-             <response code="201">Token</response>
-             <response code="400">it wasn`t able to created a new token</response>            
+            <response code="201">Token</response>
+            <response code="400">it wasn`t able to created a new token</response>            
         </member>
         <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.BazarController.ListarBazar">
             <summary>

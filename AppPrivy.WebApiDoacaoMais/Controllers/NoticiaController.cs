@@ -15,7 +15,6 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         private readonly INoticiaService _noticiaService;
 
-
         public NoticiaController(INoticiaService noticiaService)
         {
             _noticiaService = noticiaService;
@@ -78,6 +77,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpGet]
         [Route("ListarNoticiaPorCacccNome/{caccc}")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> ListarNoticiaPorCacccNome(string caccc)
         {
             try
@@ -105,6 +105,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpGet]
         [Route("ListarNoticiasGeraisPorCacccId/{Id}")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> ListarNoticiasGeraisPorCacccId(int? Id)
         {
             try

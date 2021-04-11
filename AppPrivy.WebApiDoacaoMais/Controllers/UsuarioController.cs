@@ -1,5 +1,4 @@
-﻿using AppPrivy.CrossCutting.WLog;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -58,6 +57,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
         [Route("SalvarListaUsuarios")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> AddUserList(ICollection<Usuario> usuarios)
         {
             try
@@ -88,6 +88,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
         [Route("ListarUsuarios")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public IActionResult UserList()
         {
             try
@@ -111,7 +112,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
         [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
-        [Route("ObterUsuario")]
+        [Route("ObterUsuario/{Id:int?}")]
         public IActionResult GetUser(int? Id)
         {
             try

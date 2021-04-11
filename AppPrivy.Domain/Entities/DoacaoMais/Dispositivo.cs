@@ -10,7 +10,6 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
     [Table("Disposito", Schema = "DoacaoMais")]
     public partial class Dispositivo : Entity
     {
-
         public Dispositivo()
         {
             Notificacao = new HashSet<Notificacao>();

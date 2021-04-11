@@ -30,7 +30,7 @@ namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
            .WithOne(e => e.Caccc)
            .OnDelete(DeleteBehavior.ClientSetNull);
 
-            builder.HasMany(e => e.Boletins)
+            builder.HasMany(e => e.Campanhas)
            .WithOne(e => e.Caccc)
            .OnDelete(DeleteBehavior.ClientSetNull);
 
@@ -42,12 +42,7 @@ namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
             builder.HasMany(e => e.Conteudos)
            .WithOne(e => e.Caccc)
            .OnDelete(DeleteBehavior.ClientSetNull);
-
-
-            builder.HasMany(e => e.Pacientes)
-            .WithOne(e => e.Caccc)
-           .OnDelete(DeleteBehavior.ClientSetNull);
-
+                     
 
 
 

@@ -10,6 +10,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 {
     [Route("Analista/Programador/[controller]")]
     [ApiController]
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class RecursoController : ControllerBase
     {
 
@@ -21,6 +22,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpHead]
         [Route("Cabecalho")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> Header()
         {
             try
@@ -59,6 +61,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
         [Route("SalvarArquivo")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> SaveFile()
         {
             try

@@ -19,7 +19,6 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         [StringLength(150)]
         public string Senha { get; set; }
-
         public virtual ICollection<Dispositivo> Dispositivo { get; set; }
 
     }

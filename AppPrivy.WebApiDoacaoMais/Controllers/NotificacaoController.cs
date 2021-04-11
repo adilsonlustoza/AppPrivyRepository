@@ -27,7 +27,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarNotificacoesAtivas")]
+        [Route("ListarNotificacoesAtivas")]   
         public async Task<IActionResult> ListarNotificacoesAtivas()
         {
 
@@ -55,6 +55,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpGet]
         [Route("ListaNoficacaoPorDispositivo/{IdentificadorUnico}")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> ListaNoficacaoPorDispositivo(string identificadorUnico)
         {
             try

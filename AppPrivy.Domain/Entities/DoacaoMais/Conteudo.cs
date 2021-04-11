@@ -24,8 +24,6 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         [ForeignKey("Caccc")]
         public int CacccId { get; set; }
-
-
         public virtual Caccc Caccc { get; set; }
     }
 }

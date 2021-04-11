@@ -1,5 +1,4 @@
-﻿using AppPrivy.CrossCutting.WLog;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -73,9 +72,6 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }        
 
         }
-
-
-
 
 
     }

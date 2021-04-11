@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -50,13 +51,19 @@ namespace Appointment.Application.ViewsModels
         
         [Required(ErrorMessage ="{0} é requerido")]
         [DataType(DataType.EmailAddress)]
+        [FromHeader]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "{0} é requerido")]
         [DataType(DataType.Password)]
-        public string Password { get; set; }      
+        [FromHeader]
+        public string Password { get; set; }   
+        
+
+        [JsonIgnore]
         public string Token { get; set; }
 
+        [JsonIgnore]
         [DataType(DataType.Date)]
         public DateTime? Expiration { get; set; }
 

@@ -1,7 +1,7 @@
-﻿using AppPrivy.CrossCutting.WLog;
-using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+﻿using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
@@ -14,10 +14,12 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
     {
         private readonly IBoletimService _boletimService;
+        private readonly ILogger<BoletimController> _logger;
 
-        public BoletimController(IBoletimService boletimService)
+        public BoletimController(IBoletimService boletimService, ILogger<BoletimController> logger)
         {
             _boletimService = boletimService;
+            _logger = logger;
         }
 
         /// <summary>
@@ -39,6 +41,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -65,6 +68,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -76,6 +80,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpGet]
         [Route("ListarBoletimPorCacccNome/{caccc}")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> ListarBoletimPorCacccNome(string caccc)
         {
             try
@@ -91,6 +96,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }

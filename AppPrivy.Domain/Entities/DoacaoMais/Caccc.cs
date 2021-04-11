@@ -13,11 +13,10 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
         public Caccc()
         {
             Bazares = new HashSet<Bazar>();
-            Boletins = new HashSet<Boletim>();
+            Campanhas = new HashSet<Campanha>();
             Noticias = new HashSet<Noticia>();
             ContasBancarias = new HashSet<ContaBancaria>();
-            Conteudos = new HashSet<Conteudo>();
-            Pacientes = new HashSet<Paciente>();
+            Conteudos = new HashSet<Conteudo>();         
             //Tipo Complexo
             Endereco = new Endereco();
 
@@ -34,8 +33,6 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         [StringLength(150)]
         public string Apelido { get; set; }
-
-
 
         [RegularExpression(@"^\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}$", ErrorMessage = "{0} é invalido.")]
         [Required(ErrorMessage = "{0} é requerido.")]
@@ -83,18 +80,17 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         /**********************************************Relation Area**************************************************/
 
-
         public virtual ICollection<Conteudo> Conteudos { get; set; }
 
         public virtual ICollection<Bazar> Bazares { get; set; }
 
-        public virtual ICollection<Boletim> Boletins { get; set; }
+        public virtual ICollection<Campanha> Campanhas { get; set; }
 
         public virtual ICollection<Noticia> Noticias { get; set; }
 
         public virtual ICollection<ContaBancaria> ContasBancarias { get; set; }
 
-        public virtual ICollection<Paciente> Pacientes { get; set; }
+ 
 
     }
 }

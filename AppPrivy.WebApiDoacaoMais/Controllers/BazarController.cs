@@ -1,23 +1,26 @@
-﻿using AppPrivy.CrossCutting.WLog;
-using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+﻿using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
 namespace AppPrivy.WebApiDoacaoMais.Controllers
 {
-    
+
     [ApiController]
     [Route("Analista/Programador/[controller]")]
 
     public class BazarController : ControllerBase
     {
         private readonly IBazarService _bazarService;
+        private readonly ILogger<BazarController> _logger;
 
-        public BazarController(IBazarService bazarService)
+        public BazarController(IBazarService bazarService,
+                               ILogger<BazarController> logger)
         {
             _bazarService = bazarService;
+            _logger = logger;
         }
 
         /// <summary>
@@ -27,6 +30,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpGet]
         [Route("ListarBazar")]
+       
         public async Task<IActionResult> ListarBazar()
         {
             try
@@ -39,6 +43,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -65,6 +70,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -76,6 +82,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpGet]
         [Route("ListarBazarPorCacccNome/{caccc}")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> ListarBazarPorCacccNomeAsync(string caccc)
         {
             try
@@ -93,6 +100,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }

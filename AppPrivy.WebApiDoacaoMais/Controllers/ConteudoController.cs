@@ -2,6 +2,7 @@
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
@@ -13,11 +14,11 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
     public class ConteudoController : ControllerBase
     {
         private readonly IConteudoService _conteudoService;
-
-
-        public ConteudoController(IConteudoService conteudoService)
+        private readonly ILogger<ConteudoController> _logger;
+        public ConteudoController(IConteudoService conteudoService, ILogger<ConteudoController> logger)
         {
             _conteudoService = conteudoService;
+            _logger = logger;
         }
 
         /// <summary>
@@ -39,6 +40,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -63,6 +65,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -74,6 +77,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpGet]
         [Route("ListarConteudoPorCacccNome/{caccc}")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> ListarConteudoPorCacccNome(string caccc)
         {
             try
@@ -86,6 +90,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }

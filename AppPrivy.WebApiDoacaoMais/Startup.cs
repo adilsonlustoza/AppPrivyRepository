@@ -100,7 +100,7 @@ namespace AppPrivy.WebApiDoacaoMais
             services.AddTransient<IBazarRepository, BazarRepository>();
             services.AddTransient<IBazarService, BazarService>();
 
-            services.AddTransient<IBoletimRepository, BoletimRepository>();
+            services.AddTransient<ICampanhaRepository, CampanhaRepository>();
             services.AddTransient<IBoletimService, BoletimService>();
 
             services.AddTransient<ICacccRepository, CacccRepository>();

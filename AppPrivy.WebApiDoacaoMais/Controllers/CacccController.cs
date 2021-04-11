@@ -1,10 +1,10 @@
-﻿using AppPrivy.CrossCutting.WLog;
-using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
@@ -18,10 +18,12 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
     {
 
         private readonly ICacccService _cacccService;
+        private readonly ILogger<CacccController> _logger;
 
-        public CacccController(ICacccService cacccService)
+        public CacccController(ICacccService cacccService, ILogger<CacccController> logger)
         {
             _cacccService = cacccService;
+            _logger = logger;
         }
         /// <summary>
         /// Create a new institution [Required Authorization]
@@ -65,6 +67,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -113,6 +116,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -145,7 +149,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpPatch]
         [Route("AtualizarParcialCaccc/{Id:int?}")]
-        public async Task<IActionResult> AtualizarParcialCaccc(int? Id, [FromBody] JsonPatchDocument<Caccc> caccc)
+        [ApiExplorerSettings(IgnoreApi = true)]
+        public async Task<IActionResult> AtualizarParcialCaccc([FromRoute] int? Id, [FromBody] JsonPatchDocument<Caccc> caccc)
         {
             try
             {
@@ -161,6 +166,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -198,6 +204,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -221,6 +228,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -244,6 +252,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -268,6 +277,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -279,6 +289,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [HttpGet]
         [Route("ConteudoContasPorNomeCaccc/{caccc}")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<IActionResult> ConteudoContasPorNomeCaccc(string caccc)
         {
             try
@@ -291,6 +302,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }
@@ -300,9 +312,10 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// </summary>
         /// <returns></returns>
 
-
+        
         [HttpGet]
         [Route("ListarConteudoContasPorCaccc")]
+      
         public async Task<IActionResult> ListarConteudoContasPorCaccc()
         {
             try
@@ -315,6 +328,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", e.TargetSite.ReflectedType.FullName, e);
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
         }

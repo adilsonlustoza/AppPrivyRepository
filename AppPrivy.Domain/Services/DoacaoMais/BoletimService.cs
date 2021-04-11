@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Services.DoacaoMais
 {
-    public class BoletimService : ServiceBase<Boletim>, IBoletimService
+    public class BoletimService : ServiceBase<Campanha>, IBoletimService
     {
-        private readonly IBoletimRepository _boletimRepository;
+        private readonly ICampanhaRepository _boletimRepository;
 
-        public BoletimService(IBoletimRepository boletimRepository) : base(boletimRepository)
+        public BoletimService(ICampanhaRepository boletimRepository) : base(boletimRepository)
         {
             _boletimRepository = boletimRepository;
         }
 
-        public async Task<IEnumerable<Boletim>> ListaBoletimCaccc(int? CacccId)
+        public async Task<IEnumerable<Campanha>> ListaBoletimCaccc(int? CacccId)
         {
             try
             {
@@ -32,7 +32,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
         }
 
-        Task<IEnumerable<Boletim>> IBoletimService.ListaBoletimCaccc(int? CacccId)
+        Task<IEnumerable<Campanha>> IBoletimService.ListaBoletimCaccc(int? CacccId)
         {
             throw new NotImplementedException();
         }

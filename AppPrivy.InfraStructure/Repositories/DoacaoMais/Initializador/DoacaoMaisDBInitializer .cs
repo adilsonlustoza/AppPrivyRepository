@@ -37,9 +37,9 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     Latitude = -23.6350549,
                     Longitude = -46.7713119
                 },
-                Boletins = new List<Boletim>()
+                Campanhas = new List<Campanha>()
                 {
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Campanha,
                                    Nome ="Prestes a ser fechada",
                                    UrlImagem="http://doacaomais.adilsonlustoza.com.br/Arquivos/DoacaoMais/Imagens/noticia_caccc_eliana.webp",
@@ -178,9 +178,9 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     Latitude = -23.5964588,
                     Longitude = -46.6523728
                 },
-                Boletins = new List<Boletim>()
+                Campanhas = new List<Campanha>()
                 {
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Projeto,
                                    Nome ="Apoio Psicológico",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
@@ -197,13 +197,13 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 
                     },
 
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Projeto,
                                    Nome ="Alojamento",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
                                    Descricao =@"<p align='justify'>O alojamento é a unidade da AACC que oferece ao paciente com câncer e à sua família,  desde o início do tratamento, o suporte bio-psicossocial necessário, que envolve o comprometimento de uma equipe multiprofissional e a relação com  diferentes setores da sociedade envolvidos no apoio às famílias e à saúde de crianças e jovens. Por isso, a AACC organiza diversas atividades que favoreçam o bem-estar dos atendidos para que a qualidade de vida dos usuários seja uma ferramenta a mais no processo de cura, organizando atividades culturais, passeios estratégicos que coloquem as crianças em contato com pessoas que contribuem com as artes e os desportos, a fim de despertar o sentimento e a vontade de crescimento entre elas.</p>"},
 
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Campanha,
                                    Nome ="AACC em Construindo o Futuro",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/proj_constr_final.png",
@@ -369,9 +369,9 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     Latitude = -23.6205107,
                     Longitude = -46.6199603
                 },
-                Boletins = new List<Boletim>()
+                Campanhas = new List<Campanha>()
                 {
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Projeto,
                                    Nome ="Cobertura",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
@@ -392,7 +392,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 
                                                     Resumindo, o CMK foi idealizado para que o paciente faça seu tratamento no hospital mas tenha nosso total apoio para que esse seja um sucesso e o que depender de nós que também esses pequenos meninos e meninas jamais carreguem traumas psicológicos referentes a doença durante o período que o acompanharemos."},
 
-                     new Boletim(){
+                     new Campanha(){
                                    tipoCampanha =TipoBoletim.Projeto,
                                    Nome ="Apoio",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
@@ -408,7 +408,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                                 Médico
                                 Jurídico"},
 
-                     new Boletim(){
+                     new Campanha(){
                                   tipoCampanha=TipoBoletim.Depoimento,
                                   Nome ="Agradecimentos",
                                   UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
@@ -475,9 +475,9 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     Latitude = -23.6029461,
                     Longitude = -46.7473632
                 },
-                Boletins = new List<Boletim>()
+                Campanhas = new List<Campanha>()
                 {
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Campanha,
                                    Nome ="Doações",
                                    LinkWeb=null,
@@ -553,9 +553,9 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     Latitude = -23.6010249,
                     Longitude = -46.7744426
                 },
-                Boletins = new List<Boletim>()
+                Campanhas = new List<Campanha>()
                 {
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Parceiro,
                                    Nome ="TEMOS O APOIO DA RISÜ",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/apoio_risu.jpg",
@@ -564,7 +564,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                                    DataInicial= new DateTime(),
                                    DataFinal=new DateTime(),
                                   },
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Depoimento,
                                    Nome ="GABRIELA",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo-aacc-2.png",
@@ -668,9 +668,9 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     Latitude = -23.6010296,
                     Longitude = -46.7321669
                 },
-                Boletins = new List<Boletim>()
+                Campanhas = new List<Campanha>()
                 {
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Campanha,
                                    Nome ="Doe um Produto",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo-aacc-2.png",
@@ -680,7 +680,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                                    DataInicial= new DateTime(),
                                    DataFinal=new DateTime(),
                                   },
-                    new Boletim(){
+                    new Campanha(){
                                    tipoCampanha =TipoBoletim.Depoimento,
                                    Nome ="Seja Voluntário",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo-aacc-2.png",
@@ -887,9 +887,9 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     Latitude = -23.5030268,
                     Longitude = -46.4750445
                 },
-                Boletins = new List<Boletim>()
+                Campanhas = new List<Campanha>()
                 {
-                     new Boletim(){
+                     new Campanha(){
                                    tipoCampanha =TipoBoletim.Campanha,
                                    Nome ="TERRENO DA SEDE PRÓPRIA / CONTRIBUA",
                                    UrlImagem=@"http://www.cavd.org.br/wp-content/uploads/2015/02/site.png",
@@ -899,7 +899,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                                    DataFinal=new DateTime(),
                                   },
 
-                     new Boletim(){
+                     new Campanha(){
                                    tipoCampanha =TipoBoletim.Campanha,
                                    Nome ="A HISTÓRIA CONTINUA",
                                    UrlImagem=@"http://www.cavd.org.br/wp-content/uploads/2015/02/site.png",
@@ -912,7 +912,7 @@ Para colher os recursos, a CAVD reúne diversos tipos de eventos. Além disso, r
                                    DataFinal=new DateTime(),
                                   },
 
-                     new Boletim(){
+                     new Campanha(){
                                    tipoCampanha =TipoBoletim.Projeto,
                                    Nome ="SEJA VOLUNTÁRIO",
                                    UrlImagem=@"http://www.cavd.org.br/wp-content/uploads/2015/02/site.png",
