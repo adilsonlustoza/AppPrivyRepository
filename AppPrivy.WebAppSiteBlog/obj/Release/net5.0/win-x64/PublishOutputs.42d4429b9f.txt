@@ -5,8 +5,8 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\scale.fix.js
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\prettify.css
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\prettify.js
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\favicon.ico
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\bower_components\jR3DCarousel\dist\jR3DCarousel.min.js
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\favicon.ico
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\AppPrivy.WebAppSiteBlog.exe
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Microsoft.DiaSymReader.Native.x86.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\Microsoft.DiaSymReader.Native.amd64.dll
@@ -2276,7 +2276,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\css\microsoft_brownser.css
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\css\projetos_recentes.css
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\css\rodape_responsivo.css
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\favicon.ico
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\Images\android\disponivel_google_play.png
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\Images\android\doacao_mais\entidades.png
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\Images\android\doacao_mais\facebook.png

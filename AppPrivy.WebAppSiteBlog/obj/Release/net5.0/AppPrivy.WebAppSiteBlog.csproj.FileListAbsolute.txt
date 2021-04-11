@@ -16,7 +16,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\wwwroot\
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\wwwroot\bower_components\bootstrap-lightbox\docs\assets\js\scale.fix.js
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\prettify.css
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\wwwroot\bower_components\bootstrap-lightbox\docs\assets\prettify\prettify.js
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\favicon.ico
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\wwwroot\bower_components\jR3DCarousel\dist\jR3DCarousel.min.js
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\AppPrivy.WebAppSiteBlog.deps.json
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\AppPrivy.WebAppSiteBlog.runtimeconfig.json
@@ -494,3 +493,4 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\AspNetCo
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\Serilog.Extensions.Logging.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\Serilog.Sinks.Console.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\Serilog.Sinks.File.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebAppSiteBlog\bin\Release\net5.0\wwwroot\favicon.ico
