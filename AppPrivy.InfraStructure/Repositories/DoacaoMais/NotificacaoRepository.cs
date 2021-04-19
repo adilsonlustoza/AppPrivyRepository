@@ -22,19 +22,19 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
         {
             try
             {
-                ICollection<Notificacao> _returnNotification = null;
+                ICollection<Notificacao> notificacoes = null;
 
                 var result = await this.Search(p => p.Ativa && (p.DataInicial <= DateTime.Now && p.DataFinal >= DateTime.Now));
 
                 if (result != null)
                 {
-                    _returnNotification = new List<Notificacao>();
-                    var iEnumerator = result.GetEnumerator();
-                    while (iEnumerator.MoveNext())
-                        _returnNotification.Add(iEnumerator.Current);
+                    notificacoes = new List<Notificacao>();
+                    var notificacaoEnumerator = result.GetEnumerator();
+                    while (notificacaoEnumerator.MoveNext())
+                        notificacoes.Add(notificacaoEnumerator.Current);
                 }
 
-                return _returnNotification;
+                return notificacoes;
             }
             catch (Exception e)
             {

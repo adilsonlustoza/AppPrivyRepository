@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Interfaces.Services.DoacaoMais
 {
-    public interface IBoletimService : IServiceBase<Campanha>
+    public interface ICampanhaService : IServiceBase<Campanha>
     {
-        Task<IEnumerable<Campanha>> ListaBoletimCaccc(int? CacccId);
+        Task<IEnumerable<Campanha>> ListarCampanhasCaccc(int? CacccId);
     }
 }

@@ -13,8 +13,8 @@ namespace AppPrivy.InfraStructure.EntityConfig.DoacaoMais
         public void Configure(EntityTypeBuilder<Campanha> builder)
         {
             builder.ToTable("Campanha", "DoacaoMais");
-            builder.HasKey(x => x.BoletimId);
-            builder.Property(x => x.BoletimId)
+            builder.HasKey(x => x.CampanhaId);
+            builder.Property(x => x.CampanhaId)
            .HasColumnName("CampanhaId")
            .IsRequired()
            .ValueGeneratedOnAdd();

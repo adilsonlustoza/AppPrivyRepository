@@ -120,7 +120,6 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.AssemblyInfoInputs.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.AssemblyInfo.cs
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.csproj.CoreCompileInputs.cache
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.MvcApplicationPartsAssemblyInfo.cs
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.MvcApplicationPartsAssemblyInfo.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\staticwebassets\AppPrivy.WebApiDoacaoMais.StaticWebAssets.Manifest.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\staticwebassets\AppPrivy.WebApiDoacaoMais.StaticWebAssets.xml
@@ -132,3 +131,4 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\ref\AppP
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.xml
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.genruntimeconfig.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.MvcApplicationPartsAssemblyInfo.cs

@@ -64,6 +64,7 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
         [NotMapped]
         public virtual ICollection<Notificacao> Notificacao { get; set; }
 
+        [InverseProperty(nameof(Dispositivo))]
         public virtual ICollection<NotificacaoDispositivo> NotificacaoDispositivo { get; set; }
 
 

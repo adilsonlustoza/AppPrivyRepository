@@ -44,7 +44,7 @@ namespace AppPrivy.InfraStructure.Repositories
                 var query = _context.AppPrivyContext().Set<TEntity>().AsQueryable();
 
                 if (query.Any() && (children != null && children.Count() > 0))
-                    children?.ToList().ForEach(x => query.Include(x).Load());
+                    children?.ToList().ForEach(x => query.Include(x).LoadAsync());
 
                 return await query.ToListAsync();
 

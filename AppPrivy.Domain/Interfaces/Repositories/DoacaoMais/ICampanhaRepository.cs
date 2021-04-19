@@ -6,6 +6,6 @@ namespace AppPrivy.Domain.Interfaces.Repositories.DoacaoMais
 {
     public interface ICampanhaRepository : IRepositoryBase<Campanha>
     {
-        Task<ICollection<Campanha>> ListaBoletimCaccc(int? CacccId);
+        Task<ICollection<Campanha>> ListarCampanhasCaccc(int? CacccId);
     }
 }

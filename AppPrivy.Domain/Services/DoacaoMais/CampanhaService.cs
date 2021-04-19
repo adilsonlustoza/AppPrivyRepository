@@ -7,23 +7,23 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.Domain.Services.DoacaoMais
 {
-    public class BoletimService : ServiceBase<Campanha>, IBoletimService
+    public class CampanhaService : ServiceBase<Campanha>, ICampanhaService
     {
-        private readonly ICampanhaRepository _boletimRepository;
+        private readonly ICampanhaRepository _campanhaRepository;
 
-        public BoletimService(ICampanhaRepository boletimRepository) : base(boletimRepository)
+        public CampanhaService(ICampanhaRepository campanhaRepository) : base(campanhaRepository)
         {
-            _boletimRepository = boletimRepository;
+            _campanhaRepository = campanhaRepository;
         }
 
-        public async Task<IEnumerable<Campanha>> ListaBoletimCaccc(int? CacccId)
+        public async Task<IEnumerable<Campanha>> ListarCampanhasCaccc(int? CacccId)
         {
             try
             {
                 if (!CacccId.HasValue)
                     throw new ApplicationException("Deve ser fornecido um CacccId válido.");
 
-                return await _boletimRepository.ListaBoletimCaccc(CacccId.Value);
+                return await _campanhaRepository.ListarCampanhasCaccc(CacccId.Value);
             }
             catch (Exception e)
             {
@@ -32,9 +32,6 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
         }
 
-        Task<IEnumerable<Campanha>> IBoletimService.ListaBoletimCaccc(int? CacccId)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

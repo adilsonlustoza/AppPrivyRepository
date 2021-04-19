@@ -26,24 +26,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.BoletimController.ListarBoletim">
-            <summary>
-            List all linked articles with institutions
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.BoletimController.ListarBoletimPorCaccc(System.Nullable{System.Int32})">
-            <summary>
-            List all linked articles by institution Id
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.BoletimController.ListarBoletimPorCacccNome(System.String)">
-            <summary>
-            List all linked articles by institution name
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.SalvarCaccc(AppPrivy.Domain.Entities.DoacaoMais.Caccc)">
              <summary>
              Create a new institution [Required Authorization]
@@ -159,6 +141,24 @@
         <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListarConteudoContasPorCaccc">
             <summary>
             List all content of all institutions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.ListarCampanha">
+            <summary>
+            List all linked articles with institutions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.ListarCampanhaPorCacccId(System.Nullable{System.Int32})">
+            <summary>
+            List all linked articles by institution Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.ListarBoletimPorCacccNome(System.String)">
+            <summary>
+            List all linked articles by institution name
             </summary>
             <returns></returns>
         </member>

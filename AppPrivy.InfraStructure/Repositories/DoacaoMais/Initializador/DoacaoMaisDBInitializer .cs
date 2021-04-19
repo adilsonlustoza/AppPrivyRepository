@@ -40,7 +40,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                 Campanhas = new List<Campanha>()
                 {
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Campanha,
+                                   TipoCampanha =TipoBoletim.Campanha,
                                    Nome ="Prestes a ser fechada",
                                    UrlImagem="http://doacaomais.adilsonlustoza.com.br/Arquivos/DoacaoMais/Imagens/noticia_caccc_eliana.webp",
                                    Descricao =@"<p>A CASA do Centro de Apoio C&acirc;ndida Bermejo Camargo est&aacute; prestes a ser leiloada e fechada.</p>
@@ -181,7 +181,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                 Campanhas = new List<Campanha>()
                 {
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Projeto,
+                                   TipoCampanha =TipoBoletim.Projeto,
                                    Nome ="Apoio Psicológico",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
                                    Descricao =@"<p>O apoio psicol&amp;oacute;gico oferecido pela AACC visa proporcionar a interven&amp;ccedil;&amp;atilde;o psicol&amp;oacute;gica para a crian&amp;ccedil;a com c&amp;acirc;ncer e seus familiares na Casa de Apoio da AACC, para oferecer um espa&amp;ccedil;o para que sejam acolhidos desde sua chegada e durante o per&amp;iacute;odo de perman&amp;ecirc;ncia na institui&amp;ccedil;&amp;atilde;o.</p>
@@ -198,13 +198,13 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     },
 
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Projeto,
+                                   TipoCampanha =TipoBoletim.Projeto,
                                    Nome ="Alojamento",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
                                    Descricao =@"<p align='justify'>O alojamento é a unidade da AACC que oferece ao paciente com câncer e à sua família,  desde o início do tratamento, o suporte bio-psicossocial necessário, que envolve o comprometimento de uma equipe multiprofissional e a relação com  diferentes setores da sociedade envolvidos no apoio às famílias e à saúde de crianças e jovens. Por isso, a AACC organiza diversas atividades que favoreçam o bem-estar dos atendidos para que a qualidade de vida dos usuários seja uma ferramenta a mais no processo de cura, organizando atividades culturais, passeios estratégicos que coloquem as crianças em contato com pessoas que contribuem com as artes e os desportos, a fim de despertar o sentimento e a vontade de crescimento entre elas.</p>"},
 
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Campanha,
+                                   TipoCampanha =TipoBoletim.Campanha,
                                    Nome ="AACC em Construindo o Futuro",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/proj_constr_final.png",
                                    LinkWeb="@/Arquivos/Imagens/DoacaoMais/visite.jpg",
@@ -372,7 +372,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                 Campanhas = new List<Campanha>()
                 {
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Projeto,
+                                   TipoCampanha =TipoBoletim.Projeto,
                                    Nome ="Cobertura",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
                                    Descricao =@"Enquanto o paciente realiza seu tratamento no hospital ao qual foi encaminhado, o
@@ -393,7 +393,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                                                     Resumindo, o CMK foi idealizado para que o paciente faça seu tratamento no hospital mas tenha nosso total apoio para que esse seja um sucesso e o que depender de nós que também esses pequenos meninos e meninas jamais carreguem traumas psicológicos referentes a doença durante o período que o acompanharemos."},
 
                      new Campanha(){
-                                   tipoCampanha =TipoBoletim.Projeto,
+                                   TipoCampanha =TipoBoletim.Projeto,
                                    Nome ="Apoio",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
                                    Descricao =@"O CMK oferece vários tipos e formas de apoio a todos que utilizarem nossos serviços, para que todos tenham maior segurança possível na permanência sob nossa administração durante os tratamentos.
@@ -409,7 +409,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                                 Jurídico"},
 
                      new Campanha(){
-                                  tipoCampanha=TipoBoletim.Depoimento,
+                                  TipoCampanha=TipoBoletim.Depoimento,
                                   Nome ="Agradecimentos",
                                   UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo_marca_aacc.png",
                                   Descricao=@"O CMK agradece imensamente ao Supermercado Hirota-Natal solidário 2017
@@ -478,7 +478,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                 Campanhas = new List<Campanha>()
                 {
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Campanha,
+                                   TipoCampanha =TipoBoletim.Campanha,
                                    Nome ="Doações",
                                    LinkWeb=null,
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo-aacc-2.png",
@@ -556,7 +556,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                 Campanhas = new List<Campanha>()
                 {
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Parceiro,
+                                   TipoCampanha =TipoBoletim.Parceiro,
                                    Nome ="TEMOS O APOIO DA RISÜ",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/apoio_risu.jpg",
                                    Descricao =@"A CAJEC  Casa Eduardo José Cavichio apoia a Risü. 
@@ -565,7 +565,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                                    DataFinal=new DateTime(),
                                   },
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Depoimento,
+                                   TipoCampanha =TipoBoletim.Depoimento,
                                    Nome ="GABRIELA",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo-aacc-2.png",
                                    Descricao =@"A história da Gabriela é impressionante, ela chegou na CAJEC ainda bebê, com problemas nos rins. Passou por remédios, muita gente não acreditava na sua recuperação, mas aos poucos ela foi vencendo obstáculos, muito duros até para um adulto, e foi sobrevivendo. Sua mãe biológica a abandonou na Instituição ainda pequena e foi a D.Luiza quem cuidou dela. Hoje, ela é uma adolescente. Seu pequeno porte porém , não condiz com a sua idade e volta e meia ela tem sua saúde testada. Ela se tornou a “mascote “da Instituição. Pura alegria! Recebe as crianças que chegam com a maior desenvoltura e carinho.",
@@ -671,7 +671,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                 Campanhas = new List<Campanha>()
                 {
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Campanha,
+                                   TipoCampanha =TipoBoletim.Campanha,
                                    Nome ="Doe um Produto",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo-aacc-2.png",
                                    Descricao =@"Para mantermos nossas atividades, contamos com a doação de produtos para serem      usados em nossa casa ou vendidos em nosso bazar! 
@@ -681,7 +681,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                                    DataFinal=new DateTime(),
                                   },
                     new Campanha(){
-                                   tipoCampanha =TipoBoletim.Depoimento,
+                                   TipoCampanha =TipoBoletim.Depoimento,
                                    Nome ="Seja Voluntário",
                                    UrlImagem=@"http://doacaomais.adilsonlustoza.com.br/Arquivos/Imagens/DoacaoMais/logo-aacc-2.png",
                                    Descricao =@"De acordo com o Centro de Voluntariado de São Paulo  Ser voluntário é doar seu tempo, trabalho e talento  para causas de interesse social e comunitário e com isso melhorar a qualidade de vida da comunidade.
@@ -890,7 +890,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                 Campanhas = new List<Campanha>()
                 {
                      new Campanha(){
-                                   tipoCampanha =TipoBoletim.Campanha,
+                                   TipoCampanha =TipoBoletim.Campanha,
                                    Nome ="TERRENO DA SEDE PRÓPRIA / CONTRIBUA",
                                    UrlImagem=@"http://www.cavd.org.br/wp-content/uploads/2015/02/site.png",
                                    Descricao =@"A Casa de Apoio Vida Divina já realiza o trabalho de acolhimento de crianças e adolescentes de outros estados há mais de 10 anos e desde então sempre foi em uma sede alugada. Muitas famílias já passaram por aqui e são gratas pelo espaço que tiveram enquanto necessário, também somos gratos pela história que fizemos juntos nessa casa, porém, acreditamos que podemos oferecer mais qualidade e segurança para as nossas crianças.
@@ -900,7 +900,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                                   },
 
                      new Campanha(){
-                                   tipoCampanha =TipoBoletim.Campanha,
+                                   TipoCampanha =TipoBoletim.Campanha,
                                    Nome ="A HISTÓRIA CONTINUA",
                                    UrlImagem=@"http://www.cavd.org.br/wp-content/uploads/2015/02/site.png",
                                    Descricao =@"Em Set/2014, através das doações mensais - essenciais à CAVD -, conseguimos comprar o terreno onde será levantada a sede própria da Casa de Apoio Vida Divina.
@@ -913,7 +913,7 @@ Para colher os recursos, a CAVD reúne diversos tipos de eventos. Além disso, r
                                   },
 
                      new Campanha(){
-                                   tipoCampanha =TipoBoletim.Projeto,
+                                   TipoCampanha =TipoBoletim.Projeto,
                                    Nome ="SEJA VOLUNTÁRIO",
                                    UrlImagem=@"http://www.cavd.org.br/wp-content/uploads/2015/02/site.png",
                                    Descricao =@"requentemente precisamos de ajuda em atividades, eventos e manutenções na Casa.                 Se quiser ser um voluntário, o processo é simples e de grande valia pra nós.

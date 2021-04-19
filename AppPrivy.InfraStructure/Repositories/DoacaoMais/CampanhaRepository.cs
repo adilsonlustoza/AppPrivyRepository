@@ -17,7 +17,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
             _contextManager = contextManager;
         }
 
-        public async Task<ICollection<Campanha>> ListaBoletimCaccc(int? CacccId)
+        public async Task<ICollection<Campanha>> ListarCampanhasCaccc(int? CacccId)
         {
             try
             {

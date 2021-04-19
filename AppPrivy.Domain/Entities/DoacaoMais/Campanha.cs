@@ -16,7 +16,7 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
         }
 
         [Key]
-        public int BoletimId { get; set; }
+        public int CampanhaId { get; set; }
 
         [StringLength(150)]
         public string Nome { get; set; }
@@ -40,7 +40,7 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
 
         public bool Ativa { get; set; }
 
-        public TipoBoletim tipoCampanha { get; set; }
+        public virtual TipoBoletim TipoCampanha { get; set; }
 
         /**********************************************Relation Area**************************************************/
 

@@ -10,15 +10,15 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 {
     [ApiController]
     [Route("Analista/Programador/[controller]")]
-    public class BoletimController : ControllerBase
+    public class CampanhaController : ControllerBase
 
     {
-        private readonly IBoletimService _boletimService;
-        private readonly ILogger<BoletimController> _logger;
+        private readonly ICampanhaService _campanhaService;
+        private readonly ILogger<CampanhaController> _logger;
 
-        public BoletimController(IBoletimService boletimService, ILogger<BoletimController> logger)
+        public CampanhaController(ICampanhaService campanhaService, ILogger<CampanhaController> logger)
         {
-            _boletimService = boletimService;
+            _campanhaService = campanhaService;
             _logger = logger;
         }
 
@@ -28,12 +28,12 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarBoletim")]
-        public async Task<IActionResult> ListarBoletim()
+        [Route("ListarCampanha")]
+        public async Task<IActionResult> ListarCampanha()
         {
             try
             {
-                var _result = await _boletimService.GetAll();
+                var _result = await _campanhaService.GetAll();
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
@@ -52,15 +52,15 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarBoletimPorCacccId/{Id}")]
-        public async Task<IActionResult> ListarBoletimPorCaccc(int? Id)
+        [Route("ListarCampanhaPorCacccId/{Id}")]
+        public async Task<IActionResult> ListarCampanhaPorCacccId(int? Id)
         {
             try
             {
                 if (!Id.HasValue)
                     new ArgumentException("Invalid parameter!");
 
-                var _result = await _boletimService.ListaBoletimCaccc(Id);
+                var _result = await _campanhaService.ListarCampanhasCaccc(Id);
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
@@ -88,7 +88,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                 if (string.IsNullOrEmpty(caccc) )
                     new ArgumentException("Invalid parameter!");
 
-                var _result = await _boletimService.Search(p => p.Caccc.Nome.Contains(caccc));
+                var _result = await _campanhaService.Search(p => p.Caccc.Nome.Contains(caccc));
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
