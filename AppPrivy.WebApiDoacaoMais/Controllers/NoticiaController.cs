@@ -1,5 +1,4 @@
-﻿using AppPrivy.CrossCutting.WLog;
-using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+﻿using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;

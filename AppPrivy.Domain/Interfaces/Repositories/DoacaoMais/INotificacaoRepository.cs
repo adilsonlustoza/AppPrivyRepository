@@ -8,6 +8,5 @@ namespace AppPrivy.Domain.Interfaces.Repositories.DoacaoMais
     {
         Task<IEnumerable<Notificacao>> ListaNoficacaoAtivas();
 
-        Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico);
     }
 }

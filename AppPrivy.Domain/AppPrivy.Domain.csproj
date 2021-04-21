@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Entities\Identity\**" />
+    <EmbeddedResource Remove="Entities\Identity\**" />
+    <None Remove="Entities\Identity\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
@@ -23,10 +29,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AppPrivy.CrossCutting\AppPrivy.CrossCutting.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Entities\Identity\" />
   </ItemGroup>
 
 </Project>

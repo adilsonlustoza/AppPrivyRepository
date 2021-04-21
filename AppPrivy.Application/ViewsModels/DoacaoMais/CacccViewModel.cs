@@ -1,12 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Newtonsoft.Json;
-using System.ComponentModel;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AppPrivy.Application.ViewsModels.DoacaoMais
 {
-
 
     public class CacccViewModel
     {

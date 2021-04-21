@@ -25,9 +25,9 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             return  (IEnumerable<Notificacao>)TemporaryMemory.GetInstance().GetCache(NotificacaoCache);
         }
 
-        public async Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico)
-        {
-            return await _notificacaoRepository.ListaNoficacaoPorDispositivo(identificadorUnico);
-        }
+        //public async Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico)
+        //{
+        //    return await _notificacaoRepository.ListaNoficacaoPorDispositivo(identificadorUnico);
+        //}
     }
 }

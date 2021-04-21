@@ -234,12 +234,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.ListaNoficacaoPorDispositivo(System.String)">
-            <summary>
-            List all actives notifications by device unique identifier
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.RecursoController.Header">
             <summary>
             Check Http Header Resource

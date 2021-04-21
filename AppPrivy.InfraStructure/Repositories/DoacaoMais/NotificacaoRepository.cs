@@ -43,21 +43,21 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
         }
 
 
-        public async Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico)
-        {
-            try
-            {
+        //public async Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico)
+        //{
+        //    try
+        //    {
 
-                var notificacoes = _contextManager.AppPrivyContext().Dispositivo.Where(d => d.IdentificadorUnico.Equals(identificadorUnico)).FirstOrDefault();
+        //        var notificacoes = _contextManager.AppPrivyContext().Dispositivo.Where(d => d.IdentificadorUnico.Equals(identificadorUnico)).FirstOrDefault();
 
-                if (notificacoes != null)
-                    return await Task.FromResult<IList<Notificacao>>(notificacoes.Notificacao.ToList());
-                return null;
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-        }
+        //        if (notificacoes != null)
+        //            return await Task.FromResult<IList<Notificacao>>(notificacoes);
+        //        return null;
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        throw e;
+        //    }
+        //}
     }
 }

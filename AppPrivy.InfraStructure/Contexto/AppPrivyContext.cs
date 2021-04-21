@@ -36,9 +36,9 @@ namespace AppPrivy.InfraStructure.Contexto
         public virtual DbSet<Campanha> Campanha { get; set; }
         public virtual DbSet<ContaBancaria> ContaBancaria { get; set; }
         public virtual DbSet<Conteudo> Conteudo { get; set; }
-        public virtual DbSet<Noticia> Evento { get; set; }
-        public virtual DbSet<Notificacao> Notificacao { get; set; }    
+        public virtual DbSet<Noticia> Evento { get; set; }     
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<Notificacao> Notificacao { get; set; }
         public virtual DbSet<Dispositivo> Dispositivo { get; set; }
 
         //-------------------------------Site-----------------------
