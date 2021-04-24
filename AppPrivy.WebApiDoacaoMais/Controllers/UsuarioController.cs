@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AppPrivy.WebApiDoacaoMais.Controllers
@@ -13,13 +12,13 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
     [Route("Analista/Programador/[controller]")]
     public class UsuarioController : ControllerBase
     {
-        private readonly IUsuarioService _usuarioService;            
+        private readonly IUsuarioService _usuarioService;
 
 
         public UsuarioController(IUsuarioService usuarioService)
         {
             _usuarioService = usuarioService;
-      
+
         }
 
 
@@ -29,15 +28,15 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
         [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
-        [Route("SalvarUsuario")]
-        public async Task<IActionResult> AddUser(Usuario usuario)
+        [Route("Save")]
+        public async Task<IActionResult> Save(Usuario usuario)
         {
             try
             {
                 if (usuario == null)
-                    new ArgumentException("Invalid parameter!"); 
+                    new ArgumentException("Invalid parameter!");
 
-                var user =  await _usuarioService.AdicionarUsuario(usuario);
+                var user = await _usuarioService.AdicionarUsuario(usuario);
 
                 if (user == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
@@ -49,35 +48,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
         }
 
-        /// <summary>
-        /// Add New List of User
-        /// </summary>
-        /// <returns></returns>
-        /// 
-        [Authorize(Roles = "DoacaoMais")]
-        [HttpPost]
-        [Route("SalvarListaUsuarios")]
-        [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<IActionResult> AddUserList(ICollection<Usuario> usuarios)
-        {
-            try
-            {
-                foreach (var item in usuarios)
-                {
-                    var usuario = await _usuarioService.AdicionarUsuario(item);
 
-                    if (usuario==null)
-                        return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
-
-                }
-
-                return StatusCode(StatusCodes.Status200OK);
-            }
-            catch (Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
-            }
-        }
 
         /// <summary>
         /// List All Users
@@ -87,9 +58,9 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
-        [Route("ListarUsuarios")]
+        [Route("List")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public IActionResult UserList()
+        public IActionResult List()
         {
             try
             {
@@ -112,8 +83,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
         [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
-        [Route("ObterUsuario/{Id:int?}")]
-        public IActionResult GetUser(int? Id)
+        [Route("{Id:int?}")]
+        public IActionResult Get(int? Id)
         {
             try
             {
@@ -138,13 +109,13 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
         [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
-        [Route("ObterUsuarioPorLogin/{login}")]
-        public IActionResult GetUserByLogin(string login)
+        [Route("{login}")]
+        public IActionResult Get(string login)
         {
             try
             {
                 if (string.IsNullOrWhiteSpace(login))
-                    throw new ArgumentException("Invalid parameter!"); 
+                    throw new ArgumentException("Invalid parameter!");
 
                 var _result = _usuarioService.Search(p => p.Login.Contains(login));
 

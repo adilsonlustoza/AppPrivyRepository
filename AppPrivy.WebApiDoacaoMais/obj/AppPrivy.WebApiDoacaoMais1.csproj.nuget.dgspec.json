@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebApiDoacaoMais\\AppPrivy.WebApiDoacaoMais.csproj": {}
+    "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebApiDoacaoMais\\AppPrivy.WebApiDoacaoMais1.csproj": {}
   },
   "projects": {
     "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj": {
@@ -387,12 +387,12 @@
         }
       }
     },
-    "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebApiDoacaoMais\\AppPrivy.WebApiDoacaoMais.csproj": {
-      "version": "1.0.0",
+    "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebApiDoacaoMais\\AppPrivy.WebApiDoacaoMais1.csproj": {
+      "version": "3.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebApiDoacaoMais\\AppPrivy.WebApiDoacaoMais.csproj",
-        "projectName": "AppPrivy.WebApiDoacaoMais",
-        "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebApiDoacaoMais\\AppPrivy.WebApiDoacaoMais.csproj",
+        "projectUniqueName": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebApiDoacaoMais\\AppPrivy.WebApiDoacaoMais1.csproj",
+        "projectName": "AppPrivy.WebApiDoacaoMais1",
+        "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebApiDoacaoMais\\AppPrivy.WebApiDoacaoMais1.csproj",
         "packagesPath": "C:\\Users\\adils\\.nuget\\packages\\",
         "outputPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.WebApiDoacaoMais\\obj\\",
         "projectStyle": "PackageReference",
@@ -418,12 +418,6 @@
               "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj": {
                 "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Application\\AppPrivy.Application.csproj"
               },
-              "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj": {
-                "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.CrossCutting\\AppPrivy.CrossCutting.csproj"
-              },
-              "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj": {
-                "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.Domain\\AppPrivy.Domain.csproj"
-              },
               "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj": {
                 "projectPath": "E:\\PROJETOS\\NetCore\\AppPrivy\\AppPrivy.InfraStructure\\AppPrivy.InfraStructure.csproj"
               }
@@ -442,11 +436,23 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.3, )"
             },
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "Serilog": {
               "target": "Package",
-              "version": "[1.10.13, )"
+              "version": "[2.10.0, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

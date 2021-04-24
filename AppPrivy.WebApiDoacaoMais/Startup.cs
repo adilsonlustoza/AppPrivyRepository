@@ -1,4 +1,4 @@
-using AppPrivy.Application;
+ï»¿using AppPrivy.Application;
 using AppPrivy.Application.Interfaces;
 using AppPrivy.Application.Services.Site;
 using AppPrivy.CrossCutting.Operations;
@@ -53,7 +53,7 @@ namespace AppPrivy.WebApiDoacaoMais
         public void ConfigureServices(IServiceCollection services)
         {
 
-             services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
+            services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
 
             services.AddOptions();
 
@@ -192,8 +192,8 @@ namespace AppPrivy.WebApiDoacaoMais
                 opt.SwaggerDoc("v3", new OpenApiInfo
                 {
                     Version = "v3",
-                    Title = "Doação Mais Api v3",
-                    Description = "Aplicatio Doação Mais - ASP.NET Core Web API",
+                    Title = "DoaÃ§Ã£o Mais Api v3",
+                    Description = "Aplicatio DoaÃ§Ã£o Mais - ASP.NET Core Web API",
                     TermsOfService = new Uri("https://www.adilsonlustoza.com.br/Android"),
                     Contact = new OpenApiContact
                     {
@@ -209,10 +209,10 @@ namespace AppPrivy.WebApiDoacaoMais
                 });
 
 
-               // Set the comments path for the Swagger JSON and UI.
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                opt.IncludeXmlComments(xmlPath);
+                // Set the comments path for the Swagger JSON and UI.
+                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                //opt.IncludeXmlComments(xmlPath);
 
 
 
@@ -262,16 +262,16 @@ namespace AppPrivy.WebApiDoacaoMais
 
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();              
-                
+                app.UseDeveloperExceptionPage();
+
             }
 
             app.UseSwagger();
 
             app.UseSwaggerUI(c => {
-                                    c.SwaggerEndpoint("/swagger/v3/swagger.json", "Doacao Mais v3");
-                                     c.RoutePrefix = string.Empty;
-                                  }
+                c.SwaggerEndpoint("/swagger/v3/swagger.json", "Doacao Mais v3");
+                c.RoutePrefix = string.Empty;
+            }
                             );
 
             app.UseHttpsRedirection();
@@ -292,7 +292,7 @@ namespace AppPrivy.WebApiDoacaoMais
                .AllowAnyOrigin()
                .AllowAnyMethod()
                .AllowAnyHeader());
-         
+
 
         }
     }

@@ -1,5 +1,4 @@
-﻿using AppPrivy.CrossCutting.WLog;
-using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+﻿using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -8,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.WebApiDoacaoMais.Controllers
 {
-
     [ApiController]
     [Route("Analista/Programador/[controller]")]
     public class ConteudoController : ControllerBase
@@ -27,8 +25,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarConteudo")]
-        public async Task<IActionResult> ListarConteudo()
+        [Route("List")]
+        public async Task<IActionResult> List()
         {
             try
             {
@@ -52,8 +50,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarConteudoPorCacccId/{Id}")]
-        public async Task<IActionResult> ListarConteudoPorCacccId(int Id)
+        [Route("ListByCacccId/{Id}")]
+        public async Task<IActionResult> ListByCacccId(int Id)
         {
             try
             {
@@ -76,9 +74,9 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarConteudoPorCacccNome/{caccc}")]
+        [Route("ListByCacccName/{caccc}")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<IActionResult> ListarConteudoPorCacccNome(string caccc)
+        public async Task<IActionResult> ListByCacccName(string caccc)
         {
             try
             {

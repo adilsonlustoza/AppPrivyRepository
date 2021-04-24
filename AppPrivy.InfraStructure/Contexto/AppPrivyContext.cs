@@ -41,6 +41,8 @@ namespace AppPrivy.InfraStructure.Contexto
         public virtual DbSet<Notificacao> Notificacao { get; set; }
         public virtual DbSet<Dispositivo> Dispositivo { get; set; }
 
+        public virtual DbSet<NotificacaoDispositivo> NotificacaoDispositivo { get; set; }
+
         //-------------------------------Site-----------------------
         public virtual DbSet<Pesquisa> Pesquisa { get; set; }
 

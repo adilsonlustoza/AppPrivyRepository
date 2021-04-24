@@ -16,7 +16,7 @@ namespace AppPrivy.WebApiDoacaoMais
                              .MinimumLevel.Verbose()
                              .WriteTo.Console()
                              .WriteTo.File($"Logs\\{Assembly.GetCallingAssembly().GetName().Name}-.txt", rollingInterval: RollingInterval.Day)
-                             .CreateLogger();                              
+                             .CreateLogger();
 
             try
             {

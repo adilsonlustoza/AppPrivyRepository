@@ -5,15 +5,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Reflection;
 using System.Threading.Tasks;
 
 namespace AppPrivy.WebApiDoacaoMais.Controllers
 {
-
-
-
-
     [Route("Analista/Programador/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -27,8 +22,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                               SignInManager<IdentityUser> signInManager,
                               ILogger<AuthController> logger
             )
-        {           
-                   
+        {
+
             _authService = authService;
             _signInManager = signInManager;
             _logger = logger;
@@ -59,18 +54,18 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             try
             {
                 var result = await _signInManager.PasswordSignInAsync(userToken.Email, userToken.Password,
-                        isPersistent: false, lockoutOnFailure: false);              
+                        isPersistent: false, lockoutOnFailure: false);
 
                 if (result.Succeeded)
-                    return  StatusCode(StatusCodes.Status200OK, await _authService.BuildToken(userToken));
+                    return StatusCode(StatusCodes.Status200OK, await _authService.BuildToken(userToken));
                 else
                     return StatusCode(StatusCodes.Status400BadRequest, $"It wans`t able to login!!!");
             }
             catch (Exception ex)
             {
-                _logger.Log(LogLevel.Error,"Exception Error in Method {0} - {1}: ", ex.TargetSite.ReflectedType.FullName,ex);
+                _logger.Log(LogLevel.Error, "Exception Error in Method {0} - {1}: ", ex.TargetSite.ReflectedType.FullName, ex);
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-              
+
             }
         }
     }

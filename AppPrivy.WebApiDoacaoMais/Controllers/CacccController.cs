@@ -49,8 +49,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [Authorize(Roles = "DoacaoMais")]
         [HttpPost]
-        [Route("SalvarCaccc")]
-        public async Task<IActionResult> SalvarCaccc([FromBody]Caccc caccc)
+        [Route("Save")]
+        public async Task<IActionResult> Save([FromBody] Caccc caccc)
         {
             try
             {
@@ -58,12 +58,12 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                 if (ModelState.IsValid)
                 {
                     var result = await _cacccService.Add(caccc);
-                         
-                    return StatusCode(StatusCodes.Status201Created,$"The ong {result} was created!");
+
+                    return StatusCode(StatusCodes.Status201Created, $"The ong {result} was created!");
                 }
 
                 return StatusCode(StatusCodes.Status400BadRequest, $"The ong {caccc.Cnpj}  wasn't created");
-               
+
             }
             catch (Exception e)
             {
@@ -99,8 +99,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [Authorize(Roles = "DoacaoMais")]
         [HttpPut]
-        [Route("AtualizarCaccc/{Id:int?}")]
-        public async Task<IActionResult> AtualizarCaccc(int? Id, [FromBody] Caccc caccc)
+        [Route("Update/{Id:int?}")]
+        public async Task<IActionResult> Update(int? Id, [FromBody] Caccc caccc)
         {
             try
             {
@@ -157,7 +157,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
                 if (ModelState.IsValid)
                 {
-                    
+
                     return StatusCode(StatusCodes.Status201Created, $"The ong {await Task.FromResult<int?>(Id)} was created!");
                 }
 
@@ -187,15 +187,15 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
         [Authorize(Roles = "DoacaoMais")]
         [HttpDelete]
-        [Route("ApagarCaccc/{Id:int?}")]
-        public async Task<IActionResult> ApagarCaccc(int? Id)
+        [Route("Delete/{Id:int?}")]
+        public async Task<IActionResult> Delete(int? Id)
         {
             try
             {
 
                 if (ModelState.IsValid)
                 {
-                  
+
                     return StatusCode(StatusCodes.Status201Created, $"The ong {await Task.FromResult<int>(Id.Value)} was deleted!");
                 }
 
@@ -214,12 +214,12 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("ListarCaccc")]
-        public async Task<IActionResult> ListarCaccc()
+        [Route("List")]
+        public async Task<IActionResult> List()
         {
             try
             {
-                             
+
                 var _result = await _cacccService.GetAll();
 
                 if (_result == null)
@@ -239,8 +239,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarCacccBazares")]
-        public async Task<IActionResult> ListarCacccBazares()
+        [Route("ListWithStores")]
+        public async Task<IActionResult> ListWithStores()
         {
             try
             {
@@ -263,8 +263,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ConteudoContasPorCaccc/{Id}")]
-        public async Task<IActionResult> ConteudoContasPorCaccc(int? Id)
+        [Route("ListAllByCacccId/{Id}")]
+        public async Task<IActionResult> ListAllByCacccId(int? Id)
         {
             try
             {
@@ -288,9 +288,9 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ConteudoContasPorNomeCaccc/{caccc}")]
+        [Route("ListAllByCacccName/{caccc}")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<IActionResult> ConteudoContasPorNomeCaccc(string caccc)
+        public async Task<IActionResult> ListAllByCacccName(string caccc)
         {
             try
             {
@@ -312,11 +312,11 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// </summary>
         /// <returns></returns>
 
-        
+
         [HttpGet]
-        [Route("ListarConteudoContasPorCaccc")]
-      
-        public async Task<IActionResult> ListarConteudoContasPorCaccc()
+        [Route("ListAllByCaccc")]
+
+        public async Task<IActionResult> ListAllByCaccc()
         {
             try
             {

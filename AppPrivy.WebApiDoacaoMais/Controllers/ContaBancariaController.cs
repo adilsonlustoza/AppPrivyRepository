@@ -25,9 +25,9 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarContasBancarias")]
+        [Route("List")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<IActionResult> ListarContasBancarias()
+        public async Task<IActionResult> List()
         {
             try
             {
@@ -50,14 +50,14 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("ListarContasBancariasPorCacccId/{Id}")]
-        public async Task<IActionResult> ListarContasBancariasPorCacccId(int? Id)
+        [Route("ListByCacccId/{Id}")]
+        public async Task<IActionResult> ListByCacccId(int? Id)
         {
 
             try
             {
-                if(!Id.HasValue )
-                 new ArgumentException("Invalid parameter!");
+                if (!Id.HasValue)
+                    new ArgumentException("Invalid parameter!");
 
                 var _result = await _contaBancariaService.Search(p => p.CacccId == Id.Value);
 

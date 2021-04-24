@@ -50,7 +50,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
-                 return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status500InternalServerError,"Erro ao salvar o usuario :" + e.Message));
+                return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status500InternalServerError, "Erro ao salvar o usuario :" + e.Message));
             }
         }
 
@@ -94,15 +94,15 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                     }
                 }
 
-                return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status200OK,string.Format("Arquivo salvo")));
+                return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status200OK, string.Format("Arquivo salvo")));
             }
             catch (Exception e)
             {
-                return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status500InternalServerError,"Erro ao salvar o arquivo :" + e.Message));
+                return await Task.FromResult<IActionResult>(StatusCode(StatusCodes.Status500InternalServerError, "Erro ao salvar o arquivo :" + e.Message));
             }
         }
     }
 
 
-   
+
 }

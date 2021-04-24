@@ -28,8 +28,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarCampanha")]
-        public async Task<IActionResult> ListarCampanha()
+        [Route("List")]
+        public async Task<IActionResult> List()
         {
             try
             {
@@ -52,8 +52,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarCampanhaPorCacccId/{Id}")]
-        public async Task<IActionResult> ListarCampanhaPorCacccId(int? Id)
+        [Route("ListByCacccId/{Id}")]
+        public async Task<IActionResult> ListByCacccId(int? Id)
         {
             try
             {
@@ -79,13 +79,13 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarBoletimPorCacccNome/{caccc}")]
+        [Route("ListByCacccName/{caccc}")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<IActionResult> ListarBoletimPorCacccNome(string caccc)
+        public async Task<IActionResult> ListByCacccName(string caccc)
         {
             try
             {
-                if (string.IsNullOrEmpty(caccc) )
+                if (string.IsNullOrEmpty(caccc))
                     new ArgumentException("Invalid parameter!");
 
                 var _result = await _campanhaService.Search(p => p.Caccc.Nome.Contains(caccc));

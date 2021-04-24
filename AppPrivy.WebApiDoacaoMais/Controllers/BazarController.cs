@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace AppPrivy.WebApiDoacaoMais.Controllers
 {
-
     [ApiController]
     [Route("Analista/Programador/[controller]")]
 
@@ -29,9 +28,9 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarBazar")]
-       
-        public async Task<IActionResult> ListarBazar()
+        [Route("List")]
+
+        public async Task<IActionResult> List()
         {
             try
             {
@@ -54,12 +53,12 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarBazarPorCacccId/{cacccId}")]
-        public async Task<IActionResult> ListarBazarPorCacccId(int? cacccId)
+        [Route("ListByCacccId/{cacccId}")]
+        public async Task<IActionResult> ListByCacccId(int? cacccId)
         {
             try
             {
-                if (!cacccId.HasValue )
+                if (!cacccId.HasValue)
                     new ArgumentException("Invalid parameter!");
 
                 var _result = await _bazarService.ObtemBazarPorCacccId(cacccId);
@@ -81,13 +80,13 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarBazarPorCacccNome/{caccc}")]
+        [Route("ListByCacccName/{caccc}")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<IActionResult> ListarBazarPorCacccNomeAsync(string caccc)
+        public async Task<IActionResult> ListByCacccName(string caccc)
         {
             try
             {
-                if (!string.IsNullOrEmpty(caccc) )
+                if (!string.IsNullOrEmpty(caccc))
                     new ArgumentException("Invalid parameter!");
 
                 var _result = await _bazarService.Search(p => p.Caccc.Nome.Contains(caccc));

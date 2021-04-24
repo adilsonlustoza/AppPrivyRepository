@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace AppPrivy.WebApiDoacaoMais.Controllers
@@ -25,8 +24,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarNoticia")]
-        public async Task<IActionResult> ListarNoticia()
+        [Route("List")]
+        public async Task<IActionResult> List()
         {
             try
             {
@@ -49,8 +48,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarNoticiaPorCacccId/{Id}")]
-        public async Task<IActionResult> ListarNoticiaPorCacccId(int? Id)
+        [Route("ListByCacccId/{Id?}")]
+        public async Task<IActionResult> ListByCacccId(int? Id)
         {
             try
             {
@@ -75,9 +74,9 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarNoticiaPorCacccNome/{caccc}")]
+        [Route("ListByCacccName/{caccc}")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<IActionResult> ListarNoticiaPorCacccNome(string caccc)
+        public async Task<IActionResult> ListByCacccName(string caccc)
         {
             try
             {
@@ -86,37 +85,6 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                     throw new ArgumentException("Invalid parameter");
 
                 var _result = await _noticiaService.Search(p => p.Caccc.Nome.ToLower().Trim().Contains(caccc.ToLower().Trim()));
-
-                if (_result == null)
-                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
-                return StatusCode(StatusCodes.Status200OK, _result);
-            }
-            catch (Exception e)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
-            }
-        }
-
-        /// <summary>
-        /// List all general articles by instituion Id
-        /// </summary>
-        /// <returns></returns>
-
-        [HttpGet]
-        [Route("ListarNoticiasGeraisPorCacccId/{Id}")]
-        [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<IActionResult> ListarNoticiasGeraisPorCacccId(int? Id)
-        {
-            try
-            {
-                if (!Id.HasValue)
-                    throw new ArgumentException("Invalid parameter");
-
-                var _noticias = await _noticiaService.Search(p => p.CacccId == Id.Value);
-
-                var _comuns = await _noticiaService.Search(p => p.CacccId == null);
-
-                var _result = _noticias.Union(_comuns);
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));

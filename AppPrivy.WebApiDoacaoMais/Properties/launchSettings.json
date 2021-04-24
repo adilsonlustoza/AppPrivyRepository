@@ -3,12 +3,12 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "http://localhost:4358",
+      "applicationUrl": "http://localhost/AppPrivy.WebApiDoacaoMais",
       "sslPort": 0
     },
     "iisExpress": {
-      "applicationUrl": "http://localhost:4357",
-      "sslPort": 44305
+      "applicationUrl": "http://localhost:26351",
+      "sslPort": 44338
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",
@@ -16,13 +16,22 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "Index.html",
-      "ancmHostingModel": "OutOfProcess"
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     },
-    "IIS": {
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true
+    },
+    "Internet": {
       "commandName": "IIS",
-      "workingDirectory": "/Index.html",
-      "launchBrowser": true
+      "launchBrowser": true,
+      "ancmHostingModel": "OutOfProcess",
+      "jsWebView2Debugging": true
     }
   }
 }

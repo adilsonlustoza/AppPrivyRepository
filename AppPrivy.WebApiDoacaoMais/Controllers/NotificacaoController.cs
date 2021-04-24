@@ -12,11 +12,11 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
     public class NotificacaoController : ControllerBase
     {
         private readonly INotificacaoService _notificacaoService;
-       
+
         public NotificacaoController(INotificacaoService noficacaoService)
         {
             _notificacaoService = noficacaoService;
-         
+
         }
 
 
@@ -26,15 +26,14 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("ListarNotificacoesAtivas")]   
-        public async Task<IActionResult> ListarNotificacoesAtivas()
+        [Route("List")]
+        public async Task<IActionResult> List()
         {
 
             try
             {
 
-                var _result = await _notificacaoService.GetAll(p =>p.NotificacaoDispositivo);
-
+                var _result = await _notificacaoService.GetAll(p => p.NotificacaoDispositivo);
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
                 return StatusCode(StatusCodes.Status200OK, _result);
@@ -43,8 +42,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
             }
-         
-        }        
+
+        }
 
 
     }
