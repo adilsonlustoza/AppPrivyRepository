@@ -32,4 +32,3 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppP
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csproj.CoreCompileInputs.cache
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.pdb
-E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csprojAssemblyReference.cache
