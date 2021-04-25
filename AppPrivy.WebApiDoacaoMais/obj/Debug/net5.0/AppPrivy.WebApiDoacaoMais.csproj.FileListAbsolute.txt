@@ -100,3 +100,5 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\ref\AppPrivy.WebApiDoacaoMais.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.genruntimeconfig.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.WebApiDoacaoMais.xml
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Debug\net5.0\AppPrivy.WebApiDoacaoMais.xml

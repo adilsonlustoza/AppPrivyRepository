@@ -916,3 +916,195 @@
 2021-04-25 17:20:42.372 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.List (AppPrivy.WebApiDoacaoMais) in 134.5963ms
 2021-04-25 17:20:42.372 -03:00 [INF] Executed endpoint 'AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.List (AppPrivy.WebApiDoacaoMais)'
 2021-04-25 17:20:42.373 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List - - - 200 32608 application/json;+charset=utf-8 154.8721ms
+2021-04-25 17:28:21.316 -03:00 [INF] Application is shutting down...
+2021-04-25 17:28:21.320 -03:00 [DBG] Hosting stopping
+2021-04-25 17:28:21.322 -03:00 [DBG] Hosting stopped
+2021-04-25 17:28:48.016 -03:00 [INF] Starting up
+2021-04-25 17:28:52.663 -03:00 [DBG] Hosting starting
+2021-04-25 17:28:52.950 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-04-25 17:28:52.955 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-04-25 17:28:52.981 -03:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2021-04-25 17:28:52.982 -03:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2021-04-25 17:28:53.001 -03:00 [INF] Creating key {0fad2337-91fb-4b2f-8c25-9c9152da0f1e} with creation date 2021-04-25 20:28:52Z, activation date 2021-04-25 20:28:52Z, and expiration date 2021-07-24 20:28:52Z.
+2021-04-25 17:28:53.052 -03:00 [DBG] Descriptor deserializer type for key {0fad2337-91fb-4b2f-8c25-9c9152da0f1e} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2021-04-25 17:28:53.087 -03:00 [DBG] No key escrow sink found. Not writing key {0fad2337-91fb-4b2f-8c25-9c9152da0f1e} to escrow.
+2021-04-25 17:28:53.113 -03:00 [WRN] No XML encryptor configured. Key {0fad2337-91fb-4b2f-8c25-9c9152da0f1e} may be persisted to storage in unencrypted form.
+2021-04-25 17:28:53.136 -03:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2021-04-25 17:28:53.140 -03:00 [DBG] Found key {0fad2337-91fb-4b2f-8c25-9c9152da0f1e}.
+2021-04-25 17:28:53.211 -03:00 [DBG] Considering key {0fad2337-91fb-4b2f-8c25-9c9152da0f1e} with expiration date 2021-07-24 20:28:52Z as default key.
+2021-04-25 17:28:53.348 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-04-25 17:28:53.366 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-04-25 17:28:53.375 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-04-25 17:28:53.385 -03:00 [DBG] Using key {0fad2337-91fb-4b2f-8c25-9c9152da0f1e} as the default key.
+2021-04-25 17:28:53.388 -03:00 [DBG] Key ring with default key {0fad2337-91fb-4b2f-8c25-9c9152da0f1e} was loaded during application startup.
+2021-04-25 17:28:54.723 -03:00 [DBG] Loaded hosting startup assembly AppPrivy.WebApiDoacaoMais
+2021-04-25 17:28:54.735 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-04-25 17:28:54.745 -03:00 [INF] Hosting environment: Development
+2021-04-25 17:28:54.756 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-04-25 17:28:54.769 -03:00 [DBG] Hosting started
+2021-04-25 17:28:54.885 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-04-25 17:28:54.899 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-04-25 17:28:54.900 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:29:18.573 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.WebApiDoacaoMais.xml'.
+File name: 'E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net5.0\AppPrivy.WebApiDoacaoMais.xml'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass29_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at AppPrivy.WebApiDoacaoMais.Startup.<>c.<ConfigureServices>b__4_6(SwaggerGenOptions opt) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\Startup.cs:line 215
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnvironment)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method2(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-04-25 17:29:18.722 -03:00 [DBG] Connection ID "0" disconnecting.
+2021-04-25 17:29:18.733 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 500 - text/plain 23861.7200ms
+2021-04-25 17:31:28.086 -03:00 [INF] Starting up
+2021-04-25 17:31:32.455 -03:00 [DBG] Hosting starting
+2021-04-25 17:31:32.667 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-04-25 17:31:32.672 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-04-25 17:31:32.718 -03:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2021-04-25 17:31:32.719 -03:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2021-04-25 17:31:32.737 -03:00 [INF] Creating key {d93c6d4d-b855-4783-8f6e-b98b60f9b84d} with creation date 2021-04-25 20:31:32Z, activation date 2021-04-25 20:31:32Z, and expiration date 2021-07-24 20:31:32Z.
+2021-04-25 17:31:32.775 -03:00 [DBG] Descriptor deserializer type for key {d93c6d4d-b855-4783-8f6e-b98b60f9b84d} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2021-04-25 17:31:32.792 -03:00 [DBG] No key escrow sink found. Not writing key {d93c6d4d-b855-4783-8f6e-b98b60f9b84d} to escrow.
+2021-04-25 17:31:32.806 -03:00 [WRN] No XML encryptor configured. Key {d93c6d4d-b855-4783-8f6e-b98b60f9b84d} may be persisted to storage in unencrypted form.
+2021-04-25 17:31:32.817 -03:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2021-04-25 17:31:32.819 -03:00 [DBG] Found key {d93c6d4d-b855-4783-8f6e-b98b60f9b84d}.
+2021-04-25 17:31:32.853 -03:00 [DBG] Considering key {d93c6d4d-b855-4783-8f6e-b98b60f9b84d} with expiration date 2021-07-24 20:31:32Z as default key.
+2021-04-25 17:31:32.915 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-04-25 17:31:32.924 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-04-25 17:31:32.930 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-04-25 17:31:32.937 -03:00 [DBG] Using key {d93c6d4d-b855-4783-8f6e-b98b60f9b84d} as the default key.
+2021-04-25 17:31:32.939 -03:00 [DBG] Key ring with default key {d93c6d4d-b855-4783-8f6e-b98b60f9b84d} was loaded during application startup.
+2021-04-25 17:31:33.591 -03:00 [DBG] Loaded hosting startup assembly AppPrivy.WebApiDoacaoMais
+2021-04-25 17:31:33.618 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-04-25 17:31:33.625 -03:00 [INF] Hosting environment: Development
+2021-04-25 17:31:33.648 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-04-25 17:31:33.648 -03:00 [DBG] Hosting started
+2021-04-25 17:31:33.739 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-04-25 17:31:33.744 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-04-25 17:31:33.744 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:31:34.017 -03:00 [DBG] Connection ID "0" disconnecting.
+2021-04-25 17:31:34.034 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 301.0467ms
+2021-04-25 17:32:24.247 -03:00 [INF] Starting up
+2021-04-25 17:32:28.877 -03:00 [DBG] Hosting starting
+2021-04-25 17:32:29.210 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-04-25 17:32:29.223 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-04-25 17:32:29.271 -03:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2021-04-25 17:32:29.272 -03:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2021-04-25 17:32:29.291 -03:00 [INF] Creating key {7fca7828-3b13-4413-b471-707a1258882d} with creation date 2021-04-25 20:32:29Z, activation date 2021-04-25 20:32:29Z, and expiration date 2021-07-24 20:32:29Z.
+2021-04-25 17:32:29.331 -03:00 [DBG] Descriptor deserializer type for key {7fca7828-3b13-4413-b471-707a1258882d} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2021-04-25 17:32:29.350 -03:00 [DBG] No key escrow sink found. Not writing key {7fca7828-3b13-4413-b471-707a1258882d} to escrow.
+2021-04-25 17:32:29.363 -03:00 [WRN] No XML encryptor configured. Key {7fca7828-3b13-4413-b471-707a1258882d} may be persisted to storage in unencrypted form.
+2021-04-25 17:32:29.374 -03:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2021-04-25 17:32:29.377 -03:00 [DBG] Found key {7fca7828-3b13-4413-b471-707a1258882d}.
+2021-04-25 17:32:29.416 -03:00 [DBG] Considering key {7fca7828-3b13-4413-b471-707a1258882d} with expiration date 2021-07-24 20:32:29Z as default key.
+2021-04-25 17:32:29.505 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-04-25 17:32:29.520 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-04-25 17:32:29.530 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-04-25 17:32:29.540 -03:00 [DBG] Using key {7fca7828-3b13-4413-b471-707a1258882d} as the default key.
+2021-04-25 17:32:29.543 -03:00 [DBG] Key ring with default key {7fca7828-3b13-4413-b471-707a1258882d} was loaded during application startup.
+2021-04-25 17:32:30.579 -03:00 [DBG] Loaded hosting startup assembly AppPrivy.WebApiDoacaoMais
+2021-04-25 17:32:30.608 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-04-25 17:32:30.614 -03:00 [INF] Hosting environment: Development
+2021-04-25 17:32:30.635 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-04-25 17:32:30.636 -03:00 [DBG] Hosting started
+2021-04-25 17:32:30.731 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-04-25 17:32:30.738 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-04-25 17:32:30.739 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:32:31.130 -03:00 [DBG] Connection ID "0" disconnecting.
+2021-04-25 17:32:31.146 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 428.7858ms
+2021-04-25 17:32:31.207 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/index.html - -
+2021-04-25 17:32:31.208 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:32:31.242 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en","pt"]'.
+2021-04-25 17:32:31.253 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US","en","pt"]'.
+2021-04-25 17:32:31.694 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/index.html - - - 200 - text/html;charset=utf-8 486.8191ms
+2021-04-25 17:32:32.329 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/swagger/v3/swagger.json - -
+2021-04-25 17:32:32.331 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:32:32.332 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en","pt"]'.
+2021-04-25 17:32:32.337 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US","en","pt"]'.
+2021-04-25 17:32:32.360 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/favicon-32x32.png - -
+2021-04-25 17:32:32.360 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:32:32.361 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en","pt"]'.
+2021-04-25 17:32:32.361 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US","en","pt"]'.
+2021-04-25 17:32:32.397 -03:00 [VRB] Range header's value is empty.
+2021-04-25 17:32:32.419 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-04-25 17:32:32.424 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/favicon-32x32.png - - - 200 628 image/png 64.0449ms
+2021-04-25 17:32:33.654 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/swagger/v3/swagger.json - - - 200 - application/json;charset=utf-8 1323.9459ms
+2021-04-25 17:33:00.897 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/index.html - -
+2021-04-25 17:33:00.897 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:33:00.897 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en","pt"]'.
+2021-04-25 17:33:00.897 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US","en","pt"]'.
+2021-04-25 17:33:00.901 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/index.html - - - 200 - text/html;charset=utf-8 4.1567ms
+2021-04-25 17:33:01.393 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/swagger/v3/swagger.json - -
+2021-04-25 17:33:01.393 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:33:01.397 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en","pt"]'.
+2021-04-25 17:33:01.397 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US","en","pt"]'.
+2021-04-25 17:33:01.544 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/favicon-32x32.png - -
+2021-04-25 17:33:01.544 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:33:01.544 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported cultures '["en-US","en","pt"]'.
+2021-04-25 17:33:01.545 -03:00 [DBG] AcceptLanguageHeaderRequestCultureProvider returned the following unsupported UI Cultures '["en-US","en","pt"]'.
+2021-04-25 17:33:01.545 -03:00 [VRB] Range header's value is empty.
+2021-04-25 17:33:01.546 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-04-25 17:33:01.548 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/favicon-32x32.png - - - 200 628 image/png 4.1383ms
+2021-04-25 17:33:01.558 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/swagger/v3/swagger.json - - - 200 - application/json;charset=utf-8 165.7364ms
