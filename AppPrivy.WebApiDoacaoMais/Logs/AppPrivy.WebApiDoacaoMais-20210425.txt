@@ -1139,3 +1139,31 @@ File name: 'E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Debug\net
 2021-04-25 17:44:41.099 -03:00 [VRB] All hosts are allowed.
 2021-04-25 17:44:41.241 -03:00 [DBG] Connection ID "0" disconnecting.
 2021-04-25 17:44:41.250 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 167.0695ms
+2021-04-25 17:48:09.812 -03:00 [INF] Starting up
+2021-04-25 17:48:10.911 -03:00 [DBG] Hosting starting
+2021-04-25 17:48:11.008 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-04-25 17:48:11.009 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-04-25 17:48:11.038 -03:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2021-04-25 17:48:11.038 -03:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2021-04-25 17:48:11.050 -03:00 [INF] Creating key {fa87b2e7-f58c-4e86-8d58-6574115fb80c} with creation date 2021-04-25 20:48:11Z, activation date 2021-04-25 20:48:11Z, and expiration date 2021-07-24 20:48:11Z.
+2021-04-25 17:48:11.078 -03:00 [DBG] Descriptor deserializer type for key {fa87b2e7-f58c-4e86-8d58-6574115fb80c} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2021-04-25 17:48:11.090 -03:00 [DBG] No key escrow sink found. Not writing key {fa87b2e7-f58c-4e86-8d58-6574115fb80c} to escrow.
+2021-04-25 17:48:11.095 -03:00 [WRN] No XML encryptor configured. Key {fa87b2e7-f58c-4e86-8d58-6574115fb80c} may be persisted to storage in unencrypted form.
+2021-04-25 17:48:11.103 -03:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2021-04-25 17:48:11.103 -03:00 [DBG] Found key {fa87b2e7-f58c-4e86-8d58-6574115fb80c}.
+2021-04-25 17:48:11.123 -03:00 [DBG] Considering key {fa87b2e7-f58c-4e86-8d58-6574115fb80c} with expiration date 2021-07-24 20:48:11Z as default key.
+2021-04-25 17:48:11.153 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2021-04-25 17:48:11.161 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2021-04-25 17:48:11.166 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2021-04-25 17:48:11.171 -03:00 [DBG] Using key {fa87b2e7-f58c-4e86-8d58-6574115fb80c} as the default key.
+2021-04-25 17:48:11.172 -03:00 [DBG] Key ring with default key {fa87b2e7-f58c-4e86-8d58-6574115fb80c} was loaded during application startup.
+2021-04-25 17:48:11.514 -03:00 [DBG] Loaded hosting startup assembly AppPrivy.WebApiDoacaoMais
+2021-04-25 17:48:11.520 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-04-25 17:48:11.521 -03:00 [INF] Hosting environment: Development
+2021-04-25 17:48:11.521 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-04-25 17:48:11.521 -03:00 [DBG] Hosting started
+2021-04-25 17:48:11.554 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-04-25 17:48:11.557 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2021-04-25 17:48:11.557 -03:00 [VRB] All hosts are allowed.
+2021-04-25 17:48:11.650 -03:00 [DBG] Connection ID "0" disconnecting.
+2021-04-25 17:48:11.659 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 111.4402ms
