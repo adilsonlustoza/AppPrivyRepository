@@ -21,3 +21,15 @@ H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppP
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csproj.CoreCompileInputs.cache
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.dll
 H:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.pdb
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\bin\Debug\netstandard2.0\Resources\Constants.resx
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\bin\Debug\netstandard2.0\AppPrivy.CrossCutting.deps.json
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\bin\Debug\netstandard2.0\AppPrivy.CrossCutting.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\bin\Debug\netstandard2.0\AppPrivy.CrossCutting.pdb
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.Resources.Constants.resources
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csproj.GenerateResource.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.AssemblyInfoInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.AssemblyInfo.cs
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csproj.CoreCompileInputs.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.dll
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.pdb
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.CrossCutting\obj\Debug\netstandard2.0\AppPrivy.CrossCutting.csprojAssemblyReference.cache

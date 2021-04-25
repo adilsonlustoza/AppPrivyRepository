@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "http://localhost/AppPrivy.WebApiDoacaoMais",
+      "applicationUrl": "http://localhost:81",
       "sslPort": 0
     },
     "iisExpress": {
@@ -32,6 +32,9 @@
       "launchBrowser": true,
       "ancmHostingModel": "OutOfProcess",
       "jsWebView2Debugging": true
+    },
+    "IIS": {
+      "commandName": "IIS"
     }
   }
 }
