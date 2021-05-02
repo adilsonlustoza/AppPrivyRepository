@@ -2,3 +2,8 @@
 appsettings.json
 appsettings.Development.json
 appsettings.*
+
+#Compiles
+bin
+obj
+packages
