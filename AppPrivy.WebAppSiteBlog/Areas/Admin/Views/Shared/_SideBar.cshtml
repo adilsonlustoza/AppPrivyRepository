@@ -17,7 +17,7 @@
 
             </div>
             <div class="info">
-                <a href="#" class="d-block">Adilson Lustoza</a>
+                <a href="#" class="d-block">@User.Identity.Name</a>
             </div>
         </div>
 
@@ -25,60 +25,32 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                                
-                <li class="nav-header">EXAMPLES</li>
+                <li class="nav-header">MENU</li>
                 <li class="nav-item">
-                    <a href="pages/calendar.html" class="nav-link">
-                        <i class="nav-icon far fa-calendar-alt"></i>
-                        <p>
-                            Calendar
-                            <span class="badge badge-info right">2</span>
-                        </p>
+                    <a asp-action="Index" asp-controller="Author" asp-area="Admin" class="nav-link">
+                        <i class="nav-icon fas fa-user-alt"></i>
+                        <p>Autor</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/gallery.html" class="nav-link">
-                        <i class="nav-icon far fa-image"></i>
-                        <p>
-                            Gallery
-                        </p>
+                    <a asp-action="Index" asp-controller="Category" asp-area="Admin" class="nav-link">
+                        <i class="nav-icon far fa-list-alt" ></i>
+                        <p>Categoria</p>
                     </a>
                 </li>         
                 <li class="nav-item">
-                    <a href="https://adminlte.io/docs/3.0" class="nav-link">
-                        <i class="nav-icon fas fa-file"></i>
-                        <p>Documentation</p>
+                    <a asp-action="Index" asp-controller="Tag"  asp-area="Admin" class="nav-link">
+                        <i class="nav-icon fa fa-tag"></i>
+                        <p>Tag</p>
                     </a>
                 </li>              
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fas fa-circle nav-icon"></i>
-                        <p>Level 1</p>
+                    <a asp-action="Index" asp-controller="Post" asp-area="Admin" class="nav-link">
+                        <i class="nav-icon 	fas fa-book-open"></i>
+                        <p>Post</p>
                     </a>
                 </li>             
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fas fa-circle nav-icon"></i>
-                        <p>Level 1</p>
-                    </a>
-                </li>       
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-circle text-danger"></i>
-                        <p class="text">Important</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-circle text-warning"></i>
-                        <p>Warning</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-circle text-info"></i>
-                        <p>Informational</p>
-                    </a>
-                </li>
+             
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

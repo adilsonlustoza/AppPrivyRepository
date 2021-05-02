@@ -86,3 +86,5 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x6
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x64\ref\AppPrivy.WebApiDoacaoMais.dll
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x64\AppPrivy.WebApiDoacaoMais.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x64\AppPrivy.WebApiDoacaoMais.genruntimeconfig.cache
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\bin\Release\net5.0\win-x64\AppPrivy.WebApiDoacaoMais.xml
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x64\AppPrivy.WebApiDoacaoMais.xml

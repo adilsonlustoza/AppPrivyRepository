@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppPrivy.WebApiDoacaoMais</name>
+    </assembly>
+    <members>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login(Appointment.Application.ViewsModels.UserToken)">
+            <response code="201">Token</response>
+            <response code="400">it wasn`t able to created a new token</response>            
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.BazarController.List">
+            <summary>
+            Lists stores linked to institutions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.BazarController.ListByCacccId(System.Nullable{System.Int32})">
+            <summary>
+            Lists stores by cacccId linked to institutions 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.BazarController.ListByCacccName(System.String)">
+            <summary>
+            Lists stores by name linked to institutions 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.Save(AppPrivy.Domain.Entities.DoacaoMais.Caccc)">
+             <summary>
+             Create a new institution [Required Authorization]
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST / Analista/Programador/Caccc/SalvarCaccc
+                 {
+                     "Nome": "Nome",               
+                     "Cnpj":  "99.999.999/9999-99"
+                     "Emai":  "email@dominio.com.br"
+                     "UrlImagem":"http://dominio.com.br/path/image.jpg"
+                     "Telefone":"(99) 9999-9999"
+                     "Responsavel":"Responsavel"
+                 }
+            
+             </remarks>
+             <param name="caccc"></param>        
+             <returns>New Ong Created! </returns>
+             <response code="201">Returns new Ong Creted</response>
+             <response code="400">it wasn`t able to created a new Ong</response>            
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.Update(System.Nullable{System.Int32},AppPrivy.Domain.Entities.DoacaoMais.Caccc)">
+             <summary>
+             Update a institution [Required Authorization]
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT / Analista/Programador/Caccc/AtualizaCaccc/2
+                 
+                 {
+                     "Nome": "Nome",               
+                     "Cnpj":  "99.999.999/9999-99"
+                     "Emai":  "email@dominio.com.br"
+                     "UrlImagem":"http://dominio.com.br/path/image.jpg"
+                     "Telefone":"(99) 9999-9999"
+                     "Responsavel":"Responsavel"
+                 }
+            
+             </remarks>
+             <param name="Id"></param>      
+             <param name="caccc"></param>      
+             <returns>Update institution </returns>
+             <response code="200">Returns institution updated</response>
+             <response code="400">it wasn`t able to update a institution</response>          
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.AtualizarParcialCaccc(System.Nullable{System.Int32},Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{AppPrivy.Domain.Entities.DoacaoMais.Caccc})">
+             <summary>
+             Partial update a institution [Required Authorization]
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PATCH /Analista/Programador/Caccc/AtualizarParcialCaccc/3
+                 
+                 {
+                     "Nome": "Nome",               
+                     "Cnpj":  "99.999.999/9999-99"
+                     "Emai":  "email@dominio.com.br"
+                     "UrlImagem":"http://dominio.com.br/path/image.jpg"
+                     "Telefone":"(99) 9999-9999"
+                     "Responsavel":"Responsavel"
+                 }
+            
+             </remarks>
+             <param name="Id"></param>      
+             <param name="caccc"></param>      
+             <returns>Update institution </returns>
+             <response code="200">Returns institution updated</response>
+             <response code="400">it wasn`t able to update a institution</response>          
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.Delete(System.Nullable{System.Int32})">
+             <summary>
+             Delete a institution [Required Authorization]
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE / Analista/Programador/Caccc/AtualizaCaccc/8
+                    
+             </remarks>
+             <param name="Id"></param>        
+             <returns>Delete institution </returns>
+             <response code="200">Returns institution deleted</response>
+             <response code="400">it wasn`t able to deleted a institution</response>          
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.List">
+            <summary>
+            List all Institution
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListWithStores">
+            <summary>
+            List all stores associated the Ongs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCacccId(System.Nullable{System.Int32})">
+            <summary>
+            Brings a summary of the Institution through the Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCacccName(System.String)">
+            <summary>
+            Brings a summary of the Institution through the Name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCaccc">
+            <summary>
+            List all content of all institutions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.List">
+            <summary>
+            List all linked articles with institutions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.ListByCacccId(System.Nullable{System.Int32})">
+            <summary>
+            List all linked articles by institution Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.ListByCacccName(System.String)">
+            <summary>
+            List all linked articles by institution name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.ContaBancariaController.List">
+            <summary>
+            List all bank account
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.ContaBancariaController.ListByCacccId(System.Nullable{System.Int32})">
+            <summary>
+            List bank accounts by institution Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.ConteudoController.List">
+            <summary>
+            List all content of all institution
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.ConteudoController.ListByCacccId(System.Int32)">
+            <summary>
+            List all content by institution Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.ConteudoController.ListByCacccName(System.String)">
+            <summary>
+            List all content by institution name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.List">
+            <summary>
+            List all devices 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save(AppPrivy.Domain.Entities.DoacaoMais.Dispositivo)">
+            <summary>
+            Save one device
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.List">
+            <summary>
+            List all articles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.ListByCacccId(System.Nullable{System.Int32})">
+            <summary>
+            List all articles by instituion Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.ListByCacccName(System.String)">
+            <summary>
+            List all articles by instituion name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List">
+            <summary>
+            List all actives notifications
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.RecursoController.Header">
+            <summary>
+            Check Http Header Resource
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.RecursoController.SaveFile">
+            <summary>
+            Save File By Send By Form
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.UsuarioController.Save(AppPrivy.Domain.Entities.DoacaoMais.Usuario)">
+            <summary>
+            Add New User
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.UsuarioController.List">
+            <summary>
+            List All Users
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.UsuarioController.Get(System.Nullable{System.Int32})">
+            <summary>
+            Get User By Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AppPrivy.WebApiDoacaoMais.Controllers.UsuarioController.Get(System.String)">
+            <summary>
+            Get User By Login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AppPrivy.WebApiDoacaoMais1.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:AppPrivy.WebApiDoacaoMais1.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:AppPrivy.WebApiDoacaoMais1.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -102,3 +102,4 @@ E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x6
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x64\PubTmp\Out\AppPrivy.Domain.pdb
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x64\PubTmp\Out\AppPrivy.Domain.dll.config
 E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x64\PubTmp\Out\AppPrivy.InfraStructure.pdb
+E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\obj\Release\net5.0\win-x64\PubTmp\Out\AppPrivy.WebApiDoacaoMais.xml

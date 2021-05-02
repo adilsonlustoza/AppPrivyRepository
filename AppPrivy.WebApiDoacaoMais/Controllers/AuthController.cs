@@ -48,7 +48,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
 
 
         [HttpHead("Login")]
-        [ResponseCache(NoStore = true)]
+        [Produces("application/json")]
         public async Task<ActionResult<UserToken>> Login([FromHeader] UserToken userToken)
         {
             try
@@ -56,8 +56,10 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                 var result = await _signInManager.PasswordSignInAsync(userToken.Email, userToken.Password,
                         isPersistent: false, lockoutOnFailure: false);
 
+                var objToken = await _authService.BuildToken(userToken);
+
                 if (result.Succeeded)
-                    return StatusCode(StatusCodes.Status200OK, await _authService.BuildToken(userToken));
+                    return StatusCode(StatusCodes.Status200OK, objToken);
                 else
                     return StatusCode(StatusCodes.Status400BadRequest, $"It wans`t able to login!!!");
             }
