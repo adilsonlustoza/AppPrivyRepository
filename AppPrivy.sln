@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppPrivy.WebAppSiteBlog", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppPrivy.SpaDoacaoMais", "AppPrivy.SpaDoacaoMais\AppPrivy.SpaDoacaoMais.csproj", "{83C574D5-75B1-4AEB-99B6-416029F226C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppPrivy.WebApiDoacaoMais", "AppPrivy.WebApiDoacaoMais\AppPrivy.WebApiDoacaoMais.csproj", "{6A9FA401-B54C-43D5-987F-54B6EAAA6CD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppPrivy.WebApiDoacaoMais", "AppPrivy.WebApiDoacaoMais\AppPrivy.WebApiDoacaoMais.csproj", "{6A9FA401-B54C-43D5-987F-54B6EAAA6CD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

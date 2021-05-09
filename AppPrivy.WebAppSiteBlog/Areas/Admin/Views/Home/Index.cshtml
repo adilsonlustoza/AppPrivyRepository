@@ -6,12 +6,7 @@
                 <div class="col-sm-6">
                     <h1 class="m-0 text-dark">Home</h1>
                 </div><!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home" asp-area="Admin">Home</a></li>
-                        <li class="breadcrumb-item active">Tag</li>
-                    </ol>
-                </div><!-- /.col -->
+
             </div><!-- /.row -->
         </div>
     </div><!-- /.container-fluid -->
@@ -20,71 +15,124 @@
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
-
-
-        <div class="col-sm-12">
-
-            <div class="col-sm-3 float-left">
-                <div class="small-box bg-gradient-danger">
-                    <div class="inner">
-                        <h3>150</h3>
-                        <p>New Orders</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">
-                        More info <i class="fas fa-arrow-circle-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-sm-3 float-left">
-                <div class="small-box bg-gradient-info">
-                    <div class="inner">
-                        <h3>150</h3>
-                        <p>New Orders</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">
-                        More info <i class="fas fa-arrow-circle-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-sm-3 float-left">
-                <div class="small-box bg-gradient-success">
-                    <div class="inner">
-                        <h3>150</h3>
-                        <p>New Orders</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">
-                        More info <i class="fas fa-arrow-circle-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-sm-3 float-left">
-                <div class="small-box bg-gradient-warning">
-                    <div class="inner">
-                        <h3>150</h3>
-                        <p>New Orders</p>
-                    </div>
-                    <div class="icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <a href="#" class="small-box-footer">
-                        More info <i class="fas fa-arrow-circle-right"></i>
-                    </a>
-                </div>
-            </div>
-
+        <div class="row">
+            @{ await Html.RenderPartialAsync("PartialViews/_NavBox"); }
         </div>
-    </div><!-- /.container-fluid -->
+        <div class="row">
+            @{ await Html.RenderPartialAsync("PartialViews/_Chart"); }
+        </div>
+    </div>
 </section>
-<!-- /.content -->
+
+
+@section Scripts{
+
+    <script>
+
+        var areaChartData = {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [
+                {
+                    label: 'Autor',
+                    backgroundColor: '#dc3545',
+                    borderColor: '#dc3545',
+                    pointRadius: true,
+                    pointColor: '#000000',
+                    pointStrokeColor: '#000000',
+                    pointHighlightFill: '#c1c7d1',
+                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                    data: [28, 48, 40, 19, 86, 27, 90]
+                },
+
+                {
+                    label: 'Categorias',
+                    backgroundColor: '#007bff',
+                    borderColor: '#007bff',
+                    pointRadius: true,
+                    pointColor: '#000000',
+                    pointStrokeColor: '#000000',
+                    pointHighlightFill: '#c1c7d1',
+                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                    data: [28, 48, 40, 19, 86, 27, 90]
+                },
+
+                {
+                    label: 'Tags',
+                    backgroundColor: '#28a745',
+                    borderColor: '#28a745',
+                    pointRadius: true,
+                    pointColor: '#000000',
+                    pointStrokeColor: '#000000',
+                    pointHighlightFill: '#c1c7d1',
+                    pointHighlightStroke: 'rgba(220,220,220,1)',
+                    data: [65, 59, 80, 81, 56, 55, 40]
+                },
+
+
+                {
+                    label: 'Posts',
+                    backgroundColor: '#ffc107',
+                    borderColor: '#ffc107',
+                    pointRadius: true,
+                    pointColor: '#000000',
+                    pointStrokeColor: '#000000',
+                    pointHighlightFill: '#c1c7d1',
+                    pointHighlightStroke: 'rgba(220,220,220,1)',
+                    data: [65, 59, 80, 81, 56, 55, 40]
+                },
+            ]
+        }
+
+        var areaChartOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            legend: {
+                display: true
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: true,
+                    }
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display: true,
+                    }
+                }]
+            }
+        }
+
+
+
+
+        var barChartCanvas = $('#barChart').get(0).getContext('2d');
+
+        var barChartData = jQuery.extend(true, {}, areaChartData);
+
+        var dataSetAutor = areaChartData.datasets[0];
+        var dataSetCategorias = areaChartData.datasets[1];
+        var dataSetTags = areaChartData.datasets[2];
+        var dataSetPost = areaChartData.datasets[3];
+
+        barChartData.datasets[0] = dataSetAutor;
+        barChartData.datasets[1] = dataSetCategorias;
+        barChartData.datasets[2] = dataSetTags;
+        barChartData.datasets[3] = dataSetPost;
+
+        var barChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            datasetFill: false
+        }
+
+        var barChart = new Chart(barChartCanvas, {
+            type: 'bar',
+            data: barChartData,
+            options: barChartOptions
+        })
+
+
+
+    </script>
+}

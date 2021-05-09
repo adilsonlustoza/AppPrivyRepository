@@ -205,6 +205,7 @@
     <Folder Include="App_Filter\" />
     <Folder Include="wwwroot\bower_components\bootstrap-lightbox\docs\build\" />
     <Folder Include="wwwroot\css\scss\" />
+    <Folder Include="wwwroot\js\NewFolder\" />
   </ItemGroup>
 
   <ItemGroup>
