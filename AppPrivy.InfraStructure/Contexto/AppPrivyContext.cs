@@ -31,6 +31,8 @@ namespace AppPrivy.InfraStructure.Contexto
         }
 
         //-------------------------------Doacao Mais-----------------------
+
+        public virtual DbSet<Estatistico> Estatistico { get; set; }
         public virtual DbSet<Bazar> Bazar { get; set; }
         public virtual DbSet<Caccc> Caccc { get; set; }
         public virtual DbSet<Campanha> Campanha { get; set; }
@@ -62,6 +64,7 @@ namespace AppPrivy.InfraStructure.Contexto
             modelBuilder.ApplyConfiguration(new IdentityUserTokenConfiguration());
 
             //-------------------------------Doacao Mais-----------------------
+            modelBuilder.ApplyConfiguration(new EstatisticoConfiguration());
             modelBuilder.ApplyConfiguration(new BazarConfiguration());
             modelBuilder.ApplyConfiguration(new CacccConfiguration());
             modelBuilder.ApplyConfiguration(new CampanhaConfiguration());
