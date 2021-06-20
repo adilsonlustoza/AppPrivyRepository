@@ -6,8 +6,8 @@ namespace AppPrivy.Domain.Interfaces.Services.DoacaoMais
 {
     public interface INotificacaoService : IServiceBase<Notificacao>
     {
-        Task<IEnumerable<Notificacao>> ListaNoficacaoAtivas();
+        Task<IEnumerable<Notificacao>> ListaNotificacoesAtivas();
 
-     //   Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico);
+     
     }
 }

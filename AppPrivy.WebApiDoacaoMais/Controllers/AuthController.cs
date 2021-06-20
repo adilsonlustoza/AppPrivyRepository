@@ -4,7 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Primitives;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AppPrivy.WebApiDoacaoMais.Controllers
@@ -15,17 +17,20 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
     {
 
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<IdentityUser> _userManager;
         private readonly IAuthService _authService;
         private readonly ILogger<AuthController> _logger;
 
         public AuthController(IAuthService authService,
                               SignInManager<IdentityUser> signInManager,
+                              UserManager<IdentityUser> userManager,
                               ILogger<AuthController> logger
             )
         {
 
             _authService = authService;
             _signInManager = signInManager;
+            _userManager = userManager;
             _logger = logger;
         }
 
@@ -53,10 +58,23 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         {
             try
             {
+                
+                //var identityUser = await _userManager.FindByEmailAsync(userToken.Email);
+
+                //var identityRemove = _userManager.RemovePasswordAsync(identityUser);
+
+               // var identityPass=   await _userManager.AddPasswordAsync(identityUser, "AppPrivy$2021");
+
+
                 var result = await _signInManager.PasswordSignInAsync(userToken.Email, userToken.Password,
                         isPersistent: false, lockoutOnFailure: false);
 
                 var objToken = await _authService.BuildToken(userToken);
+
+
+                this.ControllerContext.HttpContext.Response.Headers.Add("Token",new StringValues(objToken.Token));
+              
+
 
                 if (result.Succeeded)
                     return StatusCode(StatusCodes.Status200OK, objToken);

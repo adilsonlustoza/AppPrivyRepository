@@ -9,13 +9,11 @@ using System.Threading.Tasks;
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class NotificacaoRepository : RepositoryBase<Notificacao>, INotificacaoRepository
-    {
-
-        private readonly IContextManager _contextManager;
+    {       
 
         public NotificacaoRepository(IContextManager contextManager) : base(contextManager)
         {
-            _contextManager = contextManager;
+           
         }
 
         public async Task<IEnumerable<Notificacao>> ListaNoficacaoAtivas()
@@ -43,21 +41,6 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
         }
 
 
-        //public async Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico)
-        //{
-        //    try
-        //    {
-
-        //        var notificacoes = _contextManager.AppPrivyContext().Dispositivo.Where(d => d.IdentificadorUnico.Equals(identificadorUnico)).FirstOrDefault();
-
-        //        if (notificacoes != null)
-        //            return await Task.FromResult<IList<Notificacao>>(notificacoes);
-        //        return null;
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        throw e;
-        //    }
-        //}
+       
     }
 }

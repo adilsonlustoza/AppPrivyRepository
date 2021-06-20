@@ -33,7 +33,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         {
             try
             {
-                var _result = await _campanhaService.GetAll();
+                var _result = await _campanhaService.ListarCampanhas();
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));

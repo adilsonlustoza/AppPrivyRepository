@@ -1,4 +1,5 @@
-﻿using AppPrivy.Domain.Entities.DoacaoMais;
+﻿using AppPrivy.CrossCutting.Cache;
+using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using System;
@@ -15,6 +16,10 @@ namespace AppPrivy.Domain.Services.DoacaoMais
         private readonly IConteudoRepository _conteudoRepository;
         private readonly ICampanhaRepository _campanhaRepository;
         private readonly IContaBancariaRepository _contaBancariaRepository;
+        private const string ListarConteudoContasPorCacccCache = "ListarConteudoContasPorCacccCache";
+        private const string ListarCacccBazaresCache = "ListarCacccBazaresCache";
+        private const string ListarCacccCache = "ListarCacccCache";
+
 
         public CacccService(
                             ICacccRepository cacccRepository,
@@ -84,7 +89,6 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
                 if (objCaccc != null)
                 {
-
                     var _conteudos = await _conteudoRepository.ListaConteudoCaccc(objCaccc.CacccId);
 
                     var _contasBancarias = await _contaBancariaRepository.ListaContaBancariaCaccc(objCaccc.CacccId);
@@ -111,34 +115,63 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             }
         }
 
+
+        public async Task<IEnumerable<Caccc>> ListarCaccc()
+        {
+            try
+            {              
+
+                if (TemporaryMemory.GetInstance().GetCache(ListarCacccCache) == null)
+                    TemporaryMemory.GetInstance().CacheSave(ListarCacccCache, await _cacccRepository.GetAll());
+                return (IEnumerable<Caccc>)TemporaryMemory.GetInstance().GetCache(ListarCacccCache);
+
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
         public async Task<IEnumerable<Caccc>> ListarConteudoContasPorCaccc()
         {
             try
             {
+                ICollection<Caccc> _caccaList = null;
+                ICollection<Conteudo> _conteudos = null;
+                ICollection<ContaBancaria> _contasBancarias = null;
 
 
-                var _caccaList = await _cacccRepository.GetAll();
+                if (TemporaryMemory.GetInstance().GetCache(ListarConteudoContasPorCacccCache) != null)
+                    _caccaList = (ICollection<Caccc>)TemporaryMemory.GetInstance().GetCache(ListarConteudoContasPorCacccCache);
+                else
+                    _caccaList = await _cacccRepository.GetAll();
 
                 if (_caccaList != null)
                 {
                     foreach (var caccc in _caccaList)
                     {
+                        if (caccc.Conteudos?.Count() <= 0)
+                        {
+                            _conteudos = await _conteudoRepository.ListaConteudoCaccc(caccc.CacccId);
+                            if (_conteudos != null)
+                                foreach (var itemConteudos in _conteudos)
+                                    caccc.Conteudos.Add(itemConteudos);
+                        }
 
-                        var _conteudos = await _conteudoRepository.ListaConteudoCaccc(caccc.CacccId);
 
-                        var _contasBancarias = await _contaBancariaRepository.ListaContaBancariaCaccc(caccc.CacccId);
-
-                        if (_conteudos != null)
-                            foreach (var itemConteudos in _conteudos)
-                                caccc.Conteudos.Add(itemConteudos);
-
-
-                        if (_contasBancarias != null)
-                            foreach (var itemContas in _contasBancarias)
-                                caccc.ContasBancarias.Add(itemContas);
+                        if (caccc.ContasBancarias?.Count() <= 0)
+                        {
+                            _contasBancarias = await _contaBancariaRepository.ListaContaBancariaCaccc(caccc.CacccId);
+                             if (_contasBancarias != null)
+                                foreach (var itemContas in _contasBancarias)
+                                    caccc.ContasBancarias.Add(itemContas);
+                        }
 
                     }
                 }
+
+                if (TemporaryMemory.GetInstance().GetCache(ListarConteudoContasPorCacccCache) == null)
+                    TemporaryMemory.GetInstance().CacheSave(ListarConteudoContasPorCacccCache,  _caccaList);
 
                 return _caccaList;
             }
@@ -153,23 +186,36 @@ namespace AppPrivy.Domain.Services.DoacaoMais
         {
             try
             {
-                var _cacccAll = await _cacccRepository.GetAll();
+                ICollection<Caccc> _cacccAll = null;             
+
+
+                if (TemporaryMemory.GetInstance().GetCache(ListarCacccBazaresCache) != null)
+                    _cacccAll = (ICollection<Caccc>)TemporaryMemory.GetInstance().GetCache(ListarCacccBazaresCache);
+                else
+                    _cacccAll = await _cacccRepository.GetAll();
+
+              
 
                 foreach (var itemCaccc in _cacccAll)
                 {
-                    var _bazares = await _bazarRepository.GetAllByCacccId(itemCaccc.CacccId);
-
-                    if (_bazares != null)
+                    if (itemCaccc.Bazares?.Count() <= 0)
                     {
-                        foreach (var itemBazar in _bazares)
-                        {
-                            itemCaccc.Bazares.Add(itemBazar);
-                        }
+                        var _bazares = await _bazarRepository.GetAllByCacccId(itemCaccc.CacccId);
 
+                        if (_bazares != null && _bazares.Count()>0)
+                        {
+                            foreach (var itemBazar in _bazares)
+                            {
+                                itemCaccc.Bazares.Add(itemBazar);
+                            }
+
+                        }
                     }
 
-
                 }
+
+                if (TemporaryMemory.GetInstance().GetCache(ListarCacccBazaresCache) == null)
+                    TemporaryMemory.GetInstance().CacheSave(ListarCacccBazaresCache, _cacccAll);
 
                 return _cacccAll;
             }
@@ -210,6 +256,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             }
         }
 
+        
     }
 
 

@@ -25,7 +25,8 @@ namespace AppPrivy.Application.Services.Site
             {
                 var claims = new[] {
                                      new Claim(ClaimTypes.Sid, userInfo.Email),
-                                     new Claim(ClaimTypes.Role, "DoacaoMais")               
+                                     new Claim(ClaimTypes.Role, "ADMINISTRADOR") ,
+                                     new Claim(ClaimTypes.NameIdentifier, "DoacaoMais")
                                   };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:key"]));

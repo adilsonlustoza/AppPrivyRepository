@@ -52,7 +52,11 @@ namespace AppPrivy.Domain.Entities.DoacaoMais
         [Url(ErrorMessage ="{0} é inválido")]
         public string UrlImagem { get; set; }
 
-       
+
+        [Url(ErrorMessage = "{0} é inválido")]
+        public string UrlImagemPin { get; set; }
+
+
         [RegularExpression(@"^\(?\d{2}\)? \d{4,5}-\d{4}$", ErrorMessage = "{0} é invalido.")]
         [Required(ErrorMessage ="{0} é requerido.")]
         public string Telefone { get; set; }

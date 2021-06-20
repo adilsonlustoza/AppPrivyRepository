@@ -9,12 +9,10 @@ using System.Threading.Tasks;
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class ConteudoRepository : RepositoryBase<Conteudo>, IConteudoRepository
-    {
-        private readonly IContextManager _contextManager;
-
+    {        
         public ConteudoRepository(IContextManager contextManager) : base(contextManager)
         {
-            _contextManager = contextManager;
+           
         }
 
         public async Task<ICollection<Conteudo>> ListaConteudoCaccc(int? CacccId)

@@ -36,7 +36,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
                 if (usuario == null)
                     new ArgumentException("Invalid parameter!");
 
-                var user = await _usuarioService.AdicionarUsuario(usuario);
+                var user = await _usuarioService.SalvarUsuario(usuario);
 
                 if (user == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
@@ -59,12 +59,12 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
         [Route("List")]
-        [ApiExplorerSettings(IgnoreApi = true)]
-        public IActionResult List()
+
+        public async Task<IActionResult> List()
         {
             try
             {
-                var _result = _usuarioService.GetAll();
+                var _result = await _usuarioService.ListarUsuarios();
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
@@ -84,14 +84,14 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
         [Route("{Id:int?}")]
-        public IActionResult Get(int? Id)
+        public async Task<IActionResult> Get(int? Id)
         {
             try
             {
                 if (!Id.HasValue)
                     new ArgumentException("Invalid parameter!");
 
-                var _result = _usuarioService.GetById(Id.Value);
+                var _result = await _usuarioService.GetById(Id.Value);
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
@@ -110,14 +110,14 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
         [Route("{login}")]
-        public IActionResult Get(string login)
+        public async Task<IActionResult> Get(string login)
         {
             try
             {
                 if (string.IsNullOrWhiteSpace(login))
                     throw new ArgumentException("Invalid parameter!");
 
-                var _result = _usuarioService.Search(p => p.Login.Contains(login));
+                var _result = await _usuarioService.Search(p => p.Login.Contains(login));
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));

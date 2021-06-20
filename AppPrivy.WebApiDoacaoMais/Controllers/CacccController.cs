@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 
@@ -47,13 +48,16 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <response code="201">Returns new Ong Creted</response>
         /// <response code="400">it wasn`t able to created a new Ong</response>            
 
-        [Authorize(Roles = "DoacaoMais")]
+
+        [Authorize(Policy = "DoacaoMais")]
         [HttpPost]
         [Route("Save")]
+      
         public async Task<IActionResult> Save([FromBody] Caccc caccc)
         {
             try
             {
+                var cl = HttpContext.User.Claims;
 
                 if (ModelState.IsValid)
                 {
@@ -220,7 +224,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             try
             {
 
-                var _result = await _cacccService.GetAll();
+                var _result = await _cacccService.ListarCaccc();
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));

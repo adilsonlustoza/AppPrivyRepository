@@ -98,7 +98,6 @@
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\qunit.js" />
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\less\bootstrap-lightbox.less" />
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\LICENSE.md" />
-    <Content Include="wwwroot\bower_components\bootstrap-lightbox\Makefile" />
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\package.json" />
     <Content Include="wwwroot\bower_components\bootstrap-lightbox\README.md" />
     <Content Include="wwwroot\bower_components\Chart.js\Chart.css" />
@@ -157,7 +156,6 @@
     <None Include="wwwroot\bower_components\bootstrap-lightbox\js\tests\vendor\qunit.js" />
     <None Include="wwwroot\bower_components\bootstrap-lightbox\less\bootstrap-lightbox.less" />
     <None Include="wwwroot\bower_components\bootstrap-lightbox\LICENSE.md" />
-    <None Include="wwwroot\bower_components\bootstrap-lightbox\Makefile" />
     <None Include="wwwroot\bower_components\bootstrap-lightbox\README.md" />
     <None Include="wwwroot\bower_components\Chart.js\Chart.bundle.js" />
     <None Include="wwwroot\bower_components\Chart.js\Chart.bundle.min.js" />

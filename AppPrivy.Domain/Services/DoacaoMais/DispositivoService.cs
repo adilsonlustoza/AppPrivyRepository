@@ -1,8 +1,10 @@
-﻿using AppPrivy.CrossCutting.UnitOfWork;
+﻿using AppPrivy.CrossCutting.Cache;
+using AppPrivy.CrossCutting.UnitOfWork;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Transactions;
 
@@ -11,7 +13,9 @@ namespace AppPrivy.Domain.Services.DoacaoMais
     public class DispositivoService : ServiceBase<Dispositivo>, IDispositoService
     {
         private readonly IDispositivoRepository _dispositivoRepository;
-      
+        private const string ListarDispositivosCache = "ListarDispositivosCache";
+
+
 
         public DispositivoService(IDispositivoRepository dispositivoRepository) : base(dispositivoRepository)
         {
@@ -64,6 +68,20 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             }
         }
 
-
+        public async Task<IEnumerable<Dispositivo>> ListarDispositivos()
+        {
+            
+                try
+                {
+                    if (TemporaryMemory.GetInstance().GetCache(ListarDispositivosCache) == null)
+                        TemporaryMemory.GetInstance().CacheSave(ListarDispositivosCache, await _dispositivoRepository.GetAll(p => p.NotificacaoDispositivo));
+                    return (IEnumerable<Dispositivo>)TemporaryMemory.GetInstance().GetCache(ListarDispositivosCache);
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
+            
+        }
     }
 }

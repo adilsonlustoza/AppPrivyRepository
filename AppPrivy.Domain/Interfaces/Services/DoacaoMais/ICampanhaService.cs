@@ -6,6 +6,7 @@ namespace AppPrivy.Domain.Interfaces.Services.DoacaoMais
 {
     public interface ICampanhaService : IServiceBase<Campanha>
     {
+        Task<IEnumerable<Campanha>> ListarCampanhas();
         Task<IEnumerable<Campanha>> ListarCampanhasCaccc(int? CacccId);
     }
 }

@@ -8,13 +8,11 @@ using System.Threading.Tasks;
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class CampanhaRepository : RepositoryBase<Campanha>, ICampanhaRepository
-    {
-
-        private readonly IContextManager _contextManager;
+    {               
 
         public CampanhaRepository(IContextManager contextManager) : base(contextManager)
         {
-            _contextManager = contextManager;
+           
         }
 
         public async Task<ICollection<Campanha>> ListarCampanhasCaccc(int? CacccId)

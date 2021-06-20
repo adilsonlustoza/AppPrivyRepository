@@ -37,6 +37,8 @@ using System.Reflection;
 using System.Text;
 using System.Text.Json;
 using AppPrivy.CrossCutting.Commom;
+using Appointment.Application.ViewsModels;
+using System.Security.Claims;
 
 namespace AppPrivy.WebApiDoacaoMais
 {
@@ -59,6 +61,7 @@ namespace AppPrivy.WebApiDoacaoMais
 
             services.AddControllers().AddNewtonsoftJson(options =>
             {
+
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             });
@@ -81,7 +84,7 @@ namespace AppPrivy.WebApiDoacaoMais
 
             services.AddDbContext<AppPrivyContext>(options =>
              options.UseSqlServer(Configuration.GetConnectionString(ConstantHelper.AppPrivyContext),
-             b => b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc))
+             b => b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc)), ServiceLifetime.Transient
             );
 
             services.AddTransient<IContextManager, ContextManager>();
@@ -140,7 +143,7 @@ namespace AppPrivy.WebApiDoacaoMais
 
             services.AddSwaggerGenNewtonsoftSupport();
 
-            services.AddControllers();
+            services.AddControllers(options => options.EnableEndpointRouting = false);
 
 
             services
@@ -223,25 +226,35 @@ namespace AppPrivy.WebApiDoacaoMais
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-           .AddCookie(cfg => { cfg.SlidingExpiration = true; })
-           .AddJwtBearer(x =>
-           {
-               x.RequireHttpsMetadata = false;
-               x.SaveToken = true;
-               x.TokenValidationParameters = new TokenValidationParameters
-               {
-                   ValidateIssuer = true,
-                   ValidateAudience = true,
-                   ValidateLifetime = true,
-                   ValidateIssuerSigningKey = true,
 
-                   ValidIssuer = Configuration["Jwt:Issuer"],
-                   ValidAudience = Configuration["Jwt:Audience"],
-                   IssuerSigningKey = new SymmetricSecurityKey
-                      (Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
-               };
-           });
+            })
+              .AddCookie(cfg => { cfg.SlidingExpiration = true; })
+              .AddJwtBearer(x =>
+              {
+                  x.RequireHttpsMetadata = false;
+                  x.SaveToken = true;
+                  x.TokenValidationParameters = new TokenValidationParameters
+                  {
+                      ValidateIssuer = true,
+                      ValidateAudience = true,
+                      ValidateLifetime = true,
+                      ValidateIssuerSigningKey = true,
+
+                      ValidIssuer = Configuration["Jwt:Issuer"],
+                      ValidAudience = Configuration["Jwt:Audience"],
+                      IssuerSigningKey = new SymmetricSecurityKey
+                         (Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                  };
+              });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("DoacaoMais", policy =>
+                   policy.RequireAssertion(context =>
+                       context.User.HasClaim(c => c.Type == ClaimTypes.NameIdentifier && c.Value== "DoacaoMais")));
+            });
+
+
 
 
         }
@@ -268,7 +281,8 @@ namespace AppPrivy.WebApiDoacaoMais
 
             app.UseSwagger();
 
-            app.UseSwaggerUI(c => {
+            app.UseSwaggerUI(c =>
+            {
                 c.SwaggerEndpoint("/swagger/v3/swagger.json", "Doacao Mais v3");
                 c.RoutePrefix = string.Empty;
             }
@@ -278,14 +292,19 @@ namespace AppPrivy.WebApiDoacaoMais
 
             app.UseStaticFiles();
 
-            app.UseRouting();
+            //  app.UseRouting();
+
+            
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseMvc();
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
+            //});
 
 
             app.UseCors(x => x

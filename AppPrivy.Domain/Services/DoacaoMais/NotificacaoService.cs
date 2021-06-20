@@ -18,16 +18,12 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             _notificacaoRepository = notificacaoRepository;
         }
 
-        public async Task<IEnumerable<Notificacao>> ListaNoficacaoAtivas()
+        public async Task<IEnumerable<Notificacao>> ListaNotificacoesAtivas()
         {
             if (TemporaryMemory.GetInstance().GetCache(NotificacaoCache) == null)
                 TemporaryMemory.GetInstance().CacheSave(NotificacaoCache, await _notificacaoRepository.ListaNoficacaoAtivas());
             return  (IEnumerable<Notificacao>)TemporaryMemory.GetInstance().GetCache(NotificacaoCache);
         }
 
-        //public async Task<IEnumerable<Notificacao>> ListaNoficacaoPorDispositivo(string identificadorUnico)
-        //{
-        //    return await _notificacaoRepository.ListaNoficacaoPorDispositivo(identificadorUnico);
-        //}
     }
 }

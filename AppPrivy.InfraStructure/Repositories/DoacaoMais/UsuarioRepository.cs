@@ -30,7 +30,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
             }
             catch (Exception e)
             {
-                throw e;
+                throw new ApplicationException($"SaveDeviceUsuario Error: {e.Message}");
             }
 
         }

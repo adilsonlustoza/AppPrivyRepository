@@ -8,12 +8,10 @@ using System.Threading.Tasks;
 namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 {
     public class ContaBancariaRepository : RepositoryBase<ContaBancaria>, IContaBancariaRepository
-    {
-        private readonly IContextManager _contextManager;
-
+    {       
         public ContaBancariaRepository(IContextManager contextManager) : base(contextManager)
         {
-            _contextManager = contextManager;
+           
         }
 
         public async Task<ICollection<ContaBancaria>> ListaContaBancariaCaccc(int? CacccId)

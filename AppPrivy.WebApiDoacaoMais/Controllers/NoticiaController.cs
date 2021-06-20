@@ -29,7 +29,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         {
             try
             {
-                var _result = await _noticiaService.GetAll();
+                var _result = await _noticiaService.ListNoticias();
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
