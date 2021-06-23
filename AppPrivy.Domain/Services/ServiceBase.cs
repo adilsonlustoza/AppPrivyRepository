@@ -51,9 +51,9 @@ namespace AppPrivy.Domain.Services
 
      
 
-        public async Task<int?> SaveChanges()
+        public async Task<int?> SaveChangesAsync()
         {
-            return await _repository.SaveChanges();
+            return await _repository.SaveChangesAsync();
         }
 
         public void Dispose()

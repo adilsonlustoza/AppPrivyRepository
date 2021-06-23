@@ -6,8 +6,11 @@ namespace AppPrivy.Domain.Interfaces.Repositories.DoacaoMais
 {
     public interface IDispositivoRepository : IRepositoryBase<Dispositivo>
     {
-        Task<IEnumerable<Dispositivo>> GetAllDispositivosPorUsuarioId(int Id);
+        Task<IEnumerable<Dispositivo>> ListaDispositivos();
 
-        Task AddDispositivoUsuario(Dispositivo dispositivo);
+        Task<int?> Salva(Dispositivo dispositivo);
+
+
+        Task Atualiza(int? Id,Dispositivo dispositivo);
     }
 }

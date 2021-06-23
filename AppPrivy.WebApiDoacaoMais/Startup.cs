@@ -39,6 +39,7 @@ using System.Text.Json;
 using AppPrivy.CrossCutting.Commom;
 using Appointment.Application.ViewsModels;
 using System.Security.Claims;
+using Microsoft.Extensions.Logging;
 
 namespace AppPrivy.WebApiDoacaoMais
 {
@@ -55,7 +56,7 @@ namespace AppPrivy.WebApiDoacaoMais
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
+           // services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
 
             services.AddOptions();
 
@@ -83,8 +84,13 @@ namespace AppPrivy.WebApiDoacaoMais
             });
 
             services.AddDbContext<AppPrivyContext>(options =>
+
              options.UseSqlServer(Configuration.GetConnectionString(ConstantHelper.AppPrivyContext),
-             b => b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc)), ServiceLifetime.Transient
+             b =>  b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc).EnableRetryOnFailure(maxRetryCount: 5,
+                                                                                               maxRetryDelay: TimeSpan.FromSeconds(30),
+                                                                                               errorNumbersToAdd: null)
+                                                                          .UseQuerySplittingBehavior((QuerySplittingBehavior.SplitQuery))),
+             ServiceLifetime.Transient
             );
 
             services.AddTransient<IContextManager, ContextManager>();
@@ -195,10 +201,10 @@ namespace AppPrivy.WebApiDoacaoMais
                   }
             });
 
-                opt.SwaggerDoc("v3", new OpenApiInfo
+                opt.SwaggerDoc("v4", new OpenApiInfo
                 {
-                    Version = "v3",
-                    Title = "Doação Mais Api v3",
+                    Version = "v4",
+                    Title = "Doação Mais Api v4",
                     Description = "Aplicatio Doação Mais - ASP.NET Core Web API",
                     TermsOfService = new Uri("https://www.adilsonlustoza.com.br/Android"),
                     Contact = new OpenApiContact
@@ -286,7 +292,7 @@ namespace AppPrivy.WebApiDoacaoMais
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v3/swagger.json", "Doacao Mais v3");
+                c.SwaggerEndpoint("/swagger/v4/swagger.json", "Doacao Mais v4");
                 c.RoutePrefix = string.Empty;
             }
                             );
@@ -295,14 +301,19 @@ namespace AppPrivy.WebApiDoacaoMais
 
             app.UseStaticFiles();
 
+            
+
             //  app.UseRouting();
 
-            
+
             app.UseAuthentication();
 
             app.UseAuthorization();
 
+            
             app.UseMvc();
+
+            app.UseSerilogRequestLogging();
 
             //app.UseEndpoints(endpoints =>
             //{

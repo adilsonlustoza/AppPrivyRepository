@@ -83,9 +83,9 @@ namespace AppPrivy.Domain
             return await _pesquisaRepository.GetAll(children);
         }
 
-        public async Task<int?> SaveChanges()
+        public async Task<int?> SaveChangesAsync()
         {
-            return await _pesquisaRepository.SaveChanges();
+            return await _pesquisaRepository.SaveChangesAsync();
         }
     }
 }

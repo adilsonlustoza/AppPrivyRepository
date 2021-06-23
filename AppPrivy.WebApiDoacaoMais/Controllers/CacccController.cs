@@ -101,7 +101,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <response code="200">Returns institution updated</response>
         /// <response code="400">it wasn`t able to update a institution</response>          
 
-        [Authorize(Roles = "DoacaoMais")]
+        [Authorize(Policy = "DoacaoMais")]
         [HttpPut]
         [Route("Update/{Id:int?}")]
         public async Task<IActionResult> Update(int? Id, [FromBody] Caccc caccc)
@@ -189,7 +189,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <response code="200">Returns institution deleted</response>
         /// <response code="400">it wasn`t able to deleted a institution</response>          
 
-        [Authorize(Roles = "DoacaoMais")]
+        [Authorize(Policy = "DoacaoMais")]
         [HttpDelete]
         [Route("Delete/{Id:int?}")]
         public async Task<IActionResult> Delete(int? Id)

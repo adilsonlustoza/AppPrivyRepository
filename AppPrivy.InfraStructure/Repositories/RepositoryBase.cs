@@ -127,7 +127,7 @@ namespace AppPrivy.InfraStructure.Repositories
             GC.SuppressFinalize(this);
         }
 
-        public async Task<int?> SaveChanges()
+        public async Task<int?> SaveChangesAsync()
         {
             return await _context.AppPrivyContext().SaveChangesAsync();
         }

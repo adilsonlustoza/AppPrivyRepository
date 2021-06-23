@@ -24,7 +24,9 @@ namespace AppPrivy.CrossCutting.Cache
         public void CacheSave(string key, object value)
         {
             cacheItemPolicy = new CacheItemPolicy();
-            cacheItemPolicy.AbsoluteExpiration = DateTime.Now.AddMinutes(10.0);
+            cacheItemPolicy.AbsoluteExpiration = DateTime.Now.AddMinutes(10);
+            cacheItemPolicy.Priority = CacheItemPriority.Default;
+            cacheItemPolicy.SlidingExpiration = TimeSpan.FromMinutes(0);
             cache.Add(key, value, cacheItemPolicy);
         }
 

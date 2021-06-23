@@ -26,46 +26,49 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
         public async Task<int?> AdicionarDispositivo(Dispositivo dispositivo)
         {
-            int? _result = 0;
-
-            using (IUnitOfWork _unitOfWork = new TransactionScopeUnitOfWorkFactory(IsolationLevel.Serializable).Create())
-            {
-                await this.Add(dispositivo);
-
-                _result = await this.SaveChanges();
-
-                _unitOfWork.Commit();
+           
+            try
+            {  
+                
+               return await _dispositivoRepository.Salva(dispositivo);            
+              
             }
-
-            return await Task.FromResult<int?>(_result);
+            catch (Exception ex)
+            {
+             
+                throw ex;
+            }
 
         }
 
-        public async Task<int?> AtualizarDispositivo(Dispositivo dispositivo)
+        public async Task<int?> AtualizarDispositivo(int? Id,Dispositivo dispositivo)
         {
             try
             {
-            
+
+                if (!Id.HasValue)
+                    throw new ArgumentException("");
 
                 using (IUnitOfWork _unitOfWork = new TransactionScopeUnitOfWorkFactory(IsolationLevel.Serializable).Create())
                 {
+                                        
+                    await _dispositivoRepository.Atualiza(Id.Value, dispositivo);
+                              
+                    await _dispositivoRepository.SaveChangesAsync();
 
-
-
-
-                   _unitOfWork.Commit();
-
-
+                    _unitOfWork.Commit();
                 }
 
 
-                return await Task.FromResult<int?>(null);
+                return await Task.FromResult<int?>(Id);
             }
             catch (Exception e)
             {
 
                 throw e;
             }
+
+           
         }
 
         public async Task<IEnumerable<Dispositivo>> ListarDispositivos()
@@ -83,5 +86,6 @@ namespace AppPrivy.Domain.Services.DoacaoMais
                 }
             
         }
+
     }
 }

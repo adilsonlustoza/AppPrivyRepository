@@ -13,7 +13,7 @@ namespace AppPrivy.Domain.Interfaces.Services
         Task<TEntity> GetById(int id);
         Task<ICollection<TEntity>> GetAll(params Expression<Func<TEntity, object>>[] children);
         Task<ICollection<TEntity>> Search(Expression<Func<TEntity, bool>> expression, params Expression<Func<TEntity, object>>[] children);
-        Task<int?> SaveChanges();
+        Task<int?> SaveChangesAsync();
         void Dispose();
     }
 

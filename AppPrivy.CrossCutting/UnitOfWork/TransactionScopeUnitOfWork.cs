@@ -17,7 +17,7 @@ namespace AppPrivy.CrossCutting.UnitOfWork
                     {
                         IsolationLevel = isolationLevel,
                         Timeout = TransactionManager.MaximumTimeout
-                    });
+                    }, TransactionScopeAsyncFlowOption.Enabled);
         }
 
         public void Dispose()

@@ -13,7 +13,7 @@ namespace AppPrivy.WebApiDoacaoMais
 
             Log.Logger = new LoggerConfiguration()
                              .Enrich.FromLogContext()
-                             .MinimumLevel.Verbose()
+                             .MinimumLevel.Information()
                              .WriteTo.Console()
                              .WriteTo.File($"Logs\\{Assembly.GetCallingAssembly().GetName().Name}-.txt", rollingInterval: RollingInterval.Day)
                              .CreateLogger();
@@ -21,13 +21,14 @@ namespace AppPrivy.WebApiDoacaoMais
             try
             {
 
-                Log.Information("Starting up");
+                Log.Information($"Starting up {DateTime.Now.ToString("yyyyMMddHHmmss")}");
 
                 CreateHostBuilder(args).Build().Run();
             }
             catch (Exception ex)
             {
-                Log.Fatal(ex, "Application start-up failed");
+                Log.Fatal(ex, $"Application start-up failed :{ DateTime.Now.ToString("yyyyMMddHHmmss")}");
+             
             }
             finally
             {
@@ -38,6 +39,7 @@ namespace AppPrivy.WebApiDoacaoMais
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .UseSerilog()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

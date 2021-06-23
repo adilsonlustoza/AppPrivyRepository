@@ -34,7 +34,8 @@
       "jsWebView2Debugging": true
     },
     "IIS": {
-      "commandName": "IIS"
+      "commandName": "IIS",
+      "launchBrowser": true
     }
   }
 }

@@ -107,7 +107,6 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// Get User By Login
         /// </summary>
         /// <returns></returns>
-        [Authorize(Roles = "DoacaoMais")]
         [HttpGet]
         [Route("{login}")]
         public async Task<IActionResult> Get(string login)
