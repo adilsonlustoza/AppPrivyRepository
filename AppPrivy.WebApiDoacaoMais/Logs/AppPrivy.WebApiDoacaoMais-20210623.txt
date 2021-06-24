@@ -486,3 +486,4 @@ Error Number:2627,State:1,Class:14
 2021-06-23 20:00:36.943 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
 2021-06-23 20:00:36.961 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save (AppPrivy.WebApiDoacaoMais) in 7128.3934ms
 2021-06-23 20:00:36.969 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Save application/json 1776 - 500 - text/plain;+charset=utf-8 7839.4294ms
+2021-06-23 20:07:19.144 -03:00 [INF] Application is shutting down...

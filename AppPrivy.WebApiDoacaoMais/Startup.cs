@@ -265,6 +265,8 @@ namespace AppPrivy.WebApiDoacaoMais
 
 
 
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
         }
 

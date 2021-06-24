@@ -1,0 +1,737 @@
+2021-06-24 06:26:12.136 -03:00 [INF] Starting up 20210624062611
+2021-06-24 06:26:14.876 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 06:26:14.947 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 06:26:15.030 -03:00 [INF] Creating key {f92d9457-7137-4492-9a14-d67dc7cea6e7} with creation date 2021-06-24 09:26:14Z, activation date 2021-06-24 09:26:14Z, and expiration date 2021-09-22 09:26:14Z.
+2021-06-24 06:26:15.093 -03:00 [WRN] No XML encryptor configured. Key {f92d9457-7137-4492-9a14-d67dc7cea6e7} may be persisted to storage in unencrypted form.
+2021-06-24 06:26:16.462 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 06:26:16.462 -03:00 [INF] Hosting environment: Development
+2021-06-24 06:26:16.462 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 06:26:17.083 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 06:26:17.644 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 685.4971ms
+2021-06-24 06:46:00.328 -03:00 [INF] Starting up 20210624064600
+2021-06-24 06:46:00.817 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 06:46:00.820 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 06:46:00.841 -03:00 [INF] Creating key {55cabfa8-93d6-47e0-a7eb-78e4b6925c18} with creation date 2021-06-24 09:46:00Z, activation date 2021-06-24 09:46:00Z, and expiration date 2021-09-22 09:46:00Z.
+2021-06-24 06:46:00.858 -03:00 [WRN] No XML encryptor configured. Key {55cabfa8-93d6-47e0-a7eb-78e4b6925c18} may be persisted to storage in unencrypted form.
+2021-06-24 06:46:01.033 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 06:46:01.033 -03:00 [INF] Hosting environment: Development
+2021-06-24 06:46:01.033 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 06:46:01.065 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 06:46:01.147 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 87.6592ms
+2021-06-24 07:06:01.780 -03:00 [INF] Starting up 20210624070601
+2021-06-24 07:06:02.258 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 07:06:02.262 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 07:06:02.283 -03:00 [INF] Creating key {de2b31f8-aa90-4606-a4cf-7ad539e07c44} with creation date 2021-06-24 10:06:02Z, activation date 2021-06-24 10:06:02Z, and expiration date 2021-09-22 10:06:02Z.
+2021-06-24 07:06:02.300 -03:00 [WRN] No XML encryptor configured. Key {de2b31f8-aa90-4606-a4cf-7ad539e07c44} may be persisted to storage in unencrypted form.
+2021-06-24 07:06:02.474 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 07:06:02.474 -03:00 [INF] Hosting environment: Development
+2021-06-24 07:06:02.474 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 07:06:02.506 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 07:06:02.587 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 86.6455ms
+2021-06-24 07:26:03.067 -03:00 [INF] Starting up 20210624072603
+2021-06-24 07:26:03.555 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 07:26:03.559 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 07:26:03.582 -03:00 [INF] Creating key {9ec00b23-1279-4450-addc-94c1d8e20416} with creation date 2021-06-24 10:26:03Z, activation date 2021-06-24 10:26:03Z, and expiration date 2021-09-22 10:26:03Z.
+2021-06-24 07:26:03.599 -03:00 [WRN] No XML encryptor configured. Key {9ec00b23-1279-4450-addc-94c1d8e20416} may be persisted to storage in unencrypted form.
+2021-06-24 07:26:03.776 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 07:26:03.776 -03:00 [INF] Hosting environment: Development
+2021-06-24 07:26:03.777 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 07:26:03.809 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 07:26:03.892 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 89.2324ms
+2021-06-24 07:46:04.951 -03:00 [INF] Starting up 20210624074604
+2021-06-24 07:46:05.540 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 07:46:05.545 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 07:46:05.568 -03:00 [INF] Creating key {f35d6d0f-05bf-4fa2-8e59-b8dcc65c619d} with creation date 2021-06-24 10:46:05Z, activation date 2021-06-24 10:46:05Z, and expiration date 2021-09-22 10:46:05Z.
+2021-06-24 07:46:05.588 -03:00 [WRN] No XML encryptor configured. Key {f35d6d0f-05bf-4fa2-8e59-b8dcc65c619d} may be persisted to storage in unencrypted form.
+2021-06-24 07:46:05.841 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 07:46:05.842 -03:00 [INF] Hosting environment: Development
+2021-06-24 07:46:05.842 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 07:46:05.894 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 07:46:06.034 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 149.8709ms
+2021-06-24 08:06:08.022 -03:00 [INF] Starting up 20210624080607
+2021-06-24 08:06:09.237 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 08:06:09.243 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 08:06:09.300 -03:00 [INF] Creating key {ebb6ce2d-3244-40f9-8933-702840f5d121} with creation date 2021-06-24 11:06:09Z, activation date 2021-06-24 11:06:09Z, and expiration date 2021-09-22 11:06:09Z.
+2021-06-24 08:06:09.343 -03:00 [WRN] No XML encryptor configured. Key {ebb6ce2d-3244-40f9-8933-702840f5d121} may be persisted to storage in unencrypted form.
+2021-06-24 08:06:09.853 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 08:06:09.854 -03:00 [INF] Hosting environment: Development
+2021-06-24 08:06:09.854 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 08:06:09.934 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 08:06:10.182 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 260.9918ms
+2021-06-24 08:26:12.040 -03:00 [INF] Starting up 20210624082612
+2021-06-24 08:26:12.884 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 08:26:12.890 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 08:26:12.938 -03:00 [INF] Creating key {eccb6331-c146-4e59-96c6-731e39233fe6} with creation date 2021-06-24 11:26:12Z, activation date 2021-06-24 11:26:12Z, and expiration date 2021-09-22 11:26:12Z.
+2021-06-24 08:26:12.980 -03:00 [WRN] No XML encryptor configured. Key {eccb6331-c146-4e59-96c6-731e39233fe6} may be persisted to storage in unencrypted form.
+2021-06-24 08:26:13.341 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 08:26:13.342 -03:00 [INF] Hosting environment: Development
+2021-06-24 08:26:13.342 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 08:26:13.389 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 08:26:13.528 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 147.0118ms
+2021-06-24 08:41:07.264 -03:00 [INF] Starting up 20210624084107
+2021-06-24 08:41:31.996 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 08:41:32.002 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 08:41:32.035 -03:00 [INF] Creating key {eb8bfb68-538f-4fc3-83f2-b90e1dd90443} with creation date 2021-06-24 11:41:32Z, activation date 2021-06-24 11:41:32Z, and expiration date 2021-09-22 11:41:32Z.
+2021-06-24 08:41:32.075 -03:00 [WRN] No XML encryptor configured. Key {eb8bfb68-538f-4fc3-83f2-b90e1dd90443} may be persisted to storage in unencrypted form.
+2021-06-24 08:41:32.691 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 08:41:32.693 -03:00 [INF] Hosting environment: Development
+2021-06-24 08:41:32.693 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 08:41:32.765 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 08:41:32.935 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 189.9883ms
+2021-06-24 08:41:32.950 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 08:41:33.142 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 192.1652ms
+2021-06-24 08:41:33.810 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 08:41:34.813 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1003.1842ms
+2021-06-24 08:42:20.996 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 08:42:21.010 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 08:42:21.925 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:42:22.153 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:42:22.291 -03:00 [INF] CORS policy execution successful.
+2021-06-24 08:42:22.297 -03:00 [INF] HTTP POST /Analista/Programador/Dispositivo/Update/3 responded 404 in 4.8700 ms
+2021-06-24 08:42:22.316 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 404 - - 1352.2537ms
+2021-06-24 08:42:41.390 -03:00 [INF] Application is shutting down...
+2021-06-24 08:43:00.993 -03:00 [INF] Starting up 20210624084300
+2021-06-24 08:43:06.305 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 08:43:06.314 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 08:43:06.350 -03:00 [INF] Creating key {76ac4e52-6939-4078-bcc7-608240d924dc} with creation date 2021-06-24 11:43:06Z, activation date 2021-06-24 11:43:06Z, and expiration date 2021-09-22 11:43:06Z.
+2021-06-24 08:43:06.385 -03:00 [WRN] No XML encryptor configured. Key {76ac4e52-6939-4078-bcc7-608240d924dc} may be persisted to storage in unencrypted form.
+2021-06-24 08:43:06.870 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 08:43:06.870 -03:00 [INF] Hosting environment: Development
+2021-06-24 08:43:06.870 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 08:43:06.920 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 08:43:07.098 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 185.1764ms
+2021-06-24 08:43:07.106 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 08:43:07.492 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 386.0651ms
+2021-06-24 08:43:08.249 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 08:43:09.059 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 810.4856ms
+2021-06-24 08:43:37.982 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 08:43:37.992 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 08:43:38.494 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:43:38.589 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:43:38.725 -03:00 [INF] CORS policy execution successful.
+2021-06-24 08:43:38.729 -03:00 [INF] HTTP POST /Analista/Programador/Dispositivo/Update/3 responded 404 in 22.2783 ms
+2021-06-24 08:43:38.744 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 404 - - 756.3548ms
+2021-06-24 08:43:58.996 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 08:43:59.021 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:43:59.025 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:43:59.038 -03:00 [INF] CORS policy execution successful.
+2021-06-24 08:43:59.039 -03:00 [INF] HTTP POST /Analista/Programador/Dispositivo/Update/3 responded 404 in 0.5454 ms
+2021-06-24 08:43:59.053 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 404 - - 57.0853ms
+2021-06-24 08:44:33.300 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 08:44:33.313 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:44:33.314 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:44:33.315 -03:00 [INF] CORS policy execution successful.
+2021-06-24 08:44:33.315 -03:00 [INF] HTTP POST /Analista/Programador/Dispositivo/Update/3 responded 404 in 0.8032 ms
+2021-06-24 08:44:33.318 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 404 - - 18.0968ms
+2021-06-24 08:45:13.949 -03:00 [INF] Application is shutting down...
+2021-06-24 08:45:27.472 -03:00 [INF] Starting up 20210624084527
+2021-06-24 08:45:29.410 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 08:45:29.414 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 08:45:29.453 -03:00 [INF] Creating key {d0f5e511-cb1a-4519-98e7-e12a97a0583a} with creation date 2021-06-24 11:45:29Z, activation date 2021-06-24 11:45:29Z, and expiration date 2021-09-22 11:45:29Z.
+2021-06-24 08:45:29.485 -03:00 [WRN] No XML encryptor configured. Key {d0f5e511-cb1a-4519-98e7-e12a97a0583a} may be persisted to storage in unencrypted form.
+2021-06-24 08:45:29.808 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 08:45:29.809 -03:00 [INF] Hosting environment: Development
+2021-06-24 08:45:29.810 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 08:45:29.899 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 08:45:30.164 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 296.0281ms
+2021-06-24 08:45:30.188 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 08:45:30.392 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 203.7158ms
+2021-06-24 08:45:46.829 -03:00 [INF] Application is shutting down...
+2021-06-24 08:46:02.159 -03:00 [INF] Starting up 20210624084602
+2021-06-24 08:46:09.364 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 08:46:09.380 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 08:46:09.436 -03:00 [INF] Creating key {4ef53500-2d85-407c-9172-71764d1f9ad0} with creation date 2021-06-24 11:46:09Z, activation date 2021-06-24 11:46:09Z, and expiration date 2021-09-22 11:46:09Z.
+2021-06-24 08:46:09.490 -03:00 [WRN] No XML encryptor configured. Key {4ef53500-2d85-407c-9172-71764d1f9ad0} may be persisted to storage in unencrypted form.
+2021-06-24 08:46:10.199 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 08:46:10.200 -03:00 [INF] Hosting environment: Development
+2021-06-24 08:46:10.201 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 08:46:10.279 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 08:46:10.500 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 243.5236ms
+2021-06-24 08:46:10.515 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 08:46:10.732 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 217.3082ms
+2021-06-24 08:46:11.500 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 08:46:12.592 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1091.5181ms
+2021-06-24 08:50:57.763 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json -
+2021-06-24 08:50:57.771 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 08:50:58.176 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:50:58.272 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:50:58.373 -03:00 [INF] HTTP GET /Analista/Programador/Dispositivo/Update/3 responded 404 in 1.1825 ms
+2021-06-24 08:50:58.377 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json - - 404 - - 624.2137ms
+2021-06-24 08:51:07.650 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 08:51:07.652 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:51:07.656 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:51:07.658 -03:00 [INF] CORS policy execution successful.
+2021-06-24 08:51:07.680 -03:00 [INF] HTTP POST /Analista/Programador/Dispositivo/Update/3 responded 404 in 21.9113 ms
+2021-06-24 08:51:07.696 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 404 - - 46.3590ms
+2021-06-24 08:51:51.704 -03:00 [INF] Application is shutting down...
+2021-06-24 08:52:10.496 -03:00 [INF] Starting up 20210624085210
+2021-06-24 08:52:15.224 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 08:52:15.230 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 08:52:15.284 -03:00 [INF] Creating key {610fb390-b2d5-4220-b668-5cd5082914dc} with creation date 2021-06-24 11:52:15Z, activation date 2021-06-24 11:52:15Z, and expiration date 2021-09-22 11:52:15Z.
+2021-06-24 08:52:15.346 -03:00 [WRN] No XML encryptor configured. Key {610fb390-b2d5-4220-b668-5cd5082914dc} may be persisted to storage in unencrypted form.
+2021-06-24 08:52:15.979 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 08:52:15.979 -03:00 [INF] Hosting environment: Development
+2021-06-24 08:52:15.980 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 08:52:16.046 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 08:52:16.297 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 264.2896ms
+2021-06-24 08:52:16.312 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 08:52:16.604 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 291.4083ms
+2021-06-24 08:52:17.319 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 08:52:18.259 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 940.7259ms
+2021-06-24 08:52:52.290 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 08:52:52.302 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 08:52:52.733 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:52:52.901 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:52:53.058 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 08:53:37.346 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 08:53:37.359 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 44288.6614ms
+2021-06-24 08:53:37.379 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 500 - text/plain;+charset=utf-8 45090.0293ms
+2021-06-24 08:53:48.085 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 08:53:48.097 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:53:48.099 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:53:48.101 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 08:54:04.154 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 08:54:04.160 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 16057.4773ms
+2021-06-24 08:54:04.164 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 500 - text/plain;+charset=utf-8 16078.3374ms
+2021-06-24 08:56:59.704 -03:00 [INF] Application is shutting down...
+2021-06-24 08:57:15.239 -03:00 [INF] Starting up 20210624085715
+2021-06-24 08:57:21.065 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 08:57:21.069 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 08:57:21.121 -03:00 [INF] Creating key {b8421049-646e-4d3b-a832-f6525dcf212d} with creation date 2021-06-24 11:57:21Z, activation date 2021-06-24 11:57:21Z, and expiration date 2021-09-22 11:57:21Z.
+2021-06-24 08:57:21.176 -03:00 [WRN] No XML encryptor configured. Key {b8421049-646e-4d3b-a832-f6525dcf212d} may be persisted to storage in unencrypted form.
+2021-06-24 08:57:21.747 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 08:57:21.747 -03:00 [INF] Hosting environment: Development
+2021-06-24 08:57:21.747 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 08:57:21.839 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 08:57:22.081 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 255.0278ms
+2021-06-24 08:57:22.091 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 08:57:22.438 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 347.0499ms
+2021-06-24 08:57:23.080 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 08:57:24.063 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 982.2450ms
+2021-06-24 08:57:27.295 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 08:57:27.305 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 08:57:27.889 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:57:28.020 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:57:28.248 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 08:58:27.731 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 08:58:27.744 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 59482.9479ms
+2021-06-24 08:58:27.765 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 500 - text/plain;+charset=utf-8 60468.8940ms
+2021-06-24 08:58:31.409 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 08:58:31.417 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 08:58:31.418 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 08:58:31.420 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 08:59:33.232 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 08:59:33.234 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 61813.0037ms
+2021-06-24 08:59:33.237 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 201 - text/plain;+charset=utf-8 61827.4593ms
+2021-06-24 09:00:01.408 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774
+2021-06-24 09:00:01.427 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:00:01.428 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:00:01.428 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:00:21.146 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:00:21.147 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 19717.9809ms
+2021-06-24 09:00:21.154 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774 - 201 - text/plain;+charset=utf-8 19745.3863ms
+2021-06-24 09:06:07.013 -03:00 [INF] Application is shutting down...
+2021-06-24 09:06:20.942 -03:00 [INF] Starting up 20210624090620
+2021-06-24 09:06:29.084 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:06:29.090 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:06:29.132 -03:00 [INF] Creating key {087fd502-ffd3-4b0e-a2c4-3e3b4b3be515} with creation date 2021-06-24 12:06:29Z, activation date 2021-06-24 12:06:29Z, and expiration date 2021-09-22 12:06:29Z.
+2021-06-24 09:06:29.183 -03:00 [WRN] No XML encryptor configured. Key {087fd502-ffd3-4b0e-a2c4-3e3b4b3be515} may be persisted to storage in unencrypted form.
+2021-06-24 09:06:29.855 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:06:29.857 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:06:29.857 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:06:29.915 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:06:30.128 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 219.2485ms
+2021-06-24 09:06:30.135 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:06:30.724 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 588.6419ms
+2021-06-24 09:06:31.330 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:06:32.653 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1322.7811ms
+2021-06-24 09:06:55.052 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774
+2021-06-24 09:06:55.067 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:06:55.503 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:06:55.627 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:06:55.785 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:08:37.467 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:08:37.488 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 101687.1478ms
+2021-06-24 09:08:37.503 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774 - 201 - text/plain;+charset=utf-8 102451.3865ms
+2021-06-24 09:17:29.839 -03:00 [INF] Application is shutting down...
+2021-06-24 09:17:52.176 -03:00 [INF] Starting up 20210624091752
+2021-06-24 09:18:00.604 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:18:00.618 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:18:00.816 -03:00 [INF] Creating key {a18e734e-3d6e-418c-9f21-326e6199e7f0} with creation date 2021-06-24 12:18:00Z, activation date 2021-06-24 12:18:00Z, and expiration date 2021-09-22 12:18:00Z.
+2021-06-24 09:18:00.976 -03:00 [WRN] No XML encryptor configured. Key {a18e734e-3d6e-418c-9f21-326e6199e7f0} may be persisted to storage in unencrypted form.
+2021-06-24 09:18:01.821 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:18:01.822 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:18:01.823 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:18:01.895 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:18:02.210 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 327.7786ms
+2021-06-24 09:18:02.228 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:18:02.520 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 291.8303ms
+2021-06-24 09:18:03.265 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:18:04.823 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1557.2824ms
+2021-06-24 09:18:09.861 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774
+2021-06-24 09:18:09.871 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:18:10.510 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:18:10.608 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:18:10.811 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:19:22.977 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:19:23.000 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 72177.2534ms
+2021-06-24 09:19:23.011 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774 - 201 - text/plain;+charset=utf-8 73149.6434ms
+2021-06-24 09:19:36.205 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774
+2021-06-24 09:19:36.216 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:19:36.219 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:19:36.221 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:20:04.972 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:20:04.974 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 28752.3585ms
+2021-06-24 09:20:04.976 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774 - 201 - text/plain;+charset=utf-8 28771.5019ms
+2021-06-24 09:21:05.733 -03:00 [INF] Application is shutting down...
+2021-06-24 09:21:19.080 -03:00 [INF] Starting up 20210624092119
+2021-06-24 09:21:25.030 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:21:25.035 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:21:25.083 -03:00 [INF] Creating key {6ca63898-5dec-4de5-b5e4-c6d3694a5863} with creation date 2021-06-24 12:21:25Z, activation date 2021-06-24 12:21:25Z, and expiration date 2021-09-22 12:21:25Z.
+2021-06-24 09:21:25.152 -03:00 [WRN] No XML encryptor configured. Key {6ca63898-5dec-4de5-b5e4-c6d3694a5863} may be persisted to storage in unencrypted form.
+2021-06-24 09:21:25.793 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:21:25.793 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:21:25.794 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:21:25.870 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:21:26.107 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 247.6149ms
+2021-06-24 09:21:26.123 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:21:26.510 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 387.2460ms
+2021-06-24 09:21:27.151 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:21:28.136 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 985.1376ms
+2021-06-24 09:21:35.178 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774
+2021-06-24 09:21:35.185 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:21:35.573 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:21:35.669 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:21:35.822 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:22:26.723 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:22:26.739 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 50902.75ms
+2021-06-24 09:22:26.750 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774 - 500 - text/plain;+charset=utf-8 51571.4113ms
+2021-06-24 09:22:56.843 -03:00 [INF] Application is shutting down...
+2021-06-24 09:23:09.713 -03:00 [INF] Starting up 20210624092309
+2021-06-24 09:23:14.883 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:23:14.888 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:23:14.920 -03:00 [INF] Creating key {82b9dd52-f65f-4c73-a921-25cb00571d3a} with creation date 2021-06-24 12:23:14Z, activation date 2021-06-24 12:23:14Z, and expiration date 2021-09-22 12:23:14Z.
+2021-06-24 09:23:14.956 -03:00 [WRN] No XML encryptor configured. Key {82b9dd52-f65f-4c73-a921-25cb00571d3a} may be persisted to storage in unencrypted form.
+2021-06-24 09:23:15.444 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:23:15.444 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:23:15.445 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:23:15.485 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:23:15.652 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 176.0179ms
+2021-06-24 09:23:15.659 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:23:15.840 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 180.8728ms
+2021-06-24 09:23:16.877 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:23:17.661 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 791.4747ms
+2021-06-24 09:23:31.192 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774
+2021-06-24 09:23:31.203 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:23:31.633 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:23:31.873 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:23:32.152 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:24:18.399 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:24:18.417 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 46248.9574ms
+2021-06-24 09:24:18.438 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774 - 201 - text/plain;+charset=utf-8 47245.6228ms
+2021-06-24 09:25:49.263 -03:00 [INF] Application is shutting down...
+2021-06-24 09:26:03.255 -03:00 [INF] Starting up 20210624092603
+2021-06-24 09:26:08.856 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:26:08.860 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:26:08.894 -03:00 [INF] Creating key {ee3344a2-4b1e-4306-9863-0490e75c6724} with creation date 2021-06-24 12:26:08Z, activation date 2021-06-24 12:26:08Z, and expiration date 2021-09-22 12:26:08Z.
+2021-06-24 09:26:08.928 -03:00 [WRN] No XML encryptor configured. Key {ee3344a2-4b1e-4306-9863-0490e75c6724} may be persisted to storage in unencrypted form.
+2021-06-24 09:26:09.408 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:26:09.409 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:26:09.409 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:26:09.472 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:26:09.774 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 313.7780ms
+2021-06-24 09:26:09.787 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:26:10.082 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 294.7502ms
+2021-06-24 09:26:10.928 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:26:11.768 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 840.0055ms
+2021-06-24 09:26:33.410 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774
+2021-06-24 09:26:33.421 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:26:33.840 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:26:33.944 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:26:34.090 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:27:15.118 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:27:15.133 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 41031.8893ms
+2021-06-24 09:27:15.143 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774 - 201 - text/plain;+charset=utf-8 41734.8928ms
+2021-06-24 09:32:57.483 -03:00 [INF] Application is shutting down...
+2021-06-24 09:33:13.311 -03:00 [INF] Starting up 20210624093313
+2021-06-24 09:33:20.532 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:33:20.537 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:33:20.580 -03:00 [INF] Creating key {49e3d16b-72d9-420c-8b1e-b3b9c699e524} with creation date 2021-06-24 12:33:20Z, activation date 2021-06-24 12:33:20Z, and expiration date 2021-09-22 12:33:20Z.
+2021-06-24 09:33:20.624 -03:00 [WRN] No XML encryptor configured. Key {49e3d16b-72d9-420c-8b1e-b3b9c699e524} may be persisted to storage in unencrypted form.
+2021-06-24 09:33:21.099 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:33:21.100 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:33:21.101 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:33:21.156 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:33:21.378 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 231.7622ms
+2021-06-24 09:33:21.387 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:33:21.633 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 245.7781ms
+2021-06-24 09:33:22.325 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:33:23.413 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1088.1882ms
+2021-06-24 09:33:35.757 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774
+2021-06-24 09:33:35.773 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:33:36.249 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:33:36.347 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:33:36.571 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:34:39.660 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:34:39.673 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 63090.4998ms
+2021-06-24 09:34:39.682 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774 - 201 - text/plain;+charset=utf-8 63924.3297ms
+2021-06-24 09:36:19.426 -03:00 [INF] Application is shutting down...
+2021-06-24 09:36:31.115 -03:00 [INF] Starting up 20210624093631
+2021-06-24 09:36:36.234 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:36:36.240 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:36:36.285 -03:00 [INF] Creating key {c75dfbf2-7c56-4ff6-bd10-5115c5e8d01e} with creation date 2021-06-24 12:36:36Z, activation date 2021-06-24 12:36:36Z, and expiration date 2021-09-22 12:36:36Z.
+2021-06-24 09:36:36.327 -03:00 [WRN] No XML encryptor configured. Key {c75dfbf2-7c56-4ff6-bd10-5115c5e8d01e} may be persisted to storage in unencrypted form.
+2021-06-24 09:36:36.840 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:36:36.840 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:36:36.841 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:36:36.893 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:36:37.057 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 172.5380ms
+2021-06-24 09:36:37.074 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:36:37.315 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 241.2554ms
+2021-06-24 09:36:38.090 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:36:39.154 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1063.5090ms
+2021-06-24 09:36:49.109 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774
+2021-06-24 09:36:49.117 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:36:49.592 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:36:49.730 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:36:49.913 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:37:07.973 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:37:07.997 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 18064.1238ms
+2021-06-24 09:37:08.014 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1774 - 201 - text/plain;+charset=utf-8 18904.9661ms
+2021-06-24 09:37:26.097 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1770
+2021-06-24 09:37:26.101 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:37:26.103 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:37:26.105 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:38:19.002 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:38:19.003 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 52897.513ms
+2021-06-24 09:38:19.005 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1770 - 201 - text/plain;+charset=utf-8 52907.9198ms
+2021-06-24 09:38:42.271 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775
+2021-06-24 09:38:42.288 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:38:42.289 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:38:42.289 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:38:42.412 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:38:42.413 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 123.5059ms
+2021-06-24 09:38:42.423 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775 - 201 - text/plain;+charset=utf-8 152.1354ms
+2021-06-24 09:45:12.948 -03:00 [INF] Application is shutting down...
+2021-06-24 09:45:29.082 -03:00 [INF] Starting up 20210624094529
+2021-06-24 09:45:35.555 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:45:35.560 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:45:35.592 -03:00 [INF] Creating key {89b6d9fb-9e4d-4cd4-a5e5-f632b9de3962} with creation date 2021-06-24 12:45:35Z, activation date 2021-06-24 12:45:35Z, and expiration date 2021-09-22 12:45:35Z.
+2021-06-24 09:45:35.647 -03:00 [WRN] No XML encryptor configured. Key {89b6d9fb-9e4d-4cd4-a5e5-f632b9de3962} may be persisted to storage in unencrypted form.
+2021-06-24 09:45:36.269 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:45:36.280 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:45:36.280 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:45:36.324 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:45:36.552 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 233.9509ms
+2021-06-24 09:45:36.562 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:45:36.766 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 203.9842ms
+2021-06-24 09:45:38.172 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:45:39.650 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1478.9133ms
+2021-06-24 09:45:42.011 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775
+2021-06-24 09:45:42.024 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:45:42.615 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:45:42.717 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:45:42.877 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:46:55.641 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:46:55.664 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 72772.1375ms
+2021-06-24 09:46:55.677 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775 - 500 - text/plain;+charset=utf-8 73666.2560ms
+2021-06-24 09:47:01.923 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775
+2021-06-24 09:47:01.929 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:47:01.931 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:47:01.933 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:47:38.242 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:47:38.244 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 36310.9869ms
+2021-06-24 09:47:38.247 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775 - 500 - text/plain;+charset=utf-8 36324.1435ms
+2021-06-24 09:48:15.117 -03:00 [INF] Application is shutting down...
+2021-06-24 09:48:32.103 -03:00 [INF] Starting up 20210624094832
+2021-06-24 09:48:39.245 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:48:39.252 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:48:39.296 -03:00 [INF] Creating key {32ab821b-7d2d-4335-8bb0-7ad52b200418} with creation date 2021-06-24 12:48:39Z, activation date 2021-06-24 12:48:39Z, and expiration date 2021-09-22 12:48:39Z.
+2021-06-24 09:48:39.340 -03:00 [WRN] No XML encryptor configured. Key {32ab821b-7d2d-4335-8bb0-7ad52b200418} may be persisted to storage in unencrypted form.
+2021-06-24 09:48:39.881 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:48:39.881 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:48:39.881 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:48:39.954 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:48:40.177 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 233.4787ms
+2021-06-24 09:48:41.435 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:48:41.820 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 385.4527ms
+2021-06-24 09:48:42.513 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:48:43.332 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 818.9879ms
+2021-06-24 09:48:44.166 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775
+2021-06-24 09:48:44.172 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:48:44.898 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:48:45.000 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:48:45.150 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:49:10.996 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:49:11.008 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 25848.1816ms
+2021-06-24 09:49:11.016 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775 - 201 - text/plain;+charset=utf-8 26849.6062ms
+2021-06-24 09:49:30.421 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775
+2021-06-24 09:49:30.430 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:49:30.431 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:49:30.436 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:49:54.144 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:49:54.145 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 23709.1518ms
+2021-06-24 09:49:54.147 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775 - 201 - text/plain;+charset=utf-8 23725.5201ms
+2021-06-24 09:52:15.183 -03:00 [INF] Application is shutting down...
+2021-06-24 09:52:31.152 -03:00 [INF] Starting up 20210624095231
+2021-06-24 09:52:37.498 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:52:37.506 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:52:37.572 -03:00 [INF] Creating key {039255df-f816-4550-9c24-fc8548202565} with creation date 2021-06-24 12:52:37Z, activation date 2021-06-24 12:52:37Z, and expiration date 2021-09-22 12:52:37Z.
+2021-06-24 09:52:37.644 -03:00 [WRN] No XML encryptor configured. Key {039255df-f816-4550-9c24-fc8548202565} may be persisted to storage in unencrypted form.
+2021-06-24 09:52:38.458 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:52:38.458 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:52:38.459 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:52:38.541 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:52:38.850 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 325.5799ms
+2021-06-24 09:52:38.869 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:52:39.147 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 277.9349ms
+2021-06-24 09:52:41.122 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775
+2021-06-24 09:52:41.132 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:52:42.499 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:52:42.713 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:52:42.863 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:52:43.146 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:52:43.854 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 990.3157ms
+2021-06-24 09:53:12.035 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:53:12.048 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 28891.2519ms
+2021-06-24 09:53:12.058 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775 - 201 - text/plain;+charset=utf-8 30936.3605ms
+2021-06-24 09:55:37.767 -03:00 [INF] Application is shutting down...
+2021-06-24 09:55:52.004 -03:00 [INF] Starting up 20210624095551
+2021-06-24 09:55:58.118 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:55:58.125 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:55:58.168 -03:00 [INF] Creating key {0209a6b7-3bc9-4e12-98fd-0b051b1c9a92} with creation date 2021-06-24 12:55:58Z, activation date 2021-06-24 12:55:58Z, and expiration date 2021-09-22 12:55:58Z.
+2021-06-24 09:55:58.229 -03:00 [WRN] No XML encryptor configured. Key {0209a6b7-3bc9-4e12-98fd-0b051b1c9a92} may be persisted to storage in unencrypted form.
+2021-06-24 09:55:59.168 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:55:59.169 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:55:59.169 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:55:59.215 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:55:59.577 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 372.0173ms
+2021-06-24 09:55:59.635 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:55:59.668 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775
+2021-06-24 09:55:59.685 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:56:00.349 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 712.6755ms
+2021-06-24 09:56:01.306 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:56:01.873 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:56:02.547 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:56:02.797 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:56:03.801 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 2494.7219ms
+2021-06-24 09:56:11.615 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:56:11.627 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 8820.4266ms
+2021-06-24 09:56:11.636 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1775 - 201 - text/plain;+charset=utf-8 11967.9141ms
+2021-06-24 09:56:24.510 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776
+2021-06-24 09:56:24.516 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:56:24.517 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:56:24.519 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:56:27.091 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:56:27.093 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 2573.1218ms
+2021-06-24 09:56:27.094 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1776 - 201 - text/plain;+charset=utf-8 2583.8711ms
+2021-06-24 09:57:17.078 -03:00 [INF] Application is shutting down...
+2021-06-24 09:57:33.995 -03:00 [INF] Starting up 20210624095733
+2021-06-24 09:57:39.443 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 09:57:39.456 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 09:57:39.559 -03:00 [INF] Creating key {bc0fe991-6739-48d1-bc58-2357f55b1606} with creation date 2021-06-24 12:57:39Z, activation date 2021-06-24 12:57:39Z, and expiration date 2021-09-22 12:57:39Z.
+2021-06-24 09:57:39.615 -03:00 [WRN] No XML encryptor configured. Key {bc0fe991-6739-48d1-bc58-2357f55b1606} may be persisted to storage in unencrypted form.
+2021-06-24 09:57:40.313 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 09:57:40.313 -03:00 [INF] Hosting environment: Development
+2021-06-24 09:57:40.313 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 09:57:40.374 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 09:57:40.753 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 391.0753ms
+2021-06-24 09:57:40.778 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 09:57:41.252 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 451.9361ms
+2021-06-24 09:57:42.008 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 09:57:43.265 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1257.1014ms
+2021-06-24 09:57:43.798 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update application/json 1777
+2021-06-24 09:57:43.806 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 09:57:44.712 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:57:45.134 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:57:45.322 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:57:50.631 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:57:50.642 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 5309.7438ms
+2021-06-24 09:57:50.655 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update application/json 1777 - 201 - text/plain;+charset=utf-8 6857.1354ms
+2021-06-24 09:58:13.634 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777
+2021-06-24 09:58:13.640 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 09:58:13.642 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 09:58:13.646 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 09:58:13.767 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 09:58:13.768 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 121.9405ms
+2021-06-24 09:58:13.770 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777 - 201 - text/plain;+charset=utf-8 136.0877ms

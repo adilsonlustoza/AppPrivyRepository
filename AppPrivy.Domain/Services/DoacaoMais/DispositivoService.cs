@@ -3,6 +3,8 @@ using AppPrivy.CrossCutting.UnitOfWork;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
+using AutoMapper;
+using Remotion.Linq.Parsing.Structure.IntermediateModel;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -14,12 +16,14 @@ namespace AppPrivy.Domain.Services.DoacaoMais
     {
         private readonly IDispositivoRepository _dispositivoRepository;
         private const string ListarDispositivosCache = "ListarDispositivosCache";
+        private readonly IMapper _mapper;
 
 
 
-        public DispositivoService(IDispositivoRepository dispositivoRepository) : base(dispositivoRepository)
+        public DispositivoService(IDispositivoRepository dispositivoRepository,IMapper mapper) : base(dispositivoRepository)
         {
             _dispositivoRepository = dispositivoRepository;
+            _mapper = mapper;
           
         }
 
@@ -30,7 +34,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             try
             {  
                 
-               return await _dispositivoRepository.Salva(dispositivo);            
+               return await _dispositivoRepository.SalvaDispositivo(dispositivo);            
               
             }
             catch (Exception ex)
@@ -46,21 +50,18 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             try
             {
 
-                if (!Id.HasValue)
-                    throw new ArgumentException("");
+                  var query =   await _dispositivoRepository.BuscaDispositivoPorDeviceId(dispositivo.DeviceId);
 
-                using (IUnitOfWork _unitOfWork = new TransactionScopeUnitOfWorkFactory(IsolationLevel.Serializable).Create())
+                if (query != null)
                 {
-                                        
-                    await _dispositivoRepository.Atualiza(Id.Value, dispositivo);
-                              
-                    await _dispositivoRepository.SaveChangesAsync();
-
-                    _unitOfWork.Commit();
+                    dispositivo.DispositivoId = query.DispositivoId;
+                    await _dispositivoRepository.AtualizaDispositivo(Id, dispositivo);
                 }
 
 
-                return await Task.FromResult<int?>(Id);
+                return dispositivo.DispositivoId;
+                  
+              
             }
             catch (Exception e)
             {

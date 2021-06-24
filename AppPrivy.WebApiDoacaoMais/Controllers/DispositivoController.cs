@@ -3,6 +3,7 @@ using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Reflection;
@@ -74,10 +75,10 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns>Create device </returns>
         /// <response code="200">Returns device updated</response>
         /// <response code="400">it wasn`t able to ve a device</response>    
-      //  [Authorize(Policy = "DoacaoMais")]
+        [Authorize(Policy = "DoacaoMais")]
         [HttpPost]
         [Route("Save")]
-        public async Task<IActionResult> Save(Dispositivo dispositivo)
+        public async Task<IActionResult> Save([FromBody]Dispositivo dispositivo)
         {
             try
             {
@@ -90,7 +91,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             }
             catch (Exception e)
             {
-                _logger.LogError("Code : {0} Error : {1}", e.GetHashCode() , e);
+                _logger.LogError("Code : {0}  - Error : {1}", e.GetHashCode() , e);
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error to save device - Send this code { e.GetHashCode() } to System Administrator and wait a answer!");
             }
 
@@ -120,21 +121,19 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns>Create device </returns>
         /// <response code="200">Returns device updated</response>
         /// <response code="400">it wasn`t able to ve a device</response>    
-        [Authorize(Roles = "DoacaoMais")]
-        [HttpPut]
-        [Route("Update/{DispositivoId}")]
+       // [Authorize(Policy = "DoacaoMais")]
+        [HttpPost]
+        [Route("Update/{DispositivoId:int?}")]
         public async Task<IActionResult> Update([FromRoute]int? DispositivoId,[FromBody] Dispositivo dispositivo)
         {
             try
             {
-                if(!DispositivoId.HasValue)
-                    return StatusCode(StatusCodes.Status304NotModified, string.Format("Code {0} device not fill", dispositivo.Code));
-
+              
                 var _result = await _dispositivoService.AtualizarDispositivo(DispositivoId, dispositivo);                           
 
                 if (_result == null)
-                    return StatusCode(StatusCodes.Status400BadRequest, string.Format("Code {0} device not updated", dispositivo.Code));
-                return StatusCode(StatusCodes.Status201Created, string.Format("Code {0} device updated", dispositivo.Code));
+                    return StatusCode(StatusCodes.Status400BadRequest, string.Format("Code {0} device not updated", dispositivo.DeviceId));
+                return StatusCode(StatusCodes.Status201Created, string.Format("Entity with Id {0} device updated", _result));
 
             }
             catch (Exception e)
