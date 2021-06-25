@@ -27,6 +27,27 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        [Route("GetByDeviceId/{deviceId}")]
+        public async Task<IActionResult> GetByDeviceId(string deviceId)
+        {
+            try
+            {
+                var _result = await _dispositivoService.GetByDeviceId(deviceId);
+
+                if (_result == null)
+                    return StatusCode(StatusCodes.Status204NoContent, string.Format("Your search returned no results!"));
+                return StatusCode(StatusCodes.Status200OK, _result);
+            }
+            catch (Exception e)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+
+
+        }
+
 
         /// <summary>
         /// List all devices 
@@ -75,7 +96,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns>Create device </returns>
         /// <response code="200">Returns device updated</response>
         /// <response code="400">it wasn`t able to ve a device</response>    
-        [Authorize(Policy = "DoacaoMais")]
+   //     [Authorize(Policy = "DoacaoMais")]
         [HttpPost]
         [Route("Save")]
         public async Task<IActionResult> Save([FromBody]Dispositivo dispositivo)

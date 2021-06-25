@@ -735,3 +735,1061 @@ Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime
 2021-06-24 09:58:13.767 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
 2021-06-24 09:58:13.768 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 121.9405ms
 2021-06-24 09:58:13.770 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777 - 201 - text/plain;+charset=utf-8 136.0877ms
+2021-06-24 10:18:24.115 -03:00 [INF] Application is shutting down...
+2021-06-24 10:18:29.424 -03:00 [INF] Starting up 20210624101829
+2021-06-24 10:18:31.202 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 10:18:31.206 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 10:18:31.233 -03:00 [INF] Creating key {c294ab90-4551-4ac6-a2ad-3de778778a1a} with creation date 2021-06-24 13:18:31Z, activation date 2021-06-24 13:18:31Z, and expiration date 2021-09-22 13:18:31Z.
+2021-06-24 10:18:31.260 -03:00 [WRN] No XML encryptor configured. Key {c294ab90-4551-4ac6-a2ad-3de778778a1a} may be persisted to storage in unencrypted form.
+2021-06-24 10:18:31.508 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 10:18:31.509 -03:00 [INF] Hosting environment: Development
+2021-06-24 10:18:31.509 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 10:18:31.537 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 10:18:31.658 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 129.0372ms
+2021-06-24 10:38:30.376 -03:00 [INF] Starting up 20210624103830
+2021-06-24 10:38:31.413 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 10:38:31.417 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 10:38:31.437 -03:00 [INF] Creating key {98f7659d-7541-4006-b0d1-0a480661f421} with creation date 2021-06-24 13:38:31Z, activation date 2021-06-24 13:38:31Z, and expiration date 2021-09-22 13:38:31Z.
+2021-06-24 10:38:31.455 -03:00 [WRN] No XML encryptor configured. Key {98f7659d-7541-4006-b0d1-0a480661f421} may be persisted to storage in unencrypted form.
+2021-06-24 10:38:31.619 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 10:38:31.619 -03:00 [INF] Hosting environment: Development
+2021-06-24 10:38:31.620 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 10:38:31.642 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 10:38:31.722 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 85.8088ms
+2021-06-24 10:58:31.675 -03:00 [INF] Starting up 20210624105831
+2021-06-24 10:58:32.605 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 10:58:32.608 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 10:58:32.630 -03:00 [INF] Creating key {7728ec05-91e6-4057-af6d-e3f342eb8db6} with creation date 2021-06-24 13:58:32Z, activation date 2021-06-24 13:58:32Z, and expiration date 2021-09-22 13:58:32Z.
+2021-06-24 10:58:32.647 -03:00 [WRN] No XML encryptor configured. Key {7728ec05-91e6-4057-af6d-e3f342eb8db6} may be persisted to storage in unencrypted form.
+2021-06-24 10:58:32.812 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 10:58:32.812 -03:00 [INF] Hosting environment: Development
+2021-06-24 10:58:32.812 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 10:58:32.837 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 10:58:32.921 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 90.2620ms
+2021-06-24 11:18:33.508 -03:00 [INF] Starting up 20210624111833
+2021-06-24 11:18:34.723 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 11:18:34.726 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 11:18:34.756 -03:00 [INF] Creating key {d62642b4-b6b4-43a8-9e3c-89ab20f4260e} with creation date 2021-06-24 14:18:34Z, activation date 2021-06-24 14:18:34Z, and expiration date 2021-09-22 14:18:34Z.
+2021-06-24 11:18:34.782 -03:00 [WRN] No XML encryptor configured. Key {d62642b4-b6b4-43a8-9e3c-89ab20f4260e} may be persisted to storage in unencrypted form.
+2021-06-24 11:18:34.976 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 11:18:34.977 -03:00 [INF] Hosting environment: Development
+2021-06-24 11:18:34.977 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 11:18:35.006 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 11:18:35.090 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 91.7731ms
+2021-06-24 11:38:34.572 -03:00 [INF] Starting up 20210624113834
+2021-06-24 11:38:35.507 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 11:38:35.511 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 11:38:35.532 -03:00 [INF] Creating key {a0fbcbc8-3446-4858-86d2-e259e126fa65} with creation date 2021-06-24 14:38:35Z, activation date 2021-06-24 14:38:35Z, and expiration date 2021-09-22 14:38:35Z.
+2021-06-24 11:38:35.550 -03:00 [WRN] No XML encryptor configured. Key {a0fbcbc8-3446-4858-86d2-e259e126fa65} may be persisted to storage in unencrypted form.
+2021-06-24 11:38:35.711 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 11:38:35.711 -03:00 [INF] Hosting environment: Development
+2021-06-24 11:38:35.711 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 11:38:35.735 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 11:38:35.816 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 87.0599ms
+2021-06-24 11:39:50.642 -03:00 [INF] Starting up 20210624113950
+2021-06-24 11:40:00.420 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 11:40:00.436 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 11:40:00.494 -03:00 [INF] Creating key {e132f585-14bd-47ca-a387-e62d7803b414} with creation date 2021-06-24 14:40:00Z, activation date 2021-06-24 14:40:00Z, and expiration date 2021-09-22 14:40:00Z.
+2021-06-24 11:40:00.558 -03:00 [WRN] No XML encryptor configured. Key {e132f585-14bd-47ca-a387-e62d7803b414} may be persisted to storage in unencrypted form.
+2021-06-24 11:40:01.675 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 11:40:01.676 -03:00 [INF] Hosting environment: Development
+2021-06-24 11:40:01.676 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 11:40:01.761 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 11:40:02.070 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 324.0728ms
+2021-06-24 11:40:02.099 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 11:40:02.445 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 345.0983ms
+2021-06-24 11:40:03.240 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 11:40:04.931 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1691.2441ms
+2021-06-24 11:54:23.822 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Estatistico/ListByType/2 - -
+2021-06-24 11:54:23.857 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 11:54:24.556 -03:00 [INF] Route matched with {action = "ListByType", controller = "Estatistico"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListByType(AppPrivy.Domain.Entities.ObjectValue.TipoEstatisco) on controller AppPrivy.WebApiDoacaoMais.Controllers.EstatisticoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:54:25.884 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - -
+2021-06-24 11:54:26.097 -03:00 [INF] Route matched with {action = "List", controller = "Noticia"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:54:26.097 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - -
+2021-06-24 11:54:26.226 -03:00 [INF] Route matched with {action = "List", controller = "Campanha"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:54:26.327 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - -
+2021-06-24 11:54:26.336 -03:00 [INF] Route matched with {action = "ListWithStores", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListWithStores() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:54:27.378 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - -
+2021-06-24 11:54:27.387 -03:00 [INF] Route matched with {action = "ListAllByCaccc", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllByCaccc() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:54:30.493 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 11:54:30.502 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 1.9597 ms
+2021-06-24 11:54:30.719 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - -
+2021-06-24 11:54:30.727 -03:00 [INF] Route matched with {action = "List", controller = "Bazar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.BazarController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:54:31.854 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 1360.3572ms
+2021-06-24 11:54:37.328 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Noticia, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:54:37.329 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Campanha, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:54:37.333 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Bazar, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:54:37.368 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Estatistico, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:54:37.638 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.EstatisticoController.ListByType (AppPrivy.WebApiDoacaoMais) in 13056.7514ms
+2021-06-24 11:54:37.638 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.BazarController.List (AppPrivy.WebApiDoacaoMais) in 6886.4266ms
+2021-06-24 11:54:37.638 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.List (AppPrivy.WebApiDoacaoMais) in 11387.6803ms
+2021-06-24 11:54:37.665 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:54:37.667 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Estatistico/ListByType/2 - - - 200 1101 application/json;+charset=utf-8 13850.2587ms
+2021-06-24 11:54:37.667 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - - - 200 19299 application/json;+charset=utf-8 11568.8494ms
+2021-06-24 11:54:37.667 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - - - 200 4781 application/json;+charset=utf-8 6947.4206ms
+2021-06-24 11:54:37.716 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:54:37.721 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.List (AppPrivy.WebApiDoacaoMais) in 11624.1837ms
+2021-06-24 11:54:37.722 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - - - 200 34318 application/json;+charset=utf-8 11838.1138ms
+2021-06-24 11:54:37.727 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListWithStores (AppPrivy.WebApiDoacaoMais) in 11391.1111ms
+2021-06-24 11:54:37.728 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - - - 200 11250 application/json;+charset=utf-8 11400.6668ms
+2021-06-24 11:54:37.734 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCaccc (AppPrivy.WebApiDoacaoMais) in 10346.6575ms
+2021-06-24 11:54:37.735 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - - - 200 25153 application/json;+charset=utf-8 10356.9565ms
+2021-06-24 11:56:06.429 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Estatistico/ListByType/2 - -
+2021-06-24 11:56:06.437 -03:00 [INF] Route matched with {action = "ListByType", controller = "Estatistico"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListByType(AppPrivy.Domain.Entities.ObjectValue.TipoEstatisco) on controller AppPrivy.WebApiDoacaoMais.Controllers.EstatisticoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:56:06.440 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Estatistico, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:56:06.444 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.EstatisticoController.ListByType (AppPrivy.WebApiDoacaoMais) in 5.989ms
+2021-06-24 11:56:06.446 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Estatistico/ListByType/2 - - - 200 1101 application/json;+charset=utf-8 16.9168ms
+2021-06-24 11:56:10.588 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - -
+2021-06-24 11:56:10.589 -03:00 [INF] Route matched with {action = "List", controller = "Noticia"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:56:10.596 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - -
+2021-06-24 11:56:10.599 -03:00 [INF] Route matched with {action = "ListAllByCaccc", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllByCaccc() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:56:10.601 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:56:10.593 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Noticia, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:56:10.605 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCaccc (AppPrivy.WebApiDoacaoMais) in 5.8233ms
+2021-06-24 11:56:10.631 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 11:56:10.631 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.1527 ms
+2021-06-24 11:56:10.633 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - -
+2021-06-24 11:56:10.633 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - -
+2021-06-24 11:56:10.633 -03:00 [INF] Route matched with {action = "List", controller = "Campanha"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:56:10.677 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Campanha, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:56:10.677 -03:00 [INF] Route matched with {action = "ListWithStores", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListWithStores() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:56:10.678 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - - - 200 25153 application/json;+charset=utf-8 81.3279ms
+2021-06-24 11:56:10.678 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - -
+2021-06-24 11:56:10.678 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.List (AppPrivy.WebApiDoacaoMais) in 44.9861ms
+2021-06-24 11:56:10.680 -03:00 [INF] Route matched with {action = "List", controller = "Bazar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.BazarController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:56:10.680 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Bazar, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:56:10.682 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.BazarController.List (AppPrivy.WebApiDoacaoMais) in 1.6673ms
+2021-06-24 11:56:10.684 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 53.3143ms
+2021-06-24 11:56:10.685 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.List (AppPrivy.WebApiDoacaoMais) in 95.4799ms
+2021-06-24 11:56:10.687 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - - - 200 34318 application/json;+charset=utf-8 98.2977ms
+2021-06-24 11:56:10.899 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - - - 200 4781 application/json;+charset=utf-8 220.6063ms
+2021-06-24 11:56:10.900 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - - - 200 19299 application/json;+charset=utf-8 267.0975ms
+2021-06-24 11:56:10.913 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:56:10.914 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListWithStores (AppPrivy.WebApiDoacaoMais) in 237.2038ms
+2021-06-24 11:56:10.916 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - - - 200 11250 application/json;+charset=utf-8 282.7822ms
+2021-06-24 11:57:28.134 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - -
+2021-06-24 11:57:28.139 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 11:57:28.320 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 11:57:28.328 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 188.8191ms
+2021-06-24 11:57:28.329 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - - - 200 1148 application/json;+charset=utf-8 195.2165ms
+2021-06-24 12:02:15.845 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 12:02:15.870 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 25.5271ms
+2021-06-24 12:02:16.682 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 12:02:16.785 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/favicon-32x32.png - -
+2021-06-24 12:02:16.849 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 167.5408ms
+2021-06-24 12:02:17.012 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-06-24 12:02:17.016 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/favicon-32x32.png - - - 200 628 image/png 230.8772ms
+2021-06-24 12:07:17.205 -03:00 [INF] Application is shutting down...
+2021-06-24 12:07:45.417 -03:00 [INF] Starting up 20210624120745
+2021-06-24 12:07:52.417 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 12:07:52.423 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 12:07:52.494 -03:00 [INF] Creating key {30f1023b-bc3b-4353-b2a3-afe4fa69635f} with creation date 2021-06-24 15:07:52Z, activation date 2021-06-24 15:07:52Z, and expiration date 2021-09-22 15:07:52Z.
+2021-06-24 12:07:52.579 -03:00 [WRN] No XML encryptor configured. Key {30f1023b-bc3b-4353-b2a3-afe4fa69635f} may be persisted to storage in unencrypted form.
+2021-06-24 12:07:53.315 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 12:07:53.316 -03:00 [INF] Hosting environment: Development
+2021-06-24 12:07:53.316 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 12:07:53.377 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 12:07:53.636 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 269.4568ms
+2021-06-24 12:07:53.652 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 12:07:54.001 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 349.3456ms
+2021-06-24 12:07:55.095 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 12:07:56.578 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1483.6145ms
+2021-06-24 12:13:20.594 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - -
+2021-06-24 12:13:20.605 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 12:13:22.809 -03:00 [INF] Route matched with {action = "GetByDeviceId", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByDeviceId(System.String) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:13:38.873 -03:00 [INF] Executing ObjectResult, writing value of type 'AppPrivy.Domain.Entities.DoacaoMais.Dispositivo'.
+2021-06-24 12:13:39.325 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.GetByDeviceId (AppPrivy.WebApiDoacaoMais) in 16500.3747ms
+2021-06-24 12:13:39.462 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - - - 200 441 application/json;+charset=utf-8 18870.0842ms
+2021-06-24 12:15:02.158 -03:00 [INF] Application is shutting down...
+2021-06-24 12:15:15.459 -03:00 [INF] Starting up 20210624121515
+2021-06-24 12:15:30.201 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 12:15:30.207 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 12:15:30.252 -03:00 [INF] Creating key {d398fced-521b-42a1-99fc-9747c14bbef7} with creation date 2021-06-24 15:15:30Z, activation date 2021-06-24 15:15:30Z, and expiration date 2021-09-22 15:15:30Z.
+2021-06-24 12:15:30.311 -03:00 [WRN] No XML encryptor configured. Key {d398fced-521b-42a1-99fc-9747c14bbef7} may be persisted to storage in unencrypted form.
+2021-06-24 12:15:30.917 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 12:15:30.918 -03:00 [INF] Hosting environment: Development
+2021-06-24 12:15:30.918 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 12:15:30.971 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 12:15:31.190 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 228.8667ms
+2021-06-24 12:15:31.200 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 12:15:31.364 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 164.1467ms
+2021-06-24 12:15:32.286 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 12:15:33.879 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1592.4819ms
+2021-06-24 12:36:05.039 -03:00 [INF] Application is shutting down...
+2021-06-24 12:36:12.784 -03:00 [INF] Starting up 20210624123612
+2021-06-24 12:36:15.834 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 12:36:15.840 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 12:36:16.094 -03:00 [INF] Creating key {a4b3bc56-c78b-42b6-817f-3a3c69750347} with creation date 2021-06-24 15:36:16Z, activation date 2021-06-24 15:36:16Z, and expiration date 2021-09-22 15:36:16Z.
+2021-06-24 12:36:16.231 -03:00 [WRN] No XML encryptor configured. Key {a4b3bc56-c78b-42b6-817f-3a3c69750347} may be persisted to storage in unencrypted form.
+2021-06-24 12:36:16.982 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 12:36:16.983 -03:00 [INF] Hosting environment: Development
+2021-06-24 12:36:16.983 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 12:36:17.046 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 12:36:17.280 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 253.4156ms
+2021-06-24 12:36:52.405 -03:00 [INF] Starting up 20210624123652
+2021-06-24 12:36:57.845 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 12:36:57.856 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 12:36:57.902 -03:00 [INF] Creating key {e92ec2bc-0f4e-4453-8dbc-c71b669e602a} with creation date 2021-06-24 15:36:57Z, activation date 2021-06-24 15:36:57Z, and expiration date 2021-09-22 15:36:57Z.
+2021-06-24 12:36:57.953 -03:00 [WRN] No XML encryptor configured. Key {e92ec2bc-0f4e-4453-8dbc-c71b669e602a} may be persisted to storage in unencrypted form.
+2021-06-24 12:36:58.545 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 12:36:58.545 -03:00 [INF] Hosting environment: Development
+2021-06-24 12:36:58.546 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 12:36:58.594 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 12:36:58.817 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 229.6002ms
+2021-06-24 12:36:58.825 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 12:36:59.119 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 293.7863ms
+2021-06-24 12:36:59.801 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 12:37:01.386 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1585.1022ms
+2021-06-24 12:39:48.039 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - -
+2021-06-24 12:39:48.039 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - -
+2021-06-24 12:39:48.041 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - -
+2021-06-24 12:39:48.073 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - -
+2021-06-24 12:39:48.079 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 12:39:48.532 -03:00 [INF] Route matched with {action = "List", controller = "Bazar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.BazarController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:39:48.532 -03:00 [INF] Route matched with {action = "ListWithStores", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListWithStores() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:39:48.534 -03:00 [INF] Route matched with {action = "List", controller = "Noticia"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:39:48.532 -03:00 [INF] Route matched with {action = "ListAllByCaccc", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllByCaccc() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:39:49.544 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - -
+2021-06-24 12:39:49.558 -03:00 [INF] Route matched with {action = "List", controller = "Campanha"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:39:51.038 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 12:39:51.046 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 1.6426 ms
+2021-06-24 12:39:51.483 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 445.1669ms
+2021-06-24 12:39:55.716 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Bazar, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 12:39:55.716 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Noticia, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 12:39:55.715 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Campanha, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 12:39:55.956 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.BazarController.List (AppPrivy.WebApiDoacaoMais) in 7406.7053ms
+2021-06-24 12:39:55.959 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.List (AppPrivy.WebApiDoacaoMais) in 6382.15ms
+2021-06-24 12:39:55.982 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - - - 200 19299 application/json;+charset=utf-8 6437.0541ms
+2021-06-24 12:39:55.982 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - - - 200 4781 application/json;+charset=utf-8 7941.6158ms
+2021-06-24 12:39:55.992 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.List (AppPrivy.WebApiDoacaoMais) in 7457.2ms
+2021-06-24 12:39:55.994 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - - - 200 34318 application/json;+charset=utf-8 7954.7559ms
+2021-06-24 12:39:56.196 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 12:39:56.209 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 12:39:56.232 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListWithStores (AppPrivy.WebApiDoacaoMais) in 7698.7317ms
+2021-06-24 12:39:56.234 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - - - 200 11250 application/json;+charset=utf-8 8160.8853ms
+2021-06-24 12:39:56.238 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCaccc (AppPrivy.WebApiDoacaoMais) in 7703.3751ms
+2021-06-24 12:39:56.239 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - - - 200 25153 application/json;+charset=utf-8 8200.0002ms
+2021-06-24 12:40:03.792 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 12:40:03.839 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.1195 ms
+2021-06-24 12:40:03.842 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 49.3057ms
+2021-06-24 12:40:44.324 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - -
+2021-06-24 12:40:44.367 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:40:45.072 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 12:40:45.081 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 712.7508ms
+2021-06-24 12:40:45.084 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - - - 200 1148 application/json;+charset=utf-8 759.5847ms
+2021-06-24 12:41:30.195 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - -
+2021-06-24 12:41:30.198 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:41:30.199 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 12:41:30.202 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 3.4743ms
+2021-06-24 12:41:30.204 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - - - 200 1148 application/json;+charset=utf-8 8.6468ms
+2021-06-24 12:42:13.112 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - -
+2021-06-24 12:42:13.150 -03:00 [INF] Route matched with {action = "GetByDeviceId", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByDeviceId(System.String) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:42:13.999 -03:00 [INF] Executing ObjectResult, writing value of type 'AppPrivy.Domain.Entities.DoacaoMais.Dispositivo'.
+2021-06-24 12:42:14.008 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.GetByDeviceId (AppPrivy.WebApiDoacaoMais) in 856.5595ms
+2021-06-24 12:42:14.009 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - - - 200 441 application/json;+charset=utf-8 896.9469ms
+2021-06-24 12:42:32.607 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - -
+2021-06-24 12:42:32.607 -03:00 [INF] Route matched with {action = "GetByDeviceId", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByDeviceId(System.String) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:42:32.657 -03:00 [INF] Executing ObjectResult, writing value of type 'AppPrivy.Domain.Entities.DoacaoMais.Dispositivo'.
+2021-06-24 12:42:32.658 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.GetByDeviceId (AppPrivy.WebApiDoacaoMais) in 50.2287ms
+2021-06-24 12:42:32.659 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - - - 200 441 application/json;+charset=utf-8 52.0956ms
+2021-06-24 12:42:41.108 -03:00 [INF] Request starting HTTP/1.1 HEAD http://192.168.15.5:81/Analista/Programador/Auth/Login/ - -
+2021-06-24 12:42:41.127 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Appointment.Application.ViewsModels.UserToken]] Login(Appointment.Application.ViewsModels.UserToken) on controller AppPrivy.WebApiDoacaoMais.Controllers.AuthController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:42:41.252 -03:00 [INF] Entity Framework Core 5.0.3 initialized 'AppPrivyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery MigrationsAssembly=AppPrivy.WebAppMvc 
+2021-06-24 12:42:41.366 -03:00 [INF] Executed DbCommand (65ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Security].[User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2021-06-24 12:42:41.821 -03:00 [INF] Executed DbCommand (54ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[UserId], [u].[ClaimType], [u].[ClaimValue]
+FROM [Security].[UserClaim] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-06-24 12:42:42.012 -03:00 [INF] Executed DbCommand (87ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Name]
+FROM [Security].[UserRole] AS [u]
+INNER JOIN [Security].[Role] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[UserId] = @__userId_0
+2021-06-24 12:42:42.018 -03:00 [INF] Entity Framework Core 5.0.3 initialized 'AppPrivyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery MigrationsAssembly=AppPrivy.WebAppMvc 
+2021-06-24 12:42:42.038 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Security].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2021-06-24 12:42:42.121 -03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[ClaimType], [r].[ClaimValue]
+FROM [Security].[RoleClaim] AS [r]
+WHERE [r].[RoleId] = @__role_Id_0
+2021-06-24 12:42:42.186 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-06-24 12:42:42.639 -03:00 [INF] Executing ObjectResult, writing value of type 'Appointment.Application.ViewsModels.UserToken'.
+2021-06-24 12:42:42.649 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais) in 1520.9694ms
+2021-06-24 12:42:42.656 -03:00 [INF] Request finished HTTP/1.1 HEAD http://192.168.15.5:81/Analista/Programador/Auth/Login/ - - - 200 56 application/json;+charset=utf-8 1548.4112ms
+2021-06-24 12:42:43.625 -03:00 [INF] Request starting HTTP/1.1 POST http://192.168.15.5:81/Analista/Programador/Dispositivo/Save/ application/json;+charset=utf-8 1430
+2021-06-24 12:42:43.799 -03:00 [INF] Successfully validated the token.
+2021-06-24 12:42:43.813 -03:00 [INF] Route matched with {action = "Save", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 12:42:43.827 -03:00 [INF] Authorization was successful.
+2021-06-24 12:42:46.249 -03:00 [ERR] Code : 36377660  - Error : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'DeviceIdNotRepeat'. Cannot insert duplicate key in object 'DoacaoMais.Dispositivo'. The duplicate key value is (QP1A.190711.020).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:8229e5c2-9999-4185-87ae-f2ba2c35e33a
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at AppPrivy.Domain.Services.DoacaoMais.DispositivoService.AdicionarDispositivo(Dispositivo dispositivo) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Domain\Services\DoacaoMais\DispositivoService.cs:line 40
+   at AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save(Dispositivo dispositivo) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\Controllers\DispositivoController.cs:line 106
+2021-06-24 12:42:46.251 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 12:42:46.252 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save (AppPrivy.WebApiDoacaoMais) in 2438.7859ms
+2021-06-24 12:42:46.254 -03:00 [INF] Request finished HTTP/1.1 POST http://192.168.15.5:81/Analista/Programador/Dispositivo/Save/ application/json;+charset=utf-8 1430 - 500 - text/plain;+charset=utf-8 2628.4248ms
+2021-06-24 12:44:12.130 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 12:44:12.133 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.8531 ms
+2021-06-24 12:44:12.143 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 12.8868ms
+2021-06-24 13:04:45.340 -03:00 [INF] Application is shutting down...
+2021-06-24 13:04:51.850 -03:00 [INF] Starting up 20210624130451
+2021-06-24 13:04:53.051 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 13:04:53.056 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 13:04:53.077 -03:00 [INF] Creating key {06cffe23-7c52-4417-85ce-6569af002678} with creation date 2021-06-24 16:04:53Z, activation date 2021-06-24 16:04:53Z, and expiration date 2021-09-22 16:04:53Z.
+2021-06-24 13:04:53.176 -03:00 [WRN] No XML encryptor configured. Key {06cffe23-7c52-4417-85ce-6569af002678} may be persisted to storage in unencrypted form.
+2021-06-24 13:04:53.514 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 13:04:53.515 -03:00 [INF] Hosting environment: Development
+2021-06-24 13:04:53.515 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 13:04:53.541 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 13:04:53.648 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 113.6312ms
+2021-06-24 13:24:51.446 -03:00 [INF] Starting up 20210624132451
+2021-06-24 13:24:52.386 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 13:24:52.389 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 13:24:52.412 -03:00 [INF] Creating key {821e643d-7adf-4689-be87-198abacb4d71} with creation date 2021-06-24 16:24:52Z, activation date 2021-06-24 16:24:52Z, and expiration date 2021-09-22 16:24:52Z.
+2021-06-24 13:24:52.428 -03:00 [WRN] No XML encryptor configured. Key {821e643d-7adf-4689-be87-198abacb4d71} may be persisted to storage in unencrypted form.
+2021-06-24 13:24:52.593 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 13:24:52.593 -03:00 [INF] Hosting environment: Development
+2021-06-24 13:24:52.593 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 13:24:52.617 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 13:24:52.703 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 92.7054ms
+2021-06-24 13:44:52.939 -03:00 [INF] Starting up 20210624134452
+2021-06-24 13:44:53.862 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 13:44:53.866 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 13:44:53.887 -03:00 [INF] Creating key {d24caeef-9b78-410b-a5b3-c13b901d3640} with creation date 2021-06-24 16:44:53Z, activation date 2021-06-24 16:44:53Z, and expiration date 2021-09-22 16:44:53Z.
+2021-06-24 13:44:53.904 -03:00 [WRN] No XML encryptor configured. Key {d24caeef-9b78-410b-a5b3-c13b901d3640} may be persisted to storage in unencrypted form.
+2021-06-24 13:44:54.063 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 13:44:54.063 -03:00 [INF] Hosting environment: Development
+2021-06-24 13:44:54.063 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 13:44:54.087 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 13:44:54.169 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 87.5616ms
+2021-06-24 14:04:56.543 -03:00 [INF] Starting up 20210624140456
+2021-06-24 14:04:57.684 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 14:04:57.689 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 14:04:57.710 -03:00 [INF] Creating key {16b4dc88-2730-469c-a8d8-ecdc446986d2} with creation date 2021-06-24 17:04:57Z, activation date 2021-06-24 17:04:57Z, and expiration date 2021-09-22 17:04:57Z.
+2021-06-24 14:04:57.729 -03:00 [WRN] No XML encryptor configured. Key {16b4dc88-2730-469c-a8d8-ecdc446986d2} may be persisted to storage in unencrypted form.
+2021-06-24 14:04:57.896 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 14:04:57.897 -03:00 [INF] Hosting environment: Development
+2021-06-24 14:04:57.897 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 14:04:57.931 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 14:04:58.015 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 92.6826ms
+2021-06-24 14:24:56.159 -03:00 [INF] Starting up 20210624142456
+2021-06-24 14:24:57.065 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 14:24:57.069 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 14:24:57.089 -03:00 [INF] Creating key {bed3edd2-a2e5-4c27-9a8d-b5d2ad0ad836} with creation date 2021-06-24 17:24:57Z, activation date 2021-06-24 17:24:57Z, and expiration date 2021-09-22 17:24:57Z.
+2021-06-24 14:24:57.107 -03:00 [WRN] No XML encryptor configured. Key {bed3edd2-a2e5-4c27-9a8d-b5d2ad0ad836} may be persisted to storage in unencrypted form.
+2021-06-24 14:24:57.264 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 14:24:57.264 -03:00 [INF] Hosting environment: Development
+2021-06-24 14:24:57.264 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 14:24:57.288 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 14:24:57.369 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 86.8600ms
+2021-06-24 14:44:57.594 -03:00 [INF] Starting up 20210624144457
+2021-06-24 14:44:58.508 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 14:44:58.511 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 14:44:58.532 -03:00 [INF] Creating key {8d0a7834-268b-4719-9251-6ba7ef708015} with creation date 2021-06-24 17:44:58Z, activation date 2021-06-24 17:44:58Z, and expiration date 2021-09-22 17:44:58Z.
+2021-06-24 14:44:58.548 -03:00 [WRN] No XML encryptor configured. Key {8d0a7834-268b-4719-9251-6ba7ef708015} may be persisted to storage in unencrypted form.
+2021-06-24 14:44:58.704 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 14:44:58.705 -03:00 [INF] Hosting environment: Development
+2021-06-24 14:44:58.705 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 14:44:58.728 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 14:44:58.808 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 85.3867ms
+2021-06-24 15:04:59.287 -03:00 [INF] Starting up 20210624150459
+2021-06-24 15:05:00.316 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 15:05:00.320 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 15:05:00.340 -03:00 [INF] Creating key {40686c8f-1114-492c-ab19-f1c100241b80} with creation date 2021-06-24 18:05:00Z, activation date 2021-06-24 18:05:00Z, and expiration date 2021-09-22 18:05:00Z.
+2021-06-24 15:05:00.357 -03:00 [WRN] No XML encryptor configured. Key {40686c8f-1114-492c-ab19-f1c100241b80} may be persisted to storage in unencrypted form.
+2021-06-24 15:05:00.513 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 15:05:00.514 -03:00 [INF] Hosting environment: Development
+2021-06-24 15:05:00.514 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 15:05:00.537 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 15:05:00.617 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 85.8031ms
+2021-06-24 15:25:00.603 -03:00 [INF] Starting up 20210624152500
+2021-06-24 15:25:01.524 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 15:25:01.528 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 15:25:01.552 -03:00 [INF] Creating key {158e656b-c0b2-42e3-9f9d-559b0410b9e0} with creation date 2021-06-24 18:25:01Z, activation date 2021-06-24 18:25:01Z, and expiration date 2021-09-22 18:25:01Z.
+2021-06-24 15:25:01.570 -03:00 [WRN] No XML encryptor configured. Key {158e656b-c0b2-42e3-9f9d-559b0410b9e0} may be persisted to storage in unencrypted form.
+2021-06-24 15:25:01.729 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 15:25:01.729 -03:00 [INF] Hosting environment: Development
+2021-06-24 15:25:01.729 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 15:25:01.754 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 15:25:01.833 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 86.0835ms
+2021-06-24 15:45:02.125 -03:00 [INF] Starting up 20210624154502
+2021-06-24 15:45:03.028 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 15:45:03.031 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 15:45:03.052 -03:00 [INF] Creating key {1bab3d6c-c56c-4d7c-bc3b-0f51d6fd3c79} with creation date 2021-06-24 18:45:03Z, activation date 2021-06-24 18:45:03Z, and expiration date 2021-09-22 18:45:03Z.
+2021-06-24 15:45:03.071 -03:00 [WRN] No XML encryptor configured. Key {1bab3d6c-c56c-4d7c-bc3b-0f51d6fd3c79} may be persisted to storage in unencrypted form.
+2021-06-24 15:45:03.224 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 15:45:03.225 -03:00 [INF] Hosting environment: Development
+2021-06-24 15:45:03.226 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 15:45:03.248 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 15:45:03.327 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 84.6209ms
+2021-06-24 16:05:03.569 -03:00 [INF] Starting up 20210624160503
+2021-06-24 16:05:04.467 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 16:05:04.471 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 16:05:04.491 -03:00 [INF] Creating key {4bad7d2a-d272-4c52-b6c1-73f05a38dc43} with creation date 2021-06-24 19:05:04Z, activation date 2021-06-24 19:05:04Z, and expiration date 2021-09-22 19:05:04Z.
+2021-06-24 16:05:04.508 -03:00 [WRN] No XML encryptor configured. Key {4bad7d2a-d272-4c52-b6c1-73f05a38dc43} may be persisted to storage in unencrypted form.
+2021-06-24 16:05:04.662 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 16:05:04.662 -03:00 [INF] Hosting environment: Development
+2021-06-24 16:05:04.663 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 16:05:04.686 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 16:05:04.765 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 84.5682ms
+2021-06-24 16:25:05.351 -03:00 [INF] Starting up 20210624162505
+2021-06-24 16:25:06.284 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 16:25:06.287 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 16:25:06.312 -03:00 [INF] Creating key {4b3a2367-f05c-4696-928c-cf3a6c32d4ac} with creation date 2021-06-24 19:25:06Z, activation date 2021-06-24 19:25:06Z, and expiration date 2021-09-22 19:25:06Z.
+2021-06-24 16:25:06.329 -03:00 [WRN] No XML encryptor configured. Key {4b3a2367-f05c-4696-928c-cf3a6c32d4ac} may be persisted to storage in unencrypted form.
+2021-06-24 16:25:06.485 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 16:25:06.486 -03:00 [INF] Hosting environment: Development
+2021-06-24 16:25:06.486 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 16:25:06.509 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 16:25:06.590 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 86.5450ms
+2021-06-24 16:45:06.715 -03:00 [INF] Starting up 20210624164506
+2021-06-24 16:45:07.610 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 16:45:07.613 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 16:45:07.633 -03:00 [INF] Creating key {6ecb7463-7d7b-4814-aa56-a4484157277b} with creation date 2021-06-24 19:45:07Z, activation date 2021-06-24 19:45:07Z, and expiration date 2021-09-22 19:45:07Z.
+2021-06-24 16:45:07.650 -03:00 [WRN] No XML encryptor configured. Key {6ecb7463-7d7b-4814-aa56-a4484157277b} may be persisted to storage in unencrypted form.
+2021-06-24 16:45:07.806 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 16:45:07.830 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 16:45:07.835 -03:00 [INF] Hosting environment: Development
+2021-06-24 16:45:07.836 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 16:45:07.915 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 90.9936ms
+2021-06-24 17:05:08.303 -03:00 [INF] Starting up 20210624170508
+2021-06-24 17:05:09.203 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 17:05:09.206 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 17:05:09.228 -03:00 [INF] Creating key {71ffd229-3e71-467b-b073-043f46c2dced} with creation date 2021-06-24 20:05:09Z, activation date 2021-06-24 20:05:09Z, and expiration date 2021-09-22 20:05:09Z.
+2021-06-24 17:05:09.246 -03:00 [WRN] No XML encryptor configured. Key {71ffd229-3e71-467b-b073-043f46c2dced} may be persisted to storage in unencrypted form.
+2021-06-24 17:05:09.405 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 17:05:09.405 -03:00 [INF] Hosting environment: Development
+2021-06-24 17:05:09.406 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 17:05:09.429 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 17:05:09.511 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 87.6916ms
+2021-06-24 17:25:09.904 -03:00 [INF] Starting up 20210624172509
+2021-06-24 17:25:11.313 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 17:25:11.319 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 17:25:11.349 -03:00 [INF] Creating key {274d86d4-b69f-43c1-8c15-f54e8f170c07} with creation date 2021-06-24 20:25:11Z, activation date 2021-06-24 20:25:11Z, and expiration date 2021-09-22 20:25:11Z.
+2021-06-24 17:25:11.371 -03:00 [WRN] No XML encryptor configured. Key {274d86d4-b69f-43c1-8c15-f54e8f170c07} may be persisted to storage in unencrypted form.
+2021-06-24 17:25:11.557 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 17:25:11.557 -03:00 [INF] Hosting environment: Development
+2021-06-24 17:25:11.557 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 17:25:11.588 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 17:25:11.686 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 107.8838ms
+2021-06-24 17:45:11.239 -03:00 [INF] Starting up 20210624174511
+2021-06-24 17:45:12.254 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 17:45:12.258 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 17:45:12.278 -03:00 [INF] Creating key {e5b299a0-b6e4-4af0-90d7-66bd7114a2e8} with creation date 2021-06-24 20:45:12Z, activation date 2021-06-24 20:45:12Z, and expiration date 2021-09-22 20:45:12Z.
+2021-06-24 17:45:12.297 -03:00 [WRN] No XML encryptor configured. Key {e5b299a0-b6e4-4af0-90d7-66bd7114a2e8} may be persisted to storage in unencrypted form.
+2021-06-24 17:45:12.500 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 17:45:12.500 -03:00 [INF] Hosting environment: Development
+2021-06-24 17:45:12.501 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 17:45:12.525 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 17:45:12.603 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 82.7421ms
+2021-06-24 18:05:12.443 -03:00 [INF] Starting up 20210624180512
+2021-06-24 18:05:13.358 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 18:05:13.361 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 18:05:13.382 -03:00 [INF] Creating key {60b456e6-0ff5-4906-9436-6dcafbb87b73} with creation date 2021-06-24 21:05:13Z, activation date 2021-06-24 21:05:13Z, and expiration date 2021-09-22 21:05:13Z.
+2021-06-24 18:05:13.400 -03:00 [WRN] No XML encryptor configured. Key {60b456e6-0ff5-4906-9436-6dcafbb87b73} may be persisted to storage in unencrypted form.
+2021-06-24 18:05:13.558 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 18:05:13.559 -03:00 [INF] Hosting environment: Development
+2021-06-24 18:05:13.559 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 18:05:13.583 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 18:05:13.664 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 87.7284ms
+2021-06-24 18:25:13.914 -03:00 [INF] Starting up 20210624182513
+2021-06-24 18:25:14.822 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 18:25:14.826 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 18:25:14.847 -03:00 [INF] Creating key {a02b88a6-5b92-444b-ac68-b8fb5768c2a1} with creation date 2021-06-24 21:25:14Z, activation date 2021-06-24 21:25:14Z, and expiration date 2021-09-22 21:25:14Z.
+2021-06-24 18:25:14.863 -03:00 [WRN] No XML encryptor configured. Key {a02b88a6-5b92-444b-ac68-b8fb5768c2a1} may be persisted to storage in unencrypted form.
+2021-06-24 18:25:15.020 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 18:25:15.021 -03:00 [INF] Hosting environment: Development
+2021-06-24 18:25:15.021 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 18:25:15.044 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 18:25:15.124 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 86.0642ms
+2021-06-24 18:40:43.322 -03:00 [INF] Starting up 20210624184043
+2021-06-24 18:41:51.356 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 18:41:51.361 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 18:41:51.417 -03:00 [INF] Creating key {1aa40975-63f0-4a3f-b471-978b9c9862dc} with creation date 2021-06-24 21:41:51Z, activation date 2021-06-24 21:41:51Z, and expiration date 2021-09-22 21:41:51Z.
+2021-06-24 18:41:51.513 -03:00 [WRN] No XML encryptor configured. Key {1aa40975-63f0-4a3f-b471-978b9c9862dc} may be persisted to storage in unencrypted form.
+2021-06-24 18:41:54.507 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 18:41:54.507 -03:00 [INF] Hosting environment: Development
+2021-06-24 18:41:54.507 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 18:41:54.958 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 18:41:55.688 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 753.5720ms
+2021-06-24 18:41:55.722 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 18:41:56.170 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 447.7320ms
+2021-06-24 18:42:11.985 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 18:42:14.016 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 2031.0422ms
+2021-06-24 18:48:45.128 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Estatistico/ListByType/2 - -
+2021-06-24 18:48:45.164 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 18:48:45.980 -03:00 [INF] Route matched with {action = "ListByType", controller = "Estatistico"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListByType(AppPrivy.Domain.Entities.ObjectValue.TipoEstatisco) on controller AppPrivy.WebApiDoacaoMais.Controllers.EstatisticoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:48:51.514 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Estatistico, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 18:48:51.728 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.EstatisticoController.ListByType (AppPrivy.WebApiDoacaoMais) in 5731.442ms
+2021-06-24 18:48:51.757 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Estatistico/ListByType/2 - - - 200 1101 application/json;+charset=utf-8 6628.9606ms
+2021-06-24 18:48:53.134 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - -
+2021-06-24 18:48:53.138 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - -
+2021-06-24 18:48:53.153 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 18:48:53.161 -03:00 [INF] Route matched with {action = "List", controller = "Bazar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.BazarController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:48:53.169 -03:00 [INF] Route matched with {action = "ListAllByCaccc", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllByCaccc() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:48:53.169 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 2.0048 ms
+2021-06-24 18:48:53.218 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - -
+2021-06-24 18:48:53.229 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - -
+2021-06-24 18:48:53.237 -03:00 [INF] Route matched with {action = "List", controller = "Campanha"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:48:53.238 -03:00 [INF] Route matched with {action = "List", controller = "Noticia"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:48:53.321 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 167.7772ms
+2021-06-24 18:48:53.321 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - -
+2021-06-24 18:48:53.337 -03:00 [INF] Route matched with {action = "ListWithStores", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListWithStores() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:48:53.660 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Campanha, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 18:48:53.691 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.List (AppPrivy.WebApiDoacaoMais) in 453.1123ms
+2021-06-24 18:48:53.699 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Noticia, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 18:48:53.764 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Bazar, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 18:48:53.786 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.BazarController.List (AppPrivy.WebApiDoacaoMais) in 624.469ms
+2021-06-24 18:48:53.822 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - - - 200 4781 application/json;+charset=utf-8 687.2212ms
+2021-06-24 18:48:53.823 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - - - 200 19299 application/json;+charset=utf-8 593.8537ms
+2021-06-24 18:48:53.892 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.List (AppPrivy.WebApiDoacaoMais) in 653.5319ms
+2021-06-24 18:48:53.901 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - - - 200 34318 application/json;+charset=utf-8 683.5093ms
+2021-06-24 18:48:54.168 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 18:48:54.221 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListWithStores (AppPrivy.WebApiDoacaoMais) in 883.6984ms
+2021-06-24 18:48:54.249 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 18:48:54.272 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCaccc (AppPrivy.WebApiDoacaoMais) in 1102.2484ms
+2021-06-24 18:48:54.273 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - - - 200 11250 application/json;+charset=utf-8 951.8363ms
+2021-06-24 18:48:54.306 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - - - 200 25153 application/json;+charset=utf-8 1168.3569ms
+2021-06-24 18:49:19.078 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 18:49:19.085 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 7.4865ms
+2021-06-24 18:49:19.579 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 18:49:19.662 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/favicon-32x32.png - -
+2021-06-24 18:49:19.717 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 137.2916ms
+2021-06-24 18:49:19.737 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-06-24 18:49:19.742 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/favicon-32x32.png - - - 200 628 image/png 79.4715ms
+2021-06-24 18:49:24.739 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - -
+2021-06-24 18:49:24.741 -03:00 [INF] Route matched with {action = "ListAllByCaccc", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllByCaccc() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:49:24.744 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 18:49:24.749 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCaccc (AppPrivy.WebApiDoacaoMais) in 6.8793ms
+2021-06-24 18:49:24.863 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - - - 200 25153 application/json;+charset=utf-8 124.0883ms
+2021-06-24 18:49:33.646 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 18:49:33.648 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.2238 ms
+2021-06-24 18:49:33.651 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 4.5473ms
+2021-06-24 18:49:56.442 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 18:49:56.444 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 1.0717 ms
+2021-06-24 18:49:56.446 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 4.1266ms
+2021-06-24 18:50:06.665 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 18:50:06.666 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.0206 ms
+2021-06-24 18:50:06.668 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 2.9300ms
+2021-06-24 18:51:24.243 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - -
+2021-06-24 18:51:24.253 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:51:24.433 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 18:51:24.444 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 190.0155ms
+2021-06-24 18:51:24.453 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - - - 200 1148 application/json;+charset=utf-8 210.1711ms
+2021-06-24 18:52:04.124 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - -
+2021-06-24 18:52:04.140 -03:00 [INF] Route matched with {action = "GetByDeviceId", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByDeviceId(System.String) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:52:04.676 -03:00 [INF] Executing ObjectResult, writing value of type 'AppPrivy.Domain.Entities.DoacaoMais.Dispositivo'.
+2021-06-24 18:52:04.684 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.GetByDeviceId (AppPrivy.WebApiDoacaoMais) in 543.7901ms
+2021-06-24 18:52:04.685 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - - - 200 441 application/json;+charset=utf-8 561.2978ms
+2021-06-24 18:53:25.080 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - -
+2021-06-24 18:53:25.081 -03:00 [INF] Route matched with {action = "GetByDeviceId", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByDeviceId(System.String) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:53:25.108 -03:00 [INF] Executing ObjectResult, writing value of type 'AppPrivy.Domain.Entities.DoacaoMais.Dispositivo'.
+2021-06-24 18:53:25.109 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.GetByDeviceId (AppPrivy.WebApiDoacaoMais) in 26.7422ms
+2021-06-24 18:53:25.109 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - - - 200 441 application/json;+charset=utf-8 28.9340ms
+2021-06-24 18:57:39.889 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 18:57:39.895 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.0306 ms
+2021-06-24 18:57:39.898 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 9.0384ms
+2021-06-24 18:57:54.569 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 18:57:54.569 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.0371 ms
+2021-06-24 18:57:54.571 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 2.6041ms
+2021-06-24 18:59:33.715 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - -
+2021-06-24 18:59:33.716 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:59:33.722 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 18:59:33.724 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 7.2711ms
+2021-06-24 18:59:33.728 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - - - 200 1148 application/json;+charset=utf-8 16.7736ms
+2021-06-24 18:59:48.251 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - -
+2021-06-24 18:59:48.252 -03:00 [INF] Route matched with {action = "GetByDeviceId", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByDeviceId(System.String) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 18:59:48.329 -03:00 [INF] Executing ObjectResult, writing value of type 'AppPrivy.Domain.Entities.DoacaoMais.Dispositivo'.
+2021-06-24 18:59:48.330 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.GetByDeviceId (AppPrivy.WebApiDoacaoMais) in 77.8064ms
+2021-06-24 18:59:48.331 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - - - 200 441 application/json;+charset=utf-8 80.2536ms
+2021-06-24 19:00:29.420 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - -
+2021-06-24 19:00:29.421 -03:00 [INF] Route matched with {action = "GetByDeviceId", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByDeviceId(System.String) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 19:00:29.442 -03:00 [INF] Executing ObjectResult, writing value of type 'AppPrivy.Domain.Entities.DoacaoMais.Dispositivo'.
+2021-06-24 19:00:29.453 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.GetByDeviceId (AppPrivy.WebApiDoacaoMais) in 30.8142ms
+2021-06-24 19:00:29.454 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - - - 200 441 application/json;+charset=utf-8 33.7837ms
+2021-06-24 19:21:20.180 -03:00 [INF] Application is shutting down...
+2021-06-24 19:21:32.286 -03:00 [INF] Starting up 20210624192132
+2021-06-24 19:21:36.797 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 19:21:36.803 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 19:21:36.840 -03:00 [INF] Creating key {a8f27605-43d1-414a-ab27-94b221dc12f7} with creation date 2021-06-24 22:21:36Z, activation date 2021-06-24 22:21:36Z, and expiration date 2021-09-22 22:21:36Z.
+2021-06-24 19:21:36.893 -03:00 [WRN] No XML encryptor configured. Key {a8f27605-43d1-414a-ab27-94b221dc12f7} may be persisted to storage in unencrypted form.
+2021-06-24 19:21:37.528 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 19:21:37.529 -03:00 [INF] Hosting environment: Development
+2021-06-24 19:21:37.529 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 19:21:37.756 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 19:21:38.258 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 606.3383ms
+2021-06-24 19:41:28.590 -03:00 [INF] Starting up 20210624194128
+2021-06-24 19:41:30.741 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 19:41:30.748 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 19:41:30.775 -03:00 [INF] Creating key {cf3a64a7-b297-4eeb-b1fa-2839e02213ed} with creation date 2021-06-24 22:41:30Z, activation date 2021-06-24 22:41:30Z, and expiration date 2021-09-22 22:41:30Z.
+2021-06-24 19:41:30.808 -03:00 [WRN] No XML encryptor configured. Key {cf3a64a7-b297-4eeb-b1fa-2839e02213ed} may be persisted to storage in unencrypted form.
+2021-06-24 19:41:31.084 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 19:41:31.084 -03:00 [INF] Hosting environment: Development
+2021-06-24 19:41:31.084 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 19:41:31.110 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 19:41:31.244 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 143.0847ms
+2021-06-24 19:48:53.564 -03:00 [INF] Starting up 20210624194853
+2021-06-24 19:49:08.045 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 19:49:08.051 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 19:49:08.089 -03:00 [INF] Creating key {6af7efca-3381-4c24-a8c8-fc22834f72ab} with creation date 2021-06-24 22:49:08Z, activation date 2021-06-24 22:49:08Z, and expiration date 2021-09-22 22:49:08Z.
+2021-06-24 19:49:08.160 -03:00 [WRN] No XML encryptor configured. Key {6af7efca-3381-4c24-a8c8-fc22834f72ab} may be persisted to storage in unencrypted form.
+2021-06-24 19:49:10.171 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 19:49:10.171 -03:00 [INF] Hosting environment: Development
+2021-06-24 19:49:10.172 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 19:49:10.282 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 19:49:10.702 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 429.8706ms
+2021-06-24 19:49:10.723 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 19:49:11.052 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 327.9535ms
+2021-06-24 19:49:12.102 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 19:49:14.915 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 2812.6843ms
+2021-06-24 19:55:54.762 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 19:55:54.783 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 19:55:55.651 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 2.0828 ms
+2021-06-24 19:55:55.685 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 925.2210ms
+2021-06-24 19:56:14.716 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 19:56:14.759 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.1325 ms
+2021-06-24 19:56:14.762 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 46.1469ms
+2021-06-24 19:56:55.368 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - -
+2021-06-24 19:56:55.455 -03:00 [INF] Route matched with {action = "ListWithStores", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListWithStores() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 19:57:02.092 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 19:57:02.450 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListWithStores (AppPrivy.WebApiDoacaoMais) in 6981.377ms
+2021-06-24 19:57:02.512 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - - - 200 11250 application/json;+charset=utf-8 7152.5079ms
+2021-06-24 19:57:08.482 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 19:57:08.483 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.6113 ms
+2021-06-24 19:57:08.487 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 5.1932ms
+2021-06-24 19:57:13.812 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - -
+2021-06-24 19:57:13.820 -03:00 [INF] Route matched with {action = "ListAllByCaccc", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllByCaccc() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 19:57:14.146 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 19:57:14.163 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCaccc (AppPrivy.WebApiDoacaoMais) in 343.0914ms
+2021-06-24 19:57:14.182 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - - - 200 25153 application/json;+charset=utf-8 370.5044ms
+2021-06-24 19:57:19.061 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 19:57:19.061 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.0194 ms
+2021-06-24 19:57:19.066 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 4.9299ms
+2021-06-24 19:57:21.495 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - -
+2021-06-24 19:57:21.500 -03:00 [INF] Route matched with {action = "List", controller = "Bazar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.BazarController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 19:57:21.652 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Bazar, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 19:57:21.654 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.BazarController.List (AppPrivy.WebApiDoacaoMais) in 153.0593ms
+2021-06-24 19:57:21.654 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - - - 200 4781 application/json;+charset=utf-8 159.3454ms
+2021-06-24 19:57:24.801 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 19:57:24.802 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.0532 ms
+2021-06-24 19:57:24.805 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 4.0555ms
+2021-06-24 19:57:27.216 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - -
+2021-06-24 19:57:27.221 -03:00 [INF] Route matched with {action = "List", controller = "Noticia"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 19:57:27.264 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Noticia, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 19:57:27.306 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.List (AppPrivy.WebApiDoacaoMais) in 84.6784ms
+2021-06-24 19:57:27.308 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - - - 200 34318 application/json;+charset=utf-8 91.4426ms
+2021-06-24 19:57:30.575 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 19:57:30.576 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.0192 ms
+2021-06-24 19:57:30.578 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 2.7161ms
+2021-06-24 20:08:33.590 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - -
+2021-06-24 20:08:33.599 -03:00 [INF] Route matched with {action = "List", controller = "Campanha"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:08:33.695 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Campanha, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 20:08:33.707 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.List (AppPrivy.WebApiDoacaoMais) in 107.1439ms
+2021-06-24 20:08:33.709 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - - - 200 19299 application/json;+charset=utf-8 118.4742ms
+2021-06-24 20:09:00.272 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - -
+2021-06-24 20:09:00.319 -03:00 [INF] Route matched with {action = "ListWithStores", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListWithStores() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:09:00.396 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 20:09:00.397 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListWithStores (AppPrivy.WebApiDoacaoMais) in 77.9292ms
+2021-06-24 20:09:00.399 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - - - 200 11250 application/json;+charset=utf-8 127.2124ms
+2021-06-24 20:10:13.433 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - -
+2021-06-24 20:10:13.442 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:10:13.614 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 20:10:13.622 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 179.2338ms
+2021-06-24 20:10:13.631 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - - - 200 1148 application/json;+charset=utf-8 198.4557ms
+2021-06-24 20:10:20.688 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - -
+2021-06-24 20:10:20.717 -03:00 [INF] Route matched with {action = "GetByDeviceId", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByDeviceId(System.String) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:10:21.125 -03:00 [INF] Executing ObjectResult, writing value of type 'AppPrivy.Domain.Entities.DoacaoMais.Dispositivo'.
+2021-06-24 20:10:21.133 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.GetByDeviceId (AppPrivy.WebApiDoacaoMais) in 416.3152ms
+2021-06-24 20:10:21.136 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - - - 200 441 application/json;+charset=utf-8 447.8346ms
+2021-06-24 20:11:39.718 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - -
+2021-06-24 20:11:39.719 -03:00 [INF] Route matched with {action = "GetByDeviceId", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByDeviceId(System.String) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:11:39.745 -03:00 [INF] Executing ObjectResult, writing value of type 'AppPrivy.Domain.Entities.DoacaoMais.Dispositivo'.
+2021-06-24 20:11:39.746 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.GetByDeviceId (AppPrivy.WebApiDoacaoMais) in 25.77ms
+2021-06-24 20:11:39.746 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Dispositivo/GetByDeviceId/QP1A.190711.020 - - - 200 441 application/json;+charset=utf-8 27.9726ms
+2021-06-24 20:12:04.098 -03:00 [INF] Request starting HTTP/1.1 HEAD http://192.168.15.5:81/Analista/Programador/Auth/Login/ - -
+2021-06-24 20:12:04.175 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Appointment.Application.ViewsModels.UserToken]] Login(Appointment.Application.ViewsModels.UserToken) on controller AppPrivy.WebApiDoacaoMais.Controllers.AuthController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:12:04.503 -03:00 [INF] Entity Framework Core 5.0.3 initialized 'AppPrivyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery MigrationsAssembly=AppPrivy.WebAppMvc 
+2021-06-24 20:12:04.567 -03:00 [INF] Executed DbCommand (20ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Security].[User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+2021-06-24 20:12:05.145 -03:00 [INF] Executed DbCommand (56ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[UserId], [u].[ClaimType], [u].[ClaimValue]
+FROM [Security].[UserClaim] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-06-24 20:12:05.469 -03:00 [INF] Executed DbCommand (199ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Name]
+FROM [Security].[UserRole] AS [u]
+INNER JOIN [Security].[Role] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[UserId] = @__userId_0
+2021-06-24 20:12:05.481 -03:00 [INF] Entity Framework Core 5.0.3 initialized 'AppPrivyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: QuerySplittingBehavior=SplitQuery MigrationsAssembly=AppPrivy.WebAppMvc 
+2021-06-24 20:12:05.541 -03:00 [INF] Executed DbCommand (31ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Security].[Role] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0
+2021-06-24 20:12:05.655 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[ClaimType], [r].[ClaimValue]
+FROM [Security].[RoleClaim] AS [r]
+WHERE [r].[RoleId] = @__role_Id_0
+2021-06-24 20:12:05.746 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-06-24 20:12:06.085 -03:00 [INF] Executing ObjectResult, writing value of type 'Appointment.Application.ViewsModels.UserToken'.
+2021-06-24 20:12:06.090 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.AuthController.Login (AppPrivy.WebApiDoacaoMais) in 1915.1002ms
+2021-06-24 20:12:06.094 -03:00 [INF] Request finished HTTP/1.1 HEAD http://192.168.15.5:81/Analista/Programador/Auth/Login/ - - - 200 56 application/json;+charset=utf-8 1995.1706ms
+2021-06-24 20:12:06.330 -03:00 [INF] Request starting HTTP/1.1 POST http://192.168.15.5:81/Analista/Programador/Dispositivo/Save/ application/json;+charset=utf-8 474
+2021-06-24 20:12:06.506 -03:00 [INF] Successfully validated the token.
+2021-06-24 20:12:06.517 -03:00 [INF] Route matched with {action = "Save", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:12:06.532 -03:00 [INF] Authorization was successful.
+2021-06-24 20:12:10.974 -03:00 [ERR] Code : 4841431  - Error : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'DeviceIdNotRepeat'. Cannot insert duplicate key in object 'DoacaoMais.Dispositivo'. The duplicate key value is (QP1A.190711.020).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:effdf368-231c-4dcd-9d2f-41ed6ca742c6
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at AppPrivy.Domain.Services.DoacaoMais.DispositivoService.AdicionarDispositivo(Dispositivo dispositivo) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Domain\Services\DoacaoMais\DispositivoService.cs:line 40
+   at AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save(Dispositivo dispositivo) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\Controllers\DispositivoController.cs:line 106
+2021-06-24 20:12:10.976 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 20:12:10.979 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save (AppPrivy.WebApiDoacaoMais) in 4461.2248ms
+2021-06-24 20:12:10.981 -03:00 [INF] Request finished HTTP/1.1 POST http://192.168.15.5:81/Analista/Programador/Dispositivo/Save/ application/json;+charset=utf-8 474 - 500 - text/plain;+charset=utf-8 4651.0931ms
+2021-06-24 20:23:53.208 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - -
+2021-06-24 20:23:53.211 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:23:53.292 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 20:23:53.293 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 80.7397ms
+2021-06-24 20:23:53.295 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - - - 200 1148 application/json;+charset=utf-8 86.7157ms
+2021-06-24 20:35:10.895 -03:00 [INF] Application is shutting down...
+2021-06-24 20:35:43.726 -03:00 [INF] Starting up 20210624203543
+2021-06-24 20:36:33.574 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 20:36:33.580 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 20:36:33.646 -03:00 [INF] Creating key {c3600b5e-0c4f-426e-8793-80e323da9518} with creation date 2021-06-24 23:36:33Z, activation date 2021-06-24 23:36:33Z, and expiration date 2021-09-22 23:36:33Z.
+2021-06-24 20:36:33.815 -03:00 [WRN] No XML encryptor configured. Key {c3600b5e-0c4f-426e-8793-80e323da9518} may be persisted to storage in unencrypted form.
+2021-06-24 20:36:37.639 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 20:36:37.640 -03:00 [INF] Hosting environment: Development
+2021-06-24 20:36:37.640 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 20:36:37.754 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 20:36:38.441 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 709.6476ms
+2021-06-24 20:36:38.473 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 20:36:38.946 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 473.9694ms
+2021-06-24 20:36:42.183 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 20:36:47.133 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 4951.4504ms
+2021-06-24 20:37:08.792 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - -
+2021-06-24 20:37:08.814 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 20:37:13.126 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:46:02.935 -03:00 [INF] Starting up 20210624204602
+2021-06-24 20:46:19.015 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 20:46:19.020 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 20:46:19.049 -03:00 [INF] Creating key {ce644eea-757b-46db-bc12-13dcd155d02a} with creation date 2021-06-24 23:46:19Z, activation date 2021-06-24 23:46:19Z, and expiration date 2021-09-22 23:46:19Z.
+2021-06-24 20:46:19.096 -03:00 [WRN] No XML encryptor configured. Key {ce644eea-757b-46db-bc12-13dcd155d02a} may be persisted to storage in unencrypted form.
+2021-06-24 20:46:19.655 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 20:46:19.655 -03:00 [INF] Hosting environment: Development
+2021-06-24 20:46:19.655 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 20:46:19.697 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 20:46:19.887 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 195.7749ms
+2021-06-24 20:46:19.903 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 20:46:20.133 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 215.0038ms
+2021-06-24 20:46:20.870 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 20:46:22.436 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1565.7214ms
+2021-06-24 20:46:45.960 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - -
+2021-06-24 20:46:45.973 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 20:46:46.454 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:47:33.097 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 20:47:33.113 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 46642.1727ms
+2021-06-24 20:47:33.140 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - - - 500 - text/plain;+charset=utf-8 47181.6569ms
+2021-06-24 20:48:52.644 -03:00 [INF] Application is shutting down...
+2021-06-24 20:49:14.631 -03:00 [INF] Starting up 20210624204914
+2021-06-24 20:49:25.452 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 20:49:25.459 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 20:49:25.501 -03:00 [INF] Creating key {a3cdd1f0-6520-433f-a531-b2f5e6a2bfc5} with creation date 2021-06-24 23:49:25Z, activation date 2021-06-24 23:49:25Z, and expiration date 2021-09-22 23:49:25Z.
+2021-06-24 20:49:25.553 -03:00 [WRN] No XML encryptor configured. Key {a3cdd1f0-6520-433f-a531-b2f5e6a2bfc5} may be persisted to storage in unencrypted form.
+2021-06-24 20:49:26.117 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 20:49:26.117 -03:00 [INF] Hosting environment: Development
+2021-06-24 20:49:26.118 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 20:49:26.176 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 20:49:26.458 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 292.5398ms
+2021-06-24 20:49:26.469 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 20:49:26.922 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 452.6090ms
+2021-06-24 20:49:27.625 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 20:49:29.227 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1602.9610ms
+2021-06-24 20:50:58.125 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Save application/json 1776
+2021-06-24 20:50:58.131 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 20:50:58.860 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 20:50:59.044 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 20:50:59.170 -03:00 [INF] Route matched with {action = "Save", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:50:59.183 -03:00 [INF] Authorization failed. These requirements were not met:
+Handler assertion should evaluate to true.
+2021-06-24 20:50:59.184 -03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2021-06-24 20:50:59.190 -03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2021-06-24 20:50:59.204 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-06-24 20:50:59.211 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save (AppPrivy.WebApiDoacaoMais) in 33.0976ms
+2021-06-24 20:50:59.215 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Save application/json 1776 - 401 - - 1095.5315ms
+2021-06-24 20:51:19.872 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - -
+2021-06-24 20:51:19.895 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:51:58.314 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 20:51:58.315 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 38419.6144ms
+2021-06-24 20:51:58.326 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - - - 500 - text/plain;+charset=utf-8 38453.3561ms
+2021-06-24 20:54:25.736 -03:00 [INF] Application is shutting down...
+2021-06-24 20:54:48.424 -03:00 [INF] Starting up 20210624205448
+2021-06-24 20:55:03.113 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 20:55:03.118 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 20:55:03.163 -03:00 [INF] Creating key {0533cb0c-6a18-4710-8b49-4f0851ef3989} with creation date 2021-06-24 23:55:03Z, activation date 2021-06-24 23:55:03Z, and expiration date 2021-09-22 23:55:03Z.
+2021-06-24 20:55:03.215 -03:00 [WRN] No XML encryptor configured. Key {0533cb0c-6a18-4710-8b49-4f0851ef3989} may be persisted to storage in unencrypted form.
+2021-06-24 20:55:03.755 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 20:55:03.756 -03:00 [INF] Hosting environment: Development
+2021-06-24 20:55:03.768 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 20:55:03.825 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 20:55:04.120 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 312.0519ms
+2021-06-24 20:55:04.134 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 20:55:04.566 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 431.5480ms
+2021-06-24 20:55:05.287 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 20:55:06.379 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-24 20:55:08.104 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 500 - text/plain 2817.0732ms
+2021-06-24 20:55:25.398 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 20:55:25.515 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-06-24 20:55:25.578 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 500 - text/html;+charset=utf-8 179.8608ms
+2021-06-24 20:55:26.088 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/favicon.ico - -
+2021-06-24 20:55:26.099 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 20:55:26.342 -03:00 [INF] HTTP GET /favicon.ico responded 404 in 1.5600 ms
+2021-06-24 20:55:26.383 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/favicon.ico - - - 404 - - 264.2643ms
+2021-06-24 20:55:53.198 -03:00 [INF] Application is shutting down...
+2021-06-24 20:56:08.537 -03:00 [INF] Starting up 20210624205608
+2021-06-24 20:56:19.105 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 20:56:19.113 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 20:56:19.147 -03:00 [INF] Creating key {88c1be24-6952-49ff-8d62-8480aeea42ac} with creation date 2021-06-24 23:56:19Z, activation date 2021-06-24 23:56:19Z, and expiration date 2021-09-22 23:56:19Z.
+2021-06-24 20:56:19.187 -03:00 [WRN] No XML encryptor configured. Key {88c1be24-6952-49ff-8d62-8480aeea42ac} may be persisted to storage in unencrypted form.
+2021-06-24 20:56:19.740 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 20:56:19.741 -03:00 [INF] Hosting environment: Development
+2021-06-24 20:56:19.741 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 20:56:19.819 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 20:56:20.097 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 288.5543ms
+2021-06-24 20:56:20.116 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 20:56:20.538 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 422.7829ms
+2021-06-24 20:56:21.545 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 20:56:23.360 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1814.7415ms
+2021-06-24 20:56:32.656 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - -
+2021-06-24 20:56:32.712 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 20:56:33.173 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:57:03.474 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 20:57:03.739 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 30551.0632ms
+2021-06-24 20:57:03.752 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/Analista/Programador/Notificacao/List - - - 200 1148 application/json;+charset=utf-8 31095.9134ms
+2021-06-24 20:57:13.927 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Save application/json 1776
+2021-06-24 20:57:14.265 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 20:57:14.339 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 20:57:14.359 -03:00 [INF] Route matched with {action = "Save", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:57:17.588 -03:00 [ERR] Code : 35320229  - Error : Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'DeviceIdNotRepeat'. Cannot insert duplicate key in object 'DoacaoMais.Dispositivo'. The duplicate key value is (QP1A.190711.020).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6ebd7f09-4d1c-481b-bcb2-a01c4dc854d9
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at AppPrivy.Domain.Services.DoacaoMais.DispositivoService.AdicionarDispositivo(Dispositivo dispositivo) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.Domain\Services\DoacaoMais\DispositivoService.cs:line 40
+   at AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save(Dispositivo dispositivo) in E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais\Controllers\DispositivoController.cs:line 106
+2021-06-24 20:57:17.596 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 20:57:17.597 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save (AppPrivy.WebApiDoacaoMais) in 3237.3619ms
+2021-06-24 20:57:17.603 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Save application/json 1776 - 500 - text/plain;+charset=utf-8 3675.7974ms
+2021-06-24 20:57:33.856 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777
+2021-06-24 20:57:33.866 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 20:57:33.868 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 20:57:33.880 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:57:34.497 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 20:57:34.498 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 617.2926ms
+2021-06-24 20:57:34.499 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777 - 201 - text/plain;+charset=utf-8 642.7722ms
+2021-06-24 20:58:31.862 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777
+2021-06-24 20:58:31.864 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 20:58:31.865 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 20:58:31.866 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 20:58:31.907 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 20:58:31.908 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 41.2808ms
+2021-06-24 20:58:31.909 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777 - 201 - text/plain;+charset=utf-8 47.2285ms
+2021-06-24 20:58:40.591 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777
+2021-06-24 20:58:40.593 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 20:58:40.595 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 20:58:40.595 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:00:08.642 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 21:00:08.643 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 88047.2747ms
+2021-06-24 21:00:08.645 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777 - 201 - text/plain;+charset=utf-8 88054.2074ms
+2021-06-24 21:03:08.260 -03:00 [INF] Application is shutting down...
+2021-06-24 21:03:25.889 -03:00 [INF] Starting up 20210624210325
+2021-06-24 21:03:31.544 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-24 21:03:31.552 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-24 21:03:31.593 -03:00 [INF] Creating key {ebf23acb-74f2-4f56-ab58-9b60eddfa6f2} with creation date 2021-06-25 00:03:31Z, activation date 2021-06-25 00:03:31Z, and expiration date 2021-09-23 00:03:31Z.
+2021-06-24 21:03:31.647 -03:00 [WRN] No XML encryptor configured. Key {ebf23acb-74f2-4f56-ab58-9b60eddfa6f2} may be persisted to storage in unencrypted form.
+2021-06-24 21:03:32.206 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-24 21:03:32.207 -03:00 [INF] Hosting environment: Development
+2021-06-24 21:03:32.207 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-24 21:03:32.252 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-24 21:03:32.437 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 192.9027ms
+2021-06-24 21:03:32.448 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/index.html - -
+2021-06-24 21:03:32.672 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/index.html - - - 200 - text/html;charset=utf-8 224.1421ms
+2021-06-24 21:03:33.409 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - -
+2021-06-24 21:03:34.835 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:81/swagger/v4/swagger.json - - - 200 - application/json;charset=utf-8 1426.5328ms
+2021-06-24 21:03:47.531 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777
+2021-06-24 21:03:47.543 -03:00 [WRN] Failed to determine the https port for redirect.
+2021-06-24 21:03:48.094 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 21:03:48.261 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 21:03:48.454 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:05:00.777 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 21:05:00.797 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 72325.5998ms
+2021-06-24 21:05:00.813 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777 - 201 - text/plain;+charset=utf-8 73281.7258ms
+2021-06-24 21:07:46.950 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777
+2021-06-24 21:07:46.957 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 21:07:46.958 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 21:07:46.963 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:07:58.119 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 21:07:58.121 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 11152.2899ms
+2021-06-24 21:07:58.126 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777 - 201 - text/plain;+charset=utf-8 11175.0200ms
+2021-06-24 21:08:03.798 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Save application/json 1776
+2021-06-24 21:08:03.804 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 21:08:03.807 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 21:08:03.821 -03:00 [INF] Route matched with {action = "Save", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Save(AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:08:14.435 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 21:08:14.436 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Save (AppPrivy.WebApiDoacaoMais) in 10612.8498ms
+2021-06-24 21:08:14.441 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Save application/json 1776 - 201 - text/plain;+charset=utf-8 10641.0578ms
+2021-06-24 21:08:48.402 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777
+2021-06-24 21:08:48.404 -03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2021-06-24 21:08:48.406 -03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2021-06-24 21:08:48.406 -03:00 [INF] Route matched with {action = "Update", controller = "Dispositivo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Nullable`1[System.Int32], AppPrivy.Domain.Entities.DoacaoMais.Dispositivo) on controller AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:09:14.339 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2021-06-24 21:09:14.340 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.DispositivoController.Update (AppPrivy.WebApiDoacaoMais) in 25933.4054ms
+2021-06-24 21:09:14.342 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:81/Analista/Programador/Dispositivo/Update/3 application/json 1777 - 201 - text/plain;+charset=utf-8 25939.2527ms
+2021-06-24 21:13:23.330 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - -
+2021-06-24 21:13:23.343 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:13:23.626 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 21:13:23.755 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 412.1766ms
+2021-06-24 21:13:23.756 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - - - 200 1262 application/json;+charset=utf-8 426.5504ms
+2021-06-24 21:34:13.139 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - -
+2021-06-24 21:34:13.150 -03:00 [INF] Route matched with {action = "List", controller = "Bazar"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.BazarController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:34:13.171 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - -
+2021-06-24 21:34:13.194 -03:00 [INF] Route matched with {action = "ListWithStores", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListWithStores() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:34:13.261 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - -
+2021-06-24 21:34:13.261 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - -
+2021-06-24 21:34:13.261 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 21:34:13.282 -03:00 [INF] Route matched with {action = "List", controller = "Noticia"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:34:13.289 -03:00 [INF] Route matched with {action = "ListAllByCaccc", controller = "Caccc"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListAllByCaccc() on controller AppPrivy.WebApiDoacaoMais.Controllers.CacccController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:34:13.311 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 13.3806 ms
+2021-06-24 21:34:13.329 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - -
+2021-06-24 21:34:13.357 -03:00 [INF] Route matched with {action = "List", controller = "Campanha"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:34:13.504 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 243.0205ms
+2021-06-24 21:34:13.561 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Campanha, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 21:34:13.586 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CampanhaController.List (AppPrivy.WebApiDoacaoMais) in 227.6649ms
+2021-06-24 21:34:13.592 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Noticia, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 21:34:13.717 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Campanha/List/ - - - 200 19299 application/json;+charset=utf-8 388.0230ms
+2021-06-24 21:34:13.934 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Bazar, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 21:34:13.975 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.BazarController.List (AppPrivy.WebApiDoacaoMais) in 823.8012ms
+2021-06-24 21:34:13.984 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Bazar/List/ - - - 200 4781 application/json;+charset=utf-8 844.3599ms
+2021-06-24 21:34:14.011 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NoticiaController.List (AppPrivy.WebApiDoacaoMais) in 728.6109ms
+2021-06-24 21:34:14.014 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Noticia/List/ - - - 200 34318 application/json;+charset=utf-8 753.2646ms
+2021-06-24 21:34:14.452 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 21:34:14.496 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListWithStores (AppPrivy.WebApiDoacaoMais) in 1299.2459ms
+2021-06-24 21:34:14.499 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListWithStores - - - 200 11250 application/json;+charset=utf-8 1328.1853ms
+2021-06-24 21:34:14.506 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Caccc, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 21:34:14.524 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.CacccController.ListAllByCaccc (AppPrivy.WebApiDoacaoMais) in 1234.8379ms
+2021-06-24 21:34:14.578 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Caccc/ListAllByCaccc - - - 200 25153 application/json;+charset=utf-8 1316.4385ms
+2021-06-24 21:35:35.918 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - -
+2021-06-24 21:35:35.922 -03:00 [INF] Route matched with {action = "List", controller = "Notificacao"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] List() on controller AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController (AppPrivy.WebApiDoacaoMais).
+2021-06-24 21:35:35.945 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[AppPrivy.Domain.Entities.DoacaoMais.Notificacao, AppPrivy.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-06-24 21:35:35.947 -03:00 [INF] Executed action AppPrivy.WebApiDoacaoMais.Controllers.NotificacaoController.List (AppPrivy.WebApiDoacaoMais) in 24.3509ms
+2021-06-24 21:35:35.948 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Notificacao/List - - - 200 1262 application/json;+charset=utf-8 30.7092ms
+2021-06-24 21:37:44.632 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
+2021-06-24 21:37:44.634 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.2469 ms
+2021-06-24 21:37:44.735 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 102.4077ms

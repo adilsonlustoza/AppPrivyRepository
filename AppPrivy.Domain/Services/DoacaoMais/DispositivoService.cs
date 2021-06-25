@@ -1,14 +1,11 @@
 ﻿using AppPrivy.CrossCutting.Cache;
-using AppPrivy.CrossCutting.UnitOfWork;
 using AppPrivy.Domain.Entities.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.Domain.Interfaces.Services.DoacaoMais;
 using AutoMapper;
-using Remotion.Linq.Parsing.Structure.IntermediateModel;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Transactions;
 
 namespace AppPrivy.Domain.Services.DoacaoMais
 {
@@ -50,11 +47,16 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             try
             {
 
-                  var query =   await _dispositivoRepository.BuscaDispositivoPorDeviceId(dispositivo.DeviceId);
+                 var query =   await _dispositivoRepository.BuscaDispositivoPorDeviceId(dispositivo.DeviceId);
 
                 if (query != null)
                 {
                     dispositivo.DispositivoId = query.DispositivoId;
+
+                    foreach (var notificacao in dispositivo.Notificacoes)                    
+                        dispositivo.NotificacaoDispositivo.Add(new NotificacaoDispositivo() {DispositivoId=dispositivo.DispositivoId,NotificacaoId=notificacao.NotificacaoId,Dispositivo = dispositivo,Notificacao=notificacao });
+                                       
+
                     await _dispositivoRepository.AtualizaDispositivo(Id, dispositivo);
                 }
 
@@ -88,5 +90,9 @@ namespace AppPrivy.Domain.Services.DoacaoMais
             
         }
 
+        public async Task<Dispositivo> GetByDeviceId(string deviceId)
+        {
+            return await _dispositivoRepository.BuscaDispositivoPorDeviceId(deviceId);
+        }
     }
 }
