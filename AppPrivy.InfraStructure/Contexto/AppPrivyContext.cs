@@ -1,6 +1,8 @@
 ﻿using AppPrivy.CrossCutting.Commom;
 using AppPrivy.Domain;
+using AppPrivy.Domain.Entities.Blog;
 using AppPrivy.Domain.Entities.DoacaoMais;
+using AppPrivy.InfraStructure.EntityConfig.Blog;
 using AppPrivy.InfraStructure.EntityConfig.DoacaoMais;
 using AppPrivy.InfraStructure.EntityConfig.Identity;
 using AppPrivy.InfraStructure.EntityConfig.Site;
@@ -48,6 +50,17 @@ namespace AppPrivy.InfraStructure.Contexto
         //-------------------------------Site-----------------------
         public virtual DbSet<Pesquisa> Pesquisa { get; set; }
 
+        //-------------------------------Blog-----------------------
+        public virtual DbSet<Author> Author { get; set; }
+        public virtual DbSet<Category> Categorie { get; set; }
+        public virtual DbSet<Post> Post { get; set; }
+        public virtual DbSet<PostCategory> PostCategories { get; set; }
+        public virtual DbSet<PostComment> PostComments { get; set; }
+        public virtual DbSet<PostMeta> PostMeta { get; set; }
+        public virtual DbSet<PostTag> PostTags { get; set; }
+        public virtual DbSet<Tag> Tag { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -79,7 +92,19 @@ namespace AppPrivy.InfraStructure.Contexto
             //-------------------------------Site-----------------------
             modelBuilder.ApplyConfiguration(new PesquisaConfiguration());
 
-            modelBuilder.HasDefaultSchema("dbo");
+            //-------------------------------Blog-----------------------
+            modelBuilder.ApplyConfiguration(new AuthorConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new TagConfiguration());
+            modelBuilder.ApplyConfiguration(new PostConfiguration());
+            modelBuilder.ApplyConfiguration(new PostCategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new PostCommentConfiguration());
+            modelBuilder.ApplyConfiguration(new PostMetaConfiguration());
+            modelBuilder.ApplyConfiguration(new PostTagConfiguration());
+
+
+
+            modelBuilder.HasDefaultSchema("dbo").HasAnnotation("Relational:Collation", "Latin1_General_CI_AS"); ;
         }
 
 
