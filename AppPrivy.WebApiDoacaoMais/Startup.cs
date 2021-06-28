@@ -56,7 +56,7 @@ namespace AppPrivy.WebApiDoacaoMais
         public void ConfigureServices(IServiceCollection services)
         {
 
-           // services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
+            // services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
 
             services.AddOptions();
 
@@ -86,7 +86,7 @@ namespace AppPrivy.WebApiDoacaoMais
             services.AddDbContext<AppPrivyContext>(options =>
 
              options.UseSqlServer(Configuration.GetConnectionString(ConstantHelper.AppPrivyContext),
-             b =>  b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc).EnableRetryOnFailure(maxRetryCount: 5,
+             b => b.MigrationsAssembly(ConstantHelper.AppPrivy_WebAppMvc).EnableRetryOnFailure(maxRetryCount: 5,
                                                                                                maxRetryDelay: TimeSpan.FromSeconds(30),
                                                                                                errorNumbersToAdd: null)
                                                                           .UseQuerySplittingBehavior((QuerySplittingBehavior.SplitQuery))),
@@ -260,7 +260,9 @@ namespace AppPrivy.WebApiDoacaoMais
             {
                 options.AddPolicy("DoacaoMais", policy =>
                    policy.RequireAssertion(context =>
-                       context.User.HasClaim(c => c.Type == ClaimTypes.NameIdentifier && c.Value== "DoacaoMais")));
+                         context.User.HasClaim(c => c.Type == ClaimTypes.NameIdentifier && c.Value == "DoacaoMais") 
+                         || 
+                        context.User.IsInRole("Administrator") ));
             });
 
 
@@ -303,7 +305,7 @@ namespace AppPrivy.WebApiDoacaoMais
 
             app.UseStaticFiles();
 
-            
+
 
             //  app.UseRouting();
 
@@ -312,7 +314,7 @@ namespace AppPrivy.WebApiDoacaoMais
 
             app.UseAuthorization();
 
-            
+
             app.UseMvc();
 
             app.UseSerilogRequestLogging();

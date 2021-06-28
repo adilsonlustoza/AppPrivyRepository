@@ -1793,3 +1793,4 @@ Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime
 2021-06-24 21:37:44.632 -03:00 [INF] Request starting HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - -
 2021-06-24 21:37:44.634 -03:00 [INF] HTTP GET /Analista/Programador/Conteudo/ListByCacccId/ responded 404 in 0.2469 ms
 2021-06-24 21:37:44.735 -03:00 [INF] Request finished HTTP/1.1 GET http://192.168.15.5:81/Analista/Programador/Conteudo/ListByCacccId/ - - - 404 - - 102.4077ms
+2021-06-24 21:40:32.480 -03:00 [INF] Application is shutting down...

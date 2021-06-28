@@ -96,7 +96,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns>Create device </returns>
         /// <response code="200">Returns device updated</response>
         /// <response code="400">it wasn`t able to ve a device</response>    
-   //     [Authorize(Policy = "DoacaoMais")]
+        [Authorize(Policy = "DoacaoMais")]
         [HttpPost]
         [Route("Save")]
         public async Task<IActionResult> Save([FromBody]Dispositivo dispositivo)
@@ -142,8 +142,8 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         /// <returns>Create device </returns>
         /// <response code="200">Returns device updated</response>
         /// <response code="400">it wasn`t able to ve a device</response>    
-       // [Authorize(Policy = "DoacaoMais")]
-        [HttpPost]
+        [Authorize(Policy = "DoacaoMais")]
+        [HttpPut]
         [Route("Update/{DispositivoId:int?}")]
         public async Task<IActionResult> Update([FromRoute]int? DispositivoId,[FromBody] Dispositivo dispositivo)
         {

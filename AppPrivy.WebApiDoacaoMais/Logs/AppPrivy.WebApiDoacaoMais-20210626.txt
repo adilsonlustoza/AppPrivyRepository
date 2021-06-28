@@ -1,0 +1,421 @@
+2021-06-26 09:24:16.636 -03:00 [INF] Starting up 20210626092416
+2021-06-26 09:24:22.244 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 09:24:22.296 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 09:24:22.394 -03:00 [INF] Creating key {bd4421d3-a5c8-4dc6-a1d3-18c0b8c711ae} with creation date 2021-06-26 12:24:22Z, activation date 2021-06-26 12:24:22Z, and expiration date 2021-09-24 12:24:22Z.
+2021-06-26 09:24:22.482 -03:00 [WRN] No XML encryptor configured. Key {bd4421d3-a5c8-4dc6-a1d3-18c0b8c711ae} may be persisted to storage in unencrypted form.
+2021-06-26 09:24:23.520 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 09:24:23.521 -03:00 [INF] Hosting environment: Development
+2021-06-26 09:24:23.521 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 09:24:23.562 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 09:24:24.056 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 502.8778ms
+2021-06-26 09:44:09.716 -03:00 [INF] Starting up 20210626094409
+2021-06-26 09:44:12.923 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 09:44:12.929 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 09:44:12.961 -03:00 [INF] Creating key {be3aa01f-984f-4eb4-9edc-caab9724f529} with creation date 2021-06-26 12:44:12Z, activation date 2021-06-26 12:44:12Z, and expiration date 2021-09-24 12:44:12Z.
+2021-06-26 09:44:13.127 -03:00 [WRN] No XML encryptor configured. Key {be3aa01f-984f-4eb4-9edc-caab9724f529} may be persisted to storage in unencrypted form.
+2021-06-26 09:44:13.512 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 09:44:13.512 -03:00 [INF] Hosting environment: Development
+2021-06-26 09:44:13.513 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 09:44:13.543 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 09:44:13.711 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 174.5613ms
+2021-06-26 10:04:09.594 -03:00 [INF] Starting up 20210626100409
+2021-06-26 10:04:10.556 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 10:04:10.559 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 10:04:10.579 -03:00 [INF] Creating key {9b5b3845-0d13-4da6-8384-800ee4159c37} with creation date 2021-06-26 13:04:10Z, activation date 2021-06-26 13:04:10Z, and expiration date 2021-09-24 13:04:10Z.
+2021-06-26 10:04:10.595 -03:00 [WRN] No XML encryptor configured. Key {9b5b3845-0d13-4da6-8384-800ee4159c37} may be persisted to storage in unencrypted form.
+2021-06-26 10:04:10.757 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 10:04:10.757 -03:00 [INF] Hosting environment: Development
+2021-06-26 10:04:10.758 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 10:04:10.783 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 10:04:10.871 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 94.2388ms
+2021-06-26 10:24:11.698 -03:00 [INF] Starting up 20210626102411
+2021-06-26 10:24:13.358 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 10:24:13.368 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 10:24:13.432 -03:00 [INF] Creating key {a7620c7b-3c13-48c5-bc23-06de27d69ef8} with creation date 2021-06-26 13:24:13Z, activation date 2021-06-26 13:24:13Z, and expiration date 2021-09-24 13:24:13Z.
+2021-06-26 10:24:13.457 -03:00 [WRN] No XML encryptor configured. Key {a7620c7b-3c13-48c5-bc23-06de27d69ef8} may be persisted to storage in unencrypted form.
+2021-06-26 10:24:13.717 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 10:24:13.717 -03:00 [INF] Hosting environment: Development
+2021-06-26 10:24:13.718 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 10:24:13.743 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 10:24:13.849 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 111.7498ms
+2021-06-26 10:44:12.097 -03:00 [INF] Starting up 20210626104412
+2021-06-26 10:44:13.174 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 10:44:13.179 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 10:44:13.206 -03:00 [INF] Creating key {6b04a347-5432-49ce-94a5-d0ff436f3424} with creation date 2021-06-26 13:44:13Z, activation date 2021-06-26 13:44:13Z, and expiration date 2021-09-24 13:44:13Z.
+2021-06-26 10:44:13.228 -03:00 [WRN] No XML encryptor configured. Key {6b04a347-5432-49ce-94a5-d0ff436f3424} may be persisted to storage in unencrypted form.
+2021-06-26 10:44:13.400 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 10:44:13.400 -03:00 [INF] Hosting environment: Development
+2021-06-26 10:44:13.401 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 10:44:13.518 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 10:44:13.653 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 229.3066ms
+2021-06-26 11:04:50.567 -03:00 [INF] Starting up 20210626110450
+2021-06-26 11:05:00.379 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 11:05:00.385 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 11:05:00.535 -03:00 [INF] Creating key {1ad7ab85-5e02-4e0c-81f4-f8d4356ad4be} with creation date 2021-06-26 14:05:00Z, activation date 2021-06-26 14:05:00Z, and expiration date 2021-09-24 14:05:00Z.
+2021-06-26 11:05:00.659 -03:00 [WRN] No XML encryptor configured. Key {1ad7ab85-5e02-4e0c-81f4-f8d4356ad4be} may be persisted to storage in unencrypted form.
+2021-06-26 11:05:02.881 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 11:05:02.881 -03:00 [INF] Hosting environment: Development
+2021-06-26 11:05:02.882 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 11:05:03.094 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 11:05:04.887 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 1892.7723ms
+2021-06-26 11:24:23.105 -03:00 [INF] Starting up 20210626112423
+2021-06-26 11:24:25.035 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 11:24:25.038 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 11:24:25.071 -03:00 [INF] Creating key {df3787ee-29d9-443c-b069-d3c0ce94e93c} with creation date 2021-06-26 14:24:25Z, activation date 2021-06-26 14:24:25Z, and expiration date 2021-09-24 14:24:25Z.
+2021-06-26 11:24:25.095 -03:00 [WRN] No XML encryptor configured. Key {df3787ee-29d9-443c-b069-d3c0ce94e93c} may be persisted to storage in unencrypted form.
+2021-06-26 11:24:25.326 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 11:24:25.331 -03:00 [INF] Hosting environment: Development
+2021-06-26 11:24:25.331 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 11:24:25.389 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 11:24:25.517 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 140.4421ms
+2021-06-26 11:44:23.370 -03:00 [INF] Starting up 20210626114423
+2021-06-26 11:44:25.163 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 11:44:25.169 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 11:44:25.205 -03:00 [INF] Creating key {00553db5-56b2-4f6c-bd44-2e6b093505f2} with creation date 2021-06-26 14:44:25Z, activation date 2021-06-26 14:44:25Z, and expiration date 2021-09-24 14:44:25Z.
+2021-06-26 11:44:25.234 -03:00 [WRN] No XML encryptor configured. Key {00553db5-56b2-4f6c-bd44-2e6b093505f2} may be persisted to storage in unencrypted form.
+2021-06-26 11:44:25.484 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 11:44:25.485 -03:00 [INF] Hosting environment: Development
+2021-06-26 11:44:25.485 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 11:44:25.508 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 11:44:25.603 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 100.8878ms
+2021-06-26 12:04:27.768 -03:00 [INF] Starting up 20210626120427
+2021-06-26 12:04:34.463 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 12:04:34.478 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 12:04:34.548 -03:00 [INF] Creating key {930627a6-511b-4aea-afa4-f892720d8295} with creation date 2021-06-26 15:04:34Z, activation date 2021-06-26 15:04:34Z, and expiration date 2021-09-24 15:04:34Z.
+2021-06-26 12:04:34.612 -03:00 [WRN] No XML encryptor configured. Key {930627a6-511b-4aea-afa4-f892720d8295} may be persisted to storage in unencrypted form.
+2021-06-26 12:04:35.289 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 12:04:35.290 -03:00 [INF] Hosting environment: Development
+2021-06-26 12:04:35.290 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 12:04:35.356 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 12:04:35.660 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 322.4533ms
+2021-06-26 12:24:26.831 -03:00 [INF] Starting up 20210626122426
+2021-06-26 12:24:28.427 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 12:24:28.431 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 12:24:28.452 -03:00 [INF] Creating key {d54c3663-720b-4ed7-be19-5144f4e63d65} with creation date 2021-06-26 15:24:28Z, activation date 2021-06-26 15:24:28Z, and expiration date 2021-09-24 15:24:28Z.
+2021-06-26 12:24:28.478 -03:00 [WRN] No XML encryptor configured. Key {d54c3663-720b-4ed7-be19-5144f4e63d65} may be persisted to storage in unencrypted form.
+2021-06-26 12:24:28.729 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 12:24:28.729 -03:00 [INF] Hosting environment: Development
+2021-06-26 12:24:28.730 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 12:24:28.754 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 12:24:28.849 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 100.4967ms
+2021-06-26 12:44:27.843 -03:00 [INF] Starting up 20210626124427
+2021-06-26 12:44:29.264 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 12:44:29.268 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 12:44:29.292 -03:00 [INF] Creating key {25120851-2a76-46fb-aa54-1b90f1033f0b} with creation date 2021-06-26 15:44:29Z, activation date 2021-06-26 15:44:29Z, and expiration date 2021-09-24 15:44:29Z.
+2021-06-26 12:44:29.316 -03:00 [WRN] No XML encryptor configured. Key {25120851-2a76-46fb-aa54-1b90f1033f0b} may be persisted to storage in unencrypted form.
+2021-06-26 12:44:29.550 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 12:44:29.550 -03:00 [INF] Hosting environment: Development
+2021-06-26 12:44:29.550 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 12:44:29.579 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 12:44:29.709 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 136.2421ms
+2021-06-26 13:04:29.457 -03:00 [INF] Starting up 20210626130429
+2021-06-26 13:04:30.741 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 13:04:30.745 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 13:04:30.767 -03:00 [INF] Creating key {8d12f014-0842-43b6-8dc8-1592047ec1ba} with creation date 2021-06-26 16:04:30Z, activation date 2021-06-26 16:04:30Z, and expiration date 2021-09-24 16:04:30Z.
+2021-06-26 13:04:30.792 -03:00 [WRN] No XML encryptor configured. Key {8d12f014-0842-43b6-8dc8-1592047ec1ba} may be persisted to storage in unencrypted form.
+2021-06-26 13:04:31.003 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 13:04:31.004 -03:00 [INF] Hosting environment: Development
+2021-06-26 13:04:31.004 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 13:04:31.034 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 13:04:31.141 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 114.5935ms
+2021-06-26 13:24:31.042 -03:00 [INF] Starting up 20210626132431
+2021-06-26 13:24:32.396 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 13:24:32.399 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 13:24:32.420 -03:00 [INF] Creating key {59a45c94-bf0b-46bb-b2df-a3454624ff73} with creation date 2021-06-26 16:24:32Z, activation date 2021-06-26 16:24:32Z, and expiration date 2021-09-24 16:24:32Z.
+2021-06-26 13:24:32.445 -03:00 [WRN] No XML encryptor configured. Key {59a45c94-bf0b-46bb-b2df-a3454624ff73} may be persisted to storage in unencrypted form.
+2021-06-26 13:24:32.655 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 13:24:32.656 -03:00 [INF] Hosting environment: Development
+2021-06-26 13:24:32.656 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 13:24:32.679 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 13:24:32.774 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 100.6443ms
+2021-06-26 13:44:33.282 -03:00 [INF] Starting up 20210626134433
+2021-06-26 13:44:34.440 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 13:44:34.445 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 13:44:34.473 -03:00 [INF] Creating key {1b15e93e-d96c-42ad-b439-1e46b817ee02} with creation date 2021-06-26 16:44:34Z, activation date 2021-06-26 16:44:34Z, and expiration date 2021-09-24 16:44:34Z.
+2021-06-26 13:44:34.496 -03:00 [WRN] No XML encryptor configured. Key {1b15e93e-d96c-42ad-b439-1e46b817ee02} may be persisted to storage in unencrypted form.
+2021-06-26 13:44:34.681 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 13:44:34.682 -03:00 [INF] Hosting environment: Development
+2021-06-26 13:44:34.682 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 13:44:34.708 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 13:44:34.801 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 98.7836ms
+2021-06-26 14:04:33.785 -03:00 [INF] Starting up 20210626140433
+2021-06-26 14:04:34.752 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 14:04:34.755 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 14:04:34.777 -03:00 [INF] Creating key {fcf3ecf2-eeaa-44b6-a78e-702d8a8bd292} with creation date 2021-06-26 17:04:34Z, activation date 2021-06-26 17:04:34Z, and expiration date 2021-09-24 17:04:34Z.
+2021-06-26 14:04:34.794 -03:00 [WRN] No XML encryptor configured. Key {fcf3ecf2-eeaa-44b6-a78e-702d8a8bd292} may be persisted to storage in unencrypted form.
+2021-06-26 14:04:34.985 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:04:34.985 -03:00 [INF] Hosting environment: Development
+2021-06-26 14:04:34.986 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 14:04:35.013 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 14:04:35.156 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 149.7056ms
+2021-06-26 14:24:35.413 -03:00 [INF] Starting up 20210626142435
+2021-06-26 14:24:36.311 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 14:24:36.314 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 14:24:36.335 -03:00 [INF] Creating key {4dc3319f-b1e1-4b10-a773-1f3601f59ec2} with creation date 2021-06-26 17:24:36Z, activation date 2021-06-26 17:24:36Z, and expiration date 2021-09-24 17:24:36Z.
+2021-06-26 14:24:36.351 -03:00 [WRN] No XML encryptor configured. Key {4dc3319f-b1e1-4b10-a773-1f3601f59ec2} may be persisted to storage in unencrypted form.
+2021-06-26 14:24:36.507 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:24:36.507 -03:00 [INF] Hosting environment: Development
+2021-06-26 14:24:36.508 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 14:24:36.531 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 14:24:36.609 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 83.6961ms
+2021-06-26 14:44:36.928 -03:00 [INF] Starting up 20210626144436
+2021-06-26 14:44:37.961 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 14:44:37.966 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 14:44:37.999 -03:00 [INF] Creating key {6995147a-05dc-41f5-9e0c-98bc79e702d5} with creation date 2021-06-26 17:44:37Z, activation date 2021-06-26 17:44:37Z, and expiration date 2021-09-24 17:44:37Z.
+2021-06-26 14:44:38.022 -03:00 [WRN] No XML encryptor configured. Key {6995147a-05dc-41f5-9e0c-98bc79e702d5} may be persisted to storage in unencrypted form.
+2021-06-26 14:44:38.189 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 14:44:38.189 -03:00 [INF] Hosting environment: Development
+2021-06-26 14:44:38.189 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 14:44:38.214 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 14:44:38.318 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 110.9737ms
+2021-06-26 15:04:38.283 -03:00 [INF] Starting up 20210626150438
+2021-06-26 15:04:39.172 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 15:04:39.176 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 15:04:39.197 -03:00 [INF] Creating key {38e6a620-a5e5-4026-941a-82818f55223e} with creation date 2021-06-26 18:04:39Z, activation date 2021-06-26 18:04:39Z, and expiration date 2021-09-24 18:04:39Z.
+2021-06-26 15:04:39.213 -03:00 [WRN] No XML encryptor configured. Key {38e6a620-a5e5-4026-941a-82818f55223e} may be persisted to storage in unencrypted form.
+2021-06-26 15:04:39.367 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 15:04:39.368 -03:00 [INF] Hosting environment: Development
+2021-06-26 15:04:39.368 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 15:04:39.391 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 15:04:39.467 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 82.1204ms
+2021-06-26 15:24:39.930 -03:00 [INF] Starting up 20210626152439
+2021-06-26 15:24:40.813 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 15:24:40.816 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 15:24:40.837 -03:00 [INF] Creating key {c64736c5-d61d-4c08-8ac5-fcda9321cb13} with creation date 2021-06-26 18:24:40Z, activation date 2021-06-26 18:24:40Z, and expiration date 2021-09-24 18:24:40Z.
+2021-06-26 15:24:40.853 -03:00 [WRN] No XML encryptor configured. Key {c64736c5-d61d-4c08-8ac5-fcda9321cb13} may be persisted to storage in unencrypted form.
+2021-06-26 15:24:41.006 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 15:24:41.007 -03:00 [INF] Hosting environment: Development
+2021-06-26 15:24:41.007 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 15:24:41.030 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 15:24:41.108 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 84.0485ms
+2021-06-26 15:44:41.414 -03:00 [INF] Starting up 20210626154441
+2021-06-26 15:44:42.326 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 15:44:42.330 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 15:44:42.350 -03:00 [INF] Creating key {6adc156e-3ed6-4f60-b33c-faefa5c68105} with creation date 2021-06-26 18:44:42Z, activation date 2021-06-26 18:44:42Z, and expiration date 2021-09-24 18:44:42Z.
+2021-06-26 15:44:42.367 -03:00 [WRN] No XML encryptor configured. Key {6adc156e-3ed6-4f60-b33c-faefa5c68105} may be persisted to storage in unencrypted form.
+2021-06-26 15:44:42.523 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 15:44:42.523 -03:00 [INF] Hosting environment: Development
+2021-06-26 15:44:42.524 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 15:44:42.548 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 15:44:42.627 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 85.7655ms
+2021-06-26 16:04:42.911 -03:00 [INF] Starting up 20210626160442
+2021-06-26 16:04:43.793 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 16:04:43.796 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 16:04:43.817 -03:00 [INF] Creating key {b4214586-f5e4-476c-9100-9b33873f85e4} with creation date 2021-06-26 19:04:43Z, activation date 2021-06-26 19:04:43Z, and expiration date 2021-09-24 19:04:43Z.
+2021-06-26 16:04:43.834 -03:00 [WRN] No XML encryptor configured. Key {b4214586-f5e4-476c-9100-9b33873f85e4} may be persisted to storage in unencrypted form.
+2021-06-26 16:04:44.012 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 16:04:44.012 -03:00 [INF] Hosting environment: Development
+2021-06-26 16:04:44.013 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 16:04:44.039 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 16:04:44.123 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 90.9551ms
+2021-06-26 16:24:44.466 -03:00 [INF] Starting up 20210626162444
+2021-06-26 16:24:45.438 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 16:24:45.442 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 16:24:45.463 -03:00 [INF] Creating key {5eac12b9-ab82-450e-9fcc-bc6ec3cc9227} with creation date 2021-06-26 19:24:45Z, activation date 2021-06-26 19:24:45Z, and expiration date 2021-09-24 19:24:45Z.
+2021-06-26 16:24:45.479 -03:00 [WRN] No XML encryptor configured. Key {5eac12b9-ab82-450e-9fcc-bc6ec3cc9227} may be persisted to storage in unencrypted form.
+2021-06-26 16:24:45.640 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 16:24:45.641 -03:00 [INF] Hosting environment: Development
+2021-06-26 16:24:45.641 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 16:24:45.665 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 16:24:45.743 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 83.7133ms
+2021-06-26 16:44:46.021 -03:00 [INF] Starting up 20210626164446
+2021-06-26 16:44:46.957 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 16:44:46.961 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 16:44:46.982 -03:00 [INF] Creating key {2b0b071d-19fa-4232-9ce7-4b19ffd2ab4e} with creation date 2021-06-26 19:44:46Z, activation date 2021-06-26 19:44:46Z, and expiration date 2021-09-24 19:44:46Z.
+2021-06-26 16:44:46.999 -03:00 [WRN] No XML encryptor configured. Key {2b0b071d-19fa-4232-9ce7-4b19ffd2ab4e} may be persisted to storage in unencrypted form.
+2021-06-26 16:44:47.153 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 16:44:47.154 -03:00 [INF] Hosting environment: Development
+2021-06-26 16:44:47.154 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 16:44:47.178 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 16:44:47.258 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 85.9690ms
+2021-06-26 17:04:47.367 -03:00 [INF] Starting up 20210626170447
+2021-06-26 17:04:48.387 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 17:04:48.390 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 17:04:48.411 -03:00 [INF] Creating key {c07e4e73-a381-4462-bf59-d00cad7098d0} with creation date 2021-06-26 20:04:48Z, activation date 2021-06-26 20:04:48Z, and expiration date 2021-09-24 20:04:48Z.
+2021-06-26 17:04:48.427 -03:00 [WRN] No XML encryptor configured. Key {c07e4e73-a381-4462-bf59-d00cad7098d0} may be persisted to storage in unencrypted form.
+2021-06-26 17:04:48.583 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 17:04:48.584 -03:00 [INF] Hosting environment: Development
+2021-06-26 17:04:48.584 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 17:04:48.607 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 17:04:48.685 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 83.5063ms
+2021-06-26 17:24:48.878 -03:00 [INF] Starting up 20210626172448
+2021-06-26 17:24:49.762 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 17:24:49.766 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 17:24:49.786 -03:00 [INF] Creating key {1ff523cc-2ae4-46b7-a7e4-6f1ed96393a2} with creation date 2021-06-26 20:24:49Z, activation date 2021-06-26 20:24:49Z, and expiration date 2021-09-24 20:24:49Z.
+2021-06-26 17:24:49.803 -03:00 [WRN] No XML encryptor configured. Key {1ff523cc-2ae4-46b7-a7e4-6f1ed96393a2} may be persisted to storage in unencrypted form.
+2021-06-26 17:24:49.959 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 17:24:49.959 -03:00 [INF] Hosting environment: Development
+2021-06-26 17:24:49.959 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 17:24:49.983 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 17:24:50.062 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 84.7035ms
+2021-06-26 17:44:50.344 -03:00 [INF] Starting up 20210626174450
+2021-06-26 17:44:51.245 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 17:44:51.249 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 17:44:51.269 -03:00 [INF] Creating key {8d4e2888-7a0c-49c3-9b02-2d4f1b41ba0c} with creation date 2021-06-26 20:44:51Z, activation date 2021-06-26 20:44:51Z, and expiration date 2021-09-24 20:44:51Z.
+2021-06-26 17:44:51.286 -03:00 [WRN] No XML encryptor configured. Key {8d4e2888-7a0c-49c3-9b02-2d4f1b41ba0c} may be persisted to storage in unencrypted form.
+2021-06-26 17:44:51.443 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 17:44:51.444 -03:00 [INF] Hosting environment: Development
+2021-06-26 17:44:51.444 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 17:44:51.467 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 17:44:51.583 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 122.4193ms
+2021-06-26 18:04:51.853 -03:00 [INF] Starting up 20210626180451
+2021-06-26 18:04:52.731 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 18:04:52.734 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 18:04:52.755 -03:00 [INF] Creating key {59809fc2-7999-4d15-af97-b02e8ddb3cb8} with creation date 2021-06-26 21:04:52Z, activation date 2021-06-26 21:04:52Z, and expiration date 2021-09-24 21:04:52Z.
+2021-06-26 18:04:52.771 -03:00 [WRN] No XML encryptor configured. Key {59809fc2-7999-4d15-af97-b02e8ddb3cb8} may be persisted to storage in unencrypted form.
+2021-06-26 18:04:52.923 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 18:04:52.923 -03:00 [INF] Hosting environment: Development
+2021-06-26 18:04:52.923 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 18:04:52.947 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 18:04:53.024 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 83.0277ms
+2021-06-26 18:24:53.388 -03:00 [INF] Starting up 20210626182453
+2021-06-26 18:24:54.276 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 18:24:54.279 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 18:24:54.301 -03:00 [INF] Creating key {6b3bca61-a09a-4c29-a256-c284c0b8d898} with creation date 2021-06-26 21:24:54Z, activation date 2021-06-26 21:24:54Z, and expiration date 2021-09-24 21:24:54Z.
+2021-06-26 18:24:54.318 -03:00 [WRN] No XML encryptor configured. Key {6b3bca61-a09a-4c29-a256-c284c0b8d898} may be persisted to storage in unencrypted form.
+2021-06-26 18:24:54.475 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 18:24:54.475 -03:00 [INF] Hosting environment: Development
+2021-06-26 18:24:54.475 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 18:24:54.499 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 18:24:54.578 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 84.6983ms
+2021-06-26 18:44:54.826 -03:00 [INF] Starting up 20210626184454
+2021-06-26 18:44:55.720 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 18:44:55.724 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 18:44:55.744 -03:00 [INF] Creating key {86bef6f3-ba5b-472c-8150-eeffca2d127d} with creation date 2021-06-26 21:44:55Z, activation date 2021-06-26 21:44:55Z, and expiration date 2021-09-24 21:44:55Z.
+2021-06-26 18:44:55.760 -03:00 [WRN] No XML encryptor configured. Key {86bef6f3-ba5b-472c-8150-eeffca2d127d} may be persisted to storage in unencrypted form.
+2021-06-26 18:44:55.913 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 18:44:55.913 -03:00 [INF] Hosting environment: Development
+2021-06-26 18:44:55.913 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 18:44:55.937 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 18:44:56.015 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 83.1917ms
+2021-06-26 19:04:56.565 -03:00 [INF] Starting up 20210626190456
+2021-06-26 19:04:57.454 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 19:04:57.458 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 19:04:57.478 -03:00 [INF] Creating key {12f39ecf-4cf3-4c8b-93a8-30b1468921c0} with creation date 2021-06-26 22:04:57Z, activation date 2021-06-26 22:04:57Z, and expiration date 2021-09-24 22:04:57Z.
+2021-06-26 19:04:57.495 -03:00 [WRN] No XML encryptor configured. Key {12f39ecf-4cf3-4c8b-93a8-30b1468921c0} may be persisted to storage in unencrypted form.
+2021-06-26 19:04:57.650 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 19:04:57.651 -03:00 [INF] Hosting environment: Development
+2021-06-26 19:04:57.651 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 19:04:57.675 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 19:04:57.754 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 85.4188ms
+2021-06-26 19:24:59.349 -03:00 [INF] Starting up 20210626192459
+2021-06-26 19:25:00.345 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 19:25:00.350 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 19:25:00.372 -03:00 [INF] Creating key {4e68f67f-9130-420b-bebc-009bb25189a0} with creation date 2021-06-26 22:25:00Z, activation date 2021-06-26 22:25:00Z, and expiration date 2021-09-24 22:25:00Z.
+2021-06-26 19:25:00.390 -03:00 [WRN] No XML encryptor configured. Key {4e68f67f-9130-420b-bebc-009bb25189a0} may be persisted to storage in unencrypted form.
+2021-06-26 19:25:00.616 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 19:25:00.617 -03:00 [INF] Hosting environment: Development
+2021-06-26 19:25:00.617 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 19:25:00.654 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 19:25:00.761 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 116.8015ms
+2021-06-26 19:45:00.359 -03:00 [INF] Starting up 20210626194500
+2021-06-26 19:45:01.252 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 19:45:01.255 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 19:45:01.276 -03:00 [INF] Creating key {01f9b766-bf3b-4a1e-bc96-eab6fe1dba48} with creation date 2021-06-26 22:45:01Z, activation date 2021-06-26 22:45:01Z, and expiration date 2021-09-24 22:45:01Z.
+2021-06-26 19:45:01.293 -03:00 [WRN] No XML encryptor configured. Key {01f9b766-bf3b-4a1e-bc96-eab6fe1dba48} may be persisted to storage in unencrypted form.
+2021-06-26 19:45:01.448 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 19:45:01.448 -03:00 [INF] Hosting environment: Development
+2021-06-26 19:45:01.448 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 19:45:01.471 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 19:45:01.548 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 82.1025ms
+2021-06-26 20:05:01.934 -03:00 [INF] Starting up 20210626200501
+2021-06-26 20:05:02.820 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 20:05:02.824 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 20:05:02.845 -03:00 [INF] Creating key {770b6922-fc89-49af-af8f-2a225d1e4fbf} with creation date 2021-06-26 23:05:02Z, activation date 2021-06-26 23:05:02Z, and expiration date 2021-09-24 23:05:02Z.
+2021-06-26 20:05:02.861 -03:00 [WRN] No XML encryptor configured. Key {770b6922-fc89-49af-af8f-2a225d1e4fbf} may be persisted to storage in unencrypted form.
+2021-06-26 20:05:03.014 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 20:05:03.014 -03:00 [INF] Hosting environment: Development
+2021-06-26 20:05:03.015 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 20:05:03.037 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 20:05:03.115 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 83.7305ms
+2021-06-26 20:25:03.217 -03:00 [INF] Starting up 20210626202503
+2021-06-26 20:25:04.187 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 20:25:04.199 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 20:25:04.225 -03:00 [INF] Creating key {fa339331-5c5f-4109-b108-318ea0f6fd6a} with creation date 2021-06-26 23:25:04Z, activation date 2021-06-26 23:25:04Z, and expiration date 2021-09-24 23:25:04Z.
+2021-06-26 20:25:04.243 -03:00 [WRN] No XML encryptor configured. Key {fa339331-5c5f-4109-b108-318ea0f6fd6a} may be persisted to storage in unencrypted form.
+2021-06-26 20:25:04.427 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 20:25:04.427 -03:00 [INF] Hosting environment: Development
+2021-06-26 20:25:04.428 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 20:25:04.458 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 20:25:04.545 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 92.3021ms
+2021-06-26 20:45:04.993 -03:00 [INF] Starting up 20210626204504
+2021-06-26 20:45:05.877 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 20:45:05.881 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 20:45:05.901 -03:00 [INF] Creating key {ab784474-abe2-47f0-9d68-b2e48392a9cb} with creation date 2021-06-26 23:45:05Z, activation date 2021-06-26 23:45:05Z, and expiration date 2021-09-24 23:45:05Z.
+2021-06-26 20:45:05.918 -03:00 [WRN] No XML encryptor configured. Key {ab784474-abe2-47f0-9d68-b2e48392a9cb} may be persisted to storage in unencrypted form.
+2021-06-26 20:45:06.073 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 20:45:06.073 -03:00 [INF] Hosting environment: Development
+2021-06-26 20:45:06.073 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 20:45:06.097 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 20:45:06.175 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 84.0143ms
+2021-06-26 21:05:06.473 -03:00 [INF] Starting up 20210626210506
+2021-06-26 21:05:07.358 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 21:05:07.361 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 21:05:07.382 -03:00 [INF] Creating key {fae24699-8508-41a6-8cc5-68bec59bf586} with creation date 2021-06-27 00:05:07Z, activation date 2021-06-27 00:05:07Z, and expiration date 2021-09-25 00:05:07Z.
+2021-06-26 21:05:07.398 -03:00 [WRN] No XML encryptor configured. Key {fae24699-8508-41a6-8cc5-68bec59bf586} may be persisted to storage in unencrypted form.
+2021-06-26 21:05:07.559 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 21:05:07.559 -03:00 [INF] Hosting environment: Development
+2021-06-26 21:05:07.560 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 21:05:07.584 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 21:05:07.661 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 83.4972ms
+2021-06-26 21:25:07.999 -03:00 [INF] Starting up 20210626212507
+2021-06-26 21:25:08.890 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 21:25:08.893 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 21:25:08.914 -03:00 [INF] Creating key {e0408dc8-20e6-4740-90a4-346ea05303f7} with creation date 2021-06-27 00:25:08Z, activation date 2021-06-27 00:25:08Z, and expiration date 2021-09-25 00:25:08Z.
+2021-06-26 21:25:08.930 -03:00 [WRN] No XML encryptor configured. Key {e0408dc8-20e6-4740-90a4-346ea05303f7} may be persisted to storage in unencrypted form.
+2021-06-26 21:25:09.095 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 21:25:09.095 -03:00 [INF] Hosting environment: Development
+2021-06-26 21:25:09.096 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 21:25:09.122 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 21:25:09.213 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 96.3710ms
+2021-06-26 21:45:09.655 -03:00 [INF] Starting up 20210626214509
+2021-06-26 21:45:10.552 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 21:45:10.555 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 21:45:10.577 -03:00 [INF] Creating key {b85e118d-565f-47a9-9482-708e16ce09ae} with creation date 2021-06-27 00:45:10Z, activation date 2021-06-27 00:45:10Z, and expiration date 2021-09-25 00:45:10Z.
+2021-06-26 21:45:10.594 -03:00 [WRN] No XML encryptor configured. Key {b85e118d-565f-47a9-9482-708e16ce09ae} may be persisted to storage in unencrypted form.
+2021-06-26 21:45:10.748 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 21:45:10.748 -03:00 [INF] Hosting environment: Development
+2021-06-26 21:45:10.748 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 21:45:10.772 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 21:45:10.851 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 84.7237ms
+2021-06-26 22:05:11.046 -03:00 [INF] Starting up 20210626220511
+2021-06-26 22:05:11.930 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 22:05:11.933 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 22:05:11.955 -03:00 [INF] Creating key {0c506120-cbe6-4554-bc7c-2cb624411875} with creation date 2021-06-27 01:05:11Z, activation date 2021-06-27 01:05:11Z, and expiration date 2021-09-25 01:05:11Z.
+2021-06-26 22:05:11.971 -03:00 [WRN] No XML encryptor configured. Key {0c506120-cbe6-4554-bc7c-2cb624411875} may be persisted to storage in unencrypted form.
+2021-06-26 22:05:12.125 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 22:05:12.126 -03:00 [INF] Hosting environment: Development
+2021-06-26 22:05:12.126 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 22:05:12.159 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 22:05:12.237 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 88.9483ms
+2021-06-26 22:25:12.575 -03:00 [INF] Starting up 20210626222512
+2021-06-26 22:25:13.579 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 22:25:13.583 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 22:25:13.604 -03:00 [INF] Creating key {9b69f765-dfef-493b-b857-965162b1e43d} with creation date 2021-06-27 01:25:13Z, activation date 2021-06-27 01:25:13Z, and expiration date 2021-09-25 01:25:13Z.
+2021-06-26 22:25:13.621 -03:00 [WRN] No XML encryptor configured. Key {9b69f765-dfef-493b-b857-965162b1e43d} may be persisted to storage in unencrypted form.
+2021-06-26 22:25:13.788 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 22:25:13.788 -03:00 [INF] Hosting environment: Development
+2021-06-26 22:25:13.789 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 22:25:13.816 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 22:25:13.912 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 102.7794ms
+2021-06-26 22:45:14.041 -03:00 [INF] Starting up 20210626224514
+2021-06-26 22:45:15.030 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 22:45:15.034 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 22:45:15.055 -03:00 [INF] Creating key {46f9ca98-0178-4b3e-b312-61f9d3941009} with creation date 2021-06-27 01:45:15Z, activation date 2021-06-27 01:45:15Z, and expiration date 2021-09-25 01:45:15Z.
+2021-06-26 22:45:15.073 -03:00 [WRN] No XML encryptor configured. Key {46f9ca98-0178-4b3e-b312-61f9d3941009} may be persisted to storage in unencrypted form.
+2021-06-26 22:45:15.231 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 22:45:15.232 -03:00 [INF] Hosting environment: Development
+2021-06-26 22:45:15.232 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 22:45:15.255 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 22:45:15.336 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 86.8725ms
+2021-06-26 23:05:15.521 -03:00 [INF] Starting up 20210626230515
+2021-06-26 23:05:16.474 -03:00 [WRN] Using an in-memory repository. Keys will not be persisted to storage.
+2021-06-26 23:05:16.477 -03:00 [WRN] Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2021-06-26 23:05:16.501 -03:00 [INF] Creating key {b4ded540-1c24-4ac0-a2f0-5a7a958f5d8f} with creation date 2021-06-27 02:05:16Z, activation date 2021-06-27 02:05:16Z, and expiration date 2021-09-25 02:05:16Z.
+2021-06-26 23:05:16.523 -03:00 [WRN] No XML encryptor configured. Key {b4ded540-1c24-4ac0-a2f0-5a7a958f5d8f} may be persisted to storage in unencrypted form.
+2021-06-26 23:05:16.692 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-06-26 23:05:16.693 -03:00 [INF] Hosting environment: Development
+2021-06-26 23:05:16.693 -03:00 [INF] Content root path: E:\PROJETOS\NetCore\AppPrivy\AppPrivy.WebApiDoacaoMais
+2021-06-26 23:05:16.721 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost/ - -
+2021-06-26 23:05:16.801 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost/ - - - 301 - - 85.9426ms
+2021-06-26 23:18:34.778 -03:00 [INF] Application is shutting down...
