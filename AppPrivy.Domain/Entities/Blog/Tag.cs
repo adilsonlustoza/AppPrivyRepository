@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace AppPrivy.Domain.Entities.Blog
 {
     [Table("Tag", Schema = "Blog")]
-    public partial class Tag
+    public partial class Tag : Entity
     {
         public Tag()
         {

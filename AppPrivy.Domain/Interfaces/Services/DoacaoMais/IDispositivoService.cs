@@ -9,7 +9,7 @@ namespace AppPrivy.Domain.Interfaces.Services.DoacaoMais
 
         Task<Dispositivo> GetByDeviceId(string deviceId);
         Task<IEnumerable<Dispositivo>> ListarDispositivos();
-        Task<int?> AdicionarDispositivo(Dispositivo dispositivo);
-        Task<int?> AtualizarDispositivo(int? Id, Dispositivo dispositivo);
+        Task<int?> SaveDevice(Dispositivo dispositivo);
+        Task<int?> UpdateDevice(int? Id, Dispositivo dispositivo);
     }
 }

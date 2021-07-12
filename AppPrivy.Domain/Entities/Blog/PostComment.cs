@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace AppPrivy.Domain.Entities.Blog
 {
     [Table("PostComment", Schema = "Blog")]
-    public partial class PostComment
+    public partial class PostComment : Entity
     {
         [Key]
         public long PostCommentId { get; set; }

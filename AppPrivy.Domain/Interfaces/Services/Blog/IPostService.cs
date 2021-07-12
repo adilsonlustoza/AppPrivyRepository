@@ -1,15 +1,15 @@
-﻿
-using AppPrivy.Domain.Entities.Blog;
+﻿using AppPrivy.Domain.Entities.Blog;
+using AppPrivy.Domain.Entities.DoacaoMais;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace AppPrivy.Domain.Interfaces.Repositories.DoacaoMais
+namespace AppPrivy.Domain.Interfaces.Services.DoacaoMais
 {
-    public interface IPostRepository : IRepositoryBase<Post>
+    public interface IPostService : IServiceBase<Post>
     {
-        public  Task<int> SavePostAsync(Post post);
+        public Task<int> SavePostAsync(Post post);
 
         public Task UpdatePostAsync(int? Id, Post post);
 
@@ -20,7 +20,5 @@ namespace AppPrivy.Domain.Interfaces.Repositories.DoacaoMais
         public Task<IEnumerable<Post>> ListAllPosts();
 
         public Task<IEnumerable<Post>> ListAllPostsByCriteria(Expression<Func<Post, bool>> expression);
-
-
     }
 }

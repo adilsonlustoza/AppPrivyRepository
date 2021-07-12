@@ -7,6 +7,11 @@ appsettings.json
 appsettings.Development.json
 appsettings.*
 
+#Logs
+*.logs
+*.log
+*.txt
+
 
 # User-specific files
 *.suo

@@ -1,32 +1,29 @@
 ﻿using AppPrivy.CrossCutting.UnitOfWork;
-using AppPrivy.Domain.Entities.DoacaoMais;
+using AppPrivy.Domain.Entities;
+using AppPrivy.Domain.Entities.Blog;
 using AppPrivy.Domain.Interfaces.Repositories.DoacaoMais;
 using AppPrivy.InfraStructure.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 
-namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
+namespace AppPrivy.InfraStructure.Repositories.Blog
 {
-    public class DispositivoRepository : RepositoryBase<Dispositivo>, IDispositivoRepository
+    public class PostRepository :RepositoryBase<Post>, IPostRepository
     {
-
         private readonly IContextManager _contextManager;
-
-        public DispositivoRepository(IContextManager contextManager) : base(contextManager)
+        public PostRepository(IContextManager contextManager) : base(contextManager)
         {
             _contextManager = contextManager;
         }
 
 
-        public async Task<IEnumerable<Dispositivo>> ListaDispositivos()
-        {
-            return await _contextManager.AppPrivyContext().Dispositivo.ToListAsync();
-        }
-
-        public async Task<int?> SaveDevice(Dispositivo dispositivo)
+        public async Task<int> SavePostAsync(Post post)
         {
             IUnitOfWork _unitOfWork = null;
             try
@@ -41,13 +38,13 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     {
                         using (_unitOfWork = new TransactionScopeUnitOfWorkFactory(IsolationLevel.Serializable).Create())
                         {
-                            await resource.Dispositivo.AddAsync(dispositivo);
+                            await resource.Post.AddAsync(post);
 
                             codeReturn = await resource.SaveChangesAsync();
 
-                            if (dispositivo?.Notificacoes?.Count > 0)
-                                foreach (var notificacao in dispositivo?.Notificacoes)
-                                    await resource.NotificacaoDispositivo.AddAsync(new NotificacaoDispositivo() { DispositivoId = dispositivo.DispositivoId, NotificacaoId = notificacao.NotificacaoId });
+                            if (post?.PostComments?.Count > 0)
+                                foreach (var comment in post?.PostComments)
+                                    await resource.PostComments.AddAsync(comment);
 
 
                             codeReturn = await resource.SaveChangesAsync();
@@ -57,7 +54,7 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 
                 });
 
-                if (codeReturn != 2)
+                if (codeReturn <1)
                     _unitOfWork.RollBack();
                 return codeReturn;
 
@@ -67,11 +64,9 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                 _unitOfWork.RollBack();
                 throw e;
             }
-
-
         }
 
-        public async Task UpdateDevice(int? Id, Dispositivo dispositivo)
+        public async Task UpdatePostAsync(int? Id, Post post)
         {
             IUnitOfWork _unitOfWork = null;
             try
@@ -85,8 +80,8 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
                     {
                         using (_unitOfWork = new TransactionScopeUnitOfWorkFactory(IsolationLevel.Serializable).Create())
                         {
-                            if (resource.Entry(dispositivo).State != EntityState.Modified)
-                                resource.Attach(dispositivo).State = EntityState.Modified;
+                            if (resource.Entry(post).State != EntityState.Modified)
+                                resource.Attach(post).State = EntityState.Modified;
                             await _contextManager.AppPrivyContext().SaveChangesAsync();
                             _unitOfWork.Commit();
                         }
@@ -104,10 +99,25 @@ namespace AppPrivy.InfraStructure.Repositories.DoacaoMais
 
         }
 
-        public async Task<Dispositivo> BuscaDispositivoPorDeviceId(string code)
-        {
-            return await _contextManager.AppPrivyContext().Dispositivo.AsNoTracking().FirstOrDefaultAsync(p => p.DeviceId == code);
 
+        public async Task<Post> GetPostsById(int? Id)
+        {
+            return await _contextManager.AppPrivyContext().Set<Post>().AsNoTrackingWithIdentityResolution().FirstOrDefaultAsync(p => p.PostId == Id);
+        }
+
+        public async Task<Post> GetPostsByGuid(Guid guid)
+        {
+            return await _contextManager.AppPrivyContext().Set<Post>().AsNoTrackingWithIdentityResolution().FirstOrDefaultAsync(p=>p.IdentificadorUnico.Equals(guid));
+        }
+
+        public async Task<IEnumerable<Post>> ListAllPosts()
+        {
+            return await _contextManager.AppPrivyContext().Post.AsNoTrackingWithIdentityResolution().ToListAsync();
+        }
+
+        public async Task<IEnumerable<Post>> ListAllPostsByCriteria(Expression<Func<Post, bool>> expression)
+        {
+            return await _contextManager.AppPrivyContext().Set<Post>().Where(expression).AsNoTrackingWithIdentityResolution().ToListAsync();
         }
     }
 }

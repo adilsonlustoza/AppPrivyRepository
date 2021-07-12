@@ -103,7 +103,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
         {
             try
             {
-                var _result = await _dispositivoService.AdicionarDispositivo(dispositivo);
+                var _result = await _dispositivoService.SaveDevice(dispositivo);
                 
                 if (_result == null || _result==0)
                     return StatusCode(StatusCodes.Status400BadRequest, string.Format("Code {0} device not updated", dispositivo.Code));
@@ -150,7 +150,7 @@ namespace AppPrivy.WebApiDoacaoMais.Controllers
             try
             {
               
-                var _result = await _dispositivoService.AtualizarDispositivo(DispositivoId, dispositivo);                           
+                var _result = await _dispositivoService.UpdateDevice(DispositivoId, dispositivo);                           
 
                 if (_result == null)
                     return StatusCode(StatusCodes.Status400BadRequest, string.Format("Code {0} device not updated", dispositivo.DeviceId));

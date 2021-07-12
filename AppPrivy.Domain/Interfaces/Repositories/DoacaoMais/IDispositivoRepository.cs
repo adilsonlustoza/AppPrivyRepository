@@ -10,8 +10,8 @@ namespace AppPrivy.Domain.Interfaces.Repositories.DoacaoMais
 
         Task<Dispositivo> BuscaDispositivoPorDeviceId(string code);
 
-        Task<int?> SalvaDispositivo(Dispositivo dispositivo);
+        Task<int?> SaveDevice(Dispositivo dispositivo);
 
-        Task AtualizaDispositivo(int? Id,Dispositivo dispositivo);
+        Task UpdateDevice(int? Id,Dispositivo dispositivo);
     }
 }

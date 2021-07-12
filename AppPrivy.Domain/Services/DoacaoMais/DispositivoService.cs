@@ -25,13 +25,13 @@ namespace AppPrivy.Domain.Services.DoacaoMais
         }
 
 
-        public async Task<int?> AdicionarDispositivo(Dispositivo dispositivo)
+        public async Task<int?> SaveDevice(Dispositivo dispositivo)
         {
            
             try
             {  
                 
-               return await _dispositivoRepository.SalvaDispositivo(dispositivo);            
+               return await _dispositivoRepository.SaveDevice(dispositivo);            
               
             }
             catch (Exception ex)
@@ -42,7 +42,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
 
         }
 
-        public async Task<int?> AtualizarDispositivo(int? Id,Dispositivo dispositivo)
+        public async Task<int?> UpdateDevice(int? Id,Dispositivo dispositivo)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace AppPrivy.Domain.Services.DoacaoMais
                         dispositivo.NotificacaoDispositivo.Add(new NotificacaoDispositivo() {DispositivoId=dispositivo.DispositivoId,NotificacaoId=notificacao.NotificacaoId,Dispositivo = dispositivo,Notificacao=notificacao });
                                        
 
-                    await _dispositivoRepository.AtualizaDispositivo(Id, dispositivo);
+                    await _dispositivoRepository.UpdateDevice(Id, dispositivo);
                 }
 
 
